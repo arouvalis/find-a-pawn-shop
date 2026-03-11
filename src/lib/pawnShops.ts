@@ -83,6 +83,36 @@ export function toOpeningHoursSchema(raw: string | null): string[] {
   });
 }
 
+const DAY_ORDER = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+function condenseDays(days: string[]): string {
+  if (days.length === 0) return "";
+  const indices = days.map((d) => DAY_ORDER.indexOf(d)).filter((i) => i !== -1);
+  if (indices.length === 0) return days.join(", ");
+
+  // Group into consecutive runs
+  const ranges: string[] = [];
+  let start = indices[0];
+  let prev = indices[0];
+
+  for (let i = 1; i <= indices.length; i++) {
+    const curr = indices[i];
+    if (curr === prev + 1) {
+      prev = curr;
+    } else {
+      ranges.push(
+        start === prev
+          ? DAY_ORDER[start]
+          : `${DAY_ORDER[start]}–${DAY_ORDER[prev]}`
+      );
+      start = curr;
+      prev = curr;
+    }
+  }
+
+  return ranges.join(", ");
+}
+
 export function buildSeoDescription(shop: PawnShop): string {
   const parts: string[] = [];
   const loc = [shop.city, "Illinois"].filter(Boolean).join(", ");
@@ -92,7 +122,7 @@ export function buildSeoDescription(shop: PawnShop): string {
   if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
   const hours = parseHours(shop.hours);
   if (hours.length > 0) {
-    const days = hours.map((h) => h.day).join(", ");
+    const days = condenseDays(hours.map((h) => h.day));
     parts.push(`They are open ${days}.`);
   }
   if (shop.rating !== null && shop.reviews !== null) {

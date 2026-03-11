@@ -28,7 +28,7 @@ export default async function CityPage({ params }: Props) {
   if (!shops.length) notFound();
 
   const cityName = shops[0].city;
-  const sorted = [...shops].sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
+  const sorted = [...shops].sort((a, b) => (b.reviews ?? -1) - (a.reviews ?? -1));
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
