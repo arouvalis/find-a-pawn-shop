@@ -60,16 +60,33 @@ export default function HomePage() {
 
       {/* Browse by State */}
       <section className="max-w-6xl mx-auto px-4 py-16">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">Browse by State</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">Browse by State</h2>
+        <p className="text-gray-500 mb-8">Currently serving Illinois — expanding nationwide in 2026.</p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+          {/* Active */}
           <Link
             href="/illinois"
-            className="border border-gray-200 rounded-lg p-5 hover:border-amber-400 hover:shadow-sm transition-all group"
+            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
           >
-            <div className="text-3xl mb-2">🏛️</div>
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600">Illinois</div>
-            <div className="text-sm text-gray-500 mt-0.5">{totalShops} listings</div>
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Illinois</div>
+            <div className="text-sm text-gray-500">{totalShops} listings</div>
           </Link>
+          {/* Coming Soon */}
+          {[
+            "Texas", "Florida", "California", "New York", "Ohio",
+            "Michigan", "Pennsylvania", "Georgia", "Arizona", "Colorado",
+            "Nevada", "Washington", "Missouri", "Indiana",
+          ].map((state) => (
+            <div
+              key={state}
+              className="border border-gray-200 bg-gray-50 rounded-lg p-5 opacity-70"
+            >
+              <div className="font-semibold text-gray-400 mb-1">{state}</div>
+              <span className="inline-block text-xs text-gray-400 bg-gray-200 rounded-full px-2 py-0.5">
+                Coming Soon
+              </span>
+            </div>
+          ))}
         </div>
       </section>
 
