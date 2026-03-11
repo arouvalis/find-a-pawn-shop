@@ -1,6 +1,19 @@
 import Link from "next/link";
+import { getAllShops, getCities } from "@/lib/pawnShops";
+
+const FEATURED_CITIES = ["chicago", "springfield", "rockford", "naperville", "aurora"];
 
 export default function HomePage() {
+  const allShops = getAllShops();
+  const cities = getCities();
+  const totalShops = allShops.length;
+  const totalCities = cities.length;
+
+  const featuredCities = FEATURED_CITIES.flatMap((slug) => {
+    const found = cities.find((c) => c.citySlug === slug);
+    return found ? [found] : [];
+  });
+
   return (
     <>
       {/* Hero */}
@@ -27,6 +40,24 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Stats bar */}
+      <section style={{ backgroundColor: "#f59e0b" }} className="py-5 px-4">
+        <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8 text-gray-900">
+          <div className="text-center">
+            <span className="text-2xl font-bold">{totalShops}</span>
+            <span className="ml-2 font-medium">Pawn Shops Listed</span>
+          </div>
+          <div className="text-center">
+            <span className="text-2xl font-bold">{totalCities}</span>
+            <span className="ml-2 font-medium">Cities Covered</span>
+          </div>
+          <div className="text-center">
+            <span className="text-2xl font-bold">Illinois</span>
+            <span className="ml-2 font-medium">&amp; Growing</span>
+          </div>
+        </div>
+      </section>
+
       {/* Browse by State */}
       <section className="max-w-6xl mx-auto px-4 py-16">
         <h2 className="text-2xl font-bold text-gray-900 mb-8">Browse by State</h2>
@@ -37,8 +68,60 @@ export default function HomePage() {
           >
             <div className="text-3xl mb-2">🏛️</div>
             <div className="font-semibold text-gray-900 group-hover:text-amber-600">Illinois</div>
-            <div className="text-sm text-gray-500 mt-0.5">151 listings</div>
+            <div className="text-sm text-gray-500 mt-0.5">{totalShops} listings</div>
           </Link>
+        </div>
+      </section>
+
+      {/* Featured Cities */}
+      <section className="bg-gray-50 py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8">Featured Cities</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+            {featuredCities.map(({ citySlug, city, count }) => (
+              <Link
+                key={citySlug}
+                href={`/illinois/${citySlug}`}
+                className="border border-gray-200 bg-white rounded-lg p-5 hover:border-amber-400 hover:shadow-md transition-all group text-center"
+              >
+                <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">{city}</div>
+                <div
+                  style={{ backgroundColor: "#f59e0b" }}
+                  className="inline-block text-xs font-bold text-gray-900 rounded-full px-2 py-0.5 mt-1"
+                >
+                  {count} shop{count !== 1 ? "s" : ""}
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Use FindAPawnShop.com */}
+      <section className="max-w-6xl mx-auto px-4 py-16">
+        <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Why Use FindAPawnShop.com?</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="border border-gray-200 rounded-xl p-6">
+            <div className="text-3xl mb-3">✅</div>
+            <h3 className="font-bold text-gray-900 mb-2">Free &amp; Verified Listings</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Browse hundreds of pawn shops with real addresses, phone numbers, and hours.
+            </p>
+          </div>
+          <div className="border border-gray-200 rounded-xl p-6">
+            <div className="text-3xl mb-3">⭐</div>
+            <h3 className="font-bold text-gray-900 mb-2">Ratings &amp; Reviews</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              See Google ratings so you can find the best-rated shop near you.
+            </p>
+          </div>
+          <div className="border border-gray-200 rounded-xl p-6">
+            <div className="text-3xl mb-3">📞</div>
+            <h3 className="font-bold text-gray-900 mb-2">Direct Contact Info</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Call or visit any shop directly — no middleman, no fees.
+            </p>
+          </div>
         </div>
       </section>
 
