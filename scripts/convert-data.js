@@ -32,7 +32,29 @@ const workbook = XLSX.readFile(INPUT);
 const sheet = workbook.Sheets[workbook.SheetNames[0]];
 const rows = XLSX.utils.sheet_to_json(sheet, { defval: "" });
 
-const records = rows.map((row) => {
+const BLOCKLIST = ["moon's sandwich shop", "bnsf", "metra", "state street apparel", "iconnect", "railroad"];
+
+function isPawnShop(row) {
+  const raw = String(row["name"] ?? row["Name"] ?? "");
+  const name = raw.toLowerCase();
+  const category = String(row["category"] ?? row["Category"] ?? "").toLowerCase();
+  const subtypes = String(row["subtypes"] ?? row["Subtypes"] ?? "").toLowerCase();
+
+  if (BLOCKLIST.some((b) => name.includes(b))) return false;
+
+  if (subtypes.includes("pawn shop") || category.includes("pawn")) return true;
+
+  if (name.includes("pawn") || name.includes("loan") || name.includes("cash") ||
+      name.includes("empe\u00f1o") || name.includes("empeno") ||
+      name.includes("buyback") || name.includes("buy-back")) return true;
+
+  if (name.includes("exchange") &&
+      (name.includes("jewelry") || name.includes("gold") || name.includes("silver"))) return true;
+
+  return false;
+}
+
+const records = rows.filter(isPawnShop).map((row) => {
   const name = clean(row["name"] ?? row["Name"]);
   const city = clean(row["city"] ?? row["City"]);
 
