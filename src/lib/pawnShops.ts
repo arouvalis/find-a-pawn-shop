@@ -58,6 +58,49 @@ export function parseHours(raw: string | null): { day: string; open: string; clo
   });
 }
 
+const DAY_ABBR: Record<string, string> = {
+  Monday: "Mo", Tuesday: "Tu", Wednesday: "We", Thursday: "Th",
+  Friday: "Fr", Saturday: "Sa", Sunday: "Su",
+};
+
+function to24h(time: string): string {
+  const match = time.match(/^(\d+)(?::(\d+))?(AM|PM)$/i);
+  if (!match) return time;
+  let h = parseInt(match[1]);
+  const m = match[2] ? parseInt(match[2]) : 0;
+  const period = match[3].toUpperCase();
+  if (period === "PM" && h !== 12) h += 12;
+  if (period === "AM" && h === 12) h = 0;
+  return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}`;
+}
+
+export function toOpeningHoursSchema(raw: string | null): string[] {
+  if (!raw) return [];
+  return raw.split("|").map((segment) => {
+    const [day, open, close] = segment.split(",");
+    const abbr = DAY_ABBR[day ?? ""] ?? day;
+    return `${abbr} ${to24h(open ?? "")}–${to24h(close ?? "")}`;
+  });
+}
+
+export function buildSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const loc = [shop.city, "Illinois"].filter(Boolean).join(", ");
+  parts.push(
+    `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
+  );
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) {
+    const days = hours.map((h) => h.day).join(", ");
+    parts.push(`They are open ${days}.`);
+  }
+  if (shop.rating !== null && shop.reviews !== null) {
+    parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`);
+  }
+  return parts.join(" ");
+}
+
 export function formatAddress(shop: PawnShop): string {
   const parts = [shop.street, shop.city, shop.state, shop.zip].filter(Boolean);
   return parts.join(", ");
