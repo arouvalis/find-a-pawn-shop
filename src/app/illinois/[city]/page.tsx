@@ -74,6 +74,44 @@ export default async function CityPage({ params }: Props) {
           </Link>
         ))}
       </div>
+
+      {citySlug === "chicago" && (
+        <div className="mt-16 max-w-3xl">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">FAQs About Pawn Shops in Chicago</h2>
+          <div className="divide-y divide-gray-200 border border-gray-200 rounded-xl overflow-hidden">
+            {[
+              {
+                q: "How many pawn shops are in Chicago?",
+                a: "There are approximately 90+ pawn shops operating in Chicago across neighborhoods including Austin, Pilsen, Humboldt Park, Englewood, Logan Square, and the Loop. FindAPawnShop.com lists verified pawn shops across all Chicago neighborhoods.",
+              },
+              {
+                q: "Are pawn shops in Chicago safe and legitimate?",
+                a: "Yes — all licensed pawn shops in Chicago must comply with Illinois state regulations and report transactions to the Chicago Police Department. This helps prevent the sale of stolen goods and protects both buyers and sellers.",
+              },
+              {
+                q: "What neighborhoods in Chicago have the most pawn shops?",
+                a: "Austin, Pilsen, Little Village, Humboldt Park, and Englewood tend to have the highest concentration of pawn shops in Chicago. Many shops are also located along major commercial corridors like Madison Street, Chicago Avenue, and Ashland Avenue.",
+              },
+              {
+                q: "Can I sell jewelry at a Chicago pawn shop?",
+                a: "Yes — jewelry, gold, and silver are among the most commonly accepted items at Chicago pawn shops. Many shops on our list specialize in jewelry and offer competitive rates based on current gold and silver spot prices.",
+              },
+              {
+                q: "What are typical pawn shop hours in Chicago?",
+                a: "Most Chicago pawn shops are open Monday through Saturday, roughly 9AM to 6PM. Some shops have Sunday hours. Always check the individual listing page for exact hours before visiting.",
+              },
+            ].map(({ q, a }) => (
+              <details key={q} className="group bg-white">
+                <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer list-none">
+                  <span className="font-semibold text-gray-900 text-sm sm:text-base">{q}</span>
+                  <span className="text-amber-500 font-bold text-xl shrink-0 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="px-6 pb-5 text-gray-600 text-sm leading-relaxed">{a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

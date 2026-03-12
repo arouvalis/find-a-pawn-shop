@@ -142,6 +142,47 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="max-w-3xl mx-auto px-4 py-16">
+        <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Frequently Asked Questions</h2>
+        <div className="divide-y divide-gray-200 border border-gray-200 rounded-xl overflow-hidden">
+          {[
+            {
+              q: "How do pawn shops work?",
+              a: "Pawn shops offer short-term loans using your valuables as collateral. You bring in an item, the pawnbroker appraises it and offers you a loan. If you repay the loan plus interest within the agreed period, you get your item back. If not, the pawn shop keeps the item and sells it.",
+            },
+            {
+              q: "What items do pawn shops accept?",
+              a: "Most pawn shops accept jewelry, gold and silver, electronics, musical instruments, tools, firearms (where licensed), and sporting goods. High-value items like diamond rings, name-brand watches, and newer electronics tend to get the best offers.",
+            },
+            {
+              q: "How much will a pawn shop give me for my item?",
+              a: "Pawn shops typically offer 25–60% of an item's resale value. Jewelry and gold are valued based on weight and purity. Electronics are assessed by age, condition, and current market demand. Getting quotes from multiple shops is always a good idea.",
+            },
+            {
+              q: "What's the difference between pawning and selling?",
+              a: "When you pawn an item, you're taking a loan with the item as collateral — you can get it back by repaying the loan. When you sell, you transfer ownership permanently in exchange for cash. Selling usually gets you more money upfront.",
+            },
+            {
+              q: "Are pawn shop loans regulated in Illinois?",
+              a: "Yes. Illinois pawn shops are regulated by the Illinois Pawnbroker Regulation Act. Interest rates and loan terms are capped by state law. Pawnbrokers are required to be licensed and to report transactions to local law enforcement.",
+            },
+            {
+              q: "How do I find the best pawn shop near me?",
+              a: "Look for shops with high Google ratings and many reviews — this indicates consistent, trustworthy service. Check their hours, confirm they accept the type of item you have, and consider getting quotes from 2-3 shops before committing.",
+            },
+          ].map(({ q, a }) => (
+            <details key={q} className="group bg-white">
+              <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer list-none">
+                <span className="font-semibold text-gray-900 text-sm sm:text-base">{q}</span>
+                <span className="text-amber-500 font-bold text-xl shrink-0 group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p className="px-6 pb-5 text-gray-600 text-sm leading-relaxed">{a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
       {/* About */}
       <section className="bg-gray-50 py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
