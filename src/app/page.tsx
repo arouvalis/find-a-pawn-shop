@@ -21,23 +21,9 @@ export default function HomePage() {
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">
           Find a Pawn Shop Near You
         </h1>
-        <p className="text-gray-300 text-lg mb-8 max-w-xl mx-auto">
+        <p className="text-gray-300 text-lg max-w-xl mx-auto">
           Browse verified pawn shop listings by state and city. Compare ratings, hours, and contact info.
         </p>
-        <div className="max-w-lg mx-auto flex gap-2">
-          <input
-            type="text"
-            placeholder="Enter your city or zip code..."
-            className="flex-1 px-4 py-3 rounded-lg text-gray-900 text-sm outline-none"
-            readOnly
-          />
-          <button
-            style={{ backgroundColor: "#f59e0b" }}
-            className="px-6 py-3 rounded-lg font-semibold text-gray-900 hover:opacity-90 transition-opacity text-sm"
-          >
-            Search
-          </button>
-        </div>
       </section>
 
       {/* Stats bar */}

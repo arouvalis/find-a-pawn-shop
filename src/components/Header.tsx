@@ -11,6 +11,9 @@ export default function Header() {
           <Link href="/illinois" className="hover:text-amber-400 transition-colors">
             Illinois
           </Link>
+          <Link href="/blog" className="hover:text-amber-400 transition-colors">
+            Blog
+          </Link>
         </nav>
       </div>
     </header>
