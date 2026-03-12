@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { articles, getArticleBySlug } from "@/lib/articles";
@@ -55,6 +56,17 @@ export default async function BlogArticlePage({ params }: Props) {
           <span>/</span>
           <span className="text-gray-900 truncate">{article.title}</span>
         </nav>
+
+        {/* Hero image */}
+        <div className="relative w-full h-[400px] rounded-xl overflow-hidden mb-8">
+          <Image
+            src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1200&q=80"
+            alt="Jewelry and valuables laid out on a surface — common items sold at pawn shops"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
 
         {/* Header */}
         <p className="text-xs text-gray-400 mb-3">{article.dateDisplay}</p>
