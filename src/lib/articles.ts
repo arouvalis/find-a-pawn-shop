@@ -23,6 +23,14 @@ export const articles: Article[] = [
     datePublished: "2026-02-01",
     dateDisplay: "February 1, 2026",
   },
+  {
+    slug: "how-to-get-the-best-price-when-pawning-jewelry",
+    title: "How to Get the Best Price When Pawning Jewelry",
+    description:
+      "Don't leave money on the table. Here's exactly how to prepare your jewelry, time your visit, and negotiate to get the highest offer at a pawn shop.",
+    datePublished: "2026-02-15",
+    dateDisplay: "February 15, 2026",
+  },
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {

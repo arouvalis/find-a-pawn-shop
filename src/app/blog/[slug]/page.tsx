@@ -33,6 +33,10 @@ const HERO_IMAGES: Record<string, { src: string; alt: string }> = {
     src: "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=1200&q=80",
     alt: "Rejected or broken items that pawn shops typically won't accept",
   },
+  "how-to-get-the-best-price-when-pawning-jewelry": {
+    src: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1200&q=80",
+    alt: "Gold and diamond jewelry laid out — tips for getting the best pawn shop price",
+  },
 };
 
 // Per-article body content
@@ -224,6 +228,98 @@ function ArticleBody({ slug }: { slug: string }) {
           </Link>
           . Each listing includes ratings, hours, and contact info so you can call ahead before
           making the trip.
+        </p>
+      </div>
+    );
+  }
+
+  if (slug === "how-to-get-the-best-price-when-pawning-jewelry") {
+    return (
+      <div className="prose-content">
+        <p>
+          Pawn shops make money on the spread between what they pay and what they sell for — which
+          means your opening offer is rarely their best offer. With a little preparation, you can
+          significantly increase what you walk out with. Here&apos;s how to get the most money when
+          pawning or selling jewelry.
+        </p>
+
+        <h2>1. Know What You Have Before You Go</h2>
+        <p>
+          Before walking into any pawn shop, do your homework. Look up the current spot price of
+          gold and silver at kitco.com or goldprice.org. Know the karat weight of your piece
+          (stamped inside rings, on clasps). Weigh it if you can — a kitchen scale works fine. For
+          diamond jewelry, pull any GIA or appraisal certificates you have. The more you know going
+          in, the harder it is for a pawnbroker to lowball you.
+        </p>
+
+        <h2>2. Clean Your Jewelry First</h2>
+        <p>
+          Presentation matters. A dirty or tarnished piece looks like it&apos;s worth less — even
+          if it isn&apos;t. Use a soft cloth and mild soap to clean gold and silver. For diamonds,
+          a jewelry cleaning solution or a toothbrush with dish soap works well. Don&apos;t use
+          harsh chemicals on pieces with softer stones like opals, emeralds, or pearls.
+        </p>
+
+        <h2>3. Bring Documentation</h2>
+        <p>
+          Appraisals, receipts, GIA certificates, and original packaging all increase your
+          negotiating power. They prove authenticity and give the pawnbroker confidence in the
+          item&apos;s value. A Rolex with original box and papers is worth dramatically more than
+          one without.
+        </p>
+
+        <h2>4. Get Quotes from Multiple Shops</h2>
+        <p>
+          This is the single most effective thing you can do. Pawn shop offers vary widely —
+          sometimes by 30–50% for the same item. Visit at least 2–3 shops before accepting any
+          offer. Once you have competing quotes, you can use them as leverage: &ldquo;The shop on
+          Milwaukee Ave offered me $X — can you beat that?&rdquo;
+        </p>
+
+        <h2>5. Understand the Difference Between Pawning and Selling</h2>
+        <p>
+          When you pawn jewelry, you&apos;re taking a short-term loan using the piece as
+          collateral. You get the item back when you repay the loan plus interest. When you sell,
+          you transfer ownership permanently for a one-time cash payment. Selling typically gets
+          you more cash upfront. Pawning makes sense if you expect to want the piece back.
+        </p>
+
+        <h2>6. Time Your Visit Strategically</h2>
+        <p>
+          Gold and silver prices fluctuate daily. When spot prices are high, pawn shops can offer
+          more and still make their margin. Check the current gold price before you go — if prices
+          have spiked recently, it&apos;s a good time to sell. Avoid going right before a holiday
+          when shops are busiest and staff are less focused on individual negotiations.
+        </p>
+
+        <h2>7. Negotiate — Always</h2>
+        <p>
+          The first offer is almost never the final offer. A simple &ldquo;Is that the best you
+          can do?&rdquo; will often move the number. If you have documentation, competing quotes,
+          or knowledge of the spot price, use them. Stay calm and professional — pawnbrokers deal
+          with negotiations all day and respond better to informed, respectful customers than to
+          pressure tactics.
+        </p>
+
+        <h2>8. Consider Your Alternatives</h2>
+        <p>
+          If the offers you&apos;re getting feel too low, consider alternatives: selling on eBay
+          or Etsy (higher prices, more work), estate jewelry buyers, consignment with a jewelry
+          store, or Facebook Marketplace for branded pieces. For gold specifically, some coin
+          dealers and refiners pay closer to spot price than pawn shops.
+        </p>
+
+        <h2>Find Pawn Shops Near You</h2>
+        <p>
+          Ready to shop around for the best offer? Compare verified pawn shops across{" "}
+          <Link href="/illinois" className="text-amber-600 hover:underline">Illinois</Link>,
+          including{" "}
+          <Link href="/illinois/chicago" className="text-amber-600 hover:underline">
+            pawn shops in Chicago
+          </Link>
+          . Browse ratings and contact info to find reputable shops near you before making the
+          trip — getting multiple quotes is the single best thing you can do to maximize your
+          payout.
         </p>
       </div>
     );
