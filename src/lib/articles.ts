@@ -15,6 +15,14 @@ export const articles: Article[] = [
     datePublished: "2026-01-15",
     dateDisplay: "January 15, 2026",
   },
+  {
+    slug: "what-will-a-pawn-shop-not-buy",
+    title: "What Will a Pawn Shop Not Buy? Items They Usually Reject",
+    description:
+      "Before you make the trip, find out which items pawn shops typically won't accept — and why. Save yourself time with this complete guide.",
+    datePublished: "2026-02-01",
+    dateDisplay: "February 1, 2026",
+  },
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {
