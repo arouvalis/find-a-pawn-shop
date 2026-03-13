@@ -31,12 +31,17 @@ function cleanNumber(val) {
   return isNaN(n) ? null : n;
 }
 
+const CITY_OVERRIDES = {
+  "Mckinney": "McKinney",
+};
+
 function toTitleCase(str) {
   if (!str) return str;
-  return str
+  const titled = str
     .split(" ")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
     .join(" ");
+  return CITY_OVERRIDES[titled] ?? titled;
 }
 
 const BLOCKLIST = ["moon's sandwich shop", "bnsf", "metra", "state street apparel", "iconnect", "railroad"];

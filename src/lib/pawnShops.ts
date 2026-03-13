@@ -139,6 +139,10 @@ export function formatAddress(shop: PawnShop): string {
 
 // ── Texas ────────────────────────────────────────────────────────────────────
 
+const TEXAS_CITY_OVERRIDES: Record<string, string> = {
+  "Mckinney": "McKinney",
+};
+
 export const allTexasShops = texasData as PawnShop[];
 
 export function getAllTexasShops(): PawnShop[] {
@@ -157,11 +161,12 @@ export function getTexasCities(): { citySlug: string; city: string; count: numbe
   const map = new Map<string, { city: string; count: number }>();
   for (const shop of allTexasShops) {
     if (!shop.citySlug || !shop.city) continue;
+    const city = TEXAS_CITY_OVERRIDES[shop.city] ?? shop.city;
     const existing = map.get(shop.citySlug);
     if (existing) {
       existing.count++;
     } else {
-      map.set(shop.citySlug, { city: shop.city, count: 1 });
+      map.set(shop.citySlug, { city, count: 1 });
     }
   }
   return Array.from(map.entries())
@@ -171,7 +176,8 @@ export function getTexasCities(): { citySlug: string; city: string; count: numbe
 
 export function buildTexasSeoDescription(shop: PawnShop): string {
   const parts: string[] = [];
-  const loc = [shop.city, "Texas"].filter(Boolean).join(", ");
+  const city = shop.city ? (TEXAS_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "Texas"].filter(Boolean).join(", ");
   parts.push(
     `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
   );
