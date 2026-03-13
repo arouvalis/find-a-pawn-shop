@@ -41,6 +41,10 @@ const HERO_IMAGES: Record<string, { src: string; alt: string }> = {
     src: "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=1200&q=80",
     alt: "Houston city skyline — guide to the best pawn shops in Houston, Texas",
   },
+  "best-pawn-shops-in-chicago": {
+    src: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1200&q=80",
+    alt: "Chicago city skyline — guide to the best pawn shops in Chicago, Illinois",
+  },
 };
 
 // Per-article body content
@@ -416,6 +420,101 @@ function ArticleBody({ slug }: { slug: string }) {
           </Link>{" "}
           if you&apos;re outside Houston or looking in the surrounding suburbs. Every listing
           includes the address, phone number, hours, and a direct link to Google Maps.
+        </p>
+      </div>
+    );
+  }
+
+  if (slug === "best-pawn-shops-in-chicago") {
+    return (
+      <div className="prose-content">
+        <p>
+          Chicago has one of the most active pawn shop markets in the Midwest. With dozens of
+          neighborhoods and hundreds of shops spread across the city, finding the right one can take
+          time. Whether you&apos;re looking to sell jewelry, get a short-term loan, or find a deal,
+          this guide will help you navigate Chicago&apos;s pawn shop scene.
+        </p>
+
+        <h2>What to Look for in a Chicago Pawn Shop</h2>
+        <p>
+          The best Chicago pawn shops have strong Google ratings, hundreds of reviews, and
+          specialize in what you&apos;re bringing in. Chicago shops vary widely — some focus on gold
+          and jewelry, others on electronics and gaming, others on musical instruments and firearms.
+          Check hours before you go since many shops keep limited weekend hours.
+        </p>
+
+        <h2>Top Chicago Pawn Shop Neighborhoods</h2>
+
+        <h3>Austin and West Side</h3>
+        <p>
+          Austin has one of the highest concentrations of pawn shops in Chicago. The Madison Street
+          and Chicago Avenue corridors are lined with shops that deal in jewelry, electronics, and
+          tools. Competitive area — good for getting multiple quotes quickly.
+        </p>
+
+        <h3>Pilsen and Little Village</h3>
+        <p>
+          Pilsen and Little Village have a strong pawn shop presence, including several shops that
+          cater to Spanish-speaking customers. Gold and jewelry are particularly active categories
+          here.
+        </p>
+
+        <h3>Humboldt Park and Englewood</h3>
+        <p>
+          These neighborhoods have well-established pawn shops with loyal customer bases. Good for
+          tools, electronics, and firearms (with valid FOID card).
+        </p>
+
+        <h3>North Side and Logan Square</h3>
+        <p>
+          The north side has fewer pawn shops but the ones that operate tend to specialize in
+          higher-end items — vintage instruments, designer watches, and fine jewelry. Worth the trip
+          if you have quality merchandise.
+        </p>
+
+        <h2>Chicago Pawn Shop Regulations</h2>
+        <p>
+          All Chicago pawn shops are licensed by the City of Chicago and must comply with both city
+          and Illinois state regulations. Key rules to know:
+        </p>
+        <ul>
+          <li>Valid government-issued ID required for all transactions</li>
+          <li>All transactions reported to the Chicago Police Department</li>
+          <li>Firearms require a valid Illinois FOID card</li>
+          <li>
+            Interest rates on pawn loans are regulated under the Illinois Pawnbroker Regulation Act
+          </li>
+          <li>
+            Mandatory holding period on purchased items to allow police to check for stolen goods
+          </li>
+        </ul>
+
+        <h2>What Sells Best at Chicago Pawn Shops?</h2>
+        <p>
+          Gold and silver jewelry, iPhones and MacBooks, gaming consoles, Gibson and Fender guitars,
+          DeWalt and Milwaukee power tools, and Rolex or other luxury watches. Chicago&apos;s music
+          scene means instruments move particularly well — especially guitars and brass instruments.
+        </p>
+
+        <h2>Getting the Best Price in Chicago</h2>
+        <p>
+          Chicago&apos;s density works in your favor. With dozens of shops across the city you can
+          get competing quotes in a single afternoon. Bring documentation for high-value items, know
+          the current gold spot price before you go, and don&apos;t accept the first offer.
+        </p>
+
+        <h2>Find Pawn Shops in Chicago</h2>
+        <p>
+          Browse our full directory of verified{" "}
+          <Link href="/illinois/chicago" className="text-amber-600 hover:underline">
+            pawn shops in Chicago
+          </Link>{" "}
+          with real ratings, hours, addresses, and contact info. You can also explore the complete{" "}
+          <Link href="/illinois" className="text-amber-600 hover:underline">
+            Illinois pawn shop directory
+          </Link>{" "}
+          if you&apos;re in the suburbs or anywhere else in the state. Every listing links directly
+          to Google Maps so you can get directions before you go.
         </p>
       </div>
     );

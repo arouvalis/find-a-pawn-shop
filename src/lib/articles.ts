@@ -39,6 +39,14 @@ export const articles: Article[] = [
     datePublished: "2026-03-01",
     dateDisplay: "March 1, 2026",
   },
+  {
+    slug: "best-pawn-shops-in-chicago",
+    title: "Best Pawn Shops in Chicago, Illinois (2026 Guide)",
+    description:
+      "Looking for the best pawn shops in Chicago? We rounded up the top-rated pawn shops across Chicago neighborhoods — with addresses, hours, and contact info.",
+    datePublished: "2026-03-05",
+    dateDisplay: "March 5, 2026",
+  },
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {
