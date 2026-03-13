@@ -18,6 +18,14 @@ body {
   margin-bottom: 0.75rem;
 }
 
+.prose-content h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
 .prose-content ul {
   list-style: disc;
   padding-left: 1.5rem;

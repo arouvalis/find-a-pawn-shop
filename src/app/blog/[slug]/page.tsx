@@ -37,6 +37,10 @@ const HERO_IMAGES: Record<string, { src: string; alt: string }> = {
     src: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1200&q=80",
     alt: "Gold and diamond jewelry laid out — tips for getting the best pawn shop price",
   },
+  "best-pawn-shops-in-houston": {
+    src: "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=1200&q=80",
+    alt: "Houston city skyline — guide to the best pawn shops in Houston, Texas",
+  },
 };
 
 // Per-article body content
@@ -320,6 +324,98 @@ function ArticleBody({ slug }: { slug: string }) {
           . Browse ratings and contact info to find reputable shops near you before making the
           trip — getting multiple quotes is the single best thing you can do to maximize your
           payout.
+        </p>
+      </div>
+    );
+  }
+
+  if (slug === "best-pawn-shops-in-houston") {
+    return (
+      <div className="prose-content">
+        <p>
+          Houston is one of the largest cities in the United States — and it has one of the most
+          active pawn shop markets to match. Whether you&apos;re looking to get a quick loan, sell
+          jewelry, or find a deal on electronics or tools, Houston has hundreds of pawn shops to
+          choose from. Here&apos;s a guide to finding the best ones.
+        </p>
+
+        <h2>What Makes a Great Pawn Shop in Houston?</h2>
+        <p>
+          Not all pawn shops are equal. The best ones have high Google ratings (4.5+), hundreds of
+          reviews, clear posted hours, and staff who are knowledgeable about what they&apos;re
+          buying. In Houston, the top shops tend to specialize — some focus on jewelry and gold,
+          others on electronics and tools, others on firearms. Knowing what you&apos;re bringing in
+          helps you find the right shop.
+        </p>
+
+        <h2>Top-Rated Houston Pawn Shops by Area</h2>
+
+        <h3>Northwest Houston</h3>
+        <p>
+          Northwest Houston along FM 1960 and the Highway 290 corridor has a high concentration of
+          pawn shops. Look for shops with strong review counts in the Cypress, Katy, and Spring
+          areas.
+        </p>
+
+        <h3>Southwest Houston</h3>
+        <p>
+          The Braeswood, Meyerland, and Westheimer corridors have several well-established pawn
+          shops that specialize in jewelry and gold. These areas tend to have higher-end merchandise
+          and more experienced buyers.
+        </p>
+
+        <h3>East Houston / Pasadena</h3>
+        <p>
+          The Pasadena and east Houston area has a strong blue-collar tradition and pawn shops here
+          often specialize in tools, firearms, and electronics. Good area for power tools and
+          sporting goods.
+        </p>
+
+        <h3>Downtown / Midtown</h3>
+        <p>
+          Closer to downtown you&apos;ll find shops that deal heavily in jewelry, watches, and
+          musical instruments. Foot traffic is higher and competition between shops can work in your
+          favor when negotiating.
+        </p>
+
+        <h2>Tips for Pawning or Selling in Houston</h2>
+        <ul>
+          <li>
+            Houston has no city-specific pawn regulations beyond Texas state law — all licensed
+            shops must comply with the Texas Pawnshop Act
+          </li>
+          <li>All pawn transactions require a valid government-issued ID</li>
+          <li>
+            Houston pawn shops report all transactions to the Houston Police Department to prevent
+            stolen goods from entering the market
+          </li>
+          <li>Interest rates on pawn loans are capped by Texas state law</li>
+          <li>
+            Always get quotes from at least 2–3 shops — prices vary significantly across
+            Houston&apos;s competitive market
+          </li>
+        </ul>
+
+        <h2>What Sells Best at Houston Pawn Shops?</h2>
+        <p>
+          Gold and silver jewelry, firearms (with valid Texas ID), newer iPhones and electronics,
+          name-brand power tools (DeWalt, Milwaukee, Makita), and designer watches. Houston&apos;s
+          oil and gas economy means high-end watches and jewelry move well here.
+        </p>
+
+        <h2>How to Find the Best Pawn Shop Near You in Houston</h2>
+        <p>
+          The fastest way to find a top-rated pawn shop in Houston is to browse verified listings
+          with real ratings, hours, and contact info. Visit our{" "}
+          <Link href="/texas/houston" className="text-amber-600 hover:underline">
+            Houston pawn shops directory
+          </Link>{" "}
+          to see every shop in the area, sorted by review count. You can also browse the full{" "}
+          <Link href="/texas" className="text-amber-600 hover:underline">
+            Texas pawn shop directory
+          </Link>{" "}
+          if you&apos;re outside Houston or looking in the surrounding suburbs. Every listing
+          includes the address, phone number, hours, and a direct link to Google Maps.
         </p>
       </div>
     );

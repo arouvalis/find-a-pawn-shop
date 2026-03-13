@@ -31,6 +31,14 @@ export const articles: Article[] = [
     datePublished: "2026-02-15",
     dateDisplay: "February 15, 2026",
   },
+  {
+    slug: "best-pawn-shops-in-houston",
+    title: "Best Pawn Shops in Houston, Texas (2026 Guide)",
+    description:
+      "Looking for the best pawn shops in Houston? We rounded up the top-rated pawn shops across Houston neighborhoods — with addresses, hours, and contact info.",
+    datePublished: "2026-03-01",
+    dateDisplay: "March 1, 2026",
+  },
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {
