@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities } from "@/lib/pawnShops";
+import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities } from "@/lib/pawnShops";
 
 const BASE_URL = "https://www.findapawnshop.com";
 
@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const newYorkShops = getAllNewYorkShops();
   const georgiaCities = getGeorgiaCities();
   const georgiaShops = getAllGeorgiaShops();
+  const arizonaCities = getArizonaCities();
+  const arizonaShops = getAllArizonaShops();
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE_URL, changeFrequency: "monthly", priority: 1.0 },
@@ -22,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/florida`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/new-york`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/georgia`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/arizona`, changeFrequency: "monthly", priority: 0.9 },
   ];
 
   const illinoisCityPages: MetadataRoute.Sitemap = cities.map(({ citySlug }) => ({
@@ -84,6 +87,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const arizonaCityPages: MetadataRoute.Sitemap = arizonaCities.map(({ citySlug }) => ({
+    url: `${BASE_URL}/arizona/${citySlug}`,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  const arizonaListingPages: MetadataRoute.Sitemap = arizonaShops.map((shop) => ({
+    url: `${BASE_URL}/arizona/${shop.citySlug}/${shop.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   return [
     ...staticPages,
     ...illinoisCityPages,
@@ -96,5 +111,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...newYorkListingPages,
     ...georgiaCityPages,
     ...georgiaListingPages,
+    ...arizonaCityPages,
+    ...arizonaListingPages,
   ];
 }
