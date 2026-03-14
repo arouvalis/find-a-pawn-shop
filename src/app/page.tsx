@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllShops, getCities, getAllTexasShops, getTexasCities } from "@/lib/pawnShops";
+import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities } from "@/lib/pawnShops";
 
 const FEATURED_CITIES = ["chicago", "springfield", "rockford", "naperville", "aurora"];
 
@@ -8,8 +8,10 @@ export default function HomePage() {
   const cities = getCities();
   const texasShops = getAllTexasShops();
   const texasCities = getTexasCities();
-  const totalShops = allShops.length + texasShops.length;
-  const totalCities = cities.length + texasCities.length;
+  const floridaShops = getAllFloridaShops();
+  const floridaCities = getFloridaCities();
+  const totalShops = allShops.length + texasShops.length + floridaShops.length;
+  const totalCities = cities.length + texasCities.length + floridaCities.length;
 
   const featuredCities = FEATURED_CITIES.flatMap((slug) => {
     const found = cities.find((c) => c.citySlug === slug);
@@ -40,7 +42,7 @@ export default function HomePage() {
             <span className="ml-2 font-medium">Cities Covered</span>
           </div>
           <div className="text-center">
-            <span className="text-2xl font-bold">2 States</span>
+            <span className="text-2xl font-bold">3 States</span>
             <span className="ml-2 font-medium">&amp; Growing</span>
           </div>
         </div>
@@ -49,7 +51,7 @@ export default function HomePage() {
       {/* Browse by State */}
       <section className="max-w-6xl mx-auto px-4 py-16">
         <h2 className="text-2xl font-bold text-gray-900 mb-2">Browse by State</h2>
-        <p className="text-gray-500 mb-8">Currently serving Illinois and Texas — expanding nationwide in 2026.</p>
+        <p className="text-gray-500 mb-8">Currently serving Illinois, Texas, and Florida — expanding nationwide in 2026.</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {/* Active */}
           <Link
@@ -66,9 +68,16 @@ export default function HomePage() {
             <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Texas</div>
             <div className="text-sm text-gray-500">{texasShops.length} listings</div>
           </Link>
+          <Link
+            href="/florida"
+            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
+          >
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Florida</div>
+            <div className="text-sm text-gray-500">{floridaShops.length} listings</div>
+          </Link>
           {/* Coming Soon */}
           {[
-            "Florida", "California", "New York", "Ohio",
+            "California", "New York", "Ohio",
             "Michigan", "Pennsylvania", "Georgia", "Arizona", "Colorado",
             "Nevada", "Washington", "Missouri", "Indiana",
           ].map((state) => (

@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllShops, getCities, getAllTexasShops, getTexasCities } from "@/lib/pawnShops";
+import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities } from "@/lib/pawnShops";
 
 const BASE_URL = "https://www.findapawnshop.com";
 
@@ -8,11 +8,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const shops = getAllShops();
   const texasCities = getTexasCities();
   const texasShops = getAllTexasShops();
+  const floridaCities = getFloridaCities();
+  const floridaShops = getAllFloridaShops();
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE_URL, changeFrequency: "monthly", priority: 1.0 },
     { url: `${BASE_URL}/illinois`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/texas`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/florida`, changeFrequency: "monthly", priority: 0.9 },
   ];
 
   const illinoisCityPages: MetadataRoute.Sitemap = cities.map(({ citySlug }) => ({
@@ -39,11 +42,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const floridaCityPages: MetadataRoute.Sitemap = floridaCities.map(({ citySlug }) => ({
+    url: `${BASE_URL}/florida/${citySlug}`,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  const floridaListingPages: MetadataRoute.Sitemap = floridaShops.map((shop) => ({
+    url: `${BASE_URL}/florida/${shop.citySlug}/${shop.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   return [
     ...staticPages,
     ...illinoisCityPages,
     ...illinoisListingPages,
     ...texasCityPages,
     ...texasListingPages,
+    ...floridaCityPages,
+    ...floridaListingPages,
   ];
 }

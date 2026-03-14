@@ -1,5 +1,6 @@
 import data from "../../data/pawn-shops-illinois.json";
 import texasData from "../../data/pawn-shops-texas.json";
+import floridaData from "../../data/pawn-shops-florida.json";
 
 export interface PawnShop {
   slug: string;
@@ -178,6 +179,60 @@ export function buildTexasSeoDescription(shop: PawnShop): string {
   const parts: string[] = [];
   const city = shop.city ? (TEXAS_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
   const loc = [city, "Texas"].filter(Boolean).join(", ");
+  parts.push(
+    `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
+  );
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) {
+    const days = condenseDays(hours.map((h) => h.day));
+    parts.push(`They are open ${days}.`);
+  }
+  if (shop.rating !== null && shop.reviews !== null) {
+    parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`);
+  }
+  return parts.join(" ");
+}
+
+// ── Florida ──────────────────────────────────────────────────────────────────
+
+const FLORIDA_CITY_OVERRIDES: Record<string, string> = {};
+
+export const allFloridaShops = floridaData as PawnShop[];
+
+export function getAllFloridaShops(): PawnShop[] {
+  return allFloridaShops;
+}
+
+export function getFloridaShopsByCity(citySlug: string): PawnShop[] {
+  return allFloridaShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getFloridaShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allFloridaShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getFloridaCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allFloridaShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = FLORIDA_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) {
+      existing.count++;
+    } else {
+      map.set(shop.citySlug, { city, count: 1 });
+    }
+  }
+  return Array.from(map.entries())
+    .map(([citySlug, { city, count }]) => ({ citySlug, city, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function buildFloridaSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (FLORIDA_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "Florida"].filter(Boolean).join(", ");
   parts.push(
     `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
   );
