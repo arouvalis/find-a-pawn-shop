@@ -5,6 +5,7 @@ const path = require("path");
 const INPUTS = [
   path.join(process.env.HOME, "Downloads/Outscraper-20260314170312s47.xlsx"),
   path.join(process.env.HOME, "Downloads/Outscraper-20260314170342s0c.xlsx"),
+  path.join(process.env.HOME, "Downloads/Outscraper-20260314183813s37.xlsx"),
 ];
 const OUTPUT = path.join(__dirname, "../data/pawn-shops-georgia.json");
 
