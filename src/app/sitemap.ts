@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities } from "@/lib/pawnShops";
+import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities } from "@/lib/pawnShops";
 
 const BASE_URL = "https://www.findapawnshop.com";
 
@@ -12,6 +12,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const floridaShops = getAllFloridaShops();
   const newYorkCities = getNewYorkCities();
   const newYorkShops = getAllNewYorkShops();
+  const georgiaCities = getGeorgiaCities();
+  const georgiaShops = getAllGeorgiaShops();
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE_URL, changeFrequency: "monthly", priority: 1.0 },
@@ -19,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/texas`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/florida`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/new-york`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/georgia`, changeFrequency: "monthly", priority: 0.9 },
   ];
 
   const illinoisCityPages: MetadataRoute.Sitemap = cities.map(({ citySlug }) => ({
@@ -69,6 +72,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const georgiaCityPages: MetadataRoute.Sitemap = georgiaCities.map(({ citySlug }) => ({
+    url: `${BASE_URL}/georgia/${citySlug}`,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  const georgiaListingPages: MetadataRoute.Sitemap = georgiaShops.map((shop) => ({
+    url: `${BASE_URL}/georgia/${shop.citySlug}/${shop.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   return [
     ...staticPages,
     ...illinoisCityPages,
@@ -79,5 +94,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...floridaListingPages,
     ...newYorkCityPages,
     ...newYorkListingPages,
+    ...georgiaCityPages,
+    ...georgiaListingPages,
   ];
 }

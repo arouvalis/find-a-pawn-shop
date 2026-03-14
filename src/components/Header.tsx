@@ -20,6 +20,9 @@ export default function Header() {
           <Link href="/new-york" className="hover:text-amber-400 transition-colors">
             New York
           </Link>
+          <Link href="/georgia" className="hover:text-amber-400 transition-colors">
+            Georgia
+          </Link>
           <Link href="/blog" className="hover:text-amber-400 transition-colors">
             Blog
           </Link>
