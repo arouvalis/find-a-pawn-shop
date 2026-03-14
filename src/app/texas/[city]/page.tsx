@@ -30,7 +30,26 @@ export default async function TexasCityPage({ params }: Props) {
   const cityName = shops[0].city;
   const sorted = [...shops].sort((a, b) => (b.reviews ?? -1) - (a.reviews ?? -1));
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `Pawn Shops in ${cityName}, Texas`,
+    description: `Directory of pawn shops in ${cityName}, Texas`,
+    numberOfItems: shops.length,
+    itemListElement: sorted.map((shop, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: shop.name,
+      url: `https://www.findapawnshop.com/texas/${citySlug}/${shop.slug}`,
+    })),
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     <div className="max-w-6xl mx-auto px-4 py-12">
       {/* Breadcrumb */}
       <nav className="text-sm text-gray-500 mb-6 flex items-center gap-2">
@@ -113,5 +132,6 @@ export default async function TexasCityPage({ params }: Props) {
         </div>
       )}
     </div>
+    </>
   );
 }
