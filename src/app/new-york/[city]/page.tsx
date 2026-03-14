@@ -44,7 +44,7 @@ export default async function NewYorkCityPage({ params }: Props) {
     })),
   };
 
-  const isNyc = ["new-york", "bronx", "brooklyn", "queens", "staten-island"].includes(citySlug);
+  const isNyc = ["new-york-city", "bronx", "brooklyn", "queens", "staten-island"].includes(citySlug);
 
   return (
     <>

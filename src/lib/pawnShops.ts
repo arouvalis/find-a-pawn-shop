@@ -254,6 +254,7 @@ export function buildFloridaSeoDescription(shop: PawnShop): string {
 const NEW_YORK_CITY_OVERRIDES: Record<string, string> = {
   "Mt Vernon": "Mount Vernon",
   "Tonawanda Town": "Tonawanda",
+  "New York": "New York City",
 };
 
 export const allNewYorkShops = newYorkData as PawnShop[];

@@ -34,6 +34,7 @@ function cleanNumber(val) {
 const CITY_OVERRIDES = {
   "Mt Vernon": "Mount Vernon",
   "Tonawanda Town": "Tonawanda",
+  "New York": "New York City",
 };
 
 function toTitleCase(str) {
