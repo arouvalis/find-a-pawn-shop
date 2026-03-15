@@ -6,6 +6,7 @@ import georgiaData from "../../data/pawn-shops-georgia.json";
 import arizonaData from "../../data/pawn-shops-arizona.json";
 import californiaData from "../../data/pawn-shops-california.json";
 import ohioData from "../../data/pawn-shops-ohio.json";
+import michiganData from "../../data/pawn-shops-michigan.json";
 
 export interface PawnShop {
   slug: string;
@@ -514,6 +515,62 @@ export function buildOhioSeoDescription(shop: PawnShop): string {
   const parts: string[] = [];
   const city = shop.city ? (OHIO_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
   const loc = [city, "Ohio"].filter(Boolean).join(", ");
+  parts.push(
+    `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
+  );
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) {
+    const days = condenseDays(hours.map((h) => h.day));
+    parts.push(`They are open ${days}.`);
+  }
+  if (shop.rating !== null && shop.reviews !== null) {
+    parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`);
+  }
+  return parts.join(" ");
+}
+
+// ── Michigan ──────────────────────────────────────────────────────────────────
+
+const MICHIGAN_CITY_OVERRIDES: Record<string, string> = {
+  "Mt Clemens": "Mount Clemens",
+};
+
+export const allMichiganShops = michiganData as PawnShop[];
+
+export function getAllMichiganShops(): PawnShop[] {
+  return allMichiganShops;
+}
+
+export function getMichiganShopsByCity(citySlug: string): PawnShop[] {
+  return allMichiganShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getMichiganShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allMichiganShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getMichiganCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allMichiganShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = MICHIGAN_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) {
+      existing.count++;
+    } else {
+      map.set(shop.citySlug, { city, count: 1 });
+    }
+  }
+  return Array.from(map.entries())
+    .map(([citySlug, { city, count }]) => ({ citySlug, city, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function buildMichiganSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (MICHIGAN_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "Michigan"].filter(Boolean).join(", ");
   parts.push(
     `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
   );
