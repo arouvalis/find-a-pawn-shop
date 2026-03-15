@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities } from "@/lib/pawnShops";
+import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities, getAllCaliforniaShops, getCaliforniaCities } from "@/lib/pawnShops";
 
 const BASE_URL = "https://www.findapawnshop.com";
 
@@ -16,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const georgiaShops = getAllGeorgiaShops();
   const arizonaCities = getArizonaCities();
   const arizonaShops = getAllArizonaShops();
+  const californiaCities = getCaliforniaCities();
+  const californiaShops = getAllCaliforniaShops();
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE_URL, changeFrequency: "monthly", priority: 1.0 },
@@ -25,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/new-york`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/georgia`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/arizona`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/california`, changeFrequency: "monthly", priority: 0.9 },
   ];
 
   const illinoisCityPages: MetadataRoute.Sitemap = cities.map(({ citySlug }) => ({
@@ -99,6 +102,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const californiaCityPages: MetadataRoute.Sitemap = californiaCities.map(({ citySlug }) => ({
+    url: `${BASE_URL}/california/${citySlug}`,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  const californiaListingPages: MetadataRoute.Sitemap = californiaShops.map((shop) => ({
+    url: `${BASE_URL}/california/${shop.citySlug}/${shop.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   return [
     ...staticPages,
     ...illinoisCityPages,
@@ -113,5 +128,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...georgiaListingPages,
     ...arizonaCityPages,
     ...arizonaListingPages,
+    ...californiaCityPages,
+    ...californiaListingPages,
   ];
 }

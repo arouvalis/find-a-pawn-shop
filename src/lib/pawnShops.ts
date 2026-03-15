@@ -4,6 +4,7 @@ import floridaData from "../../data/pawn-shops-florida.json";
 import newYorkData from "../../data/pawn-shops-newyork.json";
 import georgiaData from "../../data/pawn-shops-georgia.json";
 import arizonaData from "../../data/pawn-shops-arizona.json";
+import californiaData from "../../data/pawn-shops-california.json";
 
 export interface PawnShop {
   slug: string;
@@ -404,6 +405,60 @@ export function buildArizonaSeoDescription(shop: PawnShop): string {
   const parts: string[] = [];
   const city = shop.city ? (ARIZONA_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
   const loc = [city, "Arizona"].filter(Boolean).join(", ");
+  parts.push(
+    `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
+  );
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) {
+    const days = condenseDays(hours.map((h) => h.day));
+    parts.push(`They are open ${days}.`);
+  }
+  if (shop.rating !== null && shop.reviews !== null) {
+    parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`);
+  }
+  return parts.join(" ");
+}
+
+// ── California ────────────────────────────────────────────────────────────────
+
+const CALIFORNIA_CITY_OVERRIDES: Record<string, string> = {};
+
+export const allCaliforniaShops = californiaData as PawnShop[];
+
+export function getAllCaliforniaShops(): PawnShop[] {
+  return allCaliforniaShops;
+}
+
+export function getCaliforniaShopsByCity(citySlug: string): PawnShop[] {
+  return allCaliforniaShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getCaliforniaShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allCaliforniaShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getCaliforniaCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allCaliforniaShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = CALIFORNIA_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) {
+      existing.count++;
+    } else {
+      map.set(shop.citySlug, { city, count: 1 });
+    }
+  }
+  return Array.from(map.entries())
+    .map(([citySlug, { city, count }]) => ({ citySlug, city, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function buildCaliforniaSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (CALIFORNIA_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "California"].filter(Boolean).join(", ");
   parts.push(
     `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
   );

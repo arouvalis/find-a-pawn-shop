@@ -26,6 +26,9 @@ export default function Header() {
           <Link href="/arizona" className="hover:text-amber-400 transition-colors">
             Arizona
           </Link>
+          <Link href="/california" className="hover:text-amber-400 transition-colors">
+            California
+          </Link>
           <Link href="/blog" className="hover:text-amber-400 transition-colors">
             Blog
           </Link>
