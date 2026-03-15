@@ -7,6 +7,7 @@ import arizonaData from "../../data/pawn-shops-arizona.json";
 import californiaData from "../../data/pawn-shops-california.json";
 import ohioData from "../../data/pawn-shops-ohio.json";
 import michiganData from "../../data/pawn-shops-michigan.json";
+import pennsylvaniaData from "../../data/pawn-shops-pennsylvania.json";
 
 export interface PawnShop {
   slug: string;
@@ -571,6 +572,65 @@ export function buildMichiganSeoDescription(shop: PawnShop): string {
   const parts: string[] = [];
   const city = shop.city ? (MICHIGAN_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
   const loc = [city, "Michigan"].filter(Boolean).join(", ");
+  parts.push(
+    `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
+  );
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) {
+    const days = condenseDays(hours.map((h) => h.day));
+    parts.push(`They are open ${days}.`);
+  }
+  if (shop.rating !== null && shop.reviews !== null) {
+    parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`);
+  }
+  return parts.join(" ");
+}
+
+// ── Pennsylvania ──────────────────────────────────────────────────────────────
+
+const PENNSYLVANIA_CITY_OVERRIDES: Record<string, string> = {
+  "Mckees Rocks": "McKees Rocks",
+  "North Versailles Township": "North Versailles",
+  "Upper Darby Township": "Upper Darby",
+  "Aston Township": "Aston",
+};
+
+export const allPennsylvaniaShops = pennsylvaniaData as PawnShop[];
+
+export function getAllPennsylvaniaShops(): PawnShop[] {
+  return allPennsylvaniaShops;
+}
+
+export function getPennsylvaniaShopsByCity(citySlug: string): PawnShop[] {
+  return allPennsylvaniaShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getPennsylvaniaShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allPennsylvaniaShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getPennsylvaniaCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allPennsylvaniaShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = PENNSYLVANIA_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) {
+      existing.count++;
+    } else {
+      map.set(shop.citySlug, { city, count: 1 });
+    }
+  }
+  return Array.from(map.entries())
+    .map(([citySlug, { city, count }]) => ({ citySlug, city, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function buildPennsylvaniaSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (PENNSYLVANIA_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "Pennsylvania"].filter(Boolean).join(", ");
   parts.push(
     `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
   );

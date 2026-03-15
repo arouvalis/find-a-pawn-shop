@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities, getAllCaliforniaShops, getCaliforniaCities, getAllOhioShops, getOhioCities, getAllMichiganShops, getMichiganCities } from "@/lib/pawnShops";
+import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities, getAllCaliforniaShops, getCaliforniaCities, getAllOhioShops, getOhioCities, getAllMichiganShops, getMichiganCities, getAllPennsylvaniaShops, getPennsylvaniaCities } from "@/lib/pawnShops";
 
 const BASE_URL = "https://www.findapawnshop.com";
 
@@ -22,6 +22,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const ohioShops = getAllOhioShops();
   const michiganCities = getMichiganCities();
   const michiganShops = getAllMichiganShops();
+  const pennsylvaniaCities = getPennsylvaniaCities();
+  const pennsylvaniaShops = getAllPennsylvaniaShops();
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE_URL, changeFrequency: "monthly", priority: 1.0 },
@@ -34,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/california`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/ohio`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/michigan`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/pennsylvania`, changeFrequency: "monthly", priority: 0.9 },
   ];
 
   const illinoisCityPages: MetadataRoute.Sitemap = cities.map(({ citySlug }) => ({
@@ -144,6 +147,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const pennsylvaniaCityPages: MetadataRoute.Sitemap = pennsylvaniaCities.map(({ citySlug }) => ({
+    url: `${BASE_URL}/pennsylvania/${citySlug}`,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  const pennsylvaniaListingPages: MetadataRoute.Sitemap = pennsylvaniaShops.map((shop) => ({
+    url: `${BASE_URL}/pennsylvania/${shop.citySlug}/${shop.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   return [
     ...staticPages,
     ...illinoisCityPages,
@@ -164,5 +179,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...ohioListingPages,
     ...michiganCityPages,
     ...michiganListingPages,
+    ...pennsylvaniaCityPages,
+    ...pennsylvaniaListingPages,
   ];
 }
