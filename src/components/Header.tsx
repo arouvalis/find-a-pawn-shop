@@ -16,6 +16,7 @@ const STATES = [
   { label: "North Carolina", href: "/north-carolina" },
   { label: "Ohio", href: "/ohio" },
   { label: "Pennsylvania", href: "/pennsylvania" },
+  { label: "Tennessee", href: "/tennessee" },
   { label: "Texas", href: "/texas" },
   { label: "Washington", href: "/washington" },
 ];
