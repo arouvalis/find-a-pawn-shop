@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities, getAllCaliforniaShops, getCaliforniaCities, getAllOhioShops, getOhioCities, getAllMichiganShops, getMichiganCities, getAllPennsylvaniaShops, getPennsylvaniaCities } from "@/lib/pawnShops";
+import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities, getAllCaliforniaShops, getCaliforniaCities, getAllOhioShops, getOhioCities, getAllMichiganShops, getMichiganCities, getAllPennsylvaniaShops, getPennsylvaniaCities, getAllNorthCarolinaShops, getNorthCarolinaCities } from "@/lib/pawnShops";
 
 const FEATURED_CITIES = ["chicago", "springfield", "rockford", "naperville", "aurora"];
 
@@ -24,8 +24,10 @@ export default function HomePage() {
   const michiganCities = getMichiganCities();
   const pennsylvaniaShops = getAllPennsylvaniaShops();
   const pennsylvaniaCities = getPennsylvaniaCities();
-  const totalShops = allShops.length + texasShops.length + floridaShops.length + newYorkShops.length + georgiaShops.length + arizonaShops.length + californiaShops.length + ohioShops.length + michiganShops.length + pennsylvaniaShops.length;
-  const totalCities = cities.length + texasCities.length + floridaCities.length + newYorkCities.length + georgiaCities.length + arizonaCities.length + californiaCities.length + ohioCities.length + michiganCities.length + pennsylvaniaCities.length;
+  const northCarolinaShops = getAllNorthCarolinaShops();
+  const northCarolinaCities = getNorthCarolinaCities();
+  const totalShops = allShops.length + texasShops.length + floridaShops.length + newYorkShops.length + georgiaShops.length + arizonaShops.length + californiaShops.length + ohioShops.length + michiganShops.length + pennsylvaniaShops.length + northCarolinaShops.length;
+  const totalCities = cities.length + texasCities.length + floridaCities.length + newYorkCities.length + georgiaCities.length + arizonaCities.length + californiaCities.length + ohioCities.length + michiganCities.length + pennsylvaniaCities.length + northCarolinaCities.length;
 
   const featuredCities = FEATURED_CITIES.flatMap((slug) => {
     const found = cities.find((c) => c.citySlug === slug);
@@ -56,7 +58,7 @@ export default function HomePage() {
             <span className="ml-2 font-medium">Cities Covered</span>
           </div>
           <div className="text-center">
-            <span className="text-2xl font-bold">10 States</span>
+            <span className="text-2xl font-bold">11 States</span>
             <span className="ml-2 font-medium">&amp; Growing</span>
           </div>
         </div>
@@ -65,7 +67,7 @@ export default function HomePage() {
       {/* Browse by State */}
       <section className="max-w-6xl mx-auto px-4 py-16">
         <h2 className="text-2xl font-bold text-gray-900 mb-2">Browse by State</h2>
-        <p className="text-gray-500 mb-8">Currently serving Illinois, Texas, Florida, New York, Georgia, Arizona, California, Ohio, Michigan, and Pennsylvania — expanding nationwide in 2026.</p>
+        <p className="text-gray-500 mb-8">Currently serving Illinois, Texas, Florida, New York, Georgia, Arizona, California, Ohio, Michigan, Pennsylvania, and North Carolina — expanding nationwide in 2026.</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {/* Active */}
           <Link
@@ -137,6 +139,13 @@ export default function HomePage() {
           >
             <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Pennsylvania</div>
             <div className="text-sm text-gray-500">{pennsylvaniaShops.length} listings</div>
+          </Link>
+          <Link
+            href="/north-carolina"
+            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
+          >
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">North Carolina</div>
+            <div className="text-sm text-gray-500">{northCarolinaShops.length} listings</div>
           </Link>
           {/* Coming Soon */}
           {[
