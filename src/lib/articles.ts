@@ -47,6 +47,14 @@ export const articles: Article[] = [
     datePublished: "2026-03-05",
     dateDisplay: "March 5, 2026",
   },
+  {
+    slug: "best-pawn-shops-in-miami",
+    title: "Best Pawn Shops in Miami, Florida (2026 Guide)",
+    description:
+      "Looking for the best pawn shops in Miami? We cover top-rated shops across Little Havana, Hialeah, Wynwood, and North Miami — with neighborhood breakdowns, tips, and a full directory link.",
+    datePublished: "2026-03-16",
+    dateDisplay: "March 16, 2026",
+  },
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {

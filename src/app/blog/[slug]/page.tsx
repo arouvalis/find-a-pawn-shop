@@ -45,6 +45,10 @@ const HERO_IMAGES: Record<string, { src: string; alt: string }> = {
     src: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1200&q=80",
     alt: "Chicago city skyline — guide to the best pawn shops in Chicago, Illinois",
   },
+  "best-pawn-shops-in-miami": {
+    src: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1200&q=80",
+    alt: "Miami Beach aerial view — guide to the best pawn shops in Miami, Florida",
+  },
 };
 
 // Per-article body content
@@ -515,6 +519,182 @@ function ArticleBody({ slug }: { slug: string }) {
           </Link>{" "}
           if you&apos;re in the suburbs or anywhere else in the state. Every listing links directly
           to Google Maps so you can get directions before you go.
+        </p>
+      </div>
+    );
+  }
+
+  if (slug === "best-pawn-shops-in-miami") {
+    return (
+      <div className="prose-content">
+        <p>
+          Miami has dozens of licensed pawn shops spread across Little Havana, Wynwood/Allapattah,
+          Hialeah, North Miami, and Downtown, with especially high concentration in working-class,
+          heavily bilingual neighborhoods that rely on fast, collateral-backed loans. The market is
+          very jewelry- and gold-heavy due to strong Latin American influence, and many shops operate
+          in Spanish as easily as English. Browse our full directory of{" "}
+          <Link href="/florida/miami" className="text-amber-600 hover:underline">
+            Miami pawn shops
+          </Link>{" "}
+          to find verified listings with addresses, hours, and contact info.
+        </p>
+
+        <h2>How Pawn Shops Work in Miami (Fast Overview)</h2>
+        <p>
+          In Florida, pawn shops are regulated under the Florida Pawnbroking Act, which requires
+          every pawnbroker to hold a separate license for each storefront and to display that license
+          prominently at the counter. Loans are made against collateral — jewelry, electronics,
+          tools, instruments, luxury goods, sometimes firearms — with a ticket that shows the loan
+          amount, fees, maturity date, and a clear statement that if you do not redeem within 30 days
+          after maturity, ownership transfers to the shop by law.
+        </p>
+        <p>
+          Shops must keep detailed transaction records including ID, signature, and thumbprint, and
+          hold goods for a fixed period so law enforcement can inspect items and investigate stolen
+          property. In 2026, Florida is also rolling out a statewide pawn-data system that requires
+          pawnbrokers to upload transaction data for law-enforcement use, which makes reputable shops
+          even more focused on compliance and documentation.
+        </p>
+
+        <h2>Best Pawn Shops by Miami Neighborhood</h2>
+
+        <h3>Little Havana &amp; West Miami</h3>
+        <p>
+          Little Havana and the surrounding West Flagler area are dense with family-run, highly
+          bilingual pawn shops that focus on gold, chains, watches, and small electronics. Expect
+          most staff here to switch seamlessly between Spanish and English, and to be very
+          comfortable evaluating Latin American jewelry styles and 22k–24k gold brought from abroad.
+        </p>
+        <p>
+          Standout options in and around Little Havana include Value Pawn &amp; Jewelry on SW 17th
+          Avenue, which offers standard pawn loans on jewelry, electronics, tools, and musical
+          instruments with a focus on fast service. La Familia Pawn &amp; Jewelry on NW 79th Street
+          leans heavily into serving Spanish-speaking customers and is notably aggressive on gold and
+          diamond loans. These shops are ideal if you want good rates on gold jewelry, need
+          Spanish-first service, or are moving inventory between Miami and Latin America.
+        </p>
+
+        <h3>Wynwood, Allapattah &amp; Design District</h3>
+        <p>
+          The Wynwood/Allapattah corridor mixes art-district foot traffic with long-standing
+          blue-collar communities, so pawn shops here see a lot of tools, consumer electronics, DJ
+          gear, and bikes in addition to the usual gold. You&apos;ll often find better selection on
+          laptops, cameras, gaming consoles, and musical gear compared to more tourist-focused areas.
+          Look for shops that clearly list categories like gaming, cameras, musical instruments, and
+          power tools — that signals they understand resale values in those niches.
+        </p>
+
+        <h3>Hialeah &amp; Northwest Miami</h3>
+        <p>
+          Hialeah and the northwest side of Miami are among the most pawn-dense zones in the metro
+          area, driven by a heavily working-class, Cuban and Latin American population that relies on
+          short-term loans against jewelry, tools, and small business equipment. You&apos;ll find a
+          mix of regional chains and independent operators that compete aggressively on loan amounts
+          for gold and on purchase prices for tools and electronics. If you are primarily pawning or
+          selling gold, chains, or high-value watches, starting in Hialeah/NW Miami often yields more
+          competitive offers.
+        </p>
+
+        <h3>North Miami &amp; North Miami Beach</h3>
+        <p>
+          North Miami and nearby suburbs have several established pawnbrokers that serve both
+          residential customers and small businesses needing fast cash. Value Pawn on NW 7th Avenue
+          focuses on loans and purchases of electronics, jewelry, gold, diamonds, tools, gaming
+          items, musical gear, handbags, and sneakers, and offers year-round layaway. AAA
+          Pawnbrokers of North Miami is a long-standing local shop open six days a week to
+          accommodate working customers.
+        </p>
+
+        <h3>Greater South Florida Chains That Serve Miami</h3>
+        <p>
+          Several regional chains serve the broader South Florida area. Lucky Pawn Shop operates
+          multiple South Florida locations and focuses on fast cash loans in addition to outright
+          purchases. King Cash Pawn &amp; Jewelry markets eight South Florida stores with consistent
+          pricing and community-friendly service. These chains are helpful when you care about
+          standardized policies, loyalty programs, and cross-location layaway options.
+        </p>
+
+        <h2>Miami-Specific Pawn Tips (2026)</h2>
+        <ul>
+          <li>
+            Bring ID and expect a thumbprint — Florida law requires pawn shops to verify identity,
+            capture a thumbprint, and keep signed transaction records for at least a year
+          </li>
+          <li>
+            Know the 30-day forfeiture window — if you don&apos;t redeem within 30 days after the
+            pawn&apos;s maturity date, your item automatically becomes the shop&apos;s property by
+            law
+          </li>
+          <li>
+            Assume data is reported statewide — with the 2026 statewide pawn-data system,
+            transactions are uploaded for law-enforcement access
+          </li>
+          <li>
+            Expect strong jewelry pricing — competition among shops tends to be fierce, which can
+            mean higher loan-to-value ratios on quality pieces
+          </li>
+          <li>
+            Use layaway to your advantage — many Miami pawn shops offer 10%-down layaway on jewelry
+            and electronics
+          </li>
+        </ul>
+
+        <h2>FAQ: Pawn Shops in Miami, Florida</h2>
+
+        <h3>Do pawn shops in Miami buy jewelry?</h3>
+        <p>
+          Yes, virtually every reputable pawn shop in Miami buys jewelry, especially gold chains,
+          rings, bracelets, luxury watches, and diamond pieces. Many advertise jewelry as their
+          primary category and offer free layaway and financing on jewelry purchases.
+        </p>
+
+        <h3>What&apos;s the best pawn shop in Miami?</h3>
+        <p>
+          The best shop depends on your goal. For jewelry-heavy loans, La Familia Pawn &amp; Jewelry
+          and Value Pawn &amp; Jewelry stand out. For multi-location convenience, Lucky Pawn and
+          King Cash are strong options. Browse the full{" "}
+          <Link href="/florida/miami" className="text-amber-600 hover:underline">
+            Miami pawn shop directory
+          </Link>{" "}
+          to compare all options.
+        </p>
+
+        <h3>How do pawn shops work in Florida?</h3>
+        <p>
+          Florida pawnbrokers must be licensed under the Florida Pawnbroking Act, keep detailed
+          records, and provide a written transaction form explaining your loan terms and the
+          forfeiture timeline. You give the shop an item as collateral, receive a loan with a
+          maturity date, and if you repay before or within 30 days after maturity, you get your item
+          back. Otherwise ownership transfers to the shop without further notice.
+        </p>
+
+        <h3>Are pawn shops in Miami safe and regulated?</h3>
+        <p>
+          Licensed pawn shops in Miami operate under state rules that require clear documentation
+          and obligate brokers to store pledged goods while making them available for law enforcement
+          inspection. The 2026 statewide pawn-data system increases traceability and helps honest
+          customers while making it harder to move stolen goods.
+        </p>
+
+        <h3>Can I shop online from Miami pawn shops?</h3>
+        <p>
+          Some chains operating in Miami maintain online inventories where you can browse and
+          purchase pre-owned items including jewelry, electronics, and tools, often at lower prices
+          than traditional retail.
+        </p>
+
+        <h2>Find Pawn Shops in Miami</h2>
+        <p>
+          Ready to find a pawn shop in Miami? Browse our complete{" "}
+          <Link href="/florida/miami" className="text-amber-600 hover:underline">
+            Miami pawn shop listings
+          </Link>{" "}
+          with verified addresses, phone numbers, hours, and ratings. Looking for shops elsewhere in
+          the state? Explore our full{" "}
+          <Link href="/florida" className="text-amber-600 hover:underline">
+            Florida pawn shop directory
+          </Link>
+          .
         </p>
       </div>
     );
