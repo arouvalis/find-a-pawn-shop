@@ -35,7 +35,7 @@ export interface PawnShop {
   googleMapsUrl: string | null;
 }
 
-export const allShops = data as PawnShop[];
+export const allShops = deduplicateSlugs(data as PawnShop[]);
 
 export function getAllShops(): PawnShop[] {
   return allShops;
@@ -151,13 +151,24 @@ export function formatAddress(shop: PawnShop): string {
   return parts.join(", ");
 }
 
+function deduplicateSlugs(shops: PawnShop[]): PawnShop[] {
+  const counts = new Map<string, number>();
+  return shops.map((shop) => {
+    const key = `${shop.citySlug}/${shop.slug}`;
+    const n = counts.get(key) ?? 0;
+    counts.set(key, n + 1);
+    if (n === 0) return shop;
+    return { ...shop, slug: `${shop.slug}-${n + 1}` };
+  });
+}
+
 // ── Texas ────────────────────────────────────────────────────────────────────
 
 const TEXAS_CITY_OVERRIDES: Record<string, string> = {
   "Mckinney": "McKinney",
 };
 
-export const allTexasShops = texasData as PawnShop[];
+export const allTexasShops = deduplicateSlugs(texasData as PawnShop[]);
 
 export function getAllTexasShops(): PawnShop[] {
   return allTexasShops;
@@ -211,7 +222,7 @@ export function buildTexasSeoDescription(shop: PawnShop): string {
 
 const FLORIDA_CITY_OVERRIDES: Record<string, string> = {};
 
-export const allFloridaShops = floridaData as PawnShop[];
+export const allFloridaShops = deduplicateSlugs(floridaData as PawnShop[]);
 
 export function getAllFloridaShops(): PawnShop[] {
   return allFloridaShops;
@@ -269,7 +280,7 @@ const NEW_YORK_CITY_OVERRIDES: Record<string, string> = {
   "New York": "New York City",
 };
 
-export const allNewYorkShops = newYorkData as PawnShop[];
+export const allNewYorkShops = deduplicateSlugs(newYorkData as PawnShop[]);
 
 export function getAllNewYorkShops(): PawnShop[] {
   return allNewYorkShops;
@@ -325,7 +336,7 @@ const GEORGIA_CITY_OVERRIDES: Record<string, string> = {
   "Mcdonough": "McDonough",
 };
 
-export const allGeorgiaShops = georgiaData as PawnShop[];
+export const allGeorgiaShops = deduplicateSlugs(georgiaData as PawnShop[]);
 
 export function getAllGeorgiaShops(): PawnShop[] {
   return allGeorgiaShops;
@@ -379,7 +390,7 @@ export function buildGeorgiaSeoDescription(shop: PawnShop): string {
 
 const ARIZONA_CITY_OVERRIDES: Record<string, string> = {};
 
-export const allArizonaShops = arizonaData as PawnShop[];
+export const allArizonaShops = deduplicateSlugs(arizonaData as PawnShop[]);
 
 export function getAllArizonaShops(): PawnShop[] {
   return allArizonaShops;
@@ -433,7 +444,7 @@ export function buildArizonaSeoDescription(shop: PawnShop): string {
 
 const CALIFORNIA_CITY_OVERRIDES: Record<string, string> = {};
 
-export const allCaliforniaShops = californiaData as PawnShop[];
+export const allCaliforniaShops = deduplicateSlugs(californiaData as PawnShop[]);
 
 export function getAllCaliforniaShops(): PawnShop[] {
   return allCaliforniaShops;
@@ -487,7 +498,7 @@ export function buildCaliforniaSeoDescription(shop: PawnShop): string {
 
 const OHIO_CITY_OVERRIDES: Record<string, string> = {};
 
-export const allOhioShops = ohioData as PawnShop[];
+export const allOhioShops = deduplicateSlugs(ohioData as PawnShop[]);
 
 export function getAllOhioShops(): PawnShop[] {
   return allOhioShops;
@@ -543,7 +554,7 @@ const MICHIGAN_CITY_OVERRIDES: Record<string, string> = {
   "Mt Clemens": "Mount Clemens",
 };
 
-export const allMichiganShops = michiganData as PawnShop[];
+export const allMichiganShops = deduplicateSlugs(michiganData as PawnShop[]);
 
 export function getAllMichiganShops(): PawnShop[] {
   return allMichiganShops;
@@ -602,7 +613,7 @@ const PENNSYLVANIA_CITY_OVERRIDES: Record<string, string> = {
   "Aston Township": "Aston",
 };
 
-export const allPennsylvaniaShops = pennsylvaniaData as PawnShop[];
+export const allPennsylvaniaShops = deduplicateSlugs(pennsylvaniaData as PawnShop[]);
 
 export function getAllPennsylvaniaShops(): PawnShop[] {
   return allPennsylvaniaShops;
@@ -659,7 +670,7 @@ const NORTH_CAROLINA_CITY_OVERRIDES: Record<string, string> = {
   "Mt Holly": "Mount Holly",
 };
 
-export const allNorthCarolinaShops = northCarolinaData as PawnShop[];
+export const allNorthCarolinaShops = deduplicateSlugs(northCarolinaData as PawnShop[]);
 
 export function getAllNorthCarolinaShops(): PawnShop[] {
   return allNorthCarolinaShops;
@@ -713,7 +724,7 @@ export function buildNorthCarolinaSeoDescription(shop: PawnShop): string {
 
 const WASHINGTON_CITY_OVERRIDES: Record<string, string> = {};
 
-export const allWashingtonShops = washingtonData as PawnShop[];
+export const allWashingtonShops = deduplicateSlugs(washingtonData as PawnShop[]);
 
 export function getAllWashingtonShops(): PawnShop[] {
   return allWashingtonShops;
@@ -767,7 +778,7 @@ export function buildWashingtonSeoDescription(shop: PawnShop): string {
 
 const COLORADO_CITY_OVERRIDES: Record<string, string> = {};
 
-export const allColoradoShops = coloradoData as PawnShop[];
+export const allColoradoShops = deduplicateSlugs(coloradoData as PawnShop[]);
 
 export function getAllColoradoShops(): PawnShop[] {
   return allColoradoShops;
@@ -821,7 +832,7 @@ export function buildColoradoSeoDescription(shop: PawnShop): string {
 
 const NEVADA_CITY_OVERRIDES: Record<string, string> = {};
 
-export const allNevadaShops = nevadaData as PawnShop[];
+export const allNevadaShops = deduplicateSlugs(nevadaData as PawnShop[]);
 
 export function getAllNevadaShops(): PawnShop[] {
   return allNevadaShops;
@@ -875,7 +886,7 @@ export function buildNevadaSeoDescription(shop: PawnShop): string {
 
 const TENNESSEE_CITY_OVERRIDES: Record<string, string> = {};
 
-export const allTennesseeShops = tennesseeData as PawnShop[];
+export const allTennesseeShops = deduplicateSlugs(tennesseeData as PawnShop[]);
 
 export function getAllTennesseeShops(): PawnShop[] {
   return allTennesseeShops;
@@ -934,7 +945,7 @@ const MISSOURI_CITY_OVERRIDES: Record<string, string> = {
   "St Robert": "St. Robert",
 };
 
-export const allMissouriShops = missouriData as PawnShop[];
+export const allMissouriShops = deduplicateSlugs(missouriData as PawnShop[]);
 
 export function getAllMissouriShops(): PawnShop[] {
   return allMissouriShops;
