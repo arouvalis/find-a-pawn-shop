@@ -13,6 +13,7 @@ import washingtonData from "../../data/pawn-shops-washington.json";
 import coloradoData from "../../data/pawn-shops-colorado.json";
 import nevadaData from "../../data/pawn-shops-nevada.json";
 import tennesseeData from "../../data/pawn-shops-tennessee.json";
+import missouriData from "../../data/pawn-shops-missouri.json";
 
 export interface PawnShop {
   slug: string;
@@ -909,6 +910,65 @@ export function buildTennesseeSeoDescription(shop: PawnShop): string {
   const parts: string[] = [];
   const city = shop.city ? (TENNESSEE_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
   const loc = [city, "Tennessee"].filter(Boolean).join(", ");
+  parts.push(
+    `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
+  );
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) {
+    const days = condenseDays(hours.map((h) => h.day));
+    parts.push(`They are open ${days}.`);
+  }
+  if (shop.rating !== null && shop.reviews !== null) {
+    parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`);
+  }
+  return parts.join(" ");
+}
+
+// ── Missouri ──────────────────────────────────────────────────────────────────
+
+const MISSOURI_CITY_OVERRIDES: Record<string, string> = {
+  "St Charles": "St. Charles",
+  "St Joseph": "St. Joseph",
+  "St Peters": "St. Peters",
+  "St Robert": "St. Robert",
+};
+
+export const allMissouriShops = missouriData as PawnShop[];
+
+export function getAllMissouriShops(): PawnShop[] {
+  return allMissouriShops;
+}
+
+export function getMissouriShopsByCity(citySlug: string): PawnShop[] {
+  return allMissouriShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getMissouriShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allMissouriShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getMissouriCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allMissouriShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = MISSOURI_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) {
+      existing.count++;
+    } else {
+      map.set(shop.citySlug, { city, count: 1 });
+    }
+  }
+  return Array.from(map.entries())
+    .map(([citySlug, { city, count }]) => ({ citySlug, city, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function buildMissouriSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (MISSOURI_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "Missouri"].filter(Boolean).join(", ");
   parts.push(
     `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
   );
