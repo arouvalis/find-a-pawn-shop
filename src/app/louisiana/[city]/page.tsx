@@ -1,0 +1,137 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { getLouisianaCities, getLouisianaShopsByCity, formatAddress } from "@/lib/pawnShops";
+import { notFound } from "next/navigation";
+
+interface Props {
+  params: Promise<{ city: string }>;
+}
+
+export async function generateStaticParams() {
+  return getLouisianaCities().map(({ citySlug }) => ({ city: citySlug }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { city: citySlug } = await params;
+  const shops = getLouisianaShopsByCity(citySlug);
+  if (!shops.length) return {};
+  const cityName = shops[0].city;
+  return {
+    title: `Pawn Shops in ${cityName}, Louisiana — FindAPawnShop.com`,
+    description: `Browse ${shops.length} pawn shop${shops.length !== 1 ? "s" : ""} in ${cityName}, Louisiana. Ratings, hours, addresses, and contact info.`,
+  };
+}
+
+export default async function LouisianaCityPage({ params }: Props) {
+  const { city: citySlug } = await params;
+  const shops = getLouisianaShopsByCity(citySlug);
+  if (!shops.length) notFound();
+
+  const cityName = shops[0].city;
+  const sorted = [...shops].sort((a, b) => (b.reviews ?? -1) - (a.reviews ?? -1));
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `Pawn Shops in ${cityName}, Louisiana`,
+    description: `Directory of pawn shops in ${cityName}, Louisiana`,
+    numberOfItems: shops.length,
+    itemListElement: sorted.map((shop, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: shop.name,
+      url: `https://www.findapawnshop.com/louisiana/${citySlug}/${shop.slug}`,
+    })),
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div className="max-w-6xl mx-auto px-4 py-12">
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-500 mb-6 flex items-center gap-2">
+          <Link href="/" className="hover:text-amber-600">Home</Link>
+          <span>/</span>
+          <Link href="/louisiana" className="hover:text-amber-600">Louisiana</Link>
+          <span>/</span>
+          <span className="text-gray-900">{cityName}</span>
+        </nav>
+
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">
+          Pawn Shops in {cityName}, Louisiana
+        </h1>
+        <p className="text-gray-500 mb-10">{shops.length} listing{shops.length !== 1 ? "s" : ""} found</p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {sorted.map((shop) => (
+            <Link
+              key={shop.slug}
+              href={`/louisiana/${citySlug}/${shop.slug}`}
+              className="border border-gray-200 rounded-lg p-5 hover:border-amber-400 hover:shadow-md transition-all group block"
+            >
+              <h2 className="font-semibold text-gray-900 group-hover:text-amber-600 mb-2 leading-tight">
+                {shop.name}
+              </h2>
+              {(shop.street || shop.city) && (
+                <p className="text-sm text-gray-500 mb-2">{formatAddress(shop)}</p>
+              )}
+              {shop.phone && (
+                <p className="text-sm text-gray-600 mb-2">{shop.phone}</p>
+              )}
+              {shop.rating !== null && (
+                <div className="flex items-center gap-1.5 mt-3">
+                  <span className="text-amber-500 text-sm">★</span>
+                  <span className="text-sm font-medium text-gray-800">{shop.rating.toFixed(1)}</span>
+                  {shop.reviews !== null && (
+                    <span className="text-xs text-gray-400">({shop.reviews} reviews)</span>
+                  )}
+                </div>
+              )}
+            </Link>
+          ))}
+        </div>
+
+        {citySlug === "new-orleans" && (
+          <div className="mt-16 max-w-3xl">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">FAQs About Pawn Shops in New Orleans</h2>
+            <div className="divide-y divide-gray-200 border border-gray-200 rounded-xl overflow-hidden">
+              {[
+                {
+                  q: "How many pawn shops are in New Orleans?",
+                  a: "New Orleans and the greater metro area — including Metairie, Kenner, Harvey, Marrero, Gretna, and Chalmette — have dozens of pawn shops. FindAPawnShop.com lists verified shops throughout the city and the surrounding Jefferson and St. Bernard parishes.",
+                },
+                {
+                  q: "Are pawn shops in New Orleans licensed and regulated?",
+                  a: "Yes — all pawn shops in Louisiana must be licensed under the Louisiana Pawnbroker Act. New Orleans pawnbrokers are required to report all transactions to local law enforcement, hold purchased items for a mandatory waiting period, and maintain detailed transaction records to help prevent the resale of stolen goods.",
+                },
+                {
+                  q: "What areas of New Orleans have the most pawn shops?",
+                  a: "Pawn shops in New Orleans are spread across the city, with concentrations along Chef Menteur Highway, Gentilly Boulevard, and the Westbank. Many shops serve Mid-City, Gentilly, and the East, while the surrounding suburbs of Metairie and Harvey also have strong pawn markets.",
+                },
+                {
+                  q: "Can I sell gold and jewelry at a New Orleans pawn shop?",
+                  a: "Yes — gold, silver, and jewelry are among the most commonly traded items at New Orleans pawn shops. Always check the current gold spot price before visiting and get quotes from multiple shops. Many New Orleans pawn shops also buy electronics, tools, musical instruments, and Mardi Gras collectibles.",
+                },
+                {
+                  q: "What are typical pawn shop hours in New Orleans?",
+                  a: "Most New Orleans pawn shops are open Monday through Saturday, roughly 9AM to 6PM. Hours vary by location. Always check the individual listing page for exact hours before visiting.",
+                },
+              ].map(({ q, a }) => (
+                <details key={q} className="group bg-white">
+                  <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer list-none">
+                    <span className="font-semibold text-gray-900 text-sm sm:text-base">{q}</span>
+                    <span className="text-amber-500 font-bold text-xl shrink-0 group-open:rotate-45 transition-transform">+</span>
+                  </summary>
+                  <p className="px-6 pb-5 text-gray-600 text-sm leading-relaxed">{a}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </>
+  );
+}
