@@ -566,9 +566,15 @@ function ArticleBody({ slug }: { slug: string }) {
           comfortable evaluating Latin American jewelry styles and 22k–24k gold brought from abroad.
         </p>
         <p>
-          Standout options in and around Little Havana include Value Pawn &amp; Jewelry on SW 17th
-          Avenue, which offers standard pawn loans on jewelry, electronics, tools, and musical
-          instruments with a focus on fast service. La Familia Pawn &amp; Jewelry on NW 79th Street
+          Standout options in and around Little Havana include{" "}
+          <Link href="/florida/miami/value-pawn-jewelry-2" className="text-amber-600 hover:underline">
+            Value Pawn &amp; Jewelry on SW 17th Avenue
+          </Link>
+          , which offers standard pawn loans on jewelry, electronics, tools, and musical
+          instruments with a focus on fast service.{" "}
+          <Link href="/florida/miami/la-familia-pawn-and-jewelry" className="text-amber-600 hover:underline">
+            La Familia Pawn &amp; Jewelry on NW 79th Street
+          </Link>{" "}
           leans heavily into serving Spanish-speaking customers and is notably aggressive on gold and
           diamond loans. These shops are ideal if you want good rates on gold jewelry, need
           Spanish-first service, or are moving inventory between Miami and Latin America.
@@ -591,26 +597,40 @@ function ArticleBody({ slug }: { slug: string }) {
           short-term loans against jewelry, tools, and small business equipment. You&apos;ll find a
           mix of regional chains and independent operators that compete aggressively on loan amounts
           for gold and on purchase prices for tools and electronics. If you are primarily pawning or
-          selling gold, chains, or high-value watches, starting in Hialeah/NW Miami often yields more
-          competitive offers.
+          selling gold, chains, or high-value watches, starting in Hialeah/NW Miami — including{" "}
+          <Link href="/florida/miami/king-cash-pawn-jewelry" className="text-amber-600 hover:underline">
+            King Cash Pawn &amp; Jewelry
+          </Link>{" "}
+          — often yields more competitive offers.
         </p>
 
         <h3>North Miami &amp; North Miami Beach</h3>
         <p>
           North Miami and nearby suburbs have several established pawnbrokers that serve both
-          residential customers and small businesses needing fast cash. Value Pawn on NW 7th Avenue
+          residential customers and small businesses needing fast cash.{" "}
+          <Link href="/florida/miami/value-pawn-jewelry" className="text-amber-600 hover:underline">
+            Value Pawn on NW 7th Avenue
+          </Link>{" "}
           focuses on loans and purchases of electronics, jewelry, gold, diamonds, tools, gaming
-          items, musical gear, handbags, and sneakers, and offers year-round layaway. AAA
-          Pawnbrokers of North Miami is a long-standing local shop open six days a week to
-          accommodate working customers.
+          items, musical gear, handbags, and sneakers, and offers year-round layaway.{" "}
+          <Link href="/florida/north-miami/aaa-pawnbrokers-of-north-miami" className="text-amber-600 hover:underline">
+            AAA Pawnbrokers of North Miami
+          </Link>{" "}
+          is a long-standing local shop open six days a week to accommodate working customers.
         </p>
 
         <h3>Greater South Florida Chains That Serve Miami</h3>
         <p>
-          Several regional chains serve the broader South Florida area. Lucky Pawn Shop operates
-          multiple South Florida locations and focuses on fast cash loans in addition to outright
-          purchases. King Cash Pawn &amp; Jewelry markets eight South Florida stores with consistent
-          pricing and community-friendly service. These chains are helpful when you care about
+          Several regional chains serve the broader South Florida area.{" "}
+          <Link href="/florida/miami/lucky-pawn-jewelry" className="text-amber-600 hover:underline">
+            Lucky Pawn Shop
+          </Link>{" "}
+          operates multiple South Florida locations and focuses on fast cash loans in addition to
+          outright purchases.{" "}
+          <Link href="/florida/miami/king-cash-pawn-jewelry" className="text-amber-600 hover:underline">
+            King Cash Pawn &amp; Jewelry
+          </Link>{" "}
+          markets eight South Florida stores with consistent pricing and community-friendly service. These chains are helpful when you care about
           standardized policies, loyalty programs, and cross-location layaway options.
         </p>
 
