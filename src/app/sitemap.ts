@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities, getAllCaliforniaShops, getCaliforniaCities, getAllOhioShops, getOhioCities, getAllMichiganShops, getMichiganCities, getAllPennsylvaniaShops, getPennsylvaniaCities, getAllNorthCarolinaShops, getNorthCarolinaCities, getAllWashingtonShops, getWashingtonCities } from "@/lib/pawnShops";
+import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities, getAllCaliforniaShops, getCaliforniaCities, getAllOhioShops, getOhioCities, getAllMichiganShops, getMichiganCities, getAllPennsylvaniaShops, getPennsylvaniaCities, getAllNorthCarolinaShops, getNorthCarolinaCities, getAllWashingtonShops, getWashingtonCities, getAllColoradoShops, getColoradoCities } from "@/lib/pawnShops";
 
 const BASE_URL = "https://www.findapawnshop.com";
 
@@ -28,6 +28,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const northCarolinaShops = getAllNorthCarolinaShops();
   const washingtonCities = getWashingtonCities();
   const washingtonShops = getAllWashingtonShops();
+  const coloradoCities = getColoradoCities();
+  const coloradoShops = getAllColoradoShops();
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE_URL, changeFrequency: "monthly", priority: 1.0 },
@@ -43,6 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/pennsylvania`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/north-carolina`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/washington`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/colorado`, changeFrequency: "monthly", priority: 0.9 },
   ];
 
   const illinoisCityPages: MetadataRoute.Sitemap = cities.map(({ citySlug }) => ({
@@ -189,6 +192,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const coloradoCityPages: MetadataRoute.Sitemap = coloradoCities.map(({ citySlug }) => ({
+    url: `${BASE_URL}/colorado/${citySlug}`,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  const coloradoListingPages: MetadataRoute.Sitemap = coloradoShops.map((shop) => ({
+    url: `${BASE_URL}/colorado/${shop.citySlug}/${shop.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   return [
     ...staticPages,
     ...illinoisCityPages,
@@ -215,5 +230,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...northCarolinaListingPages,
     ...washingtonCityPages,
     ...washingtonListingPages,
+    ...coloradoCityPages,
+    ...coloradoListingPages,
   ];
 }

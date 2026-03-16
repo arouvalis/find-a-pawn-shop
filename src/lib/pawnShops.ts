@@ -10,6 +10,7 @@ import michiganData from "../../data/pawn-shops-michigan.json";
 import pennsylvaniaData from "../../data/pawn-shops-pennsylvania.json";
 import northCarolinaData from "../../data/pawn-shops-northcarolina.json";
 import washingtonData from "../../data/pawn-shops-washington.json";
+import coloradoData from "../../data/pawn-shops-colorado.json";
 
 export interface PawnShop {
   slug: string;
@@ -744,6 +745,60 @@ export function buildWashingtonSeoDescription(shop: PawnShop): string {
   const parts: string[] = [];
   const city = shop.city ? (WASHINGTON_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
   const loc = [city, "Washington"].filter(Boolean).join(", ");
+  parts.push(
+    `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
+  );
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) {
+    const days = condenseDays(hours.map((h) => h.day));
+    parts.push(`They are open ${days}.`);
+  }
+  if (shop.rating !== null && shop.reviews !== null) {
+    parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`);
+  }
+  return parts.join(" ");
+}
+
+// ── Colorado ──────────────────────────────────────────────────────────────────
+
+const COLORADO_CITY_OVERRIDES: Record<string, string> = {};
+
+export const allColoradoShops = coloradoData as PawnShop[];
+
+export function getAllColoradoShops(): PawnShop[] {
+  return allColoradoShops;
+}
+
+export function getColoradoShopsByCity(citySlug: string): PawnShop[] {
+  return allColoradoShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getColoradoShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allColoradoShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getColoradoCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allColoradoShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = COLORADO_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) {
+      existing.count++;
+    } else {
+      map.set(shop.citySlug, { city, count: 1 });
+    }
+  }
+  return Array.from(map.entries())
+    .map(([citySlug, { city, count }]) => ({ citySlug, city, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function buildColoradoSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (COLORADO_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "Colorado"].filter(Boolean).join(", ");
   parts.push(
     `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
   );
