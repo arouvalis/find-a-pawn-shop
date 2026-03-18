@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities, getAllCaliforniaShops, getCaliforniaCities, getAllOhioShops, getOhioCities, getAllMichiganShops, getMichiganCities, getAllPennsylvaniaShops, getPennsylvaniaCities, getAllNorthCarolinaShops, getNorthCarolinaCities, getAllWashingtonShops, getWashingtonCities, getAllColoradoShops, getColoradoCities, getAllNevadaShops, getNevadaCities, getAllTennesseeShops, getTennesseeCities, getAllMissouriShops, getMissouriCities, getAllIndianaShops, getIndianaCities, getAllVirginiaShops, getVirginiaCities, getAllMarylandShops, getMarylandCities, getAllLouisianaShops, getLouisianaCities, getAllMinnesotaShops, getMinnesotaCities, getAllWisconsinShops, getWisconsinCities } from "@/lib/pawnShops";
+import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities, getAllCaliforniaShops, getCaliforniaCities, getAllOhioShops, getOhioCities, getAllMichiganShops, getMichiganCities, getAllPennsylvaniaShops, getPennsylvaniaCities, getAllNorthCarolinaShops, getNorthCarolinaCities, getAllWashingtonShops, getWashingtonCities, getAllColoradoShops, getColoradoCities, getAllNevadaShops, getNevadaCities, getAllTennesseeShops, getTennesseeCities, getAllMissouriShops, getMissouriCities, getAllIndianaShops, getIndianaCities, getAllVirginiaShops, getVirginiaCities, getAllMarylandShops, getMarylandCities, getAllLouisianaShops, getLouisianaCities, getAllMinnesotaShops, getMinnesotaCities, getAllWisconsinShops, getWisconsinCities, getAllSouthCarolinaShops, getSouthCarolinaCities } from "@/lib/pawnShops";
 
 const BASE_URL = "https://www.findapawnshop.com";
 
@@ -48,6 +48,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const minnesotaShops = getAllMinnesotaShops();
   const wisconsinCities = getWisconsinCities();
   const wisconsinShops = getAllWisconsinShops();
+  const southCarolinaCities = getSouthCarolinaCities();
+  const southCarolinaShops = getAllSouthCarolinaShops();
 
 
 
@@ -75,6 +77,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/louisiana`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/minnesota`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/wisconsin`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/south-carolina`, changeFrequency: "monthly", priority: 0.9 },
   ];
 
   const illinoisCityPages: MetadataRoute.Sitemap = cities.map(({ citySlug }) => ({
@@ -341,6 +344,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const southCarolinaCityPages: MetadataRoute.Sitemap = southCarolinaCities.map(({ citySlug }) => ({
+    url: `${BASE_URL}/south-carolina/${citySlug}`,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  const southCarolinaListingPages: MetadataRoute.Sitemap = southCarolinaShops.map((shop) => ({
+    url: `${BASE_URL}/south-carolina/${shop.citySlug}/${shop.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   return [
     ...staticPages,
     ...illinoisCityPages,
@@ -387,5 +402,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...minnesotaListingPages,
     ...wisconsinCityPages,
     ...wisconsinListingPages,
+    ...southCarolinaCityPages,
+    ...southCarolinaListingPages,
   ];
 }
