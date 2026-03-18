@@ -18,6 +18,7 @@ import indianaData from "../../data/pawn-shops-indiana.json";
 import virginiaData from "../../data/pawn-shops-virginia.json";
 import marylandData from "../../data/pawn-shops-maryland.json";
 import louisianaData from "../../data/pawn-shops-louisiana.json";
+import minnesotaData from "../../data/pawn-shops-minnesota.json";
 
 export interface PawnShop {
   slug: string;
@@ -1202,6 +1203,66 @@ export function buildLouisianaSeoDescription(shop: PawnShop): string {
   const parts: string[] = [];
   const city = shop.city ? (LOUISIANA_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
   const loc = [city, "Louisiana"].filter(Boolean).join(", ");
+  parts.push(
+    `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
+  );
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) {
+    const days = condenseDays(hours.map((h) => h.day));
+    parts.push(`They are open ${days}.`);
+  }
+  if (shop.rating !== null && shop.reviews !== null) {
+    parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`);
+  }
+  return parts.join(" ");
+}
+
+// ── Minnesota ─────────────────────────────────────────────────────────────────
+
+const MINNESOTA_CITY_OVERRIDES: Record<string, string> = {
+  "St Paul": "St. Paul",
+  "St Cloud": "St. Cloud",
+  "West St Paul": "West St. Paul",
+  "North St Paul": "North St. Paul",
+  "St Louis Park": "St. Louis Park",
+};
+
+export const allMinnesotaShops = deduplicateSlugs(minnesotaData as PawnShop[]);
+
+export function getAllMinnesotaShops(): PawnShop[] {
+  return allMinnesotaShops;
+}
+
+export function getMinnesotaShopsByCity(citySlug: string): PawnShop[] {
+  return allMinnesotaShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getMinnesotaShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allMinnesotaShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getMinnesotaCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allMinnesotaShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = MINNESOTA_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) {
+      existing.count++;
+    } else {
+      map.set(shop.citySlug, { city, count: 1 });
+    }
+  }
+  return Array.from(map.entries())
+    .map(([citySlug, { city, count }]) => ({ citySlug, city, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function buildMinnesotaSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (MINNESOTA_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "Minnesota"].filter(Boolean).join(", ");
   parts.push(
     `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
   );
