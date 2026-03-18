@@ -25,6 +25,7 @@ const STATES = [
   { label: "Texas", href: "/texas" },
   { label: "Virginia", href: "/virginia" },
   { label: "Washington", href: "/washington" },
+  { label: "Wisconsin", href: "/wisconsin" },
 ];
 
 export default function Header() {

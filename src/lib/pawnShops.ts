@@ -19,6 +19,7 @@ import virginiaData from "../../data/pawn-shops-virginia.json";
 import marylandData from "../../data/pawn-shops-maryland.json";
 import louisianaData from "../../data/pawn-shops-louisiana.json";
 import minnesotaData from "../../data/pawn-shops-minnesota.json";
+import wisconsinData from "../../data/pawn-shops-wisconsin.json";
 
 export interface PawnShop {
   slug: string;
@@ -1263,6 +1264,60 @@ export function buildMinnesotaSeoDescription(shop: PawnShop): string {
   const parts: string[] = [];
   const city = shop.city ? (MINNESOTA_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
   const loc = [city, "Minnesota"].filter(Boolean).join(", ");
+  parts.push(
+    `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
+  );
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) {
+    const days = condenseDays(hours.map((h) => h.day));
+    parts.push(`They are open ${days}.`);
+  }
+  if (shop.rating !== null && shop.reviews !== null) {
+    parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`);
+  }
+  return parts.join(" ");
+}
+
+// ── Wisconsin ─────────────────────────────────────────────────────────────────
+
+const WISCONSIN_CITY_OVERRIDES: Record<string, string> = {};
+
+export const allWisconsinShops = deduplicateSlugs(wisconsinData as PawnShop[]);
+
+export function getAllWisconsinShops(): PawnShop[] {
+  return allWisconsinShops;
+}
+
+export function getWisconsinShopsByCity(citySlug: string): PawnShop[] {
+  return allWisconsinShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getWisconsinShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allWisconsinShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getWisconsinCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allWisconsinShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = WISCONSIN_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) {
+      existing.count++;
+    } else {
+      map.set(shop.citySlug, { city, count: 1 });
+    }
+  }
+  return Array.from(map.entries())
+    .map(([citySlug, { city, count }]) => ({ citySlug, city, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function buildWisconsinSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (WISCONSIN_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "Wisconsin"].filter(Boolean).join(", ");
   parts.push(
     `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
   );
