@@ -23,6 +23,7 @@ import wisconsinData from "../../data/pawn-shops-wisconsin.json";
 import southCarolinaData from "../../data/pawn-shops-southcarolina.json";
 import kentuckyData from "../../data/pawn-shops-kentucky.json";
 import alabamaData from "../../data/pawn-shops-alabama.json";
+import oklahomaData from "../../data/pawn-shops-oklahoma.json";
 
 export interface PawnShop {
   slug: string;
@@ -1485,6 +1486,60 @@ export function buildAlabamaSeoDescription(shop: PawnShop): string {
   const parts: string[] = [];
   const city = shop.city ? (ALABAMA_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
   const loc = [city, "Alabama"].filter(Boolean).join(", ");
+  parts.push(
+    `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
+  );
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) {
+    const days = condenseDays(hours.map((h) => h.day));
+    parts.push(`They are open ${days}.`);
+  }
+  if (shop.rating !== null && shop.reviews !== null) {
+    parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`);
+  }
+  return parts.join(" ");
+}
+
+// ── Oklahoma ──────────────────────────────────────────────────────────────────
+
+const OKLAHOMA_CITY_OVERRIDES: Record<string, string> = {};
+
+export const allOklahomaShops = deduplicateSlugs(oklahomaData as PawnShop[]);
+
+export function getAllOklahomaShops(): PawnShop[] {
+  return allOklahomaShops;
+}
+
+export function getOklahomaShopsByCity(citySlug: string): PawnShop[] {
+  return allOklahomaShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getOklahomaShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allOklahomaShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getOklahomaCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allOklahomaShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = OKLAHOMA_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) {
+      existing.count++;
+    } else {
+      map.set(shop.citySlug, { city, count: 1 });
+    }
+  }
+  return Array.from(map.entries())
+    .map(([citySlug, { city, count }]) => ({ citySlug, city, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function buildOklahomaSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (OKLAHOMA_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "Oklahoma"].filter(Boolean).join(", ");
   parts.push(
     `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
   );

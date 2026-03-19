@@ -3,11 +3,10 @@ const fs = require("fs");
 const path = require("path");
 
 const INPUTS = [
-  path.join(process.env.HOME, "Downloads/Outscraper-20260316224654s20 (1).xlsx"),
-  path.join(process.env.HOME, "Downloads/Outscraper-20260316224654s20 (2).xlsx"),
-  path.join(process.env.HOME, "Downloads/Outscraper-20260316225039s02.xlsx"),
+  path.join(process.env.HOME, "Downloads/Outscraper-20260319051438s32.xlsx"),
+  path.join(process.env.HOME, "Downloads/Outscraper-20260319051504s8d.xlsx"),
 ];
-const OUTPUT = path.join(__dirname, "../data/pawn-shops-maryland.json");
+const OUTPUT = path.join(__dirname, "../data/pawn-shops-oklahoma.json");
 
 function toSlug(str) {
   if (!str) return "";
@@ -32,7 +31,10 @@ function cleanNumber(val) {
   return isNaN(n) ? null : n;
 }
 
-const CITY_OVERRIDES = {};
+const CITY_OVERRIDES = {
+  "Mcalester": "McAlester",
+  "Mcloud": "McLoud",
+};
 
 function toTitleCase(str) {
   if (!str) return str;
@@ -75,9 +77,9 @@ function isPawnShop(row) {
   return false;
 }
 
-function isMarylandRow(row) {
+function isOklahomaRow(row) {
   const state = String(row["state"] ?? row["State"] ?? "").trim().toUpperCase();
-  return state === "MD" || state === "MARYLAND";
+  return state === "OK" || state === "OKLAHOMA";
 }
 
 // Read and merge all rows from all files
@@ -102,11 +104,11 @@ const deduped = allRows.filter((row) => {
 });
 console.log(`Rows after dedup: ${deduped.length}`);
 
-// Filter to Maryland only, then filter to pawn shops, then map
-const mdRows = deduped.filter(isMarylandRow);
-console.log(`Maryland rows: ${mdRows.length}`);
+// Filter to Oklahoma only, then filter to pawn shops, then map
+const okRows = deduped.filter(isOklahomaRow);
+console.log(`Oklahoma rows: ${okRows.length}`);
 
-const records = mdRows.filter(isPawnShop).map((row) => {
+const records = okRows.filter(isPawnShop).map((row) => {
   const name = clean(row["name"] ?? row["Name"]);
   const rawCity = clean(row["city"] ?? row["City"]);
   const city = toTitleCase(rawCity);
