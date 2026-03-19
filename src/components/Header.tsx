@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 
 const STATES = [
+  { label: "Alabama", href: "/alabama" },
   { label: "Arizona", href: "/arizona" },
   { label: "California", href: "/california" },
   { label: "Colorado", href: "/colorado" },
