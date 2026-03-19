@@ -5,6 +5,7 @@ import { useState, useRef, useEffect } from "react";
 
 const STATES = [
   { label: "Alabama", href: "/alabama" },
+  { label: "Arkansas", href: "/arkansas" },
   { label: "Arizona", href: "/arizona" },
   { label: "California", href: "/california" },
   { label: "Colorado", href: "/colorado" },
