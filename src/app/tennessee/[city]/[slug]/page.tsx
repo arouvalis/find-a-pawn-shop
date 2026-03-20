@@ -2,12 +2,12 @@ export const dynamic = 'force-dynamic';
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
-  getAllColoradoShops,
-  getColoradoShopBySlug,
+  getAllTennesseeShops,
+  getTennesseeShopBySlug,
   parseHours,
   formatAddress,
   toOpeningHoursSchema,
-  buildColoradoSeoDescription,
+  buildTennesseeSeoDescription,
 } from "@/lib/pawnShops";
 import { notFound } from "next/navigation";
 
@@ -16,7 +16,7 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return getAllColoradoShops().map((shop) => ({
+  return getAllTennesseeShops().map((shop) => ({
     city: shop.citySlug,
     slug: shop.slug,
   }));
@@ -24,23 +24,23 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { city, slug } = await params;
-  const shop = getColoradoShopBySlug(city, slug);
+  const shop = getTennesseeShopBySlug(city, slug);
   if (!shop) return {};
   return {
-    title: `${shop.name} — ${shop.city}, Colorado — FindAPawnShop.com`,
-    description: buildColoradoSeoDescription(shop),
+    title: `${shop.name} — ${shop.city}, Tennessee — FindAPawnShop.com`,
+    description: buildTennesseeSeoDescription(shop),
   };
 }
 
-export default async function ColoradoListingPage({ params }: Props) {
+export default async function TennesseeListingPage({ params }: Props) {
   const { city: citySlug, slug } = await params;
-  const shop = getColoradoShopBySlug(citySlug, slug);
+  const shop = getTennesseeShopBySlug(citySlug, slug);
   if (!shop) notFound();
 
   const hours = parseHours(shop.hours);
   const address = formatAddress(shop);
   const openingHours = toOpeningHoursSchema(shop.hours);
-  const seoDescription = buildColoradoSeoDescription(shop);
+  const seoDescription = buildTennesseeSeoDescription(shop);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -52,7 +52,7 @@ export default async function ColoradoListingPage({ params }: Props) {
             "@type": "PostalAddress",
             ...(shop.street && { streetAddress: shop.street }),
             ...(shop.city && { addressLocality: shop.city }),
-            addressRegion: "CO",
+            addressRegion: "TN",
             ...(shop.zip && { postalCode: shop.zip }),
             addressCountry: "US",
           },
@@ -89,9 +89,9 @@ export default async function ColoradoListingPage({ params }: Props) {
         <nav className="text-sm text-gray-500 mb-6 flex items-center gap-2 flex-wrap">
           <Link href="/" className="hover:text-amber-600">Home</Link>
           <span>/</span>
-          <Link href="/colorado" className="hover:text-amber-600">Colorado</Link>
+          <Link href="/tennessee" className="hover:text-amber-600">Tennessee</Link>
           <span>/</span>
-          <Link href={`/colorado/${citySlug}`} className="hover:text-amber-600">{shop.city}</Link>
+          <Link href={`/tennessee/${citySlug}`} className="hover:text-amber-600">{shop.city}</Link>
           <span>/</span>
           <span className="text-gray-900">{shop.name}</span>
         </nav>
