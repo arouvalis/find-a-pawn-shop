@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getCities, getAllShops } from "@/lib/pawnShops";
 
-export const metadata: Metadata = {
-  title: "Pawn Shops in Illinois — FindAPawnShop.com",
-  description: "Browse pawn shops across Illinois by city. Find ratings, hours, and contact info.",
-};
+export function generateMetadata(): Metadata {
+  const cities = getCities().sort((a, b) => b.count - a.count);
+  const total = getAllShops().length;
+  const top = cities.slice(0, 3).map((c) => c.city);
+  return {
+    title: "Pawn Shops in Illinois — FindAPawnShop.com",
+    description: `Browse ${total} verified pawn shops across Illinois — find addresses, hours, phone numbers, and ratings for pawn shops in ${top.join(", ")} and more.`,
+  };
+}
 
 export default function IllinoisPage() {
   const cities = getCities();

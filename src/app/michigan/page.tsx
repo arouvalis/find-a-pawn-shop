@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getMichiganCities, getAllMichiganShops } from "@/lib/pawnShops";
 
-export const metadata: Metadata = {
-  title: "Pawn Shops in Michigan — FindAPawnShop.com",
-  description: "Browse pawn shops across Michigan by city. Find ratings, hours, and contact info.",
-};
+export function generateMetadata(): Metadata {
+  const cities = getMichiganCities().sort((a, b) => b.count - a.count);
+  const total = getAllMichiganShops().length;
+  const top = cities.slice(0, 3).map((c) => c.city);
+  return {
+    title: "Pawn Shops in Michigan — FindAPawnShop.com",
+    description: `Browse ${total} verified pawn shops across Michigan — find addresses, hours, phone numbers, and ratings for pawn shops in ${top.join(", ")} and more.`,
+  };
+}
 
 export default function MichiganPage() {
   const cities = getMichiganCities();

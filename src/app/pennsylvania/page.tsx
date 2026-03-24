@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getPennsylvaniaCities, getAllPennsylvaniaShops } from "@/lib/pawnShops";
 
-export const metadata: Metadata = {
-  title: "Pawn Shops in Pennsylvania — FindAPawnShop.com",
-  description: "Browse pawn shops across Pennsylvania by city. Find ratings, hours, and contact info.",
-};
+export function generateMetadata(): Metadata {
+  const cities = getPennsylvaniaCities().sort((a, b) => b.count - a.count);
+  const total = getAllPennsylvaniaShops().length;
+  const top = cities.slice(0, 3).map((c) => c.city);
+  return {
+    title: "Pawn Shops in Pennsylvania — FindAPawnShop.com",
+    description: `Browse ${total} verified pawn shops across Pennsylvania — find addresses, hours, phone numbers, and ratings for pawn shops in ${top.join(", ")} and more.`,
+  };
+}
 
 export default function PennsylvaniaPage() {
   const cities = getPennsylvaniaCities();

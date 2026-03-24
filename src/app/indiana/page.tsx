@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getIndianaCities, getAllIndianaShops } from "@/lib/pawnShops";
 
-export const metadata: Metadata = {
-  title: "Pawn Shops in Indiana — FindAPawnShop.com",
-  description: "Browse pawn shops across Indiana by city. Find ratings, hours, and contact info.",
-};
+export function generateMetadata(): Metadata {
+  const cities = getIndianaCities().sort((a, b) => b.count - a.count);
+  const total = getAllIndianaShops().length;
+  const top = cities.slice(0, 3).map((c) => c.city);
+  return {
+    title: "Pawn Shops in Indiana — FindAPawnShop.com",
+    description: `Browse ${total} verified pawn shops across Indiana — find addresses, hours, phone numbers, and ratings for pawn shops in ${top.join(", ")} and more.`,
+  };
+}
 
 export default function IndianaPage() {
   const cities = getIndianaCities();

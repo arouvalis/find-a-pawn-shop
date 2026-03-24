@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getArkansasCities, getAllArkansasShops } from "@/lib/pawnShops";
 
-export const metadata: Metadata = {
-  title: "Pawn Shops in Arkansas — FindAPawnShop.com",
-  description: "Browse pawn shops across Arkansas by city. Find ratings, hours, and contact info.",
-};
+export function generateMetadata(): Metadata {
+  const cities = getArkansasCities().sort((a, b) => b.count - a.count);
+  const total = getAllArkansasShops().length;
+  const top = cities.slice(0, 3).map((c) => c.city);
+  return {
+    title: "Pawn Shops in Arkansas — FindAPawnShop.com",
+    description: `Browse ${total} verified pawn shops across Arkansas — find addresses, hours, phone numbers, and ratings for pawn shops in ${top.join(", ")} and more.`,
+  };
+}
 
 export default function ArkansasPage() {
   const cities = getArkansasCities();

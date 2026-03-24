@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getMissouriCities, getAllMissouriShops } from "@/lib/pawnShops";
 
-export const metadata: Metadata = {
-  title: "Pawn Shops in Missouri — FindAPawnShop.com",
-  description: "Browse pawn shops across Missouri by city. Find ratings, hours, and contact info.",
-};
+export function generateMetadata(): Metadata {
+  const cities = getMissouriCities().sort((a, b) => b.count - a.count);
+  const total = getAllMissouriShops().length;
+  const top = cities.slice(0, 3).map((c) => c.city);
+  return {
+    title: "Pawn Shops in Missouri — FindAPawnShop.com",
+    description: `Browse ${total} verified pawn shops across Missouri — find addresses, hours, phone numbers, and ratings for pawn shops in ${top.join(", ")} and more.`,
+  };
+}
 
 export default function MissouriPage() {
   const cities = getMissouriCities();

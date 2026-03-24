@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cityName = shops[0].city;
   return {
     title: `Pawn Shops in ${cityName}, South Carolina — FindAPawnShop.com`,
-    description: `Browse ${shops.length} pawn shop${shops.length !== 1 ? "s" : ""} in ${cityName}, South Carolina. Ratings, hours, addresses, and contact info.`,
+    description: `Find the best pawn shops in ${cityName}, South Carolina. Browse ${shops.length} verified listings with addresses, hours, phone numbers, and ratings. Compare pawn shops near you.`,
   };
 }
 

@@ -1,5 +1,23 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities, getAllCaliforniaShops, getCaliforniaCities, getAllOhioShops, getOhioCities, getAllMichiganShops, getMichiganCities, getAllPennsylvaniaShops, getPennsylvaniaCities, getAllNorthCarolinaShops, getNorthCarolinaCities, getAllWashingtonShops, getWashingtonCities, getAllColoradoShops, getColoradoCities, getAllNevadaShops, getNevadaCities, getAllTennesseeShops, getTennesseeCities, getAllMissouriShops, getMissouriCities, getAllIndianaShops, getIndianaCities, getAllVirginiaShops, getVirginiaCities, getAllMarylandShops, getMarylandCities, getAllLouisianaShops, getLouisianaCities, getAllMinnesotaShops, getMinnesotaCities, getAllWisconsinShops, getWisconsinCities, getAllSouthCarolinaShops, getSouthCarolinaCities, getAllKentuckyShops, getKentuckyCities, getAllAlabamaShops, getAlabamaCities, getAllOklahomaShops, getOklahomaCities, getAllArkansasShops, getArkansasCities } from "@/lib/pawnShops";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const total =
+    getAllShops().length + getAllTexasShops().length + getAllFloridaShops().length +
+    getAllNewYorkShops().length + getAllGeorgiaShops().length + getAllArizonaShops().length +
+    getAllCaliforniaShops().length + getAllOhioShops().length + getAllMichiganShops().length +
+    getAllPennsylvaniaShops().length + getAllNorthCarolinaShops().length + getAllWashingtonShops().length +
+    getAllColoradoShops().length + getAllNevadaShops().length + getAllTennesseeShops().length +
+    getAllMissouriShops().length + getAllIndianaShops().length + getAllVirginiaShops().length +
+    getAllMarylandShops().length + getAllLouisianaShops().length + getAllMinnesotaShops().length +
+    getAllWisconsinShops().length + getAllSouthCarolinaShops().length + getAllKentuckyShops().length +
+    getAllAlabamaShops().length + getAllOklahomaShops().length + getAllArkansasShops().length;
+  return {
+    title: "FindAPawnShop.com — Find Pawn Shops Near You",
+    description: `Find a pawn shop near you. Browse ${total} verified pawn shops across 27 states — with addresses, hours, phone numbers, and ratings. The largest pawn shop directory in the US.`,
+  };
+}
 
 const FEATURED_CITIES = ["chicago", "springfield", "rockford", "naperville", "aurora"];
 

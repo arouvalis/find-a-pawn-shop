@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getWisconsinCities, getAllWisconsinShops } from "@/lib/pawnShops";
 
-export const metadata: Metadata = {
-  title: "Pawn Shops in Wisconsin — FindAPawnShop.com",
-  description: "Browse pawn shops across Wisconsin by city. Find ratings, hours, and contact info.",
-};
+export function generateMetadata(): Metadata {
+  const cities = getWisconsinCities().sort((a, b) => b.count - a.count);
+  const total = getAllWisconsinShops().length;
+  const top = cities.slice(0, 3).map((c) => c.city);
+  return {
+    title: "Pawn Shops in Wisconsin — FindAPawnShop.com",
+    description: `Browse ${total} verified pawn shops across Wisconsin — find addresses, hours, phone numbers, and ratings for pawn shops in ${top.join(", ")} and more.`,
+  };
+}
 
 export default function WisconsinPage() {
   const cities = getWisconsinCities();

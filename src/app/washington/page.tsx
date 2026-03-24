@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getWashingtonCities, getAllWashingtonShops } from "@/lib/pawnShops";
 
-export const metadata: Metadata = {
-  title: "Pawn Shops in Washington — FindAPawnShop.com",
-  description: "Browse pawn shops across Washington state by city. Find ratings, hours, and contact info.",
-};
+export function generateMetadata(): Metadata {
+  const cities = getWashingtonCities().sort((a, b) => b.count - a.count);
+  const total = getAllWashingtonShops().length;
+  const top = cities.slice(0, 3).map((c) => c.city);
+  return {
+    title: "Pawn Shops in Washington — FindAPawnShop.com",
+    description: `Browse ${total} verified pawn shops across Washington — find addresses, hours, phone numbers, and ratings for pawn shops in ${top.join(", ")} and more.`,
+  };
+}
 
 export default function WashingtonPage() {
   const cities = getWashingtonCities();

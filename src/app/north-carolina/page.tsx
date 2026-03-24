@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getNorthCarolinaCities, getAllNorthCarolinaShops } from "@/lib/pawnShops";
 
-export const metadata: Metadata = {
-  title: "Pawn Shops in North Carolina — FindAPawnShop.com",
-  description: "Browse pawn shops across North Carolina by city. Find ratings, hours, and contact info.",
-};
+export function generateMetadata(): Metadata {
+  const cities = getNorthCarolinaCities().sort((a, b) => b.count - a.count);
+  const total = getAllNorthCarolinaShops().length;
+  const top = cities.slice(0, 3).map((c) => c.city);
+  return {
+    title: "Pawn Shops in North Carolina — FindAPawnShop.com",
+    description: `Browse ${total} verified pawn shops across North Carolina — find addresses, hours, phone numbers, and ratings for pawn shops in ${top.join(", ")} and more.`,
+  };
+}
 
 export default function NorthCarolinaPage() {
   const cities = getNorthCarolinaCities();

@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getOklahomaCities, getAllOklahomaShops } from "@/lib/pawnShops";
 
-export const metadata: Metadata = {
-  title: "Pawn Shops in Oklahoma — FindAPawnShop.com",
-  description: "Browse pawn shops across Oklahoma by city. Find ratings, hours, and contact info.",
-};
+export function generateMetadata(): Metadata {
+  const cities = getOklahomaCities().sort((a, b) => b.count - a.count);
+  const total = getAllOklahomaShops().length;
+  const top = cities.slice(0, 3).map((c) => c.city);
+  return {
+    title: "Pawn Shops in Oklahoma — FindAPawnShop.com",
+    description: `Browse ${total} verified pawn shops across Oklahoma — find addresses, hours, phone numbers, and ratings for pawn shops in ${top.join(", ")} and more.`,
+  };
+}
 
 export default function OklahomaPage() {
   const cities = getOklahomaCities();
