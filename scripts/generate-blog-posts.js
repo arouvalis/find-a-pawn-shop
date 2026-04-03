@@ -29,12 +29,12 @@ const MAX_TOKENS    = 4096;
 // Rotated by article index so consecutive posts get different images.
 
 const HERO_IMAGES = [
-  { url: 'https://images.unsplash.com/photo-CHcoGbMq-vo?w=1200&q=80', alt: 'Pawn shop storefront' },
-  { url: 'https://images.unsplash.com/photo-PSyRo2P2Qbs?w=1200&q=80', alt: 'Jewelry and valuables at a pawn shop' },
-  { url: 'https://images.unsplash.com/photo-cB9k3TGFbag?w=1200&q=80', alt: 'Gold jewelry and coins' },
-  { url: 'https://images.unsplash.com/photo-BmyXMBBkuU0?w=1200&q=80', alt: 'Vintage items and collectibles' },
-  { url: 'https://images.unsplash.com/photo-KkTt0XCz49A?w=1200&q=80', alt: 'Cash and financial transaction' },
-  { url: 'https://images.unsplash.com/photo-6ksGE-3b8r8?w=1200&q=80', alt: 'Electronics and gadgets' },
+  { url: 'https://images.unsplash.com/CHcoGbMq-vo?w=1200&q=80', alt: 'Pawn shop storefront' },
+  { url: 'https://images.unsplash.com/PSyRo2P2Qbs?w=1200&q=80', alt: 'Jewelry and valuables at a pawn shop' },
+  { url: 'https://images.unsplash.com/cB9k3TGFbag?w=1200&q=80', alt: 'Gold jewelry and coins' },
+  { url: 'https://images.unsplash.com/BmyXMBBkuU0?w=1200&q=80', alt: 'Vintage items and collectibles' },
+  { url: 'https://images.unsplash.com/KkTt0XCz49A?w=1200&q=80', alt: 'Cash and financial transaction' },
+  { url: 'https://images.unsplash.com/6ksGE-3b8r8?w=1200&q=80', alt: 'Electronics and gadgets' },
 ];
 
 function getHeroImage(index) {
