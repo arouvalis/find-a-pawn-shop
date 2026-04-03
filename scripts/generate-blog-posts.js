@@ -25,6 +25,22 @@ const PAGE_TSX      = path.join(__dirname, '../src/app/blog/[slug]/page.tsx');
 const MODEL         = 'claude-sonnet-4-20250514';
 const MAX_TOKENS    = 4096;
 
+// ─── Curated hero image pool ──────────────────────────────────────────────────
+// Rotated by article index so consecutive posts get different images.
+
+const HERO_IMAGES = [
+  { url: 'https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=1200&q=80', alt: 'Pawn shop storefront' },
+  { url: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&q=80', alt: 'Jewelry and valuables at a pawn shop' },
+  { url: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&q=80', alt: 'Gold jewelry and coins' },
+  { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&q=80', alt: 'Vintage items and collectibles' },
+  { url: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80', alt: 'Cash and financial transaction' },
+  { url: 'https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=1200&q=80', alt: 'Electronics and gadgets' },
+];
+
+function getHeroImage(index) {
+  return HERO_IMAGES[index % HERO_IMAGES.length];
+}
+
 // ─── Anthropic API ────────────────────────────────────────────────────────────
 
 function callClaude(prompt) {
@@ -74,8 +90,6 @@ function callClaude(prompt) {
 //
 // Claude returns a structured text block:
 //
-//   IMAGE_URL: https://images.unsplash.com/photo-XXXXX?w=1200&q=80
-//   IMAGE_ALT: descriptive alt text
 //   DESCRIPTION: meta description under 160 chars
 //
 //   ---JSX---
@@ -83,25 +97,23 @@ function callClaude(prompt) {
 //   ...
 //   </div>
 //   ---END---
+//
+// Images are no longer sourced from Claude — they come from the HERO_IMAGES pool.
 
 function parseResponse(text) {
-  const imageUrl   = text.match(/^IMAGE_URL:\s*(.+)/m)?.[1]?.trim();
-  const imageAlt   = text.match(/^IMAGE_ALT:\s*(.+)/m)?.[1]?.trim();
   const description = text.match(/^DESCRIPTION:\s*(.+)/m)?.[1]?.trim();
   const jsxMatch   = text.match(/---JSX---\r?\n([\s\S]*?)\r?\n---END---/);
   const jsxContent = jsxMatch?.[1]?.trim();
 
   const missing = [];
-  if (!imageUrl)   missing.push('IMAGE_URL');
-  if (!imageAlt)   missing.push('IMAGE_ALT');
   if (!description) missing.push('DESCRIPTION');
-  if (!jsxContent) missing.push('JSX block (---JSX--- ... ---END---)');
+  if (!jsxContent)  missing.push('JSX block (---JSX--- ... ---END---)');
 
   if (missing.length) {
     throw new Error(`Missing fields in Claude response: ${missing.join(', ')}\n\nResponse preview:\n${text.slice(0, 600)}`);
   }
 
-  return { imageUrl, imageAlt, description, jsxContent };
+  return { description, jsxContent };
 }
 
 // ─── Prompt builder ───────────────────────────────────────────────────────────
@@ -132,8 +144,6 @@ Generate a detailed blog post about the best pawn shops in ${locationLabel}.
 
 Respond in EXACTLY this format — no extra text, no markdown fences:
 
-IMAGE_URL: https://images.unsplash.com/photo-PHOTO_ID?w=1200&q=80
-IMAGE_ALT: [city skyline or pawn shop image alt text]
 DESCRIPTION: [meta description, max 160 chars, starting with "Looking for the best pawn shops in ${city}?"]
 
 ---JSX---
@@ -362,7 +372,8 @@ async function main() {
         dates.datePublished,
         dates.dateDisplay,
       );
-      patchPageTSX(gap.suggested_slug, parsed.imageUrl, parsed.imageAlt, parsed.jsxContent);
+      const hero = getHeroImage(generated);
+      patchPageTSX(gap.suggested_slug, hero.url, hero.alt, parsed.jsxContent);
       console.log(`       ✓ Written — ${dates.dateDisplay}`);
       generated++;
     } catch (err) {
