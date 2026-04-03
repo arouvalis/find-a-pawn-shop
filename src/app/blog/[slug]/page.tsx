@@ -50,251 +50,251 @@ const HERO_IMAGES: Record<string, { src: string; alt: string }> = {
     alt: "Miami Beach aerial view — guide to the best pawn shops in Miami, Florida",
   },
   "best-pawn-shops-in-barberton": {
-    src: "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-CHcoGbMq-vo?w=1200&q=80",
     alt: "Pawn shop storefront",
   },
   "best-pawn-shops-in-st-louis": {
-    src: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-PSyRo2P2Qbs?w=1200&q=80",
     alt: "Jewelry and valuables at a pawn shop",
   },
   "best-pawn-shops-in-florence": {
-    src: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-cB9k3TGFbag?w=1200&q=80",
     alt: "Gold jewelry and coins",
   },
   "best-pawn-shops-in-springfield": {
-    src: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-BmyXMBBkuU0?w=1200&q=80",
     alt: "Vintage items and collectibles",
   },
   "best-pawn-shops-in-valdosta": {
-    src: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-KkTt0XCz49A?w=1200&q=80",
     alt: "Cash and financial transaction",
   },
   "best-pawn-shops-in-cumberland": {
-    src: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-6ksGE-3b8r8?w=1200&q=80",
     alt: "Electronics and gadgets",
   },
   "best-pawn-shops-in-summerville": {
-    src: "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-CHcoGbMq-vo?w=1200&q=80",
     alt: "Pawn shop storefront",
   },
   "best-pawn-shops-in-glendale": {
-    src: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-PSyRo2P2Qbs?w=1200&q=80",
     alt: "Jewelry and valuables at a pawn shop",
   },
   "best-pawn-shops-in-cape-girardeau": {
-    src: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-cB9k3TGFbag?w=1200&q=80",
     alt: "Gold jewelry and coins",
   },
   "best-pawn-shops-in-athens": {
-    src: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-BmyXMBBkuU0?w=1200&q=80",
     alt: "Vintage items and collectibles",
   },
   "best-pawn-shops-in-macon": {
-    src: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-KkTt0XCz49A?w=1200&q=80",
     alt: "Cash and financial transaction",
   },
   "best-pawn-shops-in-sacramento": {
-    src: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-6ksGE-3b8r8?w=1200&q=80",
     alt: "Electronics and gadgets",
   },
   "best-pawn-shops-in-columbia": {
-    src: "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-CHcoGbMq-vo?w=1200&q=80",
     alt: "Pawn shop storefront",
   },
   "best-pawn-shops-in-lincoln-park": {
-    src: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-PSyRo2P2Qbs?w=1200&q=80",
     alt: "Jewelry and valuables at a pawn shop",
   },
   "best-pawn-shops-in-greensburg": {
-    src: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-cB9k3TGFbag?w=1200&q=80",
     alt: "Gold jewelry and coins",
   },
   "best-pawn-shops-in-ypsilanti": {
-    src: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-BmyXMBBkuU0?w=1200&q=80",
     alt: "Vintage items and collectibles",
   },
   "best-pawn-shops-in-peoria": {
-    src: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-KkTt0XCz49A?w=1200&q=80",
     alt: "Cash and financial transaction",
   },
   "best-pawn-shops-in-westland": {
-    src: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-6ksGE-3b8r8?w=1200&q=80",
     alt: "Electronics and gadgets",
   },
   "best-pawn-shops-in-murray": {
-    src: "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-CHcoGbMq-vo?w=1200&q=80",
     alt: "Pawn shop storefront",
   },
   "best-pawn-shops-in-auburn": {
-    src: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-PSyRo2P2Qbs?w=1200&q=80",
     alt: "Jewelry and valuables at a pawn shop",
   },
   "best-pawn-shops-in-chandler": {
-    src: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-cB9k3TGFbag?w=1200&q=80",
     alt: "Gold jewelry and coins",
   },
   "best-pawn-shops-in-warner-robins": {
-    src: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-BmyXMBBkuU0?w=1200&q=80",
     alt: "Vintage items and collectibles",
   },
   "best-pawn-shops-in-highland": {
-    src: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-KkTt0XCz49A?w=1200&q=80",
     alt: "Cash and financial transaction",
   },
   "best-pawn-shops-in-bluffton": {
-    src: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-6ksGE-3b8r8?w=1200&q=80",
     alt: "Electronics and gadgets",
   },
   "best-pawn-shops-in-aberdeen": {
-    src: "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-CHcoGbMq-vo?w=1200&q=80",
     alt: "Pawn shop storefront",
   },
   "best-pawn-shops-in-flushing": {
-    src: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-PSyRo2P2Qbs?w=1200&q=80",
     alt: "Jewelry and valuables at a pawn shop",
   },
   "best-pawn-shops-in-metairie": {
-    src: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-cB9k3TGFbag?w=1200&q=80",
     alt: "Gold jewelry and coins",
   },
   "best-pawn-shops-in-bullhead-city": {
-    src: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-BmyXMBBkuU0?w=1200&q=80",
     alt: "Vintage items and collectibles",
   },
   "best-pawn-shops-in-augusta": {
-    src: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-KkTt0XCz49A?w=1200&q=80",
     alt: "Cash and financial transaction",
   },
   "best-pawn-shops-in-allentown": {
-    src: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-6ksGE-3b8r8?w=1200&q=80",
     alt: "Electronics and gadgets",
   },
   "best-pawn-shops-in-west-columbia": {
-    src: "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-CHcoGbMq-vo?w=1200&q=80",
     alt: "Pawn shop storefront",
   },
   "best-pawn-shops-in-greenville": {
-    src: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-PSyRo2P2Qbs?w=1200&q=80",
     alt: "Jewelry and valuables at a pawn shop",
   },
   "best-pawn-shops-in-decatur": {
-    src: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-cB9k3TGFbag?w=1200&q=80",
     alt: "Gold jewelry and coins",
   },
   "best-pawn-shops-in-aurora": {
-    src: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-BmyXMBBkuU0?w=1200&q=80",
     alt: "Vintage items and collectibles",
   },
   "best-pawn-shops-in-bonne-terre": {
-    src: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-KkTt0XCz49A?w=1200&q=80",
     alt: "Cash and financial transaction",
   },
   "best-pawn-shops-in-irmo": {
-    src: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-6ksGE-3b8r8?w=1200&q=80",
     alt: "Electronics and gadgets",
   },
   "best-pawn-shops-in-taylor": {
-    src: "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-CHcoGbMq-vo?w=1200&q=80",
     alt: "Pawn shop storefront",
   },
   "best-pawn-shops-in-lansing": {
-    src: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-PSyRo2P2Qbs?w=1200&q=80",
     alt: "Jewelry and valuables at a pawn shop",
   },
   "best-pawn-shops-in-harvey": {
-    src: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-cB9k3TGFbag?w=1200&q=80",
     alt: "Gold jewelry and coins",
   },
   "best-pawn-shops-in-mesquite": {
-    src: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-BmyXMBBkuU0?w=1200&q=80",
     alt: "Vintage items and collectibles",
   },
   "best-pawn-shops-in-youngstown": {
-    src: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-KkTt0XCz49A?w=1200&q=80",
     alt: "Cash and financial transaction",
   },
   "best-pawn-shops-in-jacksonville": {
-    src: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-6ksGE-3b8r8?w=1200&q=80",
     alt: "Electronics and gadgets",
   },
   "best-pawn-shops-in-prattville": {
-    src: "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-CHcoGbMq-vo?w=1200&q=80",
     alt: "Pawn shop storefront",
   },
   "best-pawn-shops-in-gilbert": {
-    src: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-PSyRo2P2Qbs?w=1200&q=80",
     alt: "Jewelry and valuables at a pawn shop",
   },
   "best-pawn-shops-in-carson-city": {
-    src: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-cB9k3TGFbag?w=1200&q=80",
     alt: "Gold jewelry and coins",
   },
   "best-pawn-shops-in-richmond": {
-    src: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-BmyXMBBkuU0?w=1200&q=80",
     alt: "Vintage items and collectibles",
   },
   "best-pawn-shops-in-hallandale-beach": {
-    src: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-KkTt0XCz49A?w=1200&q=80",
     alt: "Cash and financial transaction",
   },
   "best-pawn-shops-in-winchester": {
-    src: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-6ksGE-3b8r8?w=1200&q=80",
     alt: "Electronics and gadgets",
   },
   "best-pawn-shops-in-waldorf": {
-    src: "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-CHcoGbMq-vo?w=1200&q=80",
     alt: "Pawn shop storefront",
   },
   "best-pawn-shops-in-burlington": {
-    src: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-PSyRo2P2Qbs?w=1200&q=80",
     alt: "Jewelry and valuables at a pawn shop",
   },
   "best-pawn-shops-in-paducah": {
-    src: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-cB9k3TGFbag?w=1200&q=80",
     alt: "Gold jewelry and coins",
   },
   "best-pawn-shops-in-lebanon": {
-    src: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-BmyXMBBkuU0?w=1200&q=80",
     alt: "Vintage items and collectibles",
   },
   "best-pawn-shops-in-lakewood": {
-    src: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-KkTt0XCz49A?w=1200&q=80",
     alt: "Cash and financial transaction",
   },
   "best-pawn-shops-in-thomasville": {
-    src: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-6ksGE-3b8r8?w=1200&q=80",
     alt: "Electronics and gadgets",
   },
   "best-pawn-shops-in-knoxville": {
-    src: "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-CHcoGbMq-vo?w=1200&q=80",
     alt: "Pawn shop storefront",
   },
   "best-pawn-shops-in-lafayette": {
-    src: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-PSyRo2P2Qbs?w=1200&q=80",
     alt: "Jewelry and valuables at a pawn shop",
   },
   "best-pawn-shops-in-midland": {
-    src: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-cB9k3TGFbag?w=1200&q=80",
     alt: "Gold jewelry and coins",
   },
   "best-pawn-shops-in-springdale": {
-    src: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-BmyXMBBkuU0?w=1200&q=80",
     alt: "Vintage items and collectibles",
   },
   "best-pawn-shops-in-owensboro": {
-    src: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-KkTt0XCz49A?w=1200&q=80",
     alt: "Cash and financial transaction",
   },
   "best-pawn-shops-in-warren": {
-    src: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-6ksGE-3b8r8?w=1200&q=80",
     alt: "Electronics and gadgets",
   },
   "best-pawn-shops-in-denham-springs": {
-    src: "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-CHcoGbMq-vo?w=1200&q=80",
     alt: "Pawn shop storefront",
   },
   "best-pawn-shops-in-scranton": {
-    src: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-PSyRo2P2Qbs?w=1200&q=80",
     alt: "Jewelry and valuables at a pawn shop",
   },
 };
