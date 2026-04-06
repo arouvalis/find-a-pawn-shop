@@ -28,6 +28,7 @@ import arkansasData from "../../data/pawn-shops-arkansas.json";
 import utahData from "../../data/pawn-shops-utah.json";
 import connecticutData from "../../data/pawn-shops-connecticut.json";
 import newMexicoData from "../../data/pawn-shops-new-mexico.json";
+import iowaData from "../../data/pawn-shops-iowa.json";
 
 export interface PawnShop {
   slug: string;
@@ -1764,6 +1765,60 @@ export function buildNewMexicoSeoDescription(shop: PawnShop): string {
   const parts: string[] = [];
   const city = shop.city ? (NEW_MEXICO_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
   const loc = [city, "New Mexico"].filter(Boolean).join(", ");
+  parts.push(
+    `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
+  );
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) {
+    const days = condenseDays(hours.map((h) => h.day));
+    parts.push(`They are open ${days}.`);
+  }
+  if (shop.rating !== null && shop.reviews !== null) {
+    parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`);
+  }
+  return parts.join(" ");
+}
+
+// ── Iowa ──────────────────────────────────────────────────────────────────────
+
+const IOWA_CITY_OVERRIDES: Record<string, string> = {};
+
+export const allIowaShops = deduplicateSlugs(iowaData as PawnShop[]);
+
+export function getAllIowaShops(): PawnShop[] {
+  return allIowaShops;
+}
+
+export function getIowaShopsByCity(citySlug: string): PawnShop[] {
+  return allIowaShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getIowaShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allIowaShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getIowaCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allIowaShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = IOWA_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) {
+      existing.count++;
+    } else {
+      map.set(shop.citySlug, { city, count: 1 });
+    }
+  }
+  return Array.from(map.entries())
+    .map(([citySlug, { city, count }]) => ({ citySlug, city, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function buildIowaSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (IOWA_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "Iowa"].filter(Boolean).join(", ");
   parts.push(
     `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
   );
