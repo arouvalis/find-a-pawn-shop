@@ -25,6 +25,7 @@ import kentuckyData from "../../data/pawn-shops-kentucky.json";
 import alabamaData from "../../data/pawn-shops-alabama.json";
 import oklahomaData from "../../data/pawn-shops-oklahoma.json";
 import arkansasData from "../../data/pawn-shops-arkansas.json";
+import utahData from "../../data/pawn-shops-utah.json";
 
 export interface PawnShop {
   slug: string;
@@ -1595,6 +1596,62 @@ export function buildArkansasSeoDescription(shop: PawnShop): string {
   const parts: string[] = [];
   const city = shop.city ? (ARKANSAS_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
   const loc = [city, "Arkansas"].filter(Boolean).join(", ");
+  parts.push(
+    `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
+  );
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) {
+    const days = condenseDays(hours.map((h) => h.day));
+    parts.push(`They are open ${days}.`);
+  }
+  if (shop.rating !== null && shop.reviews !== null) {
+    parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`);
+  }
+  return parts.join(" ");
+}
+
+// ── Utah ──────────────────────────────────────────────────────────────────────
+
+const UTAH_CITY_OVERRIDES: Record<string, string> = {
+  "St. George": "St. George",
+};
+
+export const allUtahShops = deduplicateSlugs(utahData as PawnShop[]);
+
+export function getAllUtahShops(): PawnShop[] {
+  return allUtahShops;
+}
+
+export function getUtahShopsByCity(citySlug: string): PawnShop[] {
+  return allUtahShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getUtahShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allUtahShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getUtahCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allUtahShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = UTAH_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) {
+      existing.count++;
+    } else {
+      map.set(shop.citySlug, { city, count: 1 });
+    }
+  }
+  return Array.from(map.entries())
+    .map(([citySlug, { city, count }]) => ({ citySlug, city, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function buildUtahSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (UTAH_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "Utah"].filter(Boolean).join(", ");
   parts.push(
     `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
   );

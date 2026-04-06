@@ -28,6 +28,7 @@ const STATES = [
   { label: "Pennsylvania", href: "/pennsylvania" },
   { label: "Tennessee", href: "/tennessee" },
   { label: "Texas", href: "/texas" },
+  { label: "Utah", href: "/utah" },
   { label: "Virginia", href: "/virginia" },
   { label: "Washington", href: "/washington" },
   { label: "Wisconsin", href: "/wisconsin" },
