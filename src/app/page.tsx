@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities, getAllCaliforniaShops, getCaliforniaCities, getAllOhioShops, getOhioCities, getAllMichiganShops, getMichiganCities, getAllPennsylvaniaShops, getPennsylvaniaCities, getAllNorthCarolinaShops, getNorthCarolinaCities, getAllWashingtonShops, getWashingtonCities, getAllColoradoShops, getColoradoCities, getAllNevadaShops, getNevadaCities, getAllTennesseeShops, getTennesseeCities, getAllMissouriShops, getMissouriCities, getAllIndianaShops, getIndianaCities, getAllVirginiaShops, getVirginiaCities, getAllMarylandShops, getMarylandCities, getAllLouisianaShops, getLouisianaCities, getAllMinnesotaShops, getMinnesotaCities, getAllWisconsinShops, getWisconsinCities, getAllSouthCarolinaShops, getSouthCarolinaCities, getAllKentuckyShops, getKentuckyCities, getAllAlabamaShops, getAlabamaCities, getAllOklahomaShops, getOklahomaCities, getAllArkansasShops, getArkansasCities, getAllUtahShops, getUtahCities, getAllConnecticutShops, getConnecticutCities, getAllNewMexicoShops, getNewMexicoCities, getAllIowaShops, getIowaCities } from "@/lib/pawnShops";
+import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities, getAllCaliforniaShops, getCaliforniaCities, getAllOhioShops, getOhioCities, getAllMichiganShops, getMichiganCities, getAllPennsylvaniaShops, getPennsylvaniaCities, getAllNorthCarolinaShops, getNorthCarolinaCities, getAllWashingtonShops, getWashingtonCities, getAllColoradoShops, getColoradoCities, getAllNevadaShops, getNevadaCities, getAllTennesseeShops, getTennesseeCities, getAllMissouriShops, getMissouriCities, getAllIndianaShops, getIndianaCities, getAllVirginiaShops, getVirginiaCities, getAllMarylandShops, getMarylandCities, getAllLouisianaShops, getLouisianaCities, getAllMinnesotaShops, getMinnesotaCities, getAllWisconsinShops, getWisconsinCities, getAllSouthCarolinaShops, getSouthCarolinaCities, getAllKentuckyShops, getKentuckyCities, getAllAlabamaShops, getAlabamaCities, getAllOklahomaShops, getOklahomaCities, getAllArkansasShops, getArkansasCities, getAllUtahShops, getUtahCities, getAllConnecticutShops, getConnecticutCities, getAllNewMexicoShops, getNewMexicoCities, getAllIowaShops, getIowaCities, getAllKansasShops, getKansasCities } from "@/lib/pawnShops";
 
 export async function generateMetadata(): Promise<Metadata> {
   const total =
@@ -14,10 +14,11 @@ export async function generateMetadata(): Promise<Metadata> {
     getAllWisconsinShops().length + getAllSouthCarolinaShops().length + getAllKentuckyShops().length +
     getAllAlabamaShops().length + getAllOklahomaShops().length + getAllArkansasShops().length +
     getAllUtahShops().length + getAllConnecticutShops().length + getAllNewMexicoShops().length +
-    getAllIowaShops().length;
+    getAllIowaShops().length +
+    getAllKansasShops().length;
   return {
     title: "FindAPawnShop.com — Find Pawn Shops Near You",
-    description: `Find a pawn shop near you. Browse ${total} verified pawn shops across 31 states — with addresses, hours, phone numbers, and ratings. The largest pawn shop directory in the US.`,
+    description: `Find a pawn shop near you. Browse ${total} verified pawn shops across 32 states — with addresses, hours, phone numbers, and ratings. The largest pawn shop directory in the US.`,
   };
 }
 
@@ -86,8 +87,10 @@ export default function HomePage() {
   const newMexicoCities = getNewMexicoCities();
   const iowaShops = getAllIowaShops();
   const iowaCities = getIowaCities();
-  const totalShops = allShops.length + texasShops.length + floridaShops.length + newYorkShops.length + georgiaShops.length + arizonaShops.length + californiaShops.length + ohioShops.length + michiganShops.length + pennsylvaniaShops.length + northCarolinaShops.length + washingtonShops.length + coloradoShops.length + nevadaShops.length + tennesseeShops.length + missouriShops.length + indianaShops.length + virginiaShops.length + marylandShops.length + louisianaShops.length + minnesotaShops.length + wisconsinShops.length + southCarolinaShops.length + kentuckyShops.length + alabamaShops.length + oklahomaShops.length + arkansasShops.length + utahShops.length + connecticutShops.length + newMexicoShops.length + iowaShops.length;
-  const totalCities = cities.length + texasCities.length + floridaCities.length + newYorkCities.length + georgiaCities.length + arizonaCities.length + californiaCities.length + ohioCities.length + michiganCities.length + pennsylvaniaCities.length + northCarolinaCities.length + washingtonCities.length + coloradoCities.length + nevadaCities.length + tennesseeCities.length + missouriCities.length + indianaCities.length + virginiaCities.length + marylandCities.length + louisianaCities.length + minnesotaCities.length + wisconsinCities.length + southCarolinaCities.length + kentuckyCities.length + alabamaCities.length + oklahomaCities.length + arkansasCities.length + utahCities.length + connecticutCities.length + newMexicoCities.length + iowaCities.length;
+  const kansasShops = getAllKansasShops();
+  const kansasCities = getKansasCities();
+  const totalShops = allShops.length + texasShops.length + floridaShops.length + newYorkShops.length + georgiaShops.length + arizonaShops.length + californiaShops.length + ohioShops.length + michiganShops.length + pennsylvaniaShops.length + northCarolinaShops.length + washingtonShops.length + coloradoShops.length + nevadaShops.length + tennesseeShops.length + missouriShops.length + indianaShops.length + virginiaShops.length + marylandShops.length + louisianaShops.length + minnesotaShops.length + wisconsinShops.length + southCarolinaShops.length + kentuckyShops.length + alabamaShops.length + oklahomaShops.length + arkansasShops.length + utahShops.length + connecticutShops.length + newMexicoShops.length + iowaShops.length + kansasShops.length;
+  const totalCities = cities.length + texasCities.length + floridaCities.length + newYorkCities.length + georgiaCities.length + arizonaCities.length + californiaCities.length + ohioCities.length + michiganCities.length + pennsylvaniaCities.length + northCarolinaCities.length + washingtonCities.length + coloradoCities.length + nevadaCities.length + tennesseeCities.length + missouriCities.length + indianaCities.length + virginiaCities.length + marylandCities.length + louisianaCities.length + minnesotaCities.length + wisconsinCities.length + southCarolinaCities.length + kentuckyCities.length + alabamaCities.length + oklahomaCities.length + arkansasCities.length + utahCities.length + connecticutCities.length + newMexicoCities.length + iowaCities.length + kansasCities.length;
 
   const featuredCities = FEATURED_CITIES.flatMap((slug) => {
     const found = cities.find((c) => c.citySlug === slug);
@@ -118,7 +121,7 @@ export default function HomePage() {
             <span className="ml-2 font-medium">Cities Covered</span>
           </div>
           <div className="text-center">
-            <span className="text-2xl font-bold">27 States</span>
+            <span className="text-2xl font-bold">32 States</span>
             <span className="ml-2 font-medium">&amp; Growing</span>
           </div>
         </div>
@@ -127,7 +130,7 @@ export default function HomePage() {
       {/* Browse by State */}
       <section className="max-w-6xl mx-auto px-4 py-16">
         <h2 className="text-2xl font-bold text-gray-900 mb-2">Browse by State</h2>
-        <p className="text-gray-500 mb-8">Currently serving Illinois, Texas, Florida, New York, Georgia, Arizona, California, Ohio, Michigan, Pennsylvania, North Carolina, Washington, Colorado, Nevada, Tennessee, Missouri, Indiana, Virginia, Maryland, Louisiana, Minnesota, Wisconsin, South Carolina, Kentucky, Alabama, Oklahoma, Arkansas, Utah, Connecticut, New Mexico, and Iowa — expanding nationwide in 2026.</p>
+        <p className="text-gray-500 mb-8">Currently serving Illinois, Texas, Florida, New York, Georgia, Arizona, California, Ohio, Michigan, Pennsylvania, North Carolina, Washington, Colorado, Nevada, Tennessee, Missouri, Indiana, Virginia, Maryland, Louisiana, Minnesota, Wisconsin, South Carolina, Kentucky, Alabama, Oklahoma, Arkansas, Utah, Connecticut, New Mexico, Iowa, and Kansas — expanding nationwide in 2026.</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {/* Active */}
           <Link
@@ -346,6 +349,13 @@ export default function HomePage() {
           >
             <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Iowa</div>
             <div className="text-sm text-gray-500">{iowaShops.length} listings</div>
+          </Link>
+          <Link
+            href="/kansas"
+            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
+          >
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Kansas</div>
+            <div className="text-sm text-gray-500">{kansasShops.length} listings</div>
           </Link>
           {/* Coming Soon */}
           {[].map((state) => (
