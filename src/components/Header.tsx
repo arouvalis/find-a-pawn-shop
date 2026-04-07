@@ -35,6 +35,7 @@ const STATES = [
   { label: "Utah", href: "/utah" },
   { label: "Virginia", href: "/virginia" },
   { label: "Washington", href: "/washington" },
+  { label: "West Virginia", href: "/west-virginia" },
   { label: "Wisconsin", href: "/wisconsin" },
 ];
 
