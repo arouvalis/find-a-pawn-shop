@@ -31,6 +31,7 @@ import newMexicoData from "../../data/pawn-shops-new-mexico.json";
 import iowaData from "../../data/pawn-shops-iowa.json";
 import kansasData from "../../data/pawn-shops-kansas.json";
 import westVirginiaData from "../../data/pawn-shops-west-virginia.json";
+import delawareData from "../../data/pawn-shops-delaware.json";
 
 export interface PawnShop {
   slug: string;
@@ -1931,6 +1932,60 @@ export function buildWestVirginiaSeoDescription(shop: PawnShop): string {
   const parts: string[] = [];
   const city = shop.city ? (WEST_VIRGINIA_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
   const loc = [city, "West Virginia"].filter(Boolean).join(", ");
+  parts.push(
+    `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
+  );
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) {
+    const days = condenseDays(hours.map((h) => h.day));
+    parts.push(`They are open ${days}.`);
+  }
+  if (shop.rating !== null && shop.reviews !== null) {
+    parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`);
+  }
+  return parts.join(" ");
+}
+
+// ── Delaware ──────────────────────────────────────────────────────────────────
+
+const DELAWARE_CITY_OVERRIDES: Record<string, string> = {};
+
+export const allDelawareShops = deduplicateSlugs(delawareData as PawnShop[]);
+
+export function getAllDelawareShops(): PawnShop[] {
+  return allDelawareShops;
+}
+
+export function getDelawareShopsByCity(citySlug: string): PawnShop[] {
+  return allDelawareShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getDelawareShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allDelawareShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getDelawareCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allDelawareShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = DELAWARE_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) {
+      existing.count++;
+    } else {
+      map.set(shop.citySlug, { city, count: 1 });
+    }
+  }
+  return Array.from(map.entries())
+    .map(([citySlug, { city, count }]) => ({ citySlug, city, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function buildDelawareSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (DELAWARE_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "Delaware"].filter(Boolean).join(", ");
   parts.push(
     `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
   );
