@@ -16,7 +16,7 @@
     "latitude": 45.5521132,
     "longitude": -94.1900587,
     "placeId": "ChIJs6iXTWZftFIRuWw793KaqBM",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+America/@45.5521132,-94.1900587,14z/data=!4m8!1m2!2m1!1sPawn+America!3m4!1s0x52b45f664d97a8b3:0x13a89a72f73b6cb9!8m2!3d45.5521132!4d-94.1900587"
   },
   {
     "slug": "max-it-pawn",
@@ -35,7 +35,7 @@
     "latitude": 45.5534258,
     "longitude": -94.18389649999999,
     "placeId": "ChIJR9MGE7dftFIRv7ShtjPKJS0",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/maX+it+PAWN/@45.5534258,-94.18389649999999,14z/data=!4m8!1m2!2m1!1smaX+it+PAWN!3m4!1s0x52b45fb71306d347:0x2d25ca33b6a1b4bf!8m2!3d45.5534258!4d-94.18389649999999"
   },
   {
     "slug": "pawn-america",
@@ -54,7 +54,7 @@
     "latitude": 46.8006513,
     "longitude": -92.1220216,
     "placeId": "ChIJm2V1q5dNrlIR4gXDXDjXa8U",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+America/@46.8006513,-92.1220216,14z/data=!4m8!1m2!2m1!1sPawn+America!3m4!1s0x52ae4d97ab75659b:0xc56bd7385cc305e2!8m2!3d46.8006513!4d-92.1220216"
   },
   {
     "slug": "stadium-pawn",
@@ -73,7 +73,7 @@
     "latitude": 46.7385562,
     "longitude": -92.1667574,
     "placeId": "ChIJk7UJz3hNrlIRdSZVP6kDL94",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Stadium+Pawn/@46.7385562,-92.1667574,14z/data=!4m8!1m2!2m1!1sStadium+Pawn!3m4!1s0x52ae4d78cf09b593:0xde2f03a93f552675!8m2!3d46.7385562!4d-92.1667574"
   },
   {
     "slug": "pawn-america",
@@ -92,7 +92,7 @@
     "latitude": 45.13453759999999,
     "longitude": -93.2674827,
     "placeId": "ChIJ79PlvKYls1IRRgSrW1Uo5jo",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+America/@45.134537599999994,-93.2674827,14z/data=!4m8!1m2!2m1!1sPawn+America!3m4!1s0x52b325a6bce5d3ef:0x3ae628555bab0446!8m2!3d45.134537599999994!4d-93.2674827"
   },
   {
     "slug": "pawn-america",
@@ -111,7 +111,7 @@
     "latitude": 44.8466398,
     "longitude": -93.2892531,
     "placeId": "ChIJLVtuUokl9ocRF-9iI9TXr_0",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+America/@44.8466398,-93.2892531,14z/data=!4m8!1m2!2m1!1sPawn+America!3m4!1s0x87f62589526e5b2d:0xfdafd7d42362ef17!8m2!3d44.8466398!4d-93.2892531"
   },
   {
     "slug": "max-it-pawn",
@@ -130,7 +130,7 @@
     "latitude": 44.832351,
     "longitude": -93.2893307,
     "placeId": "ChIJZ_UNYQUl9ocRfB8hR6Di5yE",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/maX+it+PAWN/@44.832350999999996,-93.2893307,14z/data=!4m8!1m2!2m1!1smaX+it+PAWN!3m4!1s0x87f62505610df567:0x21e7e2a047211f7c!8m2!3d44.832350999999996!4d-93.2893307"
   },
   {
     "slug": "excel-pawn-and-jewelry",
@@ -149,7 +149,7 @@
     "latitude": 44.9927901,
     "longitude": -93.1043522,
     "placeId": "ChIJs2FGBYEqs1IRm4S8ZENhKF8",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Excel+Pawn+And+Jewelry/@44.9927901,-93.1043522,14z/data=!4m8!1m2!2m1!1sExcel+Pawn+And+Jewelry!3m4!1s0x52b32a81054661b3:0x5f28614364bc849b!8m2!3d44.9927901!4d-93.1043522"
   },
   {
     "slug": "max-it-pawn",
@@ -168,7 +168,7 @@
     "latitude": 44.9554044,
     "longitude": -93.0806834,
     "placeId": "ChIJzeVAflrV94cRwusjTENpxwM",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/maX+it+PAWN/@44.9554044,-93.0806834,14z/data=!4m8!1m2!2m1!1smaX+it+PAWN!3m4!1s0x87f7d55a7e40e5cd:0x3c769434c23ebc2!8m2!3d44.9554044!4d-93.0806834"
   },
   {
     "slug": "max-it-pawn",
@@ -187,7 +187,7 @@
     "latitude": 44.9278882,
     "longitude": -93.1261583,
     "placeId": "ChIJz2EPFOUq9ocRUv5fDeiYvHI",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/maX+it+PAWN/@44.9278882,-93.1261583,14z/data=!4m8!1m2!2m1!1smaX+it+PAWN!3m4!1s0x87f62ae5140f61cf:0x72bc98e80d5ffe52!8m2!3d44.9278882!4d-93.1261583"
   },
   {
     "slug": "pawn-america",
@@ -206,7 +206,7 @@
     "latitude": 44.8948696,
     "longitude": -93.078538,
     "placeId": "ChIJS1nHpvTV94cR0uVhWRLiSK0",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+America/@44.8948696,-93.078538,14z/data=!4m8!1m2!2m1!1sPawn+America!3m4!1s0x87f7d5f4a6c7594b:0xad48e2125961e5d2!8m2!3d44.8948696!4d-93.078538"
   },
   {
     "slug": "pawn-america",
@@ -225,7 +225,7 @@
     "latitude": 44.9932129,
     "longitude": -93.1067731,
     "placeId": "ChIJk4tYO6grs1IRyjHtAHV_2f0",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+America/@44.993212899999996,-93.1067731,14z/data=!4m8!1m2!2m1!1sPawn+America!3m4!1s0x52b32ba83b588b93:0xfdd97f7500ed31ca!8m2!3d44.993212899999996!4d-93.1067731"
   },
   {
     "slug": "pawn-america",
@@ -244,7 +244,7 @@
     "latitude": 45.0658808,
     "longitude": -93.2488941,
     "placeId": "ChIJs7sx75Qvs1IR3DmxoSn0WwQ",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+America/@45.065880799999995,-93.2488941,14z/data=!4m8!1m2!2m1!1sPawn+America!3m4!1s0x52b32f94ef31bbb3:0x45bf429a1b139dc!8m2!3d45.065880799999995!4d-93.2488941"
   },
   {
     "slug": "twin-cities-pawn",
@@ -263,26 +263,7 @@
     "latitude": 44.9641263,
     "longitude": -92.98436269999999,
     "placeId": "ChIJ61q6RSzTslIRhBozZ3X_TOs",
-    "googleMapsUrl": null
-  },
-  {
-    "slug": "max-it-pawn-1519-university-avenue-west-saint-paul",
-    "citySlug": "st-paul",
-    "name": "maX it PAWN (1519 University Avenue West, Saint Paul)",
-    "phone": "+1 651-645-7772",
-    "website": "https://ezpawn.com/stores/mn/st-paul/1519-university-ave-w",
-    "address": "1519 University Ave W, St Paul, MN 55104",
-    "street": "1519 University Ave W",
-    "city": "St. Paul",
-    "state": "Minnesota",
-    "zip": "55104",
-    "rating": 4.1,
-    "reviews": 251,
-    "hours": null,
-    "latitude": 44.9559578,
-    "longitude": -93.164896,
-    "placeId": "ChIJA1U31wkq9ocRVyGlWKRR-Wo",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Twin+Cities+Pawn/@44.9641263,-92.98436269999999,14z/data=!4m8!1m2!2m1!1sTwin+Cities+Pawn!3m4!1s0x52b2d32c45ba5aeb:0xeb4cff7567331a84!8m2!3d44.9641263!4d-92.98436269999999"
   },
   {
     "slug": "pawn-america",
@@ -301,7 +282,7 @@
     "latitude": 44.0149246,
     "longitude": -92.4623076,
     "placeId": "ChIJYUPq6btf94cRjVIEcL0eqfA",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+America/@44.0149246,-92.4623076,14z/data=!4m8!1m2!2m1!1sPawn+America!3m4!1s0x87f75fbbe9ea4361:0xf0a91ebd7004528d!8m2!3d44.0149246!4d-92.4623076"
   },
   {
     "slug": "max-it-pawn",
@@ -320,7 +301,7 @@
     "latitude": 44.9644393,
     "longitude": -93.2469991,
     "placeId": "ChIJ6U8jn0Uts1IRpIFlaKeckZw",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/maX+it+PAWN/@44.964439299999995,-93.2469991,14z/data=!4m8!1m2!2m1!1smaX+it+PAWN!3m4!1s0x52b32d459f234fe9:0x9c919ca7686581a4!8m2!3d44.964439299999995!4d-93.2469991"
   },
   {
     "slug": "twin-cities-pawn-jewelry",
@@ -339,7 +320,7 @@
     "latitude": 44.9486248,
     "longitude": -93.25188039999999,
     "placeId": "ChIJr59TW3op9ocRnVw-in1f2-c",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Twin+Cities+Pawn+%26+Jewelry/@44.9486248,-93.25188039999999,14z/data=!4m8!1m2!2m1!1sTwin+Cities+Pawn+%26+Jewelry!3m4!1s0x87f6297a5b539faf:0xe7db5f7d8a3e5c9d!8m2!3d44.9486248!4d-93.25188039999999"
   },
   {
     "slug": "metro-pawn-and-gun",
@@ -358,7 +339,7 @@
     "latitude": 44.8662855,
     "longitude": -93.28787899999999,
     "placeId": "ChIJNxk7g8Ul9ocRlcB3apoamWA",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Metro+Pawn+and+Gun/@44.8662855,-93.28787899999999,14z/data=!4m8!1m2!2m1!1sMetro+Pawn+and+Gun!3m4!1s0x87f625c5833b1937:0x60991a9a6a77c095!8m2!3d44.8662855!4d-93.28787899999999"
   },
   {
     "slug": "we-pay-more-pawn",
@@ -377,7 +358,7 @@
     "latitude": 45.1620734,
     "longitude": -93.26579029999999,
     "placeId": "ChIJoSqn0L4ks1IRzFQUCoew2g8",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/We+Pay+More+Pawn/@45.1620734,-93.26579029999999,14z/data=!4m8!1m2!2m1!1sWe+Pay+More+Pawn!3m4!1s0x52b324bed0a72aa1:0xfdab0870a1454cc!8m2!3d45.1620734!4d-93.26579029999999"
   },
   {
     "slug": "max-it-pawn",
@@ -396,7 +377,7 @@
     "latitude": 45.05188709999999,
     "longitude": -93.3564533,
     "placeId": "ChIJ-W_Xb842s1IR7-zGLKwAsJA",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/maX+it+PAWN/@45.051887099999995,-93.3564533,14z/data=!4m8!1m2!2m1!1smaX+it+PAWN!3m4!1s0x52b336ce6fd76ff9:0x90b000ac2cc6ecef!8m2!3d45.051887099999995!4d-93.3564533"
   },
   {
     "slug": "pawn-america",
@@ -415,7 +396,7 @@
     "latitude": 45.0306016,
     "longitude": -93.33791959999999,
     "placeId": "ChIJMYTwsroxs1IRmzl00f2OWJU",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+America/@45.0306016,-93.33791959999999,14z/data=!4m8!1m2!2m1!1sPawn+America!3m4!1s0x52b331bab2f08431:0x95588efdd174399b!8m2!3d45.0306016!4d-93.33791959999999"
   },
   {
     "slug": "max-it-pawn",
@@ -434,7 +415,7 @@
     "latitude": 45.1009696,
     "longitude": -93.2645434,
     "placeId": "ChIJ3Q-UhPcvs1IRoV3l3X4BgEo",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/maX+it+PAWN/@45.1009696,-93.2645434,14z/data=!4m8!1m2!2m1!1smaX+it+PAWN!3m4!1s0x52b32ff784940fdd:0x4a80017edde55da1!8m2!3d45.1009696!4d-93.2645434"
   },
   {
     "slug": "we-pay-more-pawn",
@@ -453,7 +434,7 @@
     "latitude": 45.0431635,
     "longitude": -93.21785159999999,
     "placeId": "ChIJY0qZzN8vs1IRWWZlH3jb6nU",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/We+Pay+More+Pawn/@45.0431635,-93.21785159999999,14z/data=!4m8!1m2!2m1!1sWe+Pay+More+Pawn!3m4!1s0x52b32fdfcc994a63:0x75eadb781f656659!8m2!3d45.0431635!4d-93.21785159999999"
   },
   {
     "slug": "twin-cities-pawn",
@@ -472,7 +453,7 @@
     "latitude": 45.1101665,
     "longitude": -93.3962882,
     "placeId": "ChIJs9M2YG0xs1IRwDjBJicW8Qg",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Twin+Cities+Pawn/@45.1101665,-93.3962882,14z/data=!4m8!1m2!2m1!1sTwin+Cities+Pawn!3m4!1s0x52b3316d6036d3b3:0x8f1162726c138c0!8m2!3d45.1101665!4d-93.3962882"
   },
   {
     "slug": "we-pay-more-pawn",
@@ -491,7 +472,7 @@
     "latitude": 45.0338728,
     "longitude": -93.3820959,
     "placeId": "ChIJm8QkhoU2s1IRKXxkLKRSYec",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/We+Pay+More+Pawn/@45.0338728,-93.3820959,14z/data=!4m8!1m2!2m1!1sWe+Pay+More+Pawn!3m4!1s0x52b336858624c49b:0xe76152a42c647c29!8m2!3d45.0338728!4d-93.3820959"
   },
   {
     "slug": "excel-pawn-jewelry",
@@ -510,7 +491,7 @@
     "latitude": 44.7975468,
     "longitude": -93.531953,
     "placeId": "ChIJZ4YYR3ga9ocRTh3nXmFxf60",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Excel+Pawn+%26+Jewelry/@44.7975468,-93.531953,14z/data=!4m8!1m2!2m1!1sExcel+Pawn+%26+Jewelry!3m4!1s0x87f61a7847188667:0xad7f71615ee71d4e!8m2!3d44.7975468!4d-93.531953"
   },
   {
     "slug": "pawnworks-burnsville",
@@ -529,7 +510,7 @@
     "latitude": 44.7850702,
     "longitude": -93.25623499999999,
     "placeId": "ChIJ_8_XJXUw9ocRdBetaw03kkM",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/PawnWorks+Burnsville/@44.7850702,-93.25623499999999,14z/data=!4m8!1m2!2m1!1sPawnWorks+Burnsville!3m4!1s0x87f6307525d7cfff:0x4392370d6bad1774!8m2!3d44.7850702!4d-93.25623499999999"
   },
   {
     "slug": "pawn-america",
@@ -548,7 +529,7 @@
     "latitude": 44.750532,
     "longitude": -93.28380399999999,
     "placeId": "ChIJB5x4e9c79ocR4dGG97PnEkA",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+America/@44.750532,-93.28380399999999,14z/data=!4m8!1m2!2m1!1sPawn+America!3m4!1s0x87f63bd77b789c07:0x4012e7b3f786d1e1!8m2!3d44.750532!4d-93.28380399999999"
   },
   {
     "slug": "pawnxchange",
@@ -567,7 +548,7 @@
     "latitude": 44.7861986,
     "longitude": -93.469197,
     "placeId": "ChIJ4emQA3AX9ocRpVILgzbKnwA",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/PawnXchange/@44.7861986,-93.469197,14z/data=!4m8!1m2!2m1!1sPawnXchange!3m4!1s0x87f617700390e9e1:0x9fca36830b52a5!8m2!3d44.7861986!4d-93.469197"
   },
   {
     "slug": "pawn-america",
@@ -586,7 +567,7 @@
     "latitude": 45.2077179,
     "longitude": -93.4041453,
     "placeId": "ChIJPw9lzGg_s1IRtSQI3Dy_IIY",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+America/@45.2077179,-93.4041453,14z/data=!4m8!1m2!2m1!1sPawn+America!3m4!1s0x52b33f68cc650f3f:0x8620bf3cdc0824b5!8m2!3d45.2077179!4d-93.4041453"
   },
   {
     "slug": "minnesota-gold-and-silver-exchange",
@@ -605,7 +586,7 @@
     "latitude": 44.9492066,
     "longitude": -93.3816684,
     "placeId": "ChIJVRNZHF0h9ocRPtMiWGj7gPE",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Minnesota+Gold+and+Silver+Exchange/@44.9492066,-93.3816684,14z/data=!4m8!1m2!2m1!1sMinnesota+Gold+and+Silver+Exchange!3m4!1s0x87f6215d1c591355:0xf180fb685822d33e!8m2!3d44.9492066!4d-93.3816684"
   },
   {
     "slug": "pawn-america",
@@ -624,7 +605,7 @@
     "latitude": 44.16746089999999,
     "longitude": -93.9660567,
     "placeId": "ChIJSZVvj8c79IcRRpiI5zi-Yp4",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+America/@44.167460899999995,-93.9660567,14z/data=!4m8!1m2!2m1!1sPawn+America!3m4!1s0x87f43bc78f6f9549:0x9e62be38e7889846!8m2!3d44.167460899999995!4d-93.9660567"
   },
   {
     "slug": "exchange-station",
@@ -643,7 +624,7 @@
     "latitude": 46.8429703,
     "longitude": -96.76665539999999,
     "placeId": "ChIJuxbx677OyFIRqSKvFBgNe2Q",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Exchange+Station/@46.8429703,-96.76665539999999,14z/data=!4m8!1m2!2m1!1sExchange+Station!3m4!1s0x52c8cebeebf116bb:0x647b0d1814af22a9!8m2!3d46.8429703!4d-96.76665539999999"
   },
   {
     "slug": "tlc-pawn-and-equity-loans",
@@ -662,7 +643,7 @@
     "latitude": 46.8429533,
     "longitude": -96.76685499999999,
     "placeId": "ChIJ0ZUMZb7PyFIRtKxP86rn10U",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/TLC+Pawn+and+Equity+Loans/@46.8429533,-96.76685499999999,14z/data=!4m8!1m2!2m1!1sTLC+Pawn+and+Equity+Loans!3m4!1s0x52c8cfbe650c95d1:0x45d7e7aaf34facb4!8m2!3d46.8429533!4d-96.76685499999999"
   },
   {
     "slug": "pawn-minnesota-faribault",
@@ -681,7 +662,7 @@
     "latitude": 44.2934779,
     "longitude": -93.2685379,
     "placeId": "ChIJ8QFg1Fz39ocRI6JwpYsB_9o",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+Minnesota+Faribault/@44.2934779,-93.2685379,14z/data=!4m8!1m2!2m1!1sPawn+Minnesota+Faribault!3m4!1s0x87f6f75cd46001f1:0xdaff018ba570a223!8m2!3d44.2934779!4d-93.2685379"
   },
   {
     "slug": "twin-cities-pawn-gun",
@@ -700,6 +681,139 @@
     "latitude": 45.2219796,
     "longitude": -93.43635979999999,
     "placeId": "ChIJ-QOR35Y_s1IRgkkpn1D1V2k",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Twin+Cities+Pawn+%26+Gun/@45.2219796,-93.43635979999999,14z/data=!4m8!1m2!2m1!1sTwin+Cities+Pawn+%26+Gun!3m4!1s0x52b33f96df9103f9:0x6957f5509f294982!8m2!3d45.2219796!4d-93.43635979999999"
+  },
+  {
+    "slug": "rons-pawn-shop",
+    "citySlug": "austin",
+    "name": "Ron's Pawn Shop",
+    "phone": "+1 507-437-1301",
+    "website": null,
+    "address": "2203 4th St NW, Austin, MN 55912",
+    "street": "2203 4th St NW",
+    "city": "Austin",
+    "state": "Minnesota",
+    "zip": "55912",
+    "rating": 3.6,
+    "reviews": 28,
+    "hours": "{\"Monday\": [\"Closed\"], \"Tuesday\": [\"9AM-5PM\"], \"Wednesday\": [\"9AM-5PM\"], \"Thursday\": [\"9AM-5PM\"], \"Friday\": [\"9AM-5PM\"], \"Saturday\": [\"9AM-1PM\"], \"Sunday\": [\"Closed\"]}",
+    "latitude": 43.6892518,
+    "longitude": -92.98055719999999,
+    "placeId": "ChIJ2-BAjMzT8IcR72h1_DpNSU8",
+    "googleMapsUrl": "https://www.google.com/maps/place/Ron%27s+Pawn+Shop/@43.6892518,-92.98055719999999,14z/data=!4m8!1m2!2m1!1sRon%27s+Pawn+Shop!3m4!1s0x87f0d3cc8c40e0db:0x4f494d3afc7568ef!8m2!3d43.6892518!4d-92.98055719999999"
+  },
+  {
+    "slug": "monticello-pawn-and-gun",
+    "citySlug": "monticello",
+    "name": "Monticello Pawn and Gun",
+    "phone": "+1 763-295-6955",
+    "website": "https://montipawn.com/",
+    "address": "1219 MN-25, Monticello, MN 55362",
+    "street": "1219 MN-25",
+    "city": "Monticello",
+    "state": "Minnesota",
+    "zip": "55362",
+    "rating": 3.3,
+    "reviews": 76,
+    "hours": "{\"Monday\": [\"11AM-6PM\"], \"Tuesday\": [\"11AM-6PM\"], \"Wednesday\": [\"11AM-6PM\"], \"Thursday\": [\"11AM-6PM\"], \"Friday\": [\"11AM-6PM\"], \"Saturday\": [\"10AM-6PM\"], \"Sunday\": [\"Closed\"]}",
+    "latitude": 45.29281049999999,
+    "longitude": -93.80287229999999,
+    "placeId": "ChIJ93JD0xeetFIRxp1_4XQqBKQ",
+    "googleMapsUrl": "https://www.google.com/maps/place/Monticello+Pawn+and+Gun/@45.292810499999995,-93.80287229999999,14z/data=!4m8!1m2!2m1!1sMonticello+Pawn+and+Gun!3m4!1s0x52b49e17d34372f7:0xa4042a74e17f9dc6!8m2!3d45.292810499999995!4d-93.80287229999999"
+  },
+  {
+    "slug": "zimmerman-trading-post",
+    "citySlug": "zimmerman",
+    "name": "Zimmerman Trading Post",
+    "phone": "+1 763-856-7296",
+    "website": "http://facebook.com/zimmermantradingpost",
+    "address": "25860 US-169, Zimmerman, MN 55398",
+    "street": "25860 US-169",
+    "city": "Zimmerman",
+    "state": "Minnesota",
+    "zip": "55398",
+    "rating": 4.4,
+    "reviews": 36,
+    "hours": "{\"Monday\": [\"10AM-6PM\"], \"Tuesday\": [\"10AM-6PM\"], \"Wednesday\": [\"10AM-6PM\"], \"Thursday\": [\"10AM-6PM\"], \"Friday\": [\"10AM-6PM\"], \"Saturday\": [\"10AM-3PM\"], \"Sunday\": [\"Closed\"]}",
+    "latitude": 45.4393621,
+    "longitude": -93.5836329,
+    "placeId": "ChIJWyvsIw1xs1IR0Uz_U9t3B5w",
+    "googleMapsUrl": "https://www.google.com/maps/place/Zimmerman+Trading+Post/@45.4393621,-93.5836329,14z/data=!4m8!1m2!2m1!1sZimmerman+Trading+Post!3m4!1s0x52b3710d23ec2b5b:0x9c0777db53ff4cd1!8m2!3d45.4393621!4d-93.5836329"
+  },
+  {
+    "slug": "north-star-pawn-gun",
+    "citySlug": "virginia",
+    "name": "North Star Pawn & Gun",
+    "phone": "+1 218-741-3987",
+    "website": null,
+    "address": "233 Chestnut St, Virginia, MN 55792",
+    "street": "233 Chestnut St",
+    "city": "Virginia",
+    "state": "Minnesota",
+    "zip": "55792",
+    "rating": 3.6,
+    "reviews": 31,
+    "hours": "{\"Monday\": [\"10AM-5PM\"], \"Tuesday\": [\"10AM-5PM\"], \"Wednesday\": [\"10AM-5PM\"], \"Thursday\": [\"10AM-5PM\"], \"Friday\": [\"10AM-5PM\"], \"Saturday\": [\"Closed\"], \"Sunday\": [\"Closed\"]}",
+    "latitude": 47.5233404,
+    "longitude": -92.534548,
+    "placeId": "ChIJEyJLGpRQpVIRl7oBR4XFbVs",
+    "googleMapsUrl": "https://www.google.com/maps/place/North+Star+Pawn+%26+Gun/@47.523340399999995,-92.534548,14z/data=!4m8!1m2!2m1!1sNorth+Star+Pawn+%26+Gun!3m4!1s0x52a550941a4b2213:0x5b6dc5854701ba97!8m2!3d47.523340399999995!4d-92.534548"
+  },
+  {
+    "slug": "t-b-pawn-shop",
+    "citySlug": "brainerd",
+    "name": "T B Pawn Shop",
+    "phone": "+1 218-828-3693",
+    "website": "http://www.facebook.com/pages/T-B-Pawn-and-Gun-Shop/1423776301215192",
+    "address": "515 Washington St, Brainerd, MN 56401",
+    "street": "515 Washington St",
+    "city": "Brainerd",
+    "state": "Minnesota",
+    "zip": "56401",
+    "rating": 3.8,
+    "reviews": 48,
+    "hours": "{\"Monday\": [\"9AM-5PM\"], \"Tuesday\": [\"9AM-5PM\"], \"Wednesday\": [\"9AM-5PM\"], \"Thursday\": [\"9AM-5PM\"], \"Friday\": [\"9AM-5PM\"], \"Saturday\": [\"Closed\"], \"Sunday\": [\"Closed\"]}",
+    "latitude": 46.3583918,
+    "longitude": -94.20127579999999,
+    "placeId": "ChIJUZlkaQO8tlIRKYPtBCdhOl0",
+    "googleMapsUrl": "https://www.google.com/maps/place/T+B+Pawn+Shop/@46.3583918,-94.20127579999999,14z/data=!4m8!1m2!2m1!1sT+B+Pawn+Shop!3m4!1s0x52b6bc0369649951:0x5d3a612704ed8329!8m2!3d46.3583918!4d-94.20127579999999"
+  },
+  {
+    "slug": "northern-pawn-shop",
+    "citySlug": "finlayson",
+    "name": "Northern Pawn Shop",
+    "phone": "+1 320-245-0595",
+    "website": null,
+    "address": "60622 MN-23, Finlayson, MN 55735",
+    "street": "60622 MN-23",
+    "city": "Finlayson",
+    "state": "Minnesota",
+    "zip": "55735",
+    "rating": 4.5,
+    "reviews": 33,
+    "hours": "{\"Monday\": [\"10AM-5PM\"], \"Tuesday\": [\"10AM-5PM\"], \"Wednesday\": [\"10AM-5PM\"], \"Thursday\": [\"10AM-5PM\"], \"Friday\": [\"10AM-5PM\"], \"Saturday\": [\"10AM-1PM\"], \"Sunday\": [\"Closed\"]}",
+    "latitude": 46.1790337,
+    "longitude": -92.8552028,
+    "placeId": "ChIJ5wJ8SIL1sVIRPbFqiv9_lwQ",
+    "googleMapsUrl": "https://www.google.com/maps/place/Northern+Pawn+Shop/@46.1790337,-92.8552028,14z/data=!4m8!1m2!2m1!1sNorthern+Pawn+Shop!3m4!1s0x52b1f582487c02e7:0x4977fff8a6ab13d!8m2!3d46.1790337!4d-92.8552028"
+  },
+  {
+    "slug": "t-b-pawn-gun",
+    "citySlug": "hibbing",
+    "name": "T & B Pawn & Gun",
+    "phone": "+1 218-263-9335",
+    "website": "http://www.tbpawnandgunshop.com/",
+    "address": "2530 1st Ave, Hibbing, MN 55746",
+    "street": "2530 1st Ave",
+    "city": "Hibbing",
+    "state": "Minnesota",
+    "zip": "55746",
+    "rating": 3.3,
+    "reviews": 43,
+    "hours": "{\"Monday\": [\"10AM-5PM\"], \"Tuesday\": [\"10AM-5PM\"], \"Wednesday\": [\"10AM-5PM\"], \"Thursday\": [\"10AM-5PM\"], \"Friday\": [\"10AM-5PM\"], \"Saturday\": [\"Closed\"], \"Sunday\": [\"Closed\"]}",
+    "latitude": 47.420537,
+    "longitude": -92.941395,
+    "placeId": "ChIJQSZrZq2gulIRZepXjIb-mrQ",
+    "googleMapsUrl": "https://www.google.com/maps/place/T+%26+B+Pawn+%26+Gun/@47.420536999999996,-92.941395,14z/data=!4m8!1m2!2m1!1sT+%26+B+Pawn+%26+Gun!3m4!1s0x52baa0ad666b2641:0xb49afe868c57ea65!8m2!3d47.420536999999996!4d-92.941395"
   }
 ]

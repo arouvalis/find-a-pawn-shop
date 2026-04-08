@@ -16,7 +16,7 @@
     "latitude": 43.1231625,
     "longitude": -89.312934,
     "placeId": "ChIJ6RCfzrtXBogRIdbcb2svrhk",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+America/@43.1231625,-89.312934,14z/data=!4m8!1m2!2m1!1sPawn+America!3m4!1s0x880657bbce9f10e9:0x19ae2f6b6fdcd621!8m2!3d43.1231625!4d-89.312934"
   },
   {
     "slug": "ezpawn",
@@ -35,7 +35,7 @@
     "latitude": 43.0367475,
     "longitude": -89.3888254,
     "placeId": "ChIJLdLUIbhSBogRxAoThsuCteA",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/EZPAWN/@43.0367475,-89.3888254,14z/data=!4m8!1m2!2m1!1sEZPAWN!3m4!1s0x880652b821d4d22d:0xe0b582cb86130ac4!8m2!3d43.0367475!4d-89.3888254"
   },
   {
     "slug": "gnt-jewelry-and-loan-kenosha-pawnshop",
@@ -54,7 +54,7 @@
     "latitude": 42.559028,
     "longitude": -87.82599599999999,
     "placeId": "ChIJvY06rrpfBYgRABPNrwAVDR0",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/GNT+Jewelry+and+Loan+Kenosha+Pawnshop/@42.559028,-87.82599599999999,14z/data=!4m8!1m2!2m1!1sGNT+Jewelry+and+Loan+Kenosha+Pawnshop!3m4!1s0x88055fbaae3a8dbd:0x1d0d1500afcd1300!8m2!3d42.559028!4d-87.82599599999999"
   },
   {
     "slug": "caseys-pawn-shop",
@@ -73,7 +73,7 @@
     "latitude": 42.6545344,
     "longitude": -89.0316623,
     "placeId": "ChIJY0mH4nEZBogRF6hg0YadvYU",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Casey%27s+Pawn+Shop/@42.654534399999996,-89.0316623,14z/data=!4m8!1m2!2m1!1sCasey%27s+Pawn+Shop!3m4!1s0x88061971e2874963:0x85bd9d86d160a817!8m2!3d42.654534399999996!4d-89.0316623"
   },
   {
     "slug": "gold-coin-exchange",
@@ -92,7 +92,7 @@
     "latitude": 42.7685645,
     "longitude": -87.8020013,
     "placeId": "ChIJw8ChSQlBBYgRWKI3PnSnpkA",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Gold+%26+Coin+Exchange/@42.7685645,-87.8020013,14z/data=!4m8!1m2!2m1!1sGold+%26+Coin+Exchange!3m4!1s0x8805410949a1c0c3:0x40a6a7743e37a258!8m2!3d42.7685645!4d-87.8020013"
   },
   {
     "slug": "wisconsin-discount-buy-sell",
@@ -111,7 +111,7 @@
     "latitude": 42.7431306,
     "longitude": -87.79548179999999,
     "placeId": "ChIJ5-3zepVDBYgR3r7ejLPHejM",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Wisconsin+Discount+Buy+%26+Sell/@42.7431306,-87.79548179999999,14z/data=!4m8!1m2!2m1!1sWisconsin+Discount+Buy+%26+Sell!3m4!1s0x880543957af3ede7:0x337ac7b38cdebede!8m2!3d42.7431306!4d-87.79548179999999"
   },
   {
     "slug": "pawn-america",
@@ -130,7 +130,7 @@
     "latitude": 43.1375933,
     "longitude": -88.0052327,
     "placeId": "ChIJ7dQ-XgQdBYgReIBIpkAHnGE",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+America/@43.1375933,-88.0052327,14z/data=!4m8!1m2!2m1!1sPawn+America!3m4!1s0x88051d045e3ed4ed:0x619c0740a6488078!8m2!3d43.1375933!4d-88.0052327"
   },
   {
     "slug": "neighborhood-pawn-and-resale",
@@ -149,7 +149,7 @@
     "latitude": 43.1160365,
     "longitude": -88.0549965,
     "placeId": "ChIJ_xgc7asDBYgRlOKxd_59WzY",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Neighborhood+Pawn+and+Resale/@43.1160365,-88.0549965,14z/data=!4m8!1m2!2m1!1sNeighborhood+Pawn+and+Resale!3m4!1s0x880503abed1c18ff:0x365b7dfe77b1e294!8m2!3d43.1160365!4d-88.0549965"
   },
   {
     "slug": "steins-jewelry-loan",
@@ -168,7 +168,7 @@
     "latitude": 43.0386465,
     "longitude": -87.9208027,
     "placeId": "ChIJfbztm50ZBYgRm0LDjoQgFGw",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Stein%27s+Jewelry+%26+Loan/@43.0386465,-87.9208027,14z/data=!4m8!1m2!2m1!1sStein%27s+Jewelry+%26+Loan!3m4!1s0x8805199d9bedbc7d:0x6c1420848ec3429b!8m2!3d43.0386465!4d-87.9208027"
   },
   {
     "slug": "digital-wreck",
@@ -187,7 +187,7 @@
     "latitude": 43.1105339,
     "longitude": -87.9493182,
     "placeId": "ChIJm7Lw3jYcBYgR9Au982dIf_0",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Digital+Wreck/@43.1105339,-87.9493182,14z/data=!4m8!1m2!2m1!1sDigital+Wreck!3m4!1s0x88051c36def0b29b:0xfd7f4867f3bd0bf4!8m2!3d43.1105339!4d-87.9493182"
   },
   {
     "slug": "pawn-america",
@@ -206,7 +206,7 @@
     "latitude": 43.0029975,
     "longitude": -88.007221,
     "placeId": "ChIJT_jQP8obBYgRh59q4u5y878",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+America/@43.0029975,-88.007221,14z/data=!4m8!1m2!2m1!1sPawn+America!3m4!1s0x88051bca3fd0f84f:0xbff372eee26a9f87!8m2!3d43.0029975!4d-88.007221"
   },
   {
     "slug": "national-pawn-co",
@@ -225,7 +225,7 @@
     "latitude": 44.7942538,
     "longitude": -91.5218563,
     "placeId": "ChIJV5be0i6W-IcRLmt-J8pyEjk",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/National+Pawn+Co/@44.7942538,-91.5218563,14z/data=!4m8!1m2!2m1!1sNational+Pawn+Co!3m4!1s0x87f8962ed2de9657:0x391272ca277e6b2e!8m2!3d44.7942538!4d-91.5218563"
   },
   {
     "slug": "me-no-monie-street-pawn-loan",
@@ -244,7 +244,7 @@
     "latitude": 44.7987461,
     "longitude": -91.52804739999999,
     "placeId": "ChIJizonri2W-IcR4Rk1y1EaocQ",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Me-No-Monie+Street+Pawn+%26+Loan/@44.798746099999995,-91.52804739999999,14z/data=!4m8!1m2!2m1!1sMe-No-Monie+Street+Pawn+%26+Loan!3m4!1s0x87f8962dae273a8b:0xc4a11a51cb3519e1!8m2!3d44.798746099999995!4d-91.52804739999999"
   },
   {
     "slug": "pawn-america",
@@ -263,7 +263,7 @@
     "latitude": 44.2654615,
     "longitude": -88.4601457,
     "placeId": "ChIJl_0aFy-3A4gREjYc6cnk5Qo",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+America/@44.2654615,-88.4601457,14z/data=!4m8!1m2!2m1!1sPawn+America!3m4!1s0x8803b72f171afd97:0xae5e4c9e91c3612!8m2!3d44.2654615!4d-88.4601457"
   },
   {
     "slug": "mister-money-usa",
@@ -282,7 +282,7 @@
     "latitude": 44.27983039999999,
     "longitude": -88.4169663,
     "placeId": "ChIJF0v3_tu2A4gR4G18hvzXd_E",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Mister+Money+USA/@44.279830399999994,-88.4169663,14z/data=!4m8!1m2!2m1!1sMister+Money+USA!3m4!1s0x8803b6dbfef74b17:0xf177d7fc867c6de0!8m2!3d44.279830399999994!4d-88.4169663"
   },
   {
     "slug": "fast-n-easy-pawn-menasha",
@@ -301,7 +301,7 @@
     "latitude": 44.2246494,
     "longitude": -88.4248514,
     "placeId": "ChIJi0f0hMO5A4gRkacaHpzPdFg",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Fast+N+Easy+Pawn+-+Menasha/@44.2246494,-88.4248514,14z/data=!4m8!1m2!2m1!1sFast+N+Easy+Pawn+-+Menasha!3m4!1s0x8803b9c384f4478b:0x5874cf9c1e1aa791!8m2!3d44.2246494!4d-88.4248514"
   },
   {
     "slug": "ezpawn",
@@ -320,7 +320,7 @@
     "latitude": 44.002134,
     "longitude": -88.58128239999999,
     "placeId": "ChIJNcRY4sXuA4gRQrutq2PdpnM",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/EZPAWN/@44.002134,-88.58128239999999,14z/data=!4m8!1m2!2m1!1sEZPAWN!3m4!1s0x8803eec5e258c435:0x73a6dd63abadbb42!8m2!3d44.002134!4d-88.58128239999999"
   },
   {
     "slug": "fast-n-easy-pawn-oshkosh",
@@ -339,26 +339,7 @@
     "latitude": 44.0424568,
     "longitude": -88.54325089999999,
     "placeId": "ChIJnWb2z87rA4gRvZ6bl3VlMj0",
-    "googleMapsUrl": null
-  },
-  {
-    "slug": "trio-pawn-shop",
-    "citySlug": "waukesha",
-    "name": "Trio Pawn Shop",
-    "phone": "+1 262-399-6072",
-    "website": "http://www.triopawnshop.com/",
-    "address": "2001 S West Ave, Waukesha, WI 53189",
-    "street": "2001 S West Ave",
-    "city": "Waukesha",
-    "state": "Wisconsin",
-    "zip": "53189",
-    "rating": 3.9,
-    "reviews": 15,
-    "hours": null,
-    "latitude": 42.980007,
-    "longitude": -88.23517489999999,
-    "placeId": "ChIJUfPD4BWnBYgRjn5Aeux1Z5A",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Fast+N+Easy+Pawn+-+Oshkosh/@44.0424568,-88.54325089999999,14z/data=!4m8!1m2!2m1!1sFast+N+Easy+Pawn+-+Oshkosh!3m4!1s0x8803ebcecff6669d:0x3d326575979b9ebd!8m2!3d44.0424568!4d-88.54325089999999"
   },
   {
     "slug": "ezpawn",
@@ -377,7 +358,7 @@
     "latitude": 44.5121102,
     "longitude": -87.97818099999999,
     "placeId": "ChIJZdK7kAzlAogRpbBOMGTq4YY",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/EZPAWN/@44.512110199999995,-87.97818099999999,14z/data=!4m8!1m2!2m1!1sEZPAWN!3m4!1s0x8802e50c90bbd265:0x86e1ea64304eb0a5!8m2!3d44.512110199999995!4d-87.97818099999999"
   },
   {
     "slug": "fast-n-easy-pawn-green-bay",
@@ -396,7 +377,7 @@
     "latitude": 44.4926082,
     "longitude": -87.9824259,
     "placeId": "ChIJq3JHLf3kAogRZKDOod5klsE",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Fast+N+Easy+Pawn+-+Green+Bay/@44.4926082,-87.9824259,14z/data=!4m8!1m2!2m1!1sFast+N+Easy+Pawn+-+Green+Bay!3m4!1s0x8802e4fd2d4772ab:0xc19664dea1cea064!8m2!3d44.4926082!4d-87.9824259"
   },
   {
     "slug": "j-gs-coins-rings-and-things",
@@ -415,7 +396,7 @@
     "latitude": 42.4998636,
     "longitude": -89.03471069999999,
     "placeId": "ChIJkeJZeCKhCIgRUV5RDH0Xh24",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/J+%26+G%27s+Coins%2C+Rings+and+Things/@42.4998636,-89.03471069999999,14z/data=!4m8!1m2!2m1!1sJ+%26+G%27s+Coins%2C+Rings+and+Things!3m4!1s0x8808a1227859e291:0x6e87177d0c515e51!8m2!3d42.4998636!4d-89.03471069999999"
   },
   {
     "slug": "river-city-gold-silver-exchange",
@@ -434,7 +415,7 @@
     "latitude": 43.8105074,
     "longitude": -91.2519291,
     "placeId": "ChIJKUqEpqdV-YcRrGSxxuDrF1I",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/River+City+Gold+%26+Silver+Exchange/@43.8105074,-91.2519291,14z/data=!4m8!1m2!2m1!1sRiver+City+Gold+%26+Silver+Exchange!3m4!1s0x87f955a7a6844a29:0x5217ebe0c6b164ac!8m2!3d43.8105074!4d-91.2519291"
   },
   {
     "slug": "cash-store",
@@ -453,7 +434,7 @@
     "latitude": 43.7218142,
     "longitude": -87.7372898,
     "placeId": "ChIJBRhr0FemBIgRJzl-f55pPG8",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Cash+Store/@43.7218142,-87.7372898,14z/data=!4m8!1m2!2m1!1sCash+Store!3m4!1s0x8804a657d06b1805:0x6f3c699e7f7e3927!8m2!3d43.7218142!4d-87.7372898"
   },
   {
     "slug": "rebel-brokers",
@@ -472,7 +453,7 @@
     "latitude": 43.7522358,
     "longitude": -87.7209087,
     "placeId": "ChIJJ6w3YMGnBIgRSmtvAEb4Czw",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Rebel+Brokers/@43.7522358,-87.7209087,14z/data=!4m8!1m2!2m1!1sRebel+Brokers!3m4!1s0x8804a7c16037ac27:0x3c0bf846006f6b4a!8m2!3d43.7522358!4d-87.7209087"
   },
   {
     "slug": "cash-4-gold",
@@ -491,7 +472,7 @@
     "latitude": 42.9885179,
     "longitude": -87.928578,
     "placeId": "ChIJxxoMKkwXBYgRx2LFYGmqADs",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Cash+4+Gold/@42.9885179,-87.928578,14z/data=!4m8!1m2!2m1!1sCash+4+Gold!3m4!1s0x8805174c2a0c1ac7:0x3b00aa6960c562c7!8m2!3d42.9885179!4d-87.928578"
   },
   {
     "slug": "paymore-buy-sell-trade-electronics",
@@ -510,7 +491,7 @@
     "latitude": 43.0033351,
     "longitude": -88.0478658,
     "placeId": "ChIJKfSpUwIFBYgR12EahLMVnl8",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/PayMore+-+Buy%2C+Sell+%26+Trade+Electronics/@43.0033351,-88.0478658,14z/data=!4m8!1m2!2m1!1sPayMore+-+Buy%2C+Sell+%26+Trade+Electronics!3m4!1s0x8805050253a9f429:0x5f9e15b3841a61d7!8m2!3d43.0033351!4d-88.0478658"
   },
   {
     "slug": "reflections-jewelry",
@@ -529,7 +510,7 @@
     "latitude": 43.0120717,
     "longitude": -87.9283427,
     "placeId": "ChIJddGizvAZBYgRZlBiFCnJ_mE",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Reflections+Jewelry/@43.0120717,-87.9283427,14z/data=!4m8!1m2!2m1!1sReflections+Jewelry!3m4!1s0x880519f0cea2d175:0x61fec92914625066!8m2!3d43.0120717!4d-87.9283427"
   },
   {
     "slug": "cash-n-gold",
@@ -548,7 +529,7 @@
     "latitude": 43.0431111,
     "longitude": -87.9478216,
     "placeId": "ChIJDZ7NeswbBYgRMngfjQbTWVA",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Cash+N+Gold/@43.0431111,-87.9478216,14z/data=!4m8!1m2!2m1!1sCash+N+Gold!3m4!1s0x88051bcc7acd9e0d:0x5059d3068d1f7832!8m2!3d43.0431111!4d-87.9478216"
   },
   {
     "slug": "benedons-inc",
@@ -567,7 +548,7 @@
     "latitude": 43.173611,
     "longitude": -88.1105838,
     "placeId": "ChIJATqxxEf-BIgRb5qcgVfg4G4",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Benedon%27s+Inc/@43.173611,-88.1105838,14z/data=!4m8!1m2!2m1!1sBenedon%27s+Inc!3m4!1s0x8804fe47c4b13a01:0x6ee0e057819c9a6f!8m2!3d43.173611!4d-88.1105838"
   },
   {
     "slug": "cc-conrad-jewelers",
@@ -586,7 +567,7 @@
     "latitude": 43.089582,
     "longitude": -87.887103,
     "placeId": "ChIJxb_hrSUfBYgRk8B-3rtRyJ8",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/C.C.+Conrad+Jewelers/@43.089582,-87.887103,14z/data=!4m8!1m2!2m1!1sC.C.+Conrad+Jewelers!3m4!1s0x88051f25ade1bfc5:0x9fc851bbde7ec093!8m2!3d43.089582!4d-87.887103"
   },
   {
     "slug": "downtown-pawn",
@@ -605,7 +586,7 @@
     "latitude": 44.9593807,
     "longitude": -89.62369819999999,
     "placeId": "ChIJMw595tQmAIgRjoJZmZrIVyk",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Downtown+Pawn/@44.9593807,-89.62369819999999,14z/data=!4m8!1m2!2m1!1sDowntown+Pawn!3m4!1s0x880026d4e67d0e33:0x2957c89a9959828e!8m2!3d44.9593807!4d-89.62369819999999"
   },
   {
     "slug": "cash-4-gold-jewelry",
@@ -624,7 +605,7 @@
     "latitude": 43.08962959999999,
     "longitude": -87.97629359999999,
     "placeId": "ChIJo24emIgcBYgRQjrCYn11QBk",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/Cash+4+Gold+Jewelry/@43.089629599999995,-87.97629359999999,14z/data=!4m8!1m2!2m1!1sCash+4+Gold+Jewelry!3m4!1s0x88051c88981e6ea3:0x1940757d62c23a42!8m2!3d43.089629599999995!4d-87.97629359999999"
   },
   {
     "slug": "paymore-buy-sell-trade-electronics",
@@ -643,6 +624,63 @@
     "latitude": 43.0901451,
     "longitude": -88.08211829999999,
     "placeId": "ChIJP20dStkDBYgRTCEpY6NZ6EA",
-    "googleMapsUrl": null
+    "googleMapsUrl": "https://www.google.com/maps/place/PayMore+-+Buy%2C+Sell+%26+Trade+Electronics/@43.0901451,-88.08211829999999,14z/data=!4m8!1m2!2m1!1sPayMore+-+Buy%2C+Sell+%26+Trade+Electronics!3m4!1s0x880503d94a1d6d3f:0x40e859a36329214c!8m2!3d43.0901451!4d-88.08211829999999"
+  },
+  {
+    "slug": "l-b-resale-pawn-shop",
+    "citySlug": "manitowoc",
+    "name": "L & B Resale & Pawn Shop",
+    "phone": "+1 920-682-7777",
+    "website": null,
+    "address": "1022 S 10th St, Manitowoc, WI 54220",
+    "street": "1022 S 10th St",
+    "city": "Manitowoc",
+    "state": "Wisconsin",
+    "zip": "54220",
+    "rating": 2.6,
+    "reviews": 19,
+    "hours": "{\"Monday\": [\"12-5PM\"], \"Tuesday\": [\"12-5PM\"], \"Wednesday\": [\"12-5PM\"], \"Thursday\": [\"12-5PM\"], \"Friday\": [\"12-5PM\"], \"Saturday\": [\"Closed\"], \"Sunday\": [\"Closed\"]}",
+    "latitude": 44.0878889,
+    "longitude": -87.6608376,
+    "placeId": "ChIJv7tkp8s3A4gRKqX-4e1JwVU",
+    "googleMapsUrl": "https://www.google.com/maps/place/L+%26+B+Resale+%26+Pawn+Shop/@44.087888899999996,-87.6608376,14z/data=!4m8!1m2!2m1!1sL+%26+B+Resale+%26+Pawn+Shop!3m4!1s0x880337cba764bbbf:0x55c149ede1fea52a!8m2!3d44.087888899999996!4d-87.6608376"
+  },
+  {
+    "slug": "shawano-pawn-shop",
+    "citySlug": "shawano",
+    "name": "Shawano Pawn Shop",
+    "phone": "+1 715-524-4505",
+    "website": null,
+    "address": "141 River Heights, Shawano, WI 54166",
+    "street": "141 River Heights",
+    "city": "Shawano",
+    "state": "Wisconsin",
+    "zip": "54166",
+    "rating": 3.7,
+    "reviews": 40,
+    "hours": "{\"Monday\": [\"9AM-6PM\"], \"Tuesday\": [\"9AM-6PM\"], \"Wednesday\": [\"9AM-6PM\"], \"Thursday\": [\"9AM-6PM\"], \"Friday\": [\"9AM-6PM\"], \"Saturday\": [\"9AM-3PM\"], \"Sunday\": [\"Closed\"]}",
+    "latitude": 44.789444,
+    "longitude": -88.61019549999999,
+    "placeId": "ChIJMbqZ3esQAogRjGcphdtZeFI",
+    "googleMapsUrl": "https://www.google.com/maps/place/Shawano+Pawn+Shop/@44.789443999999996,-88.61019549999999,14z/data=!4m8!1m2!2m1!1sShawano+Pawn+Shop!3m4!1s0x880210ebdd99ba31:0x527859db8529678c!8m2!3d44.789443999999996!4d-88.61019549999999"
+  },
+  {
+    "slug": "hodag-guns-loan",
+    "citySlug": "rhinelander",
+    "name": "Hodag Guns & Loan",
+    "phone": "+1 715-369-4884",
+    "website": "http://hodaggunandloan.com/",
+    "address": "2261 Lincoln St, Rhinelander, WI 54501",
+    "street": "2261 Lincoln St",
+    "city": "Rhinelander",
+    "state": "Wisconsin",
+    "zip": "54501",
+    "rating": 4.2,
+    "reviews": 100,
+    "hours": "{\"Monday\": [\"9AM-6PM\"], \"Tuesday\": [\"9AM-6PM\"], \"Wednesday\": [\"9AM-6PM\"], \"Thursday\": [\"9AM-6PM\"], \"Friday\": [\"9AM-6PM\"], \"Saturday\": [\"9AM-3PM\"], \"Sunday\": [\"Closed\"]}",
+    "latitude": 45.63371009999999,
+    "longitude": -89.37911659999999,
+    "placeId": "ChIJjbgfT9mqVU0ReVdNGhR06Fg",
+    "googleMapsUrl": "https://www.google.com/maps/place/Hodag+Guns+%26+Loan/@45.633710099999995,-89.37911659999999,14z/data=!4m8!1m2!2m1!1sHodag+Guns+%26+Loan!3m4!1s0x4d55aad94f1fb88d:0x58e874141a4d5779!8m2!3d45.633710099999995!4d-89.37911659999999"
   }
 ]

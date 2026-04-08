@@ -6,6 +6,8 @@ const INPUTS = [
   path.join(process.env.HOME, "Downloads/Outscraper-20260317154925s29.xlsx"),
   path.join(process.env.HOME, "Downloads/Outscraper-20260317154951s17.xlsx"),
   path.join(process.env.HOME, "Downloads/Outscraper-20260318162642s46.xlsx"),
+  path.join(process.env.HOME, "Downloads/Outscraper-20260408171510s4a.xlsx"),
+  path.join(process.env.HOME, "Downloads/Outscraper-20260408171602s47.xlsx"),
 ];
 const OUTPUT = path.join(__dirname, "../data/pawn-shops-wisconsin.json");
 
@@ -77,7 +79,14 @@ function isPawnShop(row) {
 
 function isWisconsinRow(row) {
   const state = String(row["state"] ?? row["State"] ?? "").trim().toUpperCase();
-  return state === "WI" || state === "WISCONSIN";
+  const stateCode = String(row["state_code"] ?? row["State Code"] ?? "").trim().toUpperCase();
+  return state === "WI" || state === "WISCONSIN" || stateCode === "WI";
+}
+
+function isOperational(row) {
+  const status = String(row["business_status"] ?? row["Business Status"] ?? "").trim().toUpperCase();
+  if (!status) return true;
+  return status === "OPERATIONAL";
 }
 
 // Read and merge all rows from all files
@@ -102,9 +111,9 @@ const deduped = allRows.filter((row) => {
 });
 console.log(`Rows after dedup: ${deduped.length}`);
 
-// Filter to Wisconsin only, then filter to pawn shops, then map
-const wiRows = deduped.filter(isWisconsinRow);
-console.log(`Wisconsin rows: ${wiRows.length}`);
+// Filter to Wisconsin + OPERATIONAL, then filter to pawn shops, then map
+const wiRows = deduped.filter(isWisconsinRow).filter(isOperational);
+console.log(`Wisconsin OPERATIONAL rows: ${wiRows.length}`);
 
 const records = wiRows.filter(isPawnShop).map((row) => {
   const name = clean(row["name"] ?? row["Name"]);
@@ -128,7 +137,7 @@ const records = wiRows.filter(isPawnShop).map((row) => {
     latitude: cleanNumber(row["latitude"] ?? row["Latitude"]),
     longitude: cleanNumber(row["longitude"] ?? row["Longitude"]),
     placeId: clean(row["place_id"] ?? row["placeId"] ?? row["Place ID"]),
-    googleMapsUrl: clean(row["googleMapsUrl"] ?? row["google_maps_url"] ?? row["Google Maps URL"]),
+    googleMapsUrl: clean(row["location_link"] ?? row["googleMapsUrl"] ?? row["google_maps_url"] ?? row["Google Maps URL"]),
   };
 });
 

@@ -6,6 +6,9 @@ const INPUTS = [
   path.join(process.env.HOME, "Downloads/Outscraper-20260316233527s30.xlsx"),
   path.join(process.env.HOME, "Downloads/Outscraper-20260316233557s75.xlsx"),
   path.join(process.env.HOME, "Downloads/Outscraper-20260318155245s77.xlsx"),
+  path.join(process.env.HOME, "Downloads/Outscraper-20260408171250s28.xlsx"),
+  path.join(process.env.HOME, "Downloads/Outscraper-20260408171312s37.xlsx"),
+  path.join(process.env.HOME, "Downloads/Outscraper-20260408171411s59.xlsx"),
 ];
 const OUTPUT = path.join(__dirname, "../data/pawn-shops-minnesota.json");
 
@@ -83,7 +86,14 @@ function isPawnShop(row) {
 
 function isMinnesotaRow(row) {
   const state = String(row["state"] ?? row["State"] ?? "").trim().toUpperCase();
-  return state === "MN" || state === "MINNESOTA";
+  const stateCode = String(row["state_code"] ?? row["State Code"] ?? "").trim().toUpperCase();
+  return state === "MN" || state === "MINNESOTA" || stateCode === "MN";
+}
+
+function isOperational(row) {
+  const status = String(row["business_status"] ?? row["Business Status"] ?? "").trim().toUpperCase();
+  if (!status) return true;
+  return status === "OPERATIONAL";
 }
 
 // Read and merge all rows from all files
@@ -108,9 +118,9 @@ const deduped = allRows.filter((row) => {
 });
 console.log(`Rows after dedup: ${deduped.length}`);
 
-// Filter to Minnesota only, then filter to pawn shops, then map
-const mnRows = deduped.filter(isMinnesotaRow);
-console.log(`Minnesota rows: ${mnRows.length}`);
+// Filter to Minnesota + OPERATIONAL, then filter to pawn shops, then map
+const mnRows = deduped.filter(isMinnesotaRow).filter(isOperational);
+console.log(`Minnesota OPERATIONAL rows: ${mnRows.length}`);
 
 const records = mnRows.filter(isPawnShop).map((row) => {
   const name = clean(row["name"] ?? row["Name"]);
@@ -134,7 +144,7 @@ const records = mnRows.filter(isPawnShop).map((row) => {
     latitude: cleanNumber(row["latitude"] ?? row["Latitude"]),
     longitude: cleanNumber(row["longitude"] ?? row["Longitude"]),
     placeId: clean(row["place_id"] ?? row["placeId"] ?? row["Place ID"]),
-    googleMapsUrl: clean(row["googleMapsUrl"] ?? row["google_maps_url"] ?? row["Google Maps URL"]),
+    googleMapsUrl: clean(row["location_link"] ?? row["googleMapsUrl"] ?? row["google_maps_url"] ?? row["Google Maps URL"]),
   };
 });
 
