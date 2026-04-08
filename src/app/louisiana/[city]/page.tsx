@@ -131,6 +131,20 @@ export default async function LouisianaCityPage({ params }: Props) {
             </div>
           </div>
         )}
+
+        {/* Owner callout */}
+        <div className="mt-10 border border-gray-200 rounded-xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4 bg-gray-50">
+          <p className="text-sm text-gray-600">
+            Own a pawn shop in <span className="font-semibold text-gray-900">{cityName}</span>? Get featured placement at the top of this page for $29/month.
+          </p>
+          <Link
+            href="/claim-listing"
+            style={{ backgroundColor: "#1a2744" }}
+            className="shrink-0 text-white font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition-opacity text-xs whitespace-nowrap"
+          >
+            Claim Your Listing
+          </Link>
+        </div>
       </div>
     </>
   );

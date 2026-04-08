@@ -111,6 +111,22 @@ export default async function TennesseeListingPage({ params }: Props) {
           <p className="text-gray-600 leading-relaxed">{seoDescription}</p>
         </div>
 
+
+        {/* Claim listing banner */}
+        <div style={{ backgroundColor: "#1a2744" }} className="my-6 rounded-xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <div className="text-white font-semibold text-sm">Is this your shop?</div>
+            <div className="text-gray-400 text-xs mt-0.5">Get featured placement at the top of your city page for $29/month.</div>
+          </div>
+          <Link
+            href="/claim-listing"
+            style={{ backgroundColor: "#f59e0b" }}
+            className="shrink-0 text-gray-900 font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition-opacity text-xs whitespace-nowrap"
+          >
+            Claim This Listing
+          </Link>
+        </div>
+
         {/* Details card */}
         <div className="border border-gray-200 rounded-xl p-6 space-y-5 mb-8 mt-8">
           {address && (
@@ -191,20 +207,6 @@ export default async function TennesseeListingPage({ params }: Props) {
         )}
       </div>
 
-      {/* Claim listing banner */}
-      <div style={{ backgroundColor: "#1a2744" }} className="mt-12 rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div>
-          <div className="text-white font-semibold text-base">Is this your shop?</div>
-          <div className="text-gray-400 text-sm mt-0.5">Get featured placement at the top of your city page for $29/month.</div>
-        </div>
-        <Link
-          href="/claim-listing"
-          style={{ backgroundColor: "#f59e0b" }}
-          className="shrink-0 text-gray-900 font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition-opacity text-sm whitespace-nowrap"
-        >
-          Claim This Listing
-        </Link>
-      </div>
     </>
   );
 }
