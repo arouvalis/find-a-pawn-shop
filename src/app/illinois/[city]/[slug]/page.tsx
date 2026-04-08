@@ -191,6 +191,21 @@ export default async function ListingPage({ params }: Props) {
           </a>
         )}
       </div>
+
+      {/* Claim listing banner */}
+      <div style={{ backgroundColor: "#1a2744" }} className="mt-12 rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>
+          <div className="text-white font-semibold text-base">Is this your shop?</div>
+          <div className="text-gray-400 text-sm mt-0.5">Get featured placement at the top of your city page for $29/month.</div>
+        </div>
+        <Link
+          href="/claim-listing"
+          style={{ backgroundColor: "#f59e0b" }}
+          className="shrink-0 text-gray-900 font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition-opacity text-sm whitespace-nowrap"
+        >
+          Claim This Listing
+        </Link>
+      </div>
     </>
   );
 }
