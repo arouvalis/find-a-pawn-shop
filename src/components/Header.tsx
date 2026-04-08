@@ -101,6 +101,9 @@ export default function Header() {
           <Link href="/blog" className="hover:text-amber-400 transition-colors">
             Blog
           </Link>
+          <Link href="/claim-listing" style={{ backgroundColor: "#f59e0b" }} className="text-gray-900 font-semibold px-3 py-1.5 rounded-md hover:opacity-90 transition-opacity text-xs">
+            Claim Listing
+          </Link>
         </nav>
       </div>
     </header>
