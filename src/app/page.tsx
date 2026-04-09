@@ -24,8 +24,6 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const FEATURED_CITIES = ["chicago", "springfield", "rockford", "naperville", "aurora"];
-
 export default function HomePage() {
   const allShops = getAllShops();
   const cities = getCities();
@@ -98,10 +96,44 @@ export default function HomePage() {
   const totalShops = allShops.length + texasShops.length + floridaShops.length + newYorkShops.length + georgiaShops.length + arizonaShops.length + californiaShops.length + ohioShops.length + michiganShops.length + pennsylvaniaShops.length + northCarolinaShops.length + washingtonShops.length + coloradoShops.length + nevadaShops.length + tennesseeShops.length + missouriShops.length + indianaShops.length + virginiaShops.length + marylandShops.length + louisianaShops.length + minnesotaShops.length + wisconsinShops.length + southCarolinaShops.length + kentuckyShops.length + alabamaShops.length + oklahomaShops.length + arkansasShops.length + utahShops.length + connecticutShops.length + newMexicoShops.length + iowaShops.length + kansasShops.length + westVirginiaShops.length + delawareShops.length;
   const totalCities = cities.length + texasCities.length + floridaCities.length + newYorkCities.length + georgiaCities.length + arizonaCities.length + californiaCities.length + ohioCities.length + michiganCities.length + pennsylvaniaCities.length + northCarolinaCities.length + washingtonCities.length + coloradoCities.length + nevadaCities.length + tennesseeCities.length + missouriCities.length + indianaCities.length + virginiaCities.length + marylandCities.length + louisianaCities.length + minnesotaCities.length + wisconsinCities.length + southCarolinaCities.length + kentuckyCities.length + alabamaCities.length + oklahomaCities.length + arkansasCities.length + utahCities.length + connecticutCities.length + newMexicoCities.length + iowaCities.length + kansasCities.length + westVirginiaCities.length + delawareCities.length;
 
-  const featuredCities = FEATURED_CITIES.flatMap((slug) => {
-    const found = cities.find((c) => c.citySlug === slug);
-    return found ? [found] : [];
-  });
+  const topCities = [
+    ...cities.map((c) => ({ ...c, stateSlug: "illinois", stateLabel: "Illinois" })),
+    ...texasCities.map((c) => ({ ...c, stateSlug: "texas", stateLabel: "Texas" })),
+    ...floridaCities.map((c) => ({ ...c, stateSlug: "florida", stateLabel: "Florida" })),
+    ...newYorkCities.map((c) => ({ ...c, stateSlug: "new-york", stateLabel: "New York" })),
+    ...georgiaCities.map((c) => ({ ...c, stateSlug: "georgia", stateLabel: "Georgia" })),
+    ...arizonaCities.map((c) => ({ ...c, stateSlug: "arizona", stateLabel: "Arizona" })),
+    ...californiaCities.map((c) => ({ ...c, stateSlug: "california", stateLabel: "California" })),
+    ...ohioCities.map((c) => ({ ...c, stateSlug: "ohio", stateLabel: "Ohio" })),
+    ...michiganCities.map((c) => ({ ...c, stateSlug: "michigan", stateLabel: "Michigan" })),
+    ...pennsylvaniaCities.map((c) => ({ ...c, stateSlug: "pennsylvania", stateLabel: "Pennsylvania" })),
+    ...northCarolinaCities.map((c) => ({ ...c, stateSlug: "north-carolina", stateLabel: "North Carolina" })),
+    ...washingtonCities.map((c) => ({ ...c, stateSlug: "washington", stateLabel: "Washington" })),
+    ...coloradoCities.map((c) => ({ ...c, stateSlug: "colorado", stateLabel: "Colorado" })),
+    ...nevadaCities.map((c) => ({ ...c, stateSlug: "nevada", stateLabel: "Nevada" })),
+    ...tennesseeCities.map((c) => ({ ...c, stateSlug: "tennessee", stateLabel: "Tennessee" })),
+    ...missouriCities.map((c) => ({ ...c, stateSlug: "missouri", stateLabel: "Missouri" })),
+    ...indianaCities.map((c) => ({ ...c, stateSlug: "indiana", stateLabel: "Indiana" })),
+    ...virginiaCities.map((c) => ({ ...c, stateSlug: "virginia", stateLabel: "Virginia" })),
+    ...marylandCities.map((c) => ({ ...c, stateSlug: "maryland", stateLabel: "Maryland" })),
+    ...louisianaCities.map((c) => ({ ...c, stateSlug: "louisiana", stateLabel: "Louisiana" })),
+    ...minnesotaCities.map((c) => ({ ...c, stateSlug: "minnesota", stateLabel: "Minnesota" })),
+    ...wisconsinCities.map((c) => ({ ...c, stateSlug: "wisconsin", stateLabel: "Wisconsin" })),
+    ...southCarolinaCities.map((c) => ({ ...c, stateSlug: "south-carolina", stateLabel: "South Carolina" })),
+    ...kentuckyCities.map((c) => ({ ...c, stateSlug: "kentucky", stateLabel: "Kentucky" })),
+    ...alabamaCities.map((c) => ({ ...c, stateSlug: "alabama", stateLabel: "Alabama" })),
+    ...oklahomaCities.map((c) => ({ ...c, stateSlug: "oklahoma", stateLabel: "Oklahoma" })),
+    ...arkansasCities.map((c) => ({ ...c, stateSlug: "arkansas", stateLabel: "Arkansas" })),
+    ...utahCities.map((c) => ({ ...c, stateSlug: "utah", stateLabel: "Utah" })),
+    ...connecticutCities.map((c) => ({ ...c, stateSlug: "connecticut", stateLabel: "Connecticut" })),
+    ...newMexicoCities.map((c) => ({ ...c, stateSlug: "new-mexico", stateLabel: "New Mexico" })),
+    ...iowaCities.map((c) => ({ ...c, stateSlug: "iowa", stateLabel: "Iowa" })),
+    ...kansasCities.map((c) => ({ ...c, stateSlug: "kansas", stateLabel: "Kansas" })),
+    ...westVirginiaCities.map((c) => ({ ...c, stateSlug: "west-virginia", stateLabel: "West Virginia" })),
+    ...delawareCities.map((c) => ({ ...c, stateSlug: "delaware", stateLabel: "Delaware" })),
+  ]
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 10);
 
   return (
     <>
@@ -392,21 +424,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Cities */}
+      {/* Top Cities */}
       <section className="bg-gray-50 py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">Featured Cities</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-8">Top Cities by Listings</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-            {featuredCities.map(({ citySlug, city, count }) => (
+            {topCities.map(({ citySlug, city, count, stateSlug, stateLabel }) => (
               <Link
-                key={citySlug}
-                href={`/illinois/${citySlug}`}
+                key={`${stateSlug}-${citySlug}`}
+                href={`/${stateSlug}/${citySlug}`}
                 className="border border-gray-200 bg-white rounded-lg p-5 hover:border-amber-400 hover:shadow-md transition-all group text-center"
               >
                 <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">{city}</div>
+                <div className="text-xs text-gray-400 mb-2">{stateLabel}</div>
                 <div
                   style={{ backgroundColor: "#f59e0b" }}
-                  className="inline-block text-xs font-bold text-gray-900 rounded-full px-2 py-0.5 mt-1"
+                  className="inline-block text-xs font-bold text-gray-900 rounded-full px-2 py-0.5"
                 >
                   {count} shop{count !== 1 ? "s" : ""}
                 </div>
