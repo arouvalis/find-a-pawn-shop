@@ -27,6 +27,7 @@ const STATES = [
   { label: "Missouri", href: "/missouri" },
   { label: "Nebraska", href: "/nebraska" },
   { label: "Nevada", href: "/nevada" },
+  { label: "New Hampshire", href: "/new-hampshire" },
   { label: "New Mexico", href: "/new-mexico" },
   { label: "Oklahoma", href: "/oklahoma" },
   { label: "South Carolina", href: "/south-carolina" },

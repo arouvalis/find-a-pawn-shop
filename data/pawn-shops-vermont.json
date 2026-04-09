@@ -1,0 +1,40 @@
+[
+  {
+    "slug": "gold-silver-antique-pawn-shop",
+    "citySlug": "montpelier",
+    "name": "Gold Silver Antique & Pawn Shop",
+    "phone": "+1 802-498-5882",
+    "website": "https://goldsilverthrift.com/",
+    "address": "174 River St, Montpelier, VT 05602",
+    "street": "174 River St",
+    "city": "Montpelier",
+    "state": "Vermont",
+    "zip": "05602",
+    "rating": 4.9,
+    "reviews": 158,
+    "hours": "{\"Monday\": [\"Closed\"], \"Tuesday\": [\"10AM-4:30PM\"], \"Wednesday\": [\"10AM-4:30PM\"], \"Thursday\": [\"10AM-4:30PM\"], \"Friday\": [\"10AM-4:30PM\"], \"Saturday\": [\"1-6PM\"], \"Sunday\": [\"Closed\"]}",
+    "latitude": 44.2496157,
+    "longitude": -72.5602972,
+    "placeId": "ChIJe_N4cV4HtUwRuDr9h9S0ehM",
+    "googleMapsUrl": "https://www.google.com/maps/place/Gold+Silver+Antique+%26+Pawn+Shop/@44.2496157,-72.5602972,14z/data=!4m8!1m2!2m1!1sGold+Silver+Antique+%26+Pawn+Shop!3m4!1s0x4cb5075e7178f37b:0x137ab4d487fd3ab8!8m2!3d44.2496157!4d-72.5602972"
+  },
+  {
+    "slug": "puros-coins-jewelry",
+    "citySlug": "rutland",
+    "name": "Puro's Coins & Jewelry",
+    "phone": "+1 802-773-3883",
+    "website": "http://www.vtcoins.com/",
+    "address": "35 Strongs Ave, Rutland, VT 05701",
+    "street": "35 Strongs Ave",
+    "city": "Rutland",
+    "state": "Vermont",
+    "zip": "05701",
+    "rating": 4.2,
+    "reviews": 36,
+    "hours": "{\"Monday\": [\"Closed\"], \"Tuesday\": [\"10AM-3PM\"], \"Wednesday\": [\"10AM-3PM\"], \"Thursday\": [\"10AM-3PM\"], \"Friday\": [\"10AM-3PM\"], \"Saturday\": [\"10AM-1PM\"], \"Sunday\": [\"Closed\"]}",
+    "latitude": 43.6039565,
+    "longitude": -72.9771057,
+    "placeId": "ChIJofq764kk4IkRMhQFDIOZxzM",
+    "googleMapsUrl": "https://www.google.com/maps/place/Puro%27s+Coins+%26+Jewelry/@43.603956499999995,-72.9771057,14z/data=!4m8!1m2!2m1!1sPuro%27s+Coins+%26+Jewelry!3m4!1s0x89e02489ebbbfaa1:0x33c799830c051432!8m2!3d43.603956499999995!4d-72.9771057"
+  }
+]
