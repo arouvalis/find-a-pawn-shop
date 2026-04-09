@@ -499,8 +499,8 @@ export default function HomePage() {
               a: "When you pawn an item, you're taking a loan with the item as collateral — you can get it back by repaying the loan. When you sell, you transfer ownership permanently in exchange for cash. Selling usually gets you more money upfront.",
             },
             {
-              q: "Are pawn shop loans regulated in Illinois?",
-              a: "Yes. Illinois pawn shops are regulated by the Illinois Pawnbroker Regulation Act. Interest rates and loan terms are capped by state law. Pawnbrokers are required to be licensed and to report transactions to local law enforcement.",
+              q: "Are pawn shop loans regulated?",
+              a: "Yes, but regulation varies by state. Each state sets its own rules on interest rates, loan terms, and licensing requirements for pawnbrokers. Most states cap interest rates and require pawn shops to be licensed and to report transactions to local law enforcement. Check your state's pawnbroker statutes for the specific rules in your area.",
             },
             {
               q: "How do I find the best pawn shop near me?",
