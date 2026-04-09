@@ -89,6 +89,25 @@ export function getCities(): { citySlug: string; city: string; count: number }[]
 
 export function parseHours(raw: string | null): { day: string; open: string; close: string }[] {
   if (!raw) return [];
+
+  // New JSON format: {"Monday": ["10AM-5PM"], "Tuesday": ["Closed"], ...}
+  if (raw.trim().startsWith("{")) {
+    try {
+      const obj = JSON.parse(raw) as Record<string, string[]>;
+      return Object.entries(obj)
+        .filter(([, times]) => times[0] && times[0].toLowerCase() !== "closed")
+        .map(([day, times]) => {
+          const dashIdx = times[0].indexOf("-");
+          const open = dashIdx !== -1 ? times[0].slice(0, dashIdx) : times[0];
+          const close = dashIdx !== -1 ? times[0].slice(dashIdx + 1) : "";
+          return { day, open, close };
+        });
+    } catch {
+      // fall through to pipe format
+    }
+  }
+
+  // Old pipe-delimited format: "Monday,9AM,6PM|Tuesday,9AM,6PM"
   return raw.split("|").map((segment) => {
     const [day, open, close] = segment.split(",");
     return { day: day ?? "", open: open ?? "", close: close ?? "" };
@@ -113,6 +132,26 @@ function to24h(time: string): string {
 
 export function toOpeningHoursSchema(raw: string | null): string[] {
   if (!raw) return [];
+
+  // New JSON format
+  if (raw.trim().startsWith("{")) {
+    try {
+      const obj = JSON.parse(raw) as Record<string, string[]>;
+      return Object.entries(obj)
+        .filter(([, times]) => times[0] && times[0].toLowerCase() !== "closed")
+        .map(([day, times]) => {
+          const dashIdx = times[0].indexOf("-");
+          const open = dashIdx !== -1 ? times[0].slice(0, dashIdx) : times[0];
+          const close = dashIdx !== -1 ? times[0].slice(dashIdx + 1) : "";
+          const abbr = DAY_ABBR[day] ?? day;
+          return `${abbr} ${to24h(open)}–${to24h(close)}`;
+        });
+    } catch {
+      // fall through
+    }
+  }
+
+  // Old pipe-delimited format
   return raw.split("|").map((segment) => {
     const [day, open, close] = segment.split(",");
     const abbr = DAY_ABBR[day ?? ""] ?? day;
