@@ -34,6 +34,7 @@ const STATES = [
   { label: "South Dakota", href: "/south-dakota" },
   { label: "New York", href: "/new-york" },
   { label: "North Carolina", href: "/north-carolina" },
+  { label: "North Dakota", href: "/north-dakota" },
   { label: "Ohio", href: "/ohio" },
   { label: "Pennsylvania", href: "/pennsylvania" },
   { label: "Tennessee", href: "/tennessee" },

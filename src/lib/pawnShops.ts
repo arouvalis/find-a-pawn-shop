@@ -38,6 +38,7 @@ import mississippiData from "../../data/pawn-shops-mississippi.json";
 import newHampshireData from "../../data/pawn-shops-new-hampshire.json";
 import wyomingData from "../../data/pawn-shops-wyoming.json";
 import southDakotaData from "../../data/pawn-shops-south-dakota.json";
+import northDakotaData from "../../data/pawn-shops-north-dakota.json";
 
 export interface PawnShop {
   slug: string;
@@ -2355,6 +2356,58 @@ export function buildSouthDakotaSeoDescription(shop: PawnShop): string {
   const parts: string[] = [];
   const city = shop.city ? (SOUTH_DAKOTA_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
   const loc = [city, "South Dakota"].filter(Boolean).join(", ");
+  parts.push(
+    `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
+  );
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) {
+    const days = condenseDays(hours.map((h) => h.day));
+    parts.push(`They are open ${days}.`);
+  }
+  if (shop.rating !== null && shop.reviews !== null) {
+    parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`);
+  }
+  return parts.join(" ");
+}
+
+const NORTH_DAKOTA_CITY_OVERRIDES: Record<string, string> = {};
+
+export const allNorthDakotaShops = deduplicateSlugs(northDakotaData as PawnShop[]);
+
+export function getAllNorthDakotaShops(): PawnShop[] {
+  return allNorthDakotaShops;
+}
+
+export function getNorthDakotaShopsByCity(citySlug: string): PawnShop[] {
+  return allNorthDakotaShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getNorthDakotaShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allNorthDakotaShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getNorthDakotaCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allNorthDakotaShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = NORTH_DAKOTA_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) {
+      existing.count++;
+    } else {
+      map.set(shop.citySlug, { city, count: 1 });
+    }
+  }
+  return Array.from(map.entries())
+    .map(([citySlug, { city, count }]) => ({ citySlug, city, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function buildNorthDakotaSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (NORTH_DAKOTA_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "North Dakota"].filter(Boolean).join(", ");
   parts.push(
     `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
   );
