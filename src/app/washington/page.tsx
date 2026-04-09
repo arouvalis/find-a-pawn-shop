@@ -42,6 +42,20 @@ export default function WashingtonPage() {
           </Link>
         ))}
       </div>
+
+      {/* Owner callout */}
+      <div style={{ backgroundColor: "#1a2744" }} className="mt-10 rounded-xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p className="text-sm text-white">
+          Own a pawn shop in <span className="font-semibold text-amber-400">Washington</span>? Get featured placement for $29/month.
+        </p>
+        <Link
+          href="/claim-listing"
+          style={{ backgroundColor: "#f59e0b" }}
+          className="shrink-0 text-gray-900 font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition-opacity text-xs whitespace-nowrap"
+        >
+          Claim Your Listing
+        </Link>
+      </div>
     </div>
   );
 }
