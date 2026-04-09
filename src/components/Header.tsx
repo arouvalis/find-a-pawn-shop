@@ -31,6 +31,7 @@ const STATES = [
   { label: "New Mexico", href: "/new-mexico" },
   { label: "Oklahoma", href: "/oklahoma" },
   { label: "South Carolina", href: "/south-carolina" },
+  { label: "South Dakota", href: "/south-dakota" },
   { label: "New York", href: "/new-york" },
   { label: "North Carolina", href: "/north-carolina" },
   { label: "Ohio", href: "/ohio" },
@@ -42,6 +43,7 @@ const STATES = [
   { label: "Washington", href: "/washington" },
   { label: "West Virginia", href: "/west-virginia" },
   { label: "Wisconsin", href: "/wisconsin" },
+  { label: "Wyoming", href: "/wyoming" },
 ];
 
 export default function Header() {
