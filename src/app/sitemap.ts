@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities, getAllCaliforniaShops, getCaliforniaCities, getAllOhioShops, getOhioCities, getAllMichiganShops, getMichiganCities, getAllPennsylvaniaShops, getPennsylvaniaCities, getAllNorthCarolinaShops, getNorthCarolinaCities, getAllWashingtonShops, getWashingtonCities, getAllColoradoShops, getColoradoCities, getAllNevadaShops, getNevadaCities, getAllTennesseeShops, getTennesseeCities, getAllMissouriShops, getMissouriCities, getAllIndianaShops, getIndianaCities, getAllVirginiaShops, getVirginiaCities, getAllMarylandShops, getMarylandCities, getAllLouisianaShops, getLouisianaCities, getAllMinnesotaShops, getMinnesotaCities, getAllWisconsinShops, getWisconsinCities, getAllSouthCarolinaShops, getSouthCarolinaCities, getAllKentuckyShops, getKentuckyCities, getAllAlabamaShops, getAlabamaCities, getAllOklahomaShops, getOklahomaCities, getAllArkansasShops, getArkansasCities, getAllUtahShops, getUtahCities, getAllConnecticutShops, getConnecticutCities, getAllNewMexicoShops, getNewMexicoCities, getAllIowaShops, getIowaCities, getAllKansasShops, getKansasCities, getAllWestVirginiaShops, getWestVirginiaCities, getAllDelawareShops, getDelawareCities, getAllIdahoShops, getIdahoCities, getAllNebraskaShops, getNebraskaCities, getAllMississippiShops, getMississippiCities, getAllNewHampshireShops, getNewHampshireCities, getAllWyomingShops, getWyomingCities, getAllSouthDakotaShops, getSouthDakotaCities, getAllNorthDakotaShops, getNorthDakotaCities, getAllNewJerseyShops, getNewJerseyCities, getAllOregonShops, getOregonCities, getAllMassachusettsShops, getMassachusettsCities, getAllMaineShops, getMaineCities, getAllRhodeIslandShops, getRhodeIslandCities, getAllAlaskaShops, getAlaskaCities, getAllDcShops, getDcCities, getAllMontanaShops, getMontanaCities } from "@/lib/pawnShops";
+import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities, getAllCaliforniaShops, getCaliforniaCities, getAllOhioShops, getOhioCities, getAllMichiganShops, getMichiganCities, getAllPennsylvaniaShops, getPennsylvaniaCities, getAllNorthCarolinaShops, getNorthCarolinaCities, getAllWashingtonShops, getWashingtonCities, getAllColoradoShops, getColoradoCities, getAllNevadaShops, getNevadaCities, getAllTennesseeShops, getTennesseeCities, getAllMissouriShops, getMissouriCities, getAllIndianaShops, getIndianaCities, getAllVirginiaShops, getVirginiaCities, getAllMarylandShops, getMarylandCities, getAllLouisianaShops, getLouisianaCities, getAllMinnesotaShops, getMinnesotaCities, getAllWisconsinShops, getWisconsinCities, getAllSouthCarolinaShops, getSouthCarolinaCities, getAllKentuckyShops, getKentuckyCities, getAllAlabamaShops, getAlabamaCities, getAllOklahomaShops, getOklahomaCities, getAllArkansasShops, getArkansasCities, getAllUtahShops, getUtahCities, getAllConnecticutShops, getConnecticutCities, getAllNewMexicoShops, getNewMexicoCities, getAllIowaShops, getIowaCities, getAllKansasShops, getKansasCities, getAllWestVirginiaShops, getWestVirginiaCities, getAllDelawareShops, getDelawareCities, getAllIdahoShops, getIdahoCities, getAllNebraskaShops, getNebraskaCities, getAllMississippiShops, getMississippiCities, getAllNewHampshireShops, getNewHampshireCities, getAllWyomingShops, getWyomingCities, getAllSouthDakotaShops, getSouthDakotaCities, getAllNorthDakotaShops, getNorthDakotaCities, getAllNewJerseyShops, getNewJerseyCities, getAllOregonShops, getOregonCities, getAllMassachusettsShops, getMassachusettsCities, getAllMaineShops, getMaineCities, getAllRhodeIslandShops, getRhodeIslandCities, getAllAlaskaShops, getAlaskaCities, getAllDcShops, getDcCities, getAllMontanaShops, getMontanaCities, getAllVermontShops, getVermontCities } from "@/lib/pawnShops";
 
 const BASE_URL = "https://www.findapawnshop.com";
 
@@ -102,6 +102,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const dcShops = getAllDcShops();
   const montanaCities = getMontanaCities();
   const montanaShops = getAllMontanaShops();
+  const vermontCities = getVermontCities();
+  const vermontShops = getAllVermontShops();
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE_URL, changeFrequency: "monthly", priority: 1.0 },
@@ -154,6 +156,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/alaska`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/dc`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/montana`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/vermont`, changeFrequency: "monthly", priority: 0.9 },
   ];
 
   const illinoisCityPages: MetadataRoute.Sitemap = cities.map(({ citySlug }) => ({
@@ -744,6 +747,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const vermontCityPages: MetadataRoute.Sitemap = vermontCities.map(({ citySlug }) => ({
+    url: `${BASE_URL}/vermont/${citySlug}`,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  const vermontListingPages: MetadataRoute.Sitemap = vermontShops.map((shop) => ({
+    url: `${BASE_URL}/vermont/${shop.citySlug}/${shop.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   return [
     ...staticPages,
     ...illinoisCityPages,
@@ -844,5 +859,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...dcListingPages,
     ...montanaCityPages,
     ...montanaListingPages,
+    ...vermontCityPages,
+    ...vermontListingPages,
   ];
 }

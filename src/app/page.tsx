@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities, getAllCaliforniaShops, getCaliforniaCities, getAllOhioShops, getOhioCities, getAllMichiganShops, getMichiganCities, getAllPennsylvaniaShops, getPennsylvaniaCities, getAllNorthCarolinaShops, getNorthCarolinaCities, getAllWashingtonShops, getWashingtonCities, getAllColoradoShops, getColoradoCities, getAllNevadaShops, getNevadaCities, getAllTennesseeShops, getTennesseeCities, getAllMissouriShops, getMissouriCities, getAllIndianaShops, getIndianaCities, getAllVirginiaShops, getVirginiaCities, getAllMarylandShops, getMarylandCities, getAllLouisianaShops, getLouisianaCities, getAllMinnesotaShops, getMinnesotaCities, getAllWisconsinShops, getWisconsinCities, getAllSouthCarolinaShops, getSouthCarolinaCities, getAllKentuckyShops, getKentuckyCities, getAllAlabamaShops, getAlabamaCities, getAllOklahomaShops, getOklahomaCities, getAllArkansasShops, getArkansasCities, getAllUtahShops, getUtahCities, getAllConnecticutShops, getConnecticutCities, getAllNewMexicoShops, getNewMexicoCities, getAllIowaShops, getIowaCities, getAllKansasShops, getKansasCities, getAllWestVirginiaShops, getWestVirginiaCities, getAllDelawareShops, getDelawareCities, getAllIdahoShops, getIdahoCities, getAllNebraskaShops, getNebraskaCities, getAllMississippiShops, getMississippiCities, getAllNewHampshireShops, getNewHampshireCities, getAllWyomingShops, getWyomingCities, getAllSouthDakotaShops, getSouthDakotaCities, getAllNorthDakotaShops, getNorthDakotaCities, getAllNewJerseyShops, getNewJerseyCities, getAllOregonShops, getOregonCities, getAllMassachusettsShops, getMassachusettsCities, getAllMaineShops, getMaineCities, getAllRhodeIslandShops, getRhodeIslandCities, getAllAlaskaShops, getAlaskaCities, getAllDcShops, getDcCities, getAllMontanaShops, getMontanaCities } from "@/lib/pawnShops";
+import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities, getAllCaliforniaShops, getCaliforniaCities, getAllOhioShops, getOhioCities, getAllMichiganShops, getMichiganCities, getAllPennsylvaniaShops, getPennsylvaniaCities, getAllNorthCarolinaShops, getNorthCarolinaCities, getAllWashingtonShops, getWashingtonCities, getAllColoradoShops, getColoradoCities, getAllNevadaShops, getNevadaCities, getAllTennesseeShops, getTennesseeCities, getAllMissouriShops, getMissouriCities, getAllIndianaShops, getIndianaCities, getAllVirginiaShops, getVirginiaCities, getAllMarylandShops, getMarylandCities, getAllLouisianaShops, getLouisianaCities, getAllMinnesotaShops, getMinnesotaCities, getAllWisconsinShops, getWisconsinCities, getAllSouthCarolinaShops, getSouthCarolinaCities, getAllKentuckyShops, getKentuckyCities, getAllAlabamaShops, getAlabamaCities, getAllOklahomaShops, getOklahomaCities, getAllArkansasShops, getArkansasCities, getAllUtahShops, getUtahCities, getAllConnecticutShops, getConnecticutCities, getAllNewMexicoShops, getNewMexicoCities, getAllIowaShops, getIowaCities, getAllKansasShops, getKansasCities, getAllWestVirginiaShops, getWestVirginiaCities, getAllDelawareShops, getDelawareCities, getAllIdahoShops, getIdahoCities, getAllNebraskaShops, getNebraskaCities, getAllMississippiShops, getMississippiCities, getAllNewHampshireShops, getNewHampshireCities, getAllWyomingShops, getWyomingCities, getAllSouthDakotaShops, getSouthDakotaCities, getAllNorthDakotaShops, getNorthDakotaCities, getAllNewJerseyShops, getNewJerseyCities, getAllOregonShops, getOregonCities, getAllMassachusettsShops, getMassachusettsCities, getAllMaineShops, getMaineCities, getAllRhodeIslandShops, getRhodeIslandCities, getAllAlaskaShops, getAlaskaCities, getAllDcShops, getDcCities, getAllMontanaShops, getMontanaCities, getAllVermontShops, getVermontCities } from "@/lib/pawnShops";
 
 export async function generateMetadata(): Promise<Metadata> {
   const total =
@@ -32,7 +32,8 @@ export async function generateMetadata(): Promise<Metadata> {
     getAllRhodeIslandShops().length +
     getAllAlaskaShops().length +
     getAllDcShops().length +
-    getAllMontanaShops().length;
+    getAllMontanaShops().length +
+    getAllVermontShops().length;
   return {
     title: "FindAPawnShop.com — Find Pawn Shops Near You",
     description: `Find a pawn shop near you. Browse ${total} verified pawn shops across 46 states — with addresses, hours, phone numbers, and ratings. The largest pawn shop directory in the US.`,
@@ -138,8 +139,10 @@ export default function HomePage() {
   const dcCities = getDcCities();
   const montanaShops = getAllMontanaShops();
   const montanaCities = getMontanaCities();
-  const totalShops = allShops.length + texasShops.length + floridaShops.length + newYorkShops.length + georgiaShops.length + arizonaShops.length + californiaShops.length + ohioShops.length + michiganShops.length + pennsylvaniaShops.length + northCarolinaShops.length + washingtonShops.length + coloradoShops.length + nevadaShops.length + tennesseeShops.length + missouriShops.length + indianaShops.length + virginiaShops.length + marylandShops.length + louisianaShops.length + minnesotaShops.length + wisconsinShops.length + southCarolinaShops.length + kentuckyShops.length + alabamaShops.length + oklahomaShops.length + arkansasShops.length + utahShops.length + connecticutShops.length + newMexicoShops.length + iowaShops.length + kansasShops.length + westVirginiaShops.length + delawareShops.length + idahoShops.length + nebraskaShops.length + mississippiShops.length + newHampshireShops.length + wyomingShops.length + southDakotaShops.length + northDakotaShops.length + newJerseyShops.length + oregonShops.length + massachusettsShops.length + maineShops.length + rhodeIslandShops.length + alaskaShops.length + dcShops.length + montanaShops.length;
-  const totalCities = cities.length + texasCities.length + floridaCities.length + newYorkCities.length + georgiaCities.length + arizonaCities.length + californiaCities.length + ohioCities.length + michiganCities.length + pennsylvaniaCities.length + northCarolinaCities.length + washingtonCities.length + coloradoCities.length + nevadaCities.length + tennesseeCities.length + missouriCities.length + indianaCities.length + virginiaCities.length + marylandCities.length + louisianaCities.length + minnesotaCities.length + wisconsinCities.length + southCarolinaCities.length + kentuckyCities.length + alabamaCities.length + oklahomaCities.length + arkansasCities.length + utahCities.length + connecticutCities.length + newMexicoCities.length + iowaCities.length + kansasCities.length + westVirginiaCities.length + delawareCities.length + idahoCities.length + nebraskaCities.length + mississippiCities.length + newHampshireCities.length + wyomingCities.length + southDakotaCities.length + northDakotaCities.length + newJerseyCities.length + oregonCities.length + massachusettsCities.length + maineCities.length + rhodeIslandCities.length + alaskaCities.length + dcCities.length + montanaCities.length;
+  const vermontShops = getAllVermontShops();
+  const vermontCities = getVermontCities();
+  const totalShops = allShops.length + texasShops.length + floridaShops.length + newYorkShops.length + georgiaShops.length + arizonaShops.length + californiaShops.length + ohioShops.length + michiganShops.length + pennsylvaniaShops.length + northCarolinaShops.length + washingtonShops.length + coloradoShops.length + nevadaShops.length + tennesseeShops.length + missouriShops.length + indianaShops.length + virginiaShops.length + marylandShops.length + louisianaShops.length + minnesotaShops.length + wisconsinShops.length + southCarolinaShops.length + kentuckyShops.length + alabamaShops.length + oklahomaShops.length + arkansasShops.length + utahShops.length + connecticutShops.length + newMexicoShops.length + iowaShops.length + kansasShops.length + westVirginiaShops.length + delawareShops.length + idahoShops.length + nebraskaShops.length + mississippiShops.length + newHampshireShops.length + wyomingShops.length + southDakotaShops.length + northDakotaShops.length + newJerseyShops.length + oregonShops.length + massachusettsShops.length + maineShops.length + rhodeIslandShops.length + alaskaShops.length + dcShops.length + montanaShops.length + vermontShops.length;
+  const totalCities = cities.length + texasCities.length + floridaCities.length + newYorkCities.length + georgiaCities.length + arizonaCities.length + californiaCities.length + ohioCities.length + michiganCities.length + pennsylvaniaCities.length + northCarolinaCities.length + washingtonCities.length + coloradoCities.length + nevadaCities.length + tennesseeCities.length + missouriCities.length + indianaCities.length + virginiaCities.length + marylandCities.length + louisianaCities.length + minnesotaCities.length + wisconsinCities.length + southCarolinaCities.length + kentuckyCities.length + alabamaCities.length + oklahomaCities.length + arkansasCities.length + utahCities.length + connecticutCities.length + newMexicoCities.length + iowaCities.length + kansasCities.length + westVirginiaCities.length + delawareCities.length + idahoCities.length + nebraskaCities.length + mississippiCities.length + newHampshireCities.length + wyomingCities.length + southDakotaCities.length + northDakotaCities.length + newJerseyCities.length + oregonCities.length + massachusettsCities.length + maineCities.length + rhodeIslandCities.length + alaskaCities.length + dcCities.length + montanaCities.length + vermontCities.length;
 
   const topCities = [
     ...cities.map((c) => ({ ...c, stateSlug: "illinois", stateLabel: "Illinois" })),
@@ -191,6 +194,7 @@ export default function HomePage() {
     ...alaskaCities.map((c) => ({ ...c, stateSlug: "alaska", stateLabel: "Alaska" })),
     ...dcCities.map((c) => ({ ...c, stateSlug: "dc", stateLabel: "Washington, D.C." })),
     ...montanaCities.map((c) => ({ ...c, stateSlug: "montana", stateLabel: "Montana" })),
+    ...vermontCities.map((c) => ({ ...c, stateSlug: "vermont", stateLabel: "Vermont" })),
   ]
     .sort((a, b) => b.count - a.count)
     .slice(0, 10);
@@ -219,7 +223,7 @@ export default function HomePage() {
             <span className="ml-2 font-medium">Cities Covered</span>
           </div>
           <div className="text-center">
-            <span className="text-2xl font-bold">49 States</span>
+            <span className="text-2xl font-bold">50 States</span>
             <span className="ml-2 font-medium">&amp; Growing</span>
           </div>
         </div>
@@ -228,7 +232,7 @@ export default function HomePage() {
       {/* Browse by State */}
       <section className="max-w-6xl mx-auto px-4 py-16">
         <h2 className="text-2xl font-bold text-gray-900 mb-2">Browse by State</h2>
-        <p className="text-gray-500 mb-8">Currently serving Illinois, Texas, Florida, New York, Georgia, Arizona, California, Ohio, Michigan, Pennsylvania, North Carolina, Washington, Colorado, Nevada, Tennessee, Missouri, Indiana, Virginia, Maryland, Louisiana, Minnesota, Wisconsin, South Carolina, Kentucky, Alabama, Oklahoma, Arkansas, Utah, Connecticut, New Mexico, Iowa, Kansas, West Virginia, Delaware, Idaho, Nebraska, Mississippi, New Hampshire, Wyoming, South Dakota, North Dakota, New Jersey, Oregon, Massachusetts, Maine, Rhode Island, Alaska, Washington, D.C., and Montana — expanding nationwide in 2026.</p>
+        <p className="text-gray-500 mb-8">Currently serving Illinois, Texas, Florida, New York, Georgia, Arizona, California, Ohio, Michigan, Pennsylvania, North Carolina, Washington, Colorado, Nevada, Tennessee, Missouri, Indiana, Virginia, Maryland, Louisiana, Minnesota, Wisconsin, South Carolina, Kentucky, Alabama, Oklahoma, Arkansas, Utah, Connecticut, New Mexico, Iowa, Kansas, West Virginia, Delaware, Idaho, Nebraska, Mississippi, New Hampshire, Wyoming, South Dakota, North Dakota, New Jersey, Oregon, Massachusetts, Maine, Rhode Island, Alaska, Washington, D.C., Montana, and Vermont — expanding nationwide in 2026.</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {/* Active */}
           <Link
@@ -573,6 +577,13 @@ export default function HomePage() {
           >
             <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Montana</div>
             <div className="text-sm text-gray-500">{montanaShops.length} listings</div>
+          </Link>
+          <Link
+            href="/vermont"
+            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
+          >
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Vermont</div>
+            <div className="text-sm text-gray-500">{vermontShops.length} listings</div>
           </Link>
           {/* Coming Soon */}
           {[].map((state) => (
