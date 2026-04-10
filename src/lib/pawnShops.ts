@@ -42,6 +42,8 @@ import northDakotaData from "../../data/pawn-shops-north-dakota.json";
 import newJerseyData from "../../data/pawn-shops-new-jersey.json";
 import oregonData from "../../data/pawn-shops-oregon.json";
 import massachusettsData from "../../data/pawn-shops-massachusetts.json";
+import maineData from "../../data/pawn-shops-maine.json";
+import rhodeIslandData from "../../data/pawn-shops-rhode-island.json";
 
 export interface PawnShop {
   slug: string;
@@ -2576,5 +2578,79 @@ export function buildMassachusettsSeoDescription(shop: PawnShop): string {
   if (shop.rating !== null && shop.reviews !== null) {
     parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`);
   }
+  return parts.join(" ");
+}
+
+const MAINE_CITY_OVERRIDES: Record<string, string> = {};
+
+export const allMaineShops = deduplicateSlugs(maineData as PawnShop[]);
+
+export function getAllMaineShops(): PawnShop[] { return allMaineShops; }
+
+export function getMaineShopsByCity(citySlug: string): PawnShop[] {
+  return allMaineShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getMaineShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allMaineShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getMaineCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allMaineShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = MAINE_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) { existing.count++; } else { map.set(shop.citySlug, { city, count: 1 }); }
+  }
+  return Array.from(map.entries()).map(([citySlug, { city, count }]) => ({ citySlug, city, count })).sort((a, b) => b.count - a.count);
+}
+
+export function buildMaineSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (MAINE_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "Maine"].filter(Boolean).join(", ");
+  parts.push(`${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`);
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) { const days = condenseDays(hours.map((h) => h.day)); parts.push(`They are open ${days}.`); }
+  if (shop.rating !== null && shop.reviews !== null) { parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`); }
+  return parts.join(" ");
+}
+
+const RHODE_ISLAND_CITY_OVERRIDES: Record<string, string> = {};
+
+export const allRhodeIslandShops = deduplicateSlugs(rhodeIslandData as PawnShop[]);
+
+export function getAllRhodeIslandShops(): PawnShop[] { return allRhodeIslandShops; }
+
+export function getRhodeIslandShopsByCity(citySlug: string): PawnShop[] {
+  return allRhodeIslandShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getRhodeIslandShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allRhodeIslandShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getRhodeIslandCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allRhodeIslandShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = RHODE_ISLAND_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) { existing.count++; } else { map.set(shop.citySlug, { city, count: 1 }); }
+  }
+  return Array.from(map.entries()).map(([citySlug, { city, count }]) => ({ citySlug, city, count })).sort((a, b) => b.count - a.count);
+}
+
+export function buildRhodeIslandSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (RHODE_ISLAND_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "Rhode Island"].filter(Boolean).join(", ");
+  parts.push(`${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`);
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) { const days = condenseDays(hours.map((h) => h.day)); parts.push(`They are open ${days}.`); }
+  if (shop.rating !== null && shop.reviews !== null) { parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`); }
   return parts.join(" ");
 }
