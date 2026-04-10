@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities, getAllCaliforniaShops, getCaliforniaCities, getAllOhioShops, getOhioCities, getAllMichiganShops, getMichiganCities, getAllPennsylvaniaShops, getPennsylvaniaCities, getAllNorthCarolinaShops, getNorthCarolinaCities, getAllWashingtonShops, getWashingtonCities, getAllColoradoShops, getColoradoCities, getAllNevadaShops, getNevadaCities, getAllTennesseeShops, getTennesseeCities, getAllMissouriShops, getMissouriCities, getAllIndianaShops, getIndianaCities, getAllVirginiaShops, getVirginiaCities, getAllMarylandShops, getMarylandCities, getAllLouisianaShops, getLouisianaCities, getAllMinnesotaShops, getMinnesotaCities, getAllWisconsinShops, getWisconsinCities, getAllSouthCarolinaShops, getSouthCarolinaCities, getAllKentuckyShops, getKentuckyCities, getAllAlabamaShops, getAlabamaCities, getAllOklahomaShops, getOklahomaCities, getAllArkansasShops, getArkansasCities, getAllUtahShops, getUtahCities, getAllConnecticutShops, getConnecticutCities, getAllNewMexicoShops, getNewMexicoCities, getAllIowaShops, getIowaCities, getAllKansasShops, getKansasCities, getAllWestVirginiaShops, getWestVirginiaCities, getAllDelawareShops, getDelawareCities, getAllIdahoShops, getIdahoCities, getAllNebraskaShops, getNebraskaCities, getAllMississippiShops, getMississippiCities, getAllNewHampshireShops, getNewHampshireCities, getAllWyomingShops, getWyomingCities, getAllSouthDakotaShops, getSouthDakotaCities, getAllNorthDakotaShops, getNorthDakotaCities, getAllNewJerseyShops, getNewJerseyCities, getAllOregonShops, getOregonCities, getAllMassachusettsShops, getMassachusettsCities, getAllMaineShops, getMaineCities, getAllRhodeIslandShops, getRhodeIslandCities } from "@/lib/pawnShops";
+import { getAllShops, getCities, getAllTexasShops, getTexasCities, getAllFloridaShops, getFloridaCities, getAllNewYorkShops, getNewYorkCities, getAllGeorgiaShops, getGeorgiaCities, getAllArizonaShops, getArizonaCities, getAllCaliforniaShops, getCaliforniaCities, getAllOhioShops, getOhioCities, getAllMichiganShops, getMichiganCities, getAllPennsylvaniaShops, getPennsylvaniaCities, getAllNorthCarolinaShops, getNorthCarolinaCities, getAllWashingtonShops, getWashingtonCities, getAllColoradoShops, getColoradoCities, getAllNevadaShops, getNevadaCities, getAllTennesseeShops, getTennesseeCities, getAllMissouriShops, getMissouriCities, getAllIndianaShops, getIndianaCities, getAllVirginiaShops, getVirginiaCities, getAllMarylandShops, getMarylandCities, getAllLouisianaShops, getLouisianaCities, getAllMinnesotaShops, getMinnesotaCities, getAllWisconsinShops, getWisconsinCities, getAllSouthCarolinaShops, getSouthCarolinaCities, getAllKentuckyShops, getKentuckyCities, getAllAlabamaShops, getAlabamaCities, getAllOklahomaShops, getOklahomaCities, getAllArkansasShops, getArkansasCities, getAllUtahShops, getUtahCities, getAllConnecticutShops, getConnecticutCities, getAllNewMexicoShops, getNewMexicoCities, getAllIowaShops, getIowaCities, getAllKansasShops, getKansasCities, getAllWestVirginiaShops, getWestVirginiaCities, getAllDelawareShops, getDelawareCities, getAllIdahoShops, getIdahoCities, getAllNebraskaShops, getNebraskaCities, getAllMississippiShops, getMississippiCities, getAllNewHampshireShops, getNewHampshireCities, getAllWyomingShops, getWyomingCities, getAllSouthDakotaShops, getSouthDakotaCities, getAllNorthDakotaShops, getNorthDakotaCities, getAllNewJerseyShops, getNewJerseyCities, getAllOregonShops, getOregonCities, getAllMassachusettsShops, getMassachusettsCities, getAllMaineShops, getMaineCities, getAllRhodeIslandShops, getRhodeIslandCities, getAllAlaskaShops, getAlaskaCities, getAllDcShops, getDcCities } from "@/lib/pawnShops";
 
 const BASE_URL = "https://www.findapawnshop.com";
 
@@ -96,6 +96,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const maineShops = getAllMaineShops();
   const rhodeIslandCities = getRhodeIslandCities();
   const rhodeIslandShops = getAllRhodeIslandShops();
+  const alaskaCities = getAlaskaCities();
+  const alaskaShops = getAllAlaskaShops();
+  const dcCities = getDcCities();
+  const dcShops = getAllDcShops();
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE_URL, changeFrequency: "monthly", priority: 1.0 },
@@ -145,6 +149,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/massachusetts`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/maine`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/rhode-island`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/alaska`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/dc`, changeFrequency: "monthly", priority: 0.9 },
   ];
 
   const illinoisCityPages: MetadataRoute.Sitemap = cities.map(({ citySlug }) => ({
@@ -699,6 +705,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const alaskaCityPages: MetadataRoute.Sitemap = alaskaCities.map(({ citySlug }) => ({
+    url: `${BASE_URL}/alaska/${citySlug}`,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  const alaskaListingPages: MetadataRoute.Sitemap = alaskaShops.map((shop) => ({
+    url: `${BASE_URL}/alaska/${shop.citySlug}/${shop.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  const dcCityPages: MetadataRoute.Sitemap = dcCities.map(({ citySlug }) => ({
+    url: `${BASE_URL}/dc/${citySlug}`,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  const dcListingPages: MetadataRoute.Sitemap = dcShops.map((shop) => ({
+    url: `${BASE_URL}/dc/${shop.citySlug}/${shop.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   return [
     ...staticPages,
     ...illinoisCityPages,
@@ -793,5 +823,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...maineListingPages,
     ...rhodeIslandCityPages,
     ...rhodeIslandListingPages,
+    ...alaskaCityPages,
+    ...alaskaListingPages,
+    ...dcCityPages,
+    ...dcListingPages,
   ];
 }
