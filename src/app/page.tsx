@@ -224,7 +224,6 @@ export default function HomePage() {
           </div>
           <div className="text-center">
             <span className="text-2xl font-bold">50 States</span>
-            <span className="ml-2 font-medium">&amp; Growing</span>
           </div>
         </div>
       </section>
@@ -232,7 +231,7 @@ export default function HomePage() {
       {/* Browse by State */}
       <section className="max-w-6xl mx-auto px-4 py-16">
         <h2 className="text-2xl font-bold text-gray-900 mb-2">Browse by State</h2>
-        <p className="text-gray-500 mb-8">Currently serving Illinois, Texas, Florida, New York, Georgia, Arizona, California, Ohio, Michigan, Pennsylvania, North Carolina, Washington, Colorado, Nevada, Tennessee, Missouri, Indiana, Virginia, Maryland, Louisiana, Minnesota, Wisconsin, South Carolina, Kentucky, Alabama, Oklahoma, Arkansas, Utah, Connecticut, New Mexico, Iowa, Kansas, West Virginia, Delaware, Idaho, Nebraska, Mississippi, New Hampshire, Wyoming, South Dakota, North Dakota, New Jersey, Oregon, Massachusetts, Maine, Rhode Island, Alaska, Washington, D.C., Montana, and Vermont — expanding nationwide in 2026.</p>
+        <p className="text-gray-500 mb-8">Currently serving all 50 states.</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           <Link href="/alabama" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
             <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Alabama</div>
