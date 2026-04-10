@@ -44,6 +44,8 @@ import oregonData from "../../data/pawn-shops-oregon.json";
 import massachusettsData from "../../data/pawn-shops-massachusetts.json";
 import maineData from "../../data/pawn-shops-maine.json";
 import rhodeIslandData from "../../data/pawn-shops-rhode-island.json";
+import alaskaData from "../../data/pawn-shops-alaska.json";
+import dcData from "../../data/pawn-shops-dc.json";
 
 export interface PawnShop {
   slug: string;
@@ -2648,6 +2650,103 @@ export function buildRhodeIslandSeoDescription(shop: PawnShop): string {
   const city = shop.city ? (RHODE_ISLAND_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
   const loc = [city, "Rhode Island"].filter(Boolean).join(", ");
   parts.push(`${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`);
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) { const days = condenseDays(hours.map((h) => h.day)); parts.push(`They are open ${days}.`); }
+  if (shop.rating !== null && shop.reviews !== null) { parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`); }
+  return parts.join(" ");
+}
+
+const ALASKA_CITY_OVERRIDES: Record<string, string> = {};
+
+export const allAlaskaShops = deduplicateSlugs(alaskaData as PawnShop[]);
+
+export function getAllAlaskaShops(): PawnShop[] { return allAlaskaShops; }
+
+export function getAlaskaShopsByCity(citySlug: string): PawnShop[] {
+  return allAlaskaShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getAlaskaShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allAlaskaShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getAlaskaCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allAlaskaShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = ALASKA_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) { existing.count++; } else { map.set(shop.citySlug, { city, count: 1 }); }
+  }
+  return Array.from(map.entries()).map(([citySlug, { city, count }]) => ({ citySlug, city, count })).sort((a, b) => b.count - a.count);
+}
+
+export function buildAlaskaSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (ALASKA_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "Alaska"].filter(Boolean).join(", ");
+  parts.push(`${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`);
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) { const days = condenseDays(hours.map((h) => h.day)); parts.push(`They are open ${days}.`); }
+  if (shop.rating !== null && shop.reviews !== null) { parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`); }
+  return parts.join(" ");
+}
+
+export const allDcShops = deduplicateSlugs(dcData as PawnShop[]);
+
+export function getAllDcShops(): PawnShop[] { return allDcShops; }
+
+export function getDcShopsByCity(citySlug: string): PawnShop[] {
+  return allDcShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getDcShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allDcShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getDcCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allDcShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const existing = map.get(shop.citySlug);
+    if (existing) { existing.count++; } else { map.set(shop.citySlug, { city: shop.city, count: 1 }); }
+  }
+  return Array.from(map.entries()).map(([citySlug, { city, count }]) => ({ citySlug, city, count })).sort((a, b) => b.count - a.count);
+}
+
+export function buildDcSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  parts.push(`${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in Washington, D.C.`);
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) { const days = condenseDays(hours.map((h) => h.day)); parts.push(`They are open ${days}.`); }
+  if (shop.rating !== null && shop.reviews !== null) { parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`); }
+  return parts.join(" ");
+}
+
+import montanaData from "../../data/pawn-shops-montana.json";
+const allMontanaShops: PawnShop[] = deduplicateSlugs(montanaData as PawnShop[]);
+export function getAllMontanaShops(): PawnShop[] { return allMontanaShops; }
+export function getMontanaShopsByCity(citySlug: string): PawnShop[] {
+  return allMontanaShops.filter((s) => s.citySlug === citySlug);
+}
+export function getMontanaShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allMontanaShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+export function getMontanaCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allMontanaShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const existing = map.get(shop.citySlug);
+    if (existing) { existing.count++; } else { map.set(shop.citySlug, { city: shop.city, count: 1 }); }
+  }
+  return Array.from(map.entries()).map(([citySlug, { city, count }]) => ({ citySlug, city, count })).sort((a, b) => b.count - a.count);
+}
+export function buildMontanaSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  parts.push(`${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${shop.city}, Montana.`);
   if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
   const hours = parseHours(shop.hours);
   if (hours.length > 0) { const days = condenseDays(hours.map((h) => h.day)); parts.push(`They are open ${days}.`); }

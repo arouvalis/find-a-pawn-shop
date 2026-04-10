@@ -5,6 +5,7 @@ import { useState, useRef, useEffect } from "react";
 
 const STATES = [
   { label: "Alabama", href: "/alabama" },
+  { label: "Alaska", href: "/alaska" },
   { label: "Arkansas", href: "/arkansas" },
   { label: "Connecticut", href: "/connecticut" },
   { label: "Arizona", href: "/arizona" },
@@ -27,6 +28,7 @@ const STATES = [
   { label: "Michigan", href: "/michigan" },
   { label: "Mississippi", href: "/mississippi" },
   { label: "Missouri", href: "/missouri" },
+  { label: "Montana", href: "/montana" },
   { label: "Nebraska", href: "/nebraska" },
   { label: "Nevada", href: "/nevada" },
   { label: "New Hampshire", href: "/new-hampshire" },
@@ -47,6 +49,7 @@ const STATES = [
   { label: "Utah", href: "/utah" },
   { label: "Virginia", href: "/virginia" },
   { label: "Washington", href: "/washington" },
+  { label: "Washington, D.C.", href: "/dc" },
   { label: "West Virginia", href: "/west-virginia" },
   { label: "Wisconsin", href: "/wisconsin" },
   { label: "Wyoming", href: "/wyoming" },
