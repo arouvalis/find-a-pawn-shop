@@ -39,6 +39,9 @@ import newHampshireData from "../../data/pawn-shops-new-hampshire.json";
 import wyomingData from "../../data/pawn-shops-wyoming.json";
 import southDakotaData from "../../data/pawn-shops-south-dakota.json";
 import northDakotaData from "../../data/pawn-shops-north-dakota.json";
+import newJerseyData from "../../data/pawn-shops-new-jersey.json";
+import oregonData from "../../data/pawn-shops-oregon.json";
+import massachusettsData from "../../data/pawn-shops-massachusetts.json";
 
 export interface PawnShop {
   slug: string;
@@ -2411,6 +2414,159 @@ export function buildNorthDakotaSeoDescription(shop: PawnShop): string {
   parts.push(
     `${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`
   );
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) {
+    const days = condenseDays(hours.map((h) => h.day));
+    parts.push(`They are open ${days}.`);
+  }
+  if (shop.rating !== null && shop.reviews !== null) {
+    parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`);
+  }
+  return parts.join(" ");
+}
+
+const NEW_JERSEY_CITY_OVERRIDES: Record<string, string> = {
+  "Weehawken Township": "Weehawken",
+  "Ewing Township": "Ewing",
+};
+
+export const allNewJerseyShops = deduplicateSlugs(newJerseyData as PawnShop[]);
+
+export function getAllNewJerseyShops(): PawnShop[] {
+  return allNewJerseyShops;
+}
+
+export function getNewJerseyShopsByCity(citySlug: string): PawnShop[] {
+  return allNewJerseyShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getNewJerseyShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allNewJerseyShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getNewJerseyCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allNewJerseyShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = NEW_JERSEY_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) {
+      existing.count++;
+    } else {
+      map.set(shop.citySlug, { city, count: 1 });
+    }
+  }
+  return Array.from(map.entries())
+    .map(([citySlug, { city, count }]) => ({ citySlug, city, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function buildNewJerseySeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (NEW_JERSEY_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "New Jersey"].filter(Boolean).join(", ");
+  parts.push(`${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`);
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) {
+    const days = condenseDays(hours.map((h) => h.day));
+    parts.push(`They are open ${days}.`);
+  }
+  if (shop.rating !== null && shop.reviews !== null) {
+    parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`);
+  }
+  return parts.join(" ");
+}
+
+const OREGON_CITY_OVERRIDES: Record<string, string> = {};
+
+export const allOregonShops = deduplicateSlugs(oregonData as PawnShop[]);
+
+export function getAllOregonShops(): PawnShop[] {
+  return allOregonShops;
+}
+
+export function getOregonShopsByCity(citySlug: string): PawnShop[] {
+  return allOregonShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getOregonShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allOregonShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getOregonCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allOregonShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = OREGON_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) {
+      existing.count++;
+    } else {
+      map.set(shop.citySlug, { city, count: 1 });
+    }
+  }
+  return Array.from(map.entries())
+    .map(([citySlug, { city, count }]) => ({ citySlug, city, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function buildOregonSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (OREGON_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "Oregon"].filter(Boolean).join(", ");
+  parts.push(`${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`);
+  if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
+  const hours = parseHours(shop.hours);
+  if (hours.length > 0) {
+    const days = condenseDays(hours.map((h) => h.day));
+    parts.push(`They are open ${days}.`);
+  }
+  if (shop.rating !== null && shop.reviews !== null) {
+    parts.push(`They have a ${shop.rating}-star rating based on ${shop.reviews} Google reviews.`);
+  }
+  return parts.join(" ");
+}
+
+const MASSACHUSETTS_CITY_OVERRIDES: Record<string, string> = {};
+
+export const allMassachusettsShops = deduplicateSlugs(massachusettsData as PawnShop[]);
+
+export function getAllMassachusettsShops(): PawnShop[] {
+  return allMassachusettsShops;
+}
+
+export function getMassachusettsShopsByCity(citySlug: string): PawnShop[] {
+  return allMassachusettsShops.filter((s) => s.citySlug === citySlug);
+}
+
+export function getMassachusettsShopBySlug(citySlug: string, slug: string): PawnShop | undefined {
+  return allMassachusettsShops.find((s) => s.citySlug === citySlug && s.slug === slug);
+}
+
+export function getMassachusettsCities(): { citySlug: string; city: string; count: number }[] {
+  const map = new Map<string, { city: string; count: number }>();
+  for (const shop of allMassachusettsShops) {
+    if (!shop.citySlug || !shop.city) continue;
+    const city = MASSACHUSETTS_CITY_OVERRIDES[shop.city] ?? shop.city;
+    const existing = map.get(shop.citySlug);
+    if (existing) {
+      existing.count++;
+    } else {
+      map.set(shop.citySlug, { city, count: 1 });
+    }
+  }
+  return Array.from(map.entries())
+    .map(([citySlug, { city, count }]) => ({ citySlug, city, count }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function buildMassachusettsSeoDescription(shop: PawnShop): string {
+  const parts: string[] = [];
+  const city = shop.city ? (MASSACHUSETTS_CITY_OVERRIDES[shop.city] ?? shop.city) : shop.city;
+  const loc = [city, "Massachusetts"].filter(Boolean).join(", ");
+  parts.push(`${shop.name} is a pawn shop${shop.street ? ` located at ${shop.street}` : ""} in ${loc}.`);
   if (shop.website) parts.push(`Visit their website at ${shop.website}.`);
   const hours = parseHours(shop.hours);
   if (hours.length > 0) {
