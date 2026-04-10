@@ -234,356 +234,205 @@ export default function HomePage() {
         <h2 className="text-2xl font-bold text-gray-900 mb-2">Browse by State</h2>
         <p className="text-gray-500 mb-8">Currently serving Illinois, Texas, Florida, New York, Georgia, Arizona, California, Ohio, Michigan, Pennsylvania, North Carolina, Washington, Colorado, Nevada, Tennessee, Missouri, Indiana, Virginia, Maryland, Louisiana, Minnesota, Wisconsin, South Carolina, Kentucky, Alabama, Oklahoma, Arkansas, Utah, Connecticut, New Mexico, Iowa, Kansas, West Virginia, Delaware, Idaho, Nebraska, Mississippi, New Hampshire, Wyoming, South Dakota, North Dakota, New Jersey, Oregon, Massachusetts, Maine, Rhode Island, Alaska, Washington, D.C., Montana, and Vermont — expanding nationwide in 2026.</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-          {/* Active */}
-          <Link
-            href="/illinois"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Illinois</div>
-            <div className="text-sm text-gray-500">{allShops.length} listings</div>
-          </Link>
-          <Link
-            href="/texas"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Texas</div>
-            <div className="text-sm text-gray-500">{texasShops.length} listings</div>
-          </Link>
-          <Link
-            href="/florida"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Florida</div>
-            <div className="text-sm text-gray-500">{floridaShops.length} listings</div>
-          </Link>
-          <Link
-            href="/new-york"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">New York</div>
-            <div className="text-sm text-gray-500">{newYorkShops.length} listings</div>
-          </Link>
-          <Link
-            href="/georgia"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Georgia</div>
-            <div className="text-sm text-gray-500">{georgiaShops.length} listings</div>
-          </Link>
-          <Link
-            href="/arizona"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Arizona</div>
-            <div className="text-sm text-gray-500">{arizonaShops.length} listings</div>
-          </Link>
-          <Link
-            href="/california"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">California</div>
-            <div className="text-sm text-gray-500">{californiaShops.length} listings</div>
-          </Link>
-          <Link
-            href="/ohio"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Ohio</div>
-            <div className="text-sm text-gray-500">{ohioShops.length} listings</div>
-          </Link>
-          <Link
-            href="/michigan"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Michigan</div>
-            <div className="text-sm text-gray-500">{michiganShops.length} listings</div>
-          </Link>
-          <Link
-            href="/pennsylvania"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Pennsylvania</div>
-            <div className="text-sm text-gray-500">{pennsylvaniaShops.length} listings</div>
-          </Link>
-          <Link
-            href="/north-carolina"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">North Carolina</div>
-            <div className="text-sm text-gray-500">{northCarolinaShops.length} listings</div>
-          </Link>
-          <Link
-            href="/washington"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Washington</div>
-            <div className="text-sm text-gray-500">{washingtonShops.length} listings</div>
-          </Link>
-          <Link
-            href="/colorado"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Colorado</div>
-            <div className="text-sm text-gray-500">{coloradoShops.length} listings</div>
-          </Link>
-          <Link
-            href="/nevada"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Nevada</div>
-            <div className="text-sm text-gray-500">{nevadaShops.length} listings</div>
-          </Link>
-          <Link
-            href="/tennessee"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Tennessee</div>
-            <div className="text-sm text-gray-500">{tennesseeShops.length} listings</div>
-          </Link>
-          <Link
-            href="/missouri"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Missouri</div>
-            <div className="text-sm text-gray-500">{missouriShops.length} listings</div>
-          </Link>
-          <Link
-            href="/indiana"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Indiana</div>
-            <div className="text-sm text-gray-500">{indianaShops.length} listings</div>
-          </Link>
-          <Link
-            href="/virginia"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Virginia</div>
-            <div className="text-sm text-gray-500">{virginiaShops.length} listings</div>
-          </Link>
-          <Link
-            href="/maryland"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Maryland</div>
-            <div className="text-sm text-gray-500">{marylandShops.length} listings</div>
-          </Link>
-          <Link
-            href="/louisiana"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Louisiana</div>
-            <div className="text-sm text-gray-500">{louisianaShops.length} listings</div>
-          </Link>
-          <Link
-            href="/minnesota"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Minnesota</div>
-            <div className="text-sm text-gray-500">{minnesotaShops.length} listings</div>
-          </Link>
-          <Link
-            href="/wisconsin"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Wisconsin</div>
-            <div className="text-sm text-gray-500">{wisconsinShops.length} listings</div>
-          </Link>
-          <Link
-            href="/south-carolina"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">South Carolina</div>
-            <div className="text-sm text-gray-500">{southCarolinaShops.length} listings</div>
-          </Link>
-          <Link
-            href="/kentucky"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Kentucky</div>
-            <div className="text-sm text-gray-500">{kentuckyShops.length} listings</div>
-          </Link>
-          <Link
-            href="/alabama"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
+          <Link href="/alabama" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
             <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Alabama</div>
             <div className="text-sm text-gray-500">{alabamaShops.length} listings</div>
           </Link>
-          <Link
-            href="/oklahoma"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Oklahoma</div>
-            <div className="text-sm text-gray-500">{oklahomaShops.length} listings</div>
-          </Link>
-          <Link
-            href="/arkansas"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Arkansas</div>
-            <div className="text-sm text-gray-500">{arkansasShops.length} listings</div>
-          </Link>
-          <Link
-            href="/utah"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Utah</div>
-            <div className="text-sm text-gray-500">{utahShops.length} listings</div>
-          </Link>
-          <Link
-            href="/connecticut"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Connecticut</div>
-            <div className="text-sm text-gray-500">{connecticutShops.length} listings</div>
-          </Link>
-          <Link
-            href="/new-mexico"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">New Mexico</div>
-            <div className="text-sm text-gray-500">{newMexicoShops.length} listings</div>
-          </Link>
-          <Link
-            href="/iowa"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Iowa</div>
-            <div className="text-sm text-gray-500">{iowaShops.length} listings</div>
-          </Link>
-          <Link
-            href="/kansas"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Kansas</div>
-            <div className="text-sm text-gray-500">{kansasShops.length} listings</div>
-          </Link>
-          <Link
-            href="/west-virginia"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">West Virginia</div>
-            <div className="text-sm text-gray-500">{westVirginiaShops.length} listings</div>
-          </Link>
-          <Link
-            href="/delaware"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Delaware</div>
-            <div className="text-sm text-gray-500">{delawareShops.length} listings</div>
-          </Link>
-          <Link
-            href="/idaho"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Idaho</div>
-            <div className="text-sm text-gray-500">{idahoShops.length} listings</div>
-          </Link>
-          <Link
-            href="/nebraska"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Nebraska</div>
-            <div className="text-sm text-gray-500">{nebraskaShops.length} listings</div>
-          </Link>
-          <Link
-            href="/mississippi"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Mississippi</div>
-            <div className="text-sm text-gray-500">{mississippiShops.length} listings</div>
-          </Link>
-          <Link
-            href="/new-hampshire"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">New Hampshire</div>
-            <div className="text-sm text-gray-500">{newHampshireShops.length} listings</div>
-          </Link>
-          <Link
-            href="/wyoming"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Wyoming</div>
-            <div className="text-sm text-gray-500">{wyomingShops.length} listings</div>
-          </Link>
-          <Link
-            href="/south-dakota"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">South Dakota</div>
-            <div className="text-sm text-gray-500">{southDakotaShops.length} listings</div>
-          </Link>
-          <Link
-            href="/north-dakota"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">North Dakota</div>
-            <div className="text-sm text-gray-500">{northDakotaShops.length} listings</div>
-          </Link>
-          <Link
-            href="/new-jersey"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">New Jersey</div>
-            <div className="text-sm text-gray-500">{newJerseyShops.length} listings</div>
-          </Link>
-          <Link
-            href="/oregon"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Oregon</div>
-            <div className="text-sm text-gray-500">{oregonShops.length} listings</div>
-          </Link>
-          <Link
-            href="/massachusetts"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Massachusetts</div>
-            <div className="text-sm text-gray-500">{massachusettsShops.length} listings</div>
-          </Link>
-          <Link
-            href="/maine"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Maine</div>
-            <div className="text-sm text-gray-500">{maineShops.length} listings</div>
-          </Link>
-          <Link
-            href="/rhode-island"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Rhode Island</div>
-            <div className="text-sm text-gray-500">{rhodeIslandShops.length} listings</div>
-          </Link>
-          <Link
-            href="/alaska"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
+          <Link href="/alaska" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
             <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Alaska</div>
             <div className="text-sm text-gray-500">{alaskaShops.length} listings</div>
           </Link>
-          <Link
-            href="/dc"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
-            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Washington, D.C.</div>
-            <div className="text-sm text-gray-500">{dcShops.length} listings</div>
+          <Link href="/arizona" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Arizona</div>
+            <div className="text-sm text-gray-500">{arizonaShops.length} listings</div>
           </Link>
-          <Link
-            href="/montana"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
+          <Link href="/arkansas" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Arkansas</div>
+            <div className="text-sm text-gray-500">{arkansasShops.length} listings</div>
+          </Link>
+          <Link href="/california" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">California</div>
+            <div className="text-sm text-gray-500">{californiaShops.length} listings</div>
+          </Link>
+          <Link href="/colorado" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Colorado</div>
+            <div className="text-sm text-gray-500">{coloradoShops.length} listings</div>
+          </Link>
+          <Link href="/connecticut" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Connecticut</div>
+            <div className="text-sm text-gray-500">{connecticutShops.length} listings</div>
+          </Link>
+          <Link href="/delaware" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Delaware</div>
+            <div className="text-sm text-gray-500">{delawareShops.length} listings</div>
+          </Link>
+          <Link href="/florida" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Florida</div>
+            <div className="text-sm text-gray-500">{floridaShops.length} listings</div>
+          </Link>
+          <Link href="/georgia" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Georgia</div>
+            <div className="text-sm text-gray-500">{georgiaShops.length} listings</div>
+          </Link>
+          <Link href="/idaho" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Idaho</div>
+            <div className="text-sm text-gray-500">{idahoShops.length} listings</div>
+          </Link>
+          <Link href="/illinois" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Illinois</div>
+            <div className="text-sm text-gray-500">{allShops.length} listings</div>
+          </Link>
+          <Link href="/indiana" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Indiana</div>
+            <div className="text-sm text-gray-500">{indianaShops.length} listings</div>
+          </Link>
+          <Link href="/iowa" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Iowa</div>
+            <div className="text-sm text-gray-500">{iowaShops.length} listings</div>
+          </Link>
+          <Link href="/kansas" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Kansas</div>
+            <div className="text-sm text-gray-500">{kansasShops.length} listings</div>
+          </Link>
+          <Link href="/kentucky" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Kentucky</div>
+            <div className="text-sm text-gray-500">{kentuckyShops.length} listings</div>
+          </Link>
+          <Link href="/louisiana" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Louisiana</div>
+            <div className="text-sm text-gray-500">{louisianaShops.length} listings</div>
+          </Link>
+          <Link href="/maine" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Maine</div>
+            <div className="text-sm text-gray-500">{maineShops.length} listings</div>
+          </Link>
+          <Link href="/maryland" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Maryland</div>
+            <div className="text-sm text-gray-500">{marylandShops.length} listings</div>
+          </Link>
+          <Link href="/massachusetts" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Massachusetts</div>
+            <div className="text-sm text-gray-500">{massachusettsShops.length} listings</div>
+          </Link>
+          <Link href="/michigan" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Michigan</div>
+            <div className="text-sm text-gray-500">{michiganShops.length} listings</div>
+          </Link>
+          <Link href="/minnesota" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Minnesota</div>
+            <div className="text-sm text-gray-500">{minnesotaShops.length} listings</div>
+          </Link>
+          <Link href="/mississippi" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Mississippi</div>
+            <div className="text-sm text-gray-500">{mississippiShops.length} listings</div>
+          </Link>
+          <Link href="/missouri" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Missouri</div>
+            <div className="text-sm text-gray-500">{missouriShops.length} listings</div>
+          </Link>
+          <Link href="/montana" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
             <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Montana</div>
             <div className="text-sm text-gray-500">{montanaShops.length} listings</div>
           </Link>
-          <Link
-            href="/vermont"
-            className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group"
-          >
+          <Link href="/nebraska" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Nebraska</div>
+            <div className="text-sm text-gray-500">{nebraskaShops.length} listings</div>
+          </Link>
+          <Link href="/nevada" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Nevada</div>
+            <div className="text-sm text-gray-500">{nevadaShops.length} listings</div>
+          </Link>
+          <Link href="/new-hampshire" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">New Hampshire</div>
+            <div className="text-sm text-gray-500">{newHampshireShops.length} listings</div>
+          </Link>
+          <Link href="/new-jersey" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">New Jersey</div>
+            <div className="text-sm text-gray-500">{newJerseyShops.length} listings</div>
+          </Link>
+          <Link href="/new-mexico" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">New Mexico</div>
+            <div className="text-sm text-gray-500">{newMexicoShops.length} listings</div>
+          </Link>
+          <Link href="/new-york" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">New York</div>
+            <div className="text-sm text-gray-500">{newYorkShops.length} listings</div>
+          </Link>
+          <Link href="/north-carolina" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">North Carolina</div>
+            <div className="text-sm text-gray-500">{northCarolinaShops.length} listings</div>
+          </Link>
+          <Link href="/north-dakota" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">North Dakota</div>
+            <div className="text-sm text-gray-500">{northDakotaShops.length} listings</div>
+          </Link>
+          <Link href="/ohio" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Ohio</div>
+            <div className="text-sm text-gray-500">{ohioShops.length} listings</div>
+          </Link>
+          <Link href="/oklahoma" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Oklahoma</div>
+            <div className="text-sm text-gray-500">{oklahomaShops.length} listings</div>
+          </Link>
+          <Link href="/oregon" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Oregon</div>
+            <div className="text-sm text-gray-500">{oregonShops.length} listings</div>
+          </Link>
+          <Link href="/pennsylvania" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Pennsylvania</div>
+            <div className="text-sm text-gray-500">{pennsylvaniaShops.length} listings</div>
+          </Link>
+          <Link href="/rhode-island" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Rhode Island</div>
+            <div className="text-sm text-gray-500">{rhodeIslandShops.length} listings</div>
+          </Link>
+          <Link href="/south-carolina" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">South Carolina</div>
+            <div className="text-sm text-gray-500">{southCarolinaShops.length} listings</div>
+          </Link>
+          <Link href="/south-dakota" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">South Dakota</div>
+            <div className="text-sm text-gray-500">{southDakotaShops.length} listings</div>
+          </Link>
+          <Link href="/tennessee" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Tennessee</div>
+            <div className="text-sm text-gray-500">{tennesseeShops.length} listings</div>
+          </Link>
+          <Link href="/texas" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Texas</div>
+            <div className="text-sm text-gray-500">{texasShops.length} listings</div>
+          </Link>
+          <Link href="/utah" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Utah</div>
+            <div className="text-sm text-gray-500">{utahShops.length} listings</div>
+          </Link>
+          <Link href="/vermont" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
             <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Vermont</div>
             <div className="text-sm text-gray-500">{vermontShops.length} listings</div>
+          </Link>
+          <Link href="/virginia" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Virginia</div>
+            <div className="text-sm text-gray-500">{virginiaShops.length} listings</div>
+          </Link>
+          <Link href="/washington" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Washington</div>
+            <div className="text-sm text-gray-500">{washingtonShops.length} listings</div>
+          </Link>
+          <Link href="/dc" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Washington, D.C.</div>
+            <div className="text-sm text-gray-500">{dcShops.length} listings</div>
+          </Link>
+          <Link href="/west-virginia" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">West Virginia</div>
+            <div className="text-sm text-gray-500">{westVirginiaShops.length} listings</div>
+          </Link>
+          <Link href="/wisconsin" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Wisconsin</div>
+            <div className="text-sm text-gray-500">{wisconsinShops.length} listings</div>
+          </Link>
+          <Link href="/wyoming" className="border-2 border-amber-400 bg-amber-50 rounded-lg p-5 hover:shadow-md transition-all group">
+            <div className="font-semibold text-gray-900 group-hover:text-amber-600 mb-1">Wyoming</div>
+            <div className="text-sm text-gray-500">{wyomingShops.length} listings</div>
           </Link>
           {/* Coming Soon */}
           {[].map((state) => (
