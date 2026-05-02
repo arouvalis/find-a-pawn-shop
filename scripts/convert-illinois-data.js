@@ -10,6 +10,7 @@ const INPUTS = [
   path.join(process.env.HOME, "Downloads/Outscraper-20260408165628s61.xlsx"),
   path.join(process.env.HOME, "Downloads/Outscraper-20260408165649s48.xlsx"),
   path.join(process.env.HOME, "Downloads/Outscraper-20260408165711s52.xlsx"),
+  path.join(process.env.HOME, "Downloads/Outscraper-20260502184028s58.xlsx"),
 ];
 const OUTPUT = path.join(__dirname, "../data/pawn-shops-illinois.json");
 
