@@ -497,13 +497,6 @@ export const articles: Article[] = [
     dateDisplay: "May 31, 2027",
   },
   {
-    slug: "best-pawn-shops-in-express-florence",
-    title: "Best Pawn Shops in Express Florence, South Carolina (2026 Guide)",
-    description: "Looking for the best pawn shops in Express Florence? Discover top-rated shops, regulations, neighborhood guides, and expert tips for 2026.",
-    datePublished: "2027-06-07",
-    dateDisplay: "June 7, 2027",
-  },
-  {
     slug: "best-pawn-shops-in-torrance",
     title: "Best Pawn Shops in Torrance (2026 Guide)",
     description: "Looking for the best pawn shops in Torrance? Find licensed dealers, neighborhood guides, and local tips for pawning or buying in this South Bay city.",
@@ -518,20 +511,6 @@ export const articles: Article[] = [
     dateDisplay: "June 21, 2027",
   },
   {
-    slug: "best-pawn-shops-in-chicago-illinois",
-    title: "Best Pawn Shops in Chicago Illinois (2026 Guide)",
-    description: "Looking for the best pawn shops in Chicago Illinois? Discover top neighborhoods, regulations, and expert tips for pawn transactions in the Windy City.",
-    datePublished: "2027-06-28",
-    dateDisplay: "June 28, 2027",
-  },
-  {
-    slug: "best-pawn-shops-in-chicago-near",
-    title: "Best Pawn Shops in Chicago Near, Maine (2026 Guide)",
-    description: "Looking for the best pawn shops in Chicago Near? Discover top-rated shops, Maine regulations, neighborhood guides, and expert tips for 2026.",
-    datePublished: "2027-07-05",
-    dateDisplay: "July 5, 2027",
-  },
-  {
     slug: "best-pawn-shops-in-elko",
     title: "Best Pawn Shops in Elko, Nevada (2026 Guide)",
     description: "Looking for the best pawn shops in Elko? Discover top-rated pawn shops across Elko neighborhoods with our complete guide to Nevada's pawn market.",
@@ -544,13 +523,6 @@ export const articles: Article[] = [
     description: "Looking for the best pawn shops in Parker? Discover top-rated pawn shops across Parker neighborhoods with our complete directory and local tips.",
     datePublished: "2027-07-19",
     dateDisplay: "July 19, 2027",
-  },
-  {
-    slug: "best-pawn-shops-in-chicago-area",
-    title: "Best Pawn Shops in Chicago Area (2026 Guide)",
-    description: "Looking for the best pawn shops in Chicago Area? Discover top-rated shops by neighborhood, local regulations, and insider tips for 2026.",
-    datePublished: "2027-07-26",
-    dateDisplay: "July 26, 2027",
   },
   {
     slug: "best-pawn-shops-in-yonkers",
