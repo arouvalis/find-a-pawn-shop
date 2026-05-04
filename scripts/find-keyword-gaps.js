@@ -248,6 +248,10 @@ const NOT_CITIES = new Set([
   'pros', 'cons', 'tips', 'reviews', 'hours',
   // Spanish pawn shop terms
   'casa', 'empeno', 'prestamo',
+  // Vague geographic terms
+  'area', 'region', 'metro', 'zone',
+  // State names used as city qualifiers
+  'illinois', 'california', 'texas', 'florida', 'ohio', 'michigan',
 ]);
 
 function buildLocation(rawCity, stateAbbr) {
