@@ -226,9 +226,11 @@ function getNextPublishDate() {
   const dates = [...content.matchAll(/datePublished:\s*["'](\d{4}-\d{2}-\d{2})["']/g)]
     .map(m => new Date(m[1] + 'T12:00:00'));
 
-  const base = dates.length
+  const today = new Date();
+  const latest = dates.length
     ? dates.reduce((a, b) => (a > b ? a : b))
-    : new Date();
+    : today;
+  const base = latest > today ? today : latest;
 
   const next = new Date(base);
   next.setDate(next.getDate() + 7);
