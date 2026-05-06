@@ -8,6 +8,7 @@ const INPUTS = [
   path.join(process.env.HOME, "Downloads/Outscraper-20260316225039s02.xlsx"),
   path.join(process.env.HOME, "Downloads/Outscraper-20260408171137s1b.xlsx"),
   path.join(process.env.HOME, "Downloads/Outscraper-20260408171203s76.xlsx"),
+  path.join(process.env.HOME, "Downloads/Outscraper-20260504200354s3f.xlsx"),
 ];
 const OUTPUT = path.join(__dirname, "../data/pawn-shops-maryland.json");
 
@@ -92,6 +93,10 @@ function isOperational(row) {
 // Read and merge all rows from all files
 let allRows = [];
 for (const input of INPUTS) {
+  if (!require("fs").existsSync(input)) {
+    console.warn(`Skipping missing file: ${require("path").basename(input)}`);
+    continue;
+  }
   const workbook = XLSX.readFile(input);
   const sheet = workbook.Sheets[workbook.SheetNames[0]];
   const rows = XLSX.utils.sheet_to_json(sheet, { defval: "" });

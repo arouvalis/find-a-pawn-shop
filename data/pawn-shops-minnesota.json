@@ -815,5 +815,24 @@
     "longitude": -92.941395,
     "placeId": "ChIJQSZrZq2gulIRZepXjIb-mrQ",
     "googleMapsUrl": "https://www.google.com/maps/place/T+%26+B+Pawn+%26+Gun/@47.420536999999996,-92.941395,14z/data=!4m8!1m2!2m1!1sT+%26+B+Pawn+%26+Gun!3m4!1s0x52baa0ad666b2641:0xb49afe868c57ea65!8m2!3d47.420536999999996!4d-92.941395"
+  },
+  {
+    "slug": "st-louis-park-gold-silver",
+    "citySlug": "minneapolis",
+    "name": "St. Louis Park Gold & Silver",
+    "phone": "+1 952-217-5488",
+    "website": "https://www.slpgoldandsilver.com/",
+    "address": "4825 Minnetonka Blvd, Minneapolis, MN 55416",
+    "street": "4825 Minnetonka Blvd",
+    "city": "Minneapolis",
+    "state": "Minnesota",
+    "zip": "55416",
+    "rating": 4.9,
+    "reviews": 432.0,
+    "hours": "{\"Monday\": [\"11AM-6PM\"], \"Tuesday\": [\"11AM-6PM\"], \"Wednesday\": [\"11AM-6PM\"], \"Thursday\": [\"11AM-6PM\"], \"Friday\": [\"11AM-6PM\"], \"Saturday\": [\"Closed\"], \"Sunday\": [\"Closed\"]}",
+    "latitude": 44.9482931,
+    "longitude": -93.3412098,
+    "placeId": "ChIJ2__yFm8h9ocRV7tmwSuCI7I",
+    "googleMapsUrl": "https://www.google.com/maps/place/St.+Louis+Park+Gold+%26+Silver/@44.9482931,-93.3412098,14z/data=!4m8!1m2!2m1!1sSt.+Louis+Park+Gold+%26+Silver!3m4!1s0x87f6216f16f2ffdb:0xb223822bc166bb57!8m2!3d44.9482931!4d-93.3412098"
   }
 ]
