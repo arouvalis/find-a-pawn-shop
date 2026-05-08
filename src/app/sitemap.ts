@@ -157,6 +157,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/dc`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/montana`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/vermont`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/espanol`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/espanol/california/santa-ana`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/espanol/california/los-angeles`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/espanol/illinois/chicago`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/espanol/new-york/new-york-city`, changeFrequency: "monthly", priority: 0.8 },
   ];
 
   const illinoisCityPages: MetadataRoute.Sitemap = cities.map(({ citySlug }) => ({
