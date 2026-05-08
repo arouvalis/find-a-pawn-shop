@@ -42,7 +42,8 @@ function toTitleCase(str) {
   return CITY_OVERRIDES[titled] ?? titled;
 }
 
-const BLOCKLIST = [];
+const BLOCKLIST = [
+  ...["check cashing", "title loan", "title loans", "car title"],];
 
 function isPawnShop(row) {
   const raw = String(row["name"] ?? row["Name"] ?? "");

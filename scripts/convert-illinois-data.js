@@ -45,7 +45,8 @@ function toTitleCase(str) {
     .join(" ");
 }
 
-const BLOCKLIST = ["moon's sandwich shop", "bnsf", "metra", "state street apparel", "iconnect", "railroad"];
+const BLOCKLIST = [
+  ...["check cashing", "title loan", "title loans", "car title"],"moon's sandwich shop", "bnsf", "metra", "state street apparel", "iconnect", "railroad"];
 
 function isPawnShop(row) {
   const raw = String(row["name"] ?? row["Name"] ?? "");
