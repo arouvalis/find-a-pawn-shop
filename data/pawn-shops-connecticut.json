@@ -209,25 +209,6 @@
     "googleMapsUrl": "https://www.google.com/maps/place/MX+PAWN/@41.1632503,-73.2213768,14z/data=!4m8!1m2!2m1!1sMX+PAWN!3m4!1s0x89e80d4377c840fd:0x7c7cc79e0f4a02ea!8m2!3d41.1632503!4d-73.2213768"
   },
   {
-    "slug": "east-main-jewelry-pawn-check-cashing",
-    "citySlug": "bridgeport",
-    "name": "East Main Jewelry Pawn & Check Cashing",
-    "phone": "+1 203-368-4900",
-    "website": null,
-    "address": "1756 E Main St, Bridgeport, CT 06610",
-    "street": "1756 E Main St",
-    "city": "Bridgeport",
-    "state": "Connecticut",
-    "zip": "06610",
-    "rating": 4.8,
-    "reviews": 25,
-    "hours": "{\"Monday\": [\"10AM-6PM\"], \"Tuesday\": [\"10AM-6PM\"], \"Wednesday\": [\"10AM-6PM\"], \"Thursday\": [\"10AM-6PM\"], \"Friday\": [\"10AM-6PM\"], \"Saturday\": [\"10AM-4PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 41.1987019,
-    "longitude": -73.1801057,
-    "placeId": "ChIJo-Jw2ycM6IkRjS7vq5fu0Zg",
-    "googleMapsUrl": "https://www.google.com/maps/place/East+Main+Jewelry+Pawn+%26+Check+Cashing/@41.198701899999996,-73.1801057,14z/data=!4m8!1m2!2m1!1sEast+Main+Jewelry+Pawn+%26+Check+Cashing!3m4!1s0x89e80c27db70e2a3:0x98d1ee97abef2e8d!8m2!3d41.198701899999996!4d-73.1801057"
-  },
-  {
     "slug": "downtown-pawn-shop",
     "citySlug": "bridgeport",
     "name": "Downtown Pawn Shop",
@@ -245,25 +226,6 @@
     "longitude": -73.2026592,
     "placeId": "ChIJTxjbK2EO6IkR6GPiXwcpr-o",
     "googleMapsUrl": "https://www.google.com/maps/place/Downtown+Pawn+Shop/@41.187279,-73.2026592,14z/data=!4m8!1m2!2m1!1sDowntown+Pawn+Shop!3m4!1s0x89e80e612bdb184f:0xeaaf29075fe263e8!8m2!3d41.187279!4d-73.2026592"
-  },
-  {
-    "slug": "gold-rush-pawn-check-cashing",
-    "citySlug": "bridgeport",
-    "name": "Gold Rush Pawn & Check Cashing",
-    "phone": "+1 203-908-3500",
-    "website": "https://tinyurl.com/Gold-Buyers",
-    "address": "1761 Barnum Ave BUS, Bridgeport, CT 06610",
-    "street": "1761 Barnum Ave BUS",
-    "city": "Bridgeport",
-    "state": "Connecticut",
-    "zip": "06610",
-    "rating": 4.9,
-    "reviews": 70,
-    "hours": "{\"Monday\": [\"9AM-5PM\"], \"Tuesday\": [\"9AM-5PM\"], \"Wednesday\": [\"9AM-5PM\"], \"Thursday\": [\"9AM-5PM\"], \"Friday\": [\"9AM-5PM\"], \"Saturday\": [\"9AM-2PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 41.1891983,
-    "longitude": -73.15773399999999,
-    "placeId": "ChIJC202I0oM6IkR420GkNfqhRs",
-    "googleMapsUrl": "https://www.google.com/maps/place/Gold+Rush+Pawn+%26+Check+Cashing/@41.1891983,-73.15773399999999,14z/data=!4m8!1m2!2m1!1sGold+Rush+Pawn+%26+Check+Cashing!3m4!1s0x89e80c4a23366d0b:0x1b85ead790066de3!8m2!3d41.1891983!4d-73.15773399999999"
   },
   {
     "slug": "pawn-king",
@@ -646,25 +608,6 @@
     "googleMapsUrl": "https://www.google.com/maps/place/Superior+Exchange+Gold+Buyers/@41.3188725,-72.8989782,14z/data=!4m8!1m2!2m1!1sSuperior+Exchange+Gold+Buyers!3m4!1s0x89e7d9df7e64289b:0x5d54603936b2ce8e!8m2!3d41.3188725!4d-72.8989782"
   },
   {
-    "slug": "mm-pawn-check-cashing",
-    "citySlug": "new-haven",
-    "name": "M&M Pawn & Check Cashing",
-    "phone": "+1 203-787-5626",
-    "website": null,
-    "address": "32 Howe St, New Haven, CT 06511",
-    "street": "32 Howe St",
-    "city": "New Haven",
-    "state": "Connecticut",
-    "zip": "06511",
-    "rating": 2.9,
-    "reviews": 40,
-    "hours": "{\"Monday\": [\"10AM-6PM\"], \"Tuesday\": [\"10AM-6PM\"], \"Wednesday\": [\"10AM-6PM\"], \"Thursday\": [\"10AM-6PM\"], \"Friday\": [\"10AM-6PM\"], \"Saturday\": [\"10AM-4PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 41.3079694,
-    "longitude": -72.936836,
-    "placeId": "ChIJASJn01LY54kR1lKc0qGSUe0",
-    "googleMapsUrl": "https://www.google.com/maps/place/M%26M+Pawn+%26+Check+Cashing/@41.3079694,-72.936836,14z/data=!4m8!1m2!2m1!1sM%26M+Pawn+%26+Check+Cashing!3m4!1s0x89e7d852d3672201:0xed5192a1d29c52d6!8m2!3d41.3079694!4d-72.936836"
-  },
-  {
     "slug": "the-pawn-shop",
     "citySlug": "west-haven",
     "name": "The Pawn Shop",
@@ -701,25 +644,6 @@
     "longitude": -72.8625121,
     "placeId": "ChIJu4ItjT3X54kRwYA1ErGSsGk",
     "googleMapsUrl": "https://www.google.com/maps/place/Pawn+Haven-Jewelry%2C+Coin%2C+and+Bullion+Exchange/@41.321035599999995,-72.8625121,14z/data=!4m8!1m2!2m1!1sPawn+Haven-Jewelry%2C+Coin%2C+and+Bullion+Exchange!3m4!1s0x89e7d73d8d2d82bb:0x69b092b1123580c1!8m2!3d41.321035599999995!4d-72.8625121"
-  },
-  {
-    "slug": "m-m-pawn-shop-check-cashing",
-    "citySlug": "new-haven",
-    "name": "M & M Pawn Shop & Check Cashing",
-    "phone": "+1 203-907-3606",
-    "website": null,
-    "address": "188 Grand Ave, New Haven, CT 06513",
-    "street": "188 Grand Ave",
-    "city": "New Haven",
-    "state": "Connecticut",
-    "zip": "06513",
-    "rating": 2.7,
-    "reviews": 15,
-    "hours": "{\"Monday\": [\"10AM-6PM\"], \"Tuesday\": [\"10AM-6PM\"], \"Wednesday\": [\"10AM-6PM\"], \"Thursday\": [\"10AM-6PM\"], \"Friday\": [\"10AM-6PM\"], \"Saturday\": [\"10AM-4PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 41.3089184,
-    "longitude": -72.8944786,
-    "placeId": "ChIJ1wybWHzX54kRvAYaMxv30jk",
-    "googleMapsUrl": "https://www.google.com/maps/place/M+%26+M+Pawn+Shop+%26+Check+Cashing/@41.308918399999996,-72.8944786,14z/data=!4m8!1m2!2m1!1sM+%26+M+Pawn+Shop+%26+Check+Cashing!3m4!1s0x89e7d77c589b0cd7:0x39d2f71b331a06bc!8m2!3d41.308918399999996!4d-72.8944786"
   },
   {
     "slug": "boulevard-pawn-shop",

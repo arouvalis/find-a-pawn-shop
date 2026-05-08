@@ -781,7 +781,7 @@
   {
     "slug": "pawn-empenos",
     "citySlug": "town-n-country",
-    "name": "Pawn Empeños",
+    "name": "Pawn Empe\u00f1os",
     "phone": null,
     "website": null,
     "address": "Town 'N' Country, FL 33634",
@@ -1178,25 +1178,6 @@
     "googleMapsUrl": null
   },
   {
-    "slug": "5-star-car-title-loans",
-    "citySlug": "temple-terrace",
-    "name": "5 Star Car Title Loans",
-    "phone": "+1 813-710-6951",
-    "website": "https://5starloans.com/locations/florida/temple-terrace/10936-56th-st-suite-204p/%3Futm_source%3Dgoogle%26utm_medium%3Dgmb%26utm_campaign%3D0027829",
-    "address": "10936 N 56th St #204p, Temple Terrace, FL 33617",
-    "street": "10936 N 56th St #204p",
-    "city": "Temple Terrace",
-    "state": "Florida",
-    "zip": "33617",
-    "rating": 4.8,
-    "reviews": 10,
-    "hours": "{\"Monday\": [\"9AM-7PM\"], \"Tuesday\": [\"9AM-7PM\"], \"Wednesday\": [\"9AM-7PM\"], \"Thursday\": [\"9AM-7PM\"], \"Friday\": [\"9AM-7PM\"], \"Saturday\": [\"10AM-5PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 28.0483614,
-    "longitude": -82.39425059999999,
-    "placeId": "ChIJ4TvI1ZrHwogRFklyb3di6TE",
-    "googleMapsUrl": null
-  },
-  {
     "slug": "b-and-b-auto-title-pawn",
     "citySlug": "tampa",
     "name": "B and B Auto Title Pawn",
@@ -1251,25 +1232,6 @@
     "latitude": 27.82123,
     "longitude": -82.71503799999999,
     "placeId": "ChIJM2tNc17jwogRBtqbda1dvBM",
-    "googleMapsUrl": null
-  },
-  {
-    "slug": "swift-title-loans",
-    "citySlug": "town-n-country",
-    "name": "Swift Title Loans",
-    "phone": "+1 813-592-7870",
-    "website": "https://cartitleloansla.com/locations/florida/town-n-country/6743-memorial-hwy/%3Futm_source%3Dgoogle%26utm_medium%3Dgmb%26utm_campaign%3D0030354",
-    "address": "6743 Memorial Hwy #100, Town 'N' Country, FL 33615",
-    "street": "6743 Memorial Hwy #100",
-    "city": "Town 'n' Country",
-    "state": "Florida",
-    "zip": "33615",
-    "rating": 4.4,
-    "reviews": 9,
-    "hours": "{\"Monday\": [\"9AM-5PM\"], \"Tuesday\": [\"9AM-5PM\"], \"Wednesday\": [\"9AM-5PM\"], \"Thursday\": [\"9AM-5PM\"], \"Friday\": [\"9AM-5PM\"], \"Saturday\": [\"10AM-2PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 27.9959615,
-    "longitude": -82.5810212,
-    "placeId": "ChIJNUTfb4npwogRuMfFNf5x2lk",
     "googleMapsUrl": null
   },
   {
@@ -1807,7 +1769,7 @@
   {
     "slug": "le-jeune-jewelry-pawn-and-guns-empenos",
     "citySlug": "hialeah",
-    "name": "LE JEUNE JEWELRY PAWN AND GUNS EMPEÑOS",
+    "name": "LE JEUNE JEWELRY PAWN AND GUNS EMPE\u00d1OS",
     "phone": "+1 305-558-8447",
     "website": null,
     "address": "1937 W 60th St, Hialeah, FL 33012",
@@ -2035,7 +1997,7 @@
   {
     "slug": "casa-de-empeno",
     "citySlug": "hialeah",
-    "name": "CASA DE EMPEÑO",
+    "name": "CASA DE EMPE\u00d1O",
     "phone": null,
     "website": null,
     "address": "Hialeah, FL 33014",
@@ -2185,28 +2147,9 @@
     "googleMapsUrl": null
   },
   {
-    "slug": "check-cashing-usa",
-    "citySlug": "hialeah",
-    "name": "Check Cashing USA",
-    "phone": "+1 305-681-2726",
-    "website": "https://www.checkcashingusa.com/%3Futm_source%3Dgoogle%26utm_medium%3Dyext",
-    "address": "612 E 49th St, Hialeah, FL 33013",
-    "street": "612 E 49th St",
-    "city": "Hialeah",
-    "state": "Florida",
-    "zip": "33013",
-    "rating": 4.8,
-    "reviews": 218,
-    "hours": "{\"Monday\": [\"9AM-7PM\"], \"Tuesday\": [\"9AM-7PM\"], \"Wednesday\": [\"9AM-7PM\"], \"Thursday\": [\"9AM-7PM\"], \"Friday\": [\"9AM-8PM\"], \"Saturday\": [\"9AM-6PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 25.8670202,
-    "longitude": -80.2704926,
-    "placeId": "ChIJ4_wxuuax2YgRFg0suq8NidM",
-    "googleMapsUrl": null
-  },
-  {
     "slug": "pawn-shop-joyeria-empeno",
     "citySlug": "hialeah",
-    "name": "Pawn Shop Joyeria Empeño",
+    "name": "Pawn Shop Joyeria Empe\u00f1o",
     "phone": null,
     "website": null,
     "address": "Hialeah, FL 33016",
@@ -2339,7 +2282,7 @@
   {
     "slug": "joyeria-casa-de-empeno",
     "citySlug": "hialeah",
-    "name": "Joyeria CASA de EMPEÑO",
+    "name": "Joyeria CASA de EMPE\u00d1O",
     "phone": null,
     "website": null,
     "address": "Hialeah, FL 33010",
@@ -2719,7 +2662,7 @@
   {
     "slug": "la-boveda-jewelry-pawn",
     "citySlug": "miami",
-    "name": "La Bóveda Jewelry & Pawn",
+    "name": "La B\u00f3veda Jewelry & Pawn",
     "phone": "+1 786-828-7698",
     "website": "https://www.labovedapawn.com/",
     "address": "2424 NW 27th Ave, Miami, FL 33142",
@@ -2833,7 +2776,7 @@
   {
     "slug": "ariels-jewelry-no5",
     "citySlug": "hialeah",
-    "name": "Ariel’s Jewelry No5",
+    "name": "Ariel\u2019s Jewelry No5",
     "phone": "+1 305-826-9070",
     "website": "https://arielsjewelry.com/",
     "address": "2476 W 60th St, Hialeah, FL 33016",
@@ -3365,7 +3308,7 @@
   {
     "slug": "capitol-city-buy-sell-pawn",
     "citySlug": "clearwater",
-    "name": "CAPITOL CITY BUY • SELL • PAWN",
+    "name": "CAPITOL CITY BUY \u2022 SELL \u2022 PAWN",
     "phone": "+1 727-223-5515",
     "website": "https://www.capitolcitybuysellpawn.com/contact-us",
     "address": "4355 E Bay Dr unit 100, Clearwater, FL 33764",
@@ -4617,25 +4560,6 @@
     "googleMapsUrl": null
   },
   {
-    "slug": "swift-title-loans",
-    "citySlug": "orlando",
-    "name": "Swift Title Loans",
-    "phone": "+1 407-871-6911",
-    "website": "https://cartitleloansla.com/locations/florida/orlando/5781-major-blvd/%3Futm_source%3Dgoogle%26utm_medium%3Dgmb%26utm_campaign%3D0031148",
-    "address": "5781 Major Blvd STE 101, Orlando, FL 32819",
-    "street": "5781 Major Blvd STE 101",
-    "city": "Orlando",
-    "state": "Florida",
-    "zip": "32819",
-    "rating": 4.9,
-    "reviews": 12,
-    "hours": "{\"Monday\": [\"9AM-7PM\"], \"Tuesday\": [\"9AM-7PM\"], \"Wednesday\": [\"9AM-7PM\"], \"Thursday\": [\"9AM-7PM\"], \"Friday\": [\"9AM-7PM\"], \"Saturday\": [\"10AM-5PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 28.4768011,
-    "longitude": -81.4572584,
-    "placeId": "ChIJDUCQs6Z554gRim7Bzpx1sAo",
-    "googleMapsUrl": null
-  },
-  {
     "slug": "la-familia-pawn-and-jewelry",
     "citySlug": "kissimmee",
     "name": "La Familia Pawn and Jewelry",
@@ -5282,25 +5206,6 @@
     "googleMapsUrl": null
   },
   {
-    "slug": "check-cashing-store-pompano-beach-sell-my-rolex-luxury-watches-gold-silver-jewelry",
-    "citySlug": "pompano-beach",
-    "name": "Check Cashing Store Pompano Beach - Sell My Rolex, Luxury Watches, Gold & Silver Jewelry",
-    "phone": "+1 561-774-9292",
-    "website": "http://ddpawnloans.com/",
-    "address": "2751 W Atlantic Blvd, Pompano Beach, FL 33069",
-    "street": "2751 W Atlantic Blvd",
-    "city": "Pompano Beach",
-    "state": "Florida",
-    "zip": "33069",
-    "rating": 4.9,
-    "reviews": 197,
-    "hours": "{\"Monday\": [\"10AM-7PM\"], \"Tuesday\": [\"10AM-7PM\"], \"Wednesday\": [\"10AM-7PM\"], \"Thursday\": [\"10AM-7PM\"], \"Friday\": [\"9AM-8:30PM\"], \"Saturday\": [\"10AM-7PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 26.231586,
-    "longitude": -80.16017599999999,
-    "placeId": "ChIJd1Sr0g0D2YgRZsvrqB0fQRg",
-    "googleMapsUrl": null
-  },
-  {
     "slug": "sterling-loan-and-jewelry-inc",
     "citySlug": "fort-lauderdale",
     "name": "Sterling Loan and Jewelry INC",
@@ -5586,25 +5491,6 @@
     "googleMapsUrl": null
   },
   {
-    "slug": "dd-pawn-loans-pawn-shop-check-cashing-store-pompano-beach",
-    "citySlug": "pompano-beach",
-    "name": "DD Pawn Loans - Pawn Shop & Check Cashing Store Pompano Beach",
-    "phone": "+1 561-774-9292",
-    "website": "https://ddpawnloans.com/%3Futm_source%3DGMB%26utm_medium%3Dgoogle",
-    "address": "2751 W Atlantic Blvd #101, Pompano Beach, FL 33069",
-    "street": "2751 W Atlantic Blvd #101",
-    "city": "Pompano Beach",
-    "state": "Florida",
-    "zip": "33069",
-    "rating": 4.9,
-    "reviews": 473,
-    "hours": "{\"Monday\": [\"10AM-7PM\"], \"Tuesday\": [\"10AM-7PM\"], \"Wednesday\": [\"10AM-7PM\"], \"Thursday\": [\"10AM-7PM\"], \"Friday\": [\"9AM-8PM\"], \"Saturday\": [\"10AM-7PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 26.2315861,
-    "longitude": -80.160245,
-    "placeId": "ChIJNb54KwwD2YgRK34FB20jXwo",
-    "googleMapsUrl": null
-  },
-  {
     "slug": "rolex-watch-buyers",
     "citySlug": "sunny-isles-beach",
     "name": "Rolex Watch Buyers",
@@ -5621,25 +5507,6 @@
     "latitude": 25.9300485,
     "longitude": -80.1262026,
     "placeId": "ChIJaYtBr-St2YgRnYFhQw8kWKo",
-    "googleMapsUrl": null
-  },
-  {
-    "slug": "5-star-car-title-loans",
-    "citySlug": "fort-lauderdale",
-    "name": "5 Star Car Title Loans",
-    "phone": "+1 754-704-1512",
-    "website": "https://5starloans.com/locations/florida/fort-lauderdale/4208-ne-5th-ave/%3Futm_source%3Dgoogle%26utm_medium%3Dgmb%26utm_campaign%3D0033603",
-    "address": "4208 NE 5th Ave, Fort Lauderdale, FL 33334",
-    "street": "4208 NE 5th Ave",
-    "city": "Fort Lauderdale",
-    "state": "Florida",
-    "zip": "33334",
-    "rating": 4.9,
-    "reviews": 12,
-    "hours": "{\"Monday\": [\"9AM-7PM\"], \"Tuesday\": [\"9AM-7PM\"], \"Wednesday\": [\"9AM-7PM\"], \"Thursday\": [\"9AM-7PM\"], \"Friday\": [\"9AM-7PM\"], \"Saturday\": [\"10AM-5PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 26.178481,
-    "longitude": -80.1405326,
-    "placeId": "ChIJV9pjTdANToYRDY7myTAAgGU",
     "googleMapsUrl": null
   },
   {
@@ -7507,7 +7374,7 @@
   {
     "slug": "empeno",
     "citySlug": "miami",
-    "name": "Empeño",
+    "name": "Empe\u00f1o",
     "phone": null,
     "website": null,
     "address": "7381 SW 8th St, Miami, FL 33144",
@@ -9977,7 +9844,7 @@
   {
     "slug": "vcells-miami-cash-for-phones-electronics",
     "citySlug": "miami",
-    "name": "VCells Miami – Cash for Phones & ElectronicS",
+    "name": "VCells Miami \u2013 Cash for Phones & ElectronicS",
     "phone": "+1 305-747-3422",
     "website": "http://vcellsmiami.com/",
     "address": "19501 Biscayne Blvd, Miami, FL 33180",
@@ -10086,25 +9953,6 @@
     "latitude": 26.046013,
     "longitude": -80.22461779999999,
     "placeId": "ChIJDTBaza6p2YgRoLQBmHAvxgU",
-    "googleMapsUrl": null
-  },
-  {
-    "slug": "check-cashing-usa",
-    "citySlug": "pembroke-pines",
-    "name": "Check Cashing USA",
-    "phone": "+1 954-435-9000",
-    "website": "https://www.checkcashingusa.com/%3Futm_source%3Dgoogle%26utm_medium%3Dyext",
-    "address": "1980 N University Dr, Pembroke Pines, FL 33024",
-    "street": "1980 N University Dr",
-    "city": "Pembroke Pines",
-    "state": "Florida",
-    "zip": "33024",
-    "rating": 4.9,
-    "reviews": 143,
-    "hours": "{\"Monday\": [\"10AM-6PM\"], \"Tuesday\": [\"Closed\"], \"Wednesday\": [\"10AM-6PM\"], \"Thursday\": [\"10AM-6PM\"], \"Friday\": [\"10AM-7PM\"], \"Saturday\": [\"10AM-5PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 26.0262675,
-    "longitude": -80.2491502,
-    "placeId": "ChIJf5cH-yyp2YgRdZ_Rpie94ZQ",
     "googleMapsUrl": null
   },
   {

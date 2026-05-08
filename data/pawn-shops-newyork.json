@@ -1769,7 +1769,7 @@
   {
     "slug": "oscars-pay-me-now",
     "citySlug": "bronx",
-    "name": "Oscar’s Pay Me Now",
+    "name": "Oscar\u2019s Pay Me Now",
     "phone": "+1 914-320-6693",
     "website": "https://www.paymenowpawn.com/",
     "address": "2356 Grand Concourse, Bronx, NY 10458",
@@ -1788,7 +1788,7 @@
   {
     "slug": "pawn-shop-top-dollar-brooklyn",
     "citySlug": "brooklyn",
-    "name": "PAWN SHOP — TOP DOLLAR BROOKLYN",
+    "name": "PAWN SHOP \u2014 TOP DOLLAR BROOKLYN",
     "phone": "+1 917-769-0904",
     "website": null,
     "address": "4301 Church Ave, Brooklyn, NY 11203",
@@ -1902,7 +1902,7 @@
   {
     "slug": "tu-casa-de-empeno",
     "citySlug": "corona",
-    "name": "Tu Casa de Empeño",
+    "name": "Tu Casa de Empe\u00f1o",
     "phone": "+1 718-781-1111",
     "website": "https://tucasadeempeno.com/",
     "address": "39-13 104th St, Corona, NY 11368",
@@ -3327,7 +3327,7 @@
   {
     "slug": "empeno-cash-loan",
     "citySlug": "bronx",
-    "name": "Empeño Cash Loan",
+    "name": "Empe\u00f1o Cash Loan",
     "phone": null,
     "website": null,
     "address": "190 E 167th St, Bronx, NY 10456",
@@ -4275,25 +4275,6 @@
     "googleMapsUrl": null
   },
   {
-    "slug": "atn-check-cashing",
-    "citySlug": "elmhurst",
-    "name": "ATN Check Cashing",
-    "phone": "+1 718-271-2823",
-    "website": null,
-    "address": "94-72 Corona Ave., Elmhurst, NY 11373",
-    "street": "94-72 Corona Ave.",
-    "city": "Elmhurst",
-    "state": "New York",
-    "zip": "11373",
-    "rating": 1.2,
-    "reviews": 17,
-    "hours": "{\"Monday\": [\"7AM-12AM\"], \"Tuesday\": [\"7AM-12AM\"], \"Wednesday\": [\"7AM-12AM\"], \"Thursday\": [\"7AM-12AM\"], \"Friday\": [\"7AM-12AM\"], \"Saturday\": [\"8AM-12AM\"], \"Sunday\": [\"8AM-12AM\"]}",
-    "latitude": 40.7419882,
-    "longitude": -73.8676827,
-    "placeId": "ChIJGVdAsLVfwokRTSO03UvHDTc",
-    "googleMapsUrl": null
-  },
-  {
     "slug": "aldor-jewelry-creations-inc",
     "citySlug": "astoria",
     "name": "Aldor Jewelry Creations Inc",
@@ -4937,25 +4918,6 @@
     "latitude": 40.57726359999999,
     "longitude": -73.96190469999999,
     "placeId": "ChIJjWAxUF1FwokROt4W6rfewcA",
-    "googleMapsUrl": null
-  },
-  {
-    "slug": "challenger-check-cashing",
-    "citySlug": "brooklyn",
-    "name": "Challenger Check Cashing",
-    "phone": "+1 718-209-4789",
-    "website": "http://www.challengercheckcashing.com/",
-    "address": "1772 Ralph Ave ste b, Brooklyn, NY 11236",
-    "street": "1772 Ralph Ave ste b",
-    "city": "Brooklyn",
-    "state": "New York",
-    "zip": "11236",
-    "rating": 3.1,
-    "reviews": 14,
-    "hours": "{\"Monday\": [\"7AM-7PM\"], \"Tuesday\": [\"7AM-7PM\"], \"Wednesday\": [\"7AM-7PM\"], \"Thursday\": [\"7AM-7PM\"], \"Friday\": [\"7AM-7PM\"], \"Saturday\": [\"7AM-5PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 40.6333335,
-    "longitude": -73.919421,
-    "placeId": "ChIJr6dhRrFcwokRJTX0SPjiyeA",
     "googleMapsUrl": null
   },
   {

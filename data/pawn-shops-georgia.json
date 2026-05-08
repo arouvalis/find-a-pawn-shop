@@ -2679,25 +2679,6 @@
     "googleMapsUrl": null
   },
   {
-    "slug": "carbucks-title-pawns-and-title-loans",
-    "citySlug": "norcross",
-    "name": "Carbucks Title Pawns and Title Loans",
-    "phone": "+1 770-242-4017",
-    "website": "http://www.carbuckscorp.com/",
-    "address": "5865 Jimmy Carter Blvd #110, Norcross, GA 30071",
-    "street": "5865 Jimmy Carter Blvd #110",
-    "city": "Norcross",
-    "state": "Georgia",
-    "zip": "30071",
-    "rating": 4.8,
-    "reviews": 128,
-    "hours": "{\"Monday\": [\"9AM-6PM\"], \"Tuesday\": [\"9AM-6PM\"], \"Wednesday\": [\"9AM-6PM\"], \"Thursday\": [\"9AM-6PM\"], \"Friday\": [\"9AM-6PM\"], \"Saturday\": [\"10AM-2PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 33.920173,
-    "longitude": -84.2097189,
-    "placeId": "ChIJrYdprs6m9YgRVvKSeRCvZQg",
-    "googleMapsUrl": null
-  },
-  {
     "slug": "atlanta-luxury-bags-resale-consignment-and-designer-handbag-authentication",
     "citySlug": "atlanta",
     "name": "Atlanta Luxury Bags Resale Consignment and Designer Handbag Authentication",
@@ -3189,25 +3170,6 @@
     "latitude": 33.9505625,
     "longitude": -84.5276446,
     "placeId": "ChIJlxXeKwQU9YgR5SCxBhZP-18",
-    "googleMapsUrl": null
-  },
-  {
-    "slug": "360-title-loans-title-pawn",
-    "citySlug": "marietta",
-    "name": "360 Title Loans & Title Pawn",
-    "phone": "+1 404-284-4444",
-    "website": null,
-    "address": "603 South Marietta Pkwy SE, Marietta, GA 30060",
-    "street": "603 South Marietta Pkwy SE",
-    "city": "Marietta",
-    "state": "Georgia",
-    "zip": "30060",
-    "rating": 1,
-    "reviews": 1,
-    "hours": "{\"Monday\": [\"9AM-7PM\"], \"Tuesday\": [\"9AM-7PM\"], \"Wednesday\": [\"9AM-7PM\"], \"Thursday\": [\"9AM-7PM\"], \"Friday\": [\"9AM-7PM\"], \"Saturday\": [\"9AM-7PM\"], \"Sunday\": [\"9AM-7PM\"]}",
-    "latitude": 33.9436238,
-    "longitude": -84.53375919999999,
-    "placeId": "ChIJKf6MXB0U9YgRFHmvfJqkMu4",
     "googleMapsUrl": null
   },
   {
@@ -4123,25 +4085,6 @@
     "googleMapsUrl": null
   },
   {
-    "slug": "atlanta-title-loans",
-    "citySlug": "decatur",
-    "name": "Atlanta Title Loans",
-    "phone": "+1 404-508-8662",
-    "website": "https://www.atlantatitleloans.net/locations/georgia/decatur/4801-b-memorial-dr%3Futm_source%3Dyextgoogle%26utm_medium%3Dorganic%26utm_campaign%3Dwebsite",
-    "address": "4801-B, Memorial Dr, Decatur, GA 30032",
-    "street": "4801-B, Memorial Dr",
-    "city": "Decatur",
-    "state": "Georgia",
-    "zip": "30032",
-    "rating": 4.9,
-    "reviews": 155,
-    "hours": "{\"Monday\": [\"10AM-6PM\"], \"Tuesday\": [\"10AM-6PM\"], \"Wednesday\": [\"10AM-6PM\"], \"Thursday\": [\"10AM-6PM\"], \"Friday\": [\"10AM-6PM\"], \"Saturday\": [\"9AM-3PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 33.7858185,
-    "longitude": -84.2338801,
-    "placeId": "ChIJb4smSK-p9YgRy6H_XVI_qSo",
-    "googleMapsUrl": null
-  },
-  {
     "slug": "titlemax-title-pawns",
     "citySlug": "atlanta",
     "name": "TitleMax Title Pawns",
@@ -4177,25 +4120,6 @@
     "latitude": 33.7455281,
     "longitude": -84.40419589999999,
     "placeId": "ChIJR3LnVHAD9YgRhBDxiAl1yxQ",
-    "googleMapsUrl": null
-  },
-  {
-    "slug": "rapid-car-title-pawns",
-    "citySlug": "decatur",
-    "name": "Rapid Car Title Pawns",
-    "phone": "+1 404-373-0531",
-    "website": null,
-    "address": "2677 E College Ave, Decatur, GA 30030",
-    "street": "2677 E College Ave",
-    "city": "Decatur",
-    "state": "Georgia",
-    "zip": "30030",
-    "rating": null,
-    "reviews": null,
-    "hours": null,
-    "latitude": 33.7745055,
-    "longitude": -84.2803359,
-    "placeId": "ChIJvxRmSl0H9YgRQym9ujkn1H8",
     "googleMapsUrl": null
   },
   {

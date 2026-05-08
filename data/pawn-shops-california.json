@@ -1596,25 +1596,6 @@
     "googleMapsUrl": null
   },
   {
-    "slug": "montana-capital-car-title-loans",
-    "citySlug": "los-angeles",
-    "name": "Montana Capital Car Title Loans",
-    "phone": "+1 323-672-4955",
-    "website": "https://montanacapital.com/locations/los-angeles-14/%3Futm_source%3Dgoogle%26utm_medium%3Dgmb%26utm_campaign%3D0001870",
-    "address": "5918 S Broadway, Los Angeles, CA 90003",
-    "street": "5918 S Broadway",
-    "city": "Los Angeles",
-    "state": "California",
-    "zip": "90003",
-    "rating": 4.9,
-    "reviews": 14,
-    "hours": "{\"Monday\": [\"9AM-8PM\"], \"Tuesday\": [\"9AM-8PM\"], \"Wednesday\": [\"9AM-8PM\"], \"Thursday\": [\"9AM-8PM\"], \"Friday\": [\"9AM-8PM\"], \"Saturday\": [\"9AM-8PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 33.9864578,
-    "longitude": -118.2781282,
-    "placeId": "ChIJz00aljfIwoAR1jXad6ce_Bg",
-    "googleMapsUrl": null
-  },
-  {
     "slug": "elliott-salter-pawnshop",
     "citySlug": "west-hollywood",
     "name": "Elliott Salter Pawnshop",
@@ -3588,25 +3569,6 @@
     "latitude": 32.6222276,
     "longitude": -117.073144,
     "placeId": "ChIJ8YMIznBO2YARuduizVp0QQ8",
-    "googleMapsUrl": null
-  },
-  {
-    "slug": "5-star-car-title-loans",
-    "citySlug": "national-city",
-    "name": "5 Star Car Title Loans",
-    "phone": "+1 619-605-0367",
-    "website": "https://5starloans.com/locations/california/national-city/710-e-8th-st/%3Futm_source%3Dgoogle%26utm_medium%3Dgmb%26utm_campaign%3D0030617",
-    "address": "710 E 8th St, National City, CA 91950",
-    "street": "710 E 8th St",
-    "city": "National City",
-    "state": "California",
-    "zip": "91950",
-    "rating": 5,
-    "reviews": 10,
-    "hours": "{\"Monday\": [\"9AM-7PM\"], \"Tuesday\": [\"9AM-7PM\"], \"Wednesday\": [\"9AM-7PM\"], \"Thursday\": [\"9AM-7PM\"], \"Friday\": [\"9AM-7PM\"], \"Saturday\": [\"10AM-5PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 32.6776848,
-    "longitude": -117.0994508,
-    "placeId": "ChIJJYOvbolT2YARfrRluExs6ps",
     "googleMapsUrl": null
   },
   {
@@ -5621,25 +5583,6 @@
     "latitude": 33.879307,
     "longitude": -118.353014,
     "placeId": "ChIJecG7iVa0woARYozSyg1d6Ws",
-    "googleMapsUrl": null
-  },
-  {
-    "slug": "mundo-check-cashing-4",
-    "citySlug": "los-angeles",
-    "name": "Mundo Check Cashing #4",
-    "phone": "+1 213-388-3848",
-    "website": null,
-    "address": "2201 W Pico Blvd, Los Angeles, CA 90006",
-    "street": "2201 W Pico Blvd",
-    "city": "Los Angeles",
-    "state": "California",
-    "zip": "90006",
-    "rating": 2.9,
-    "reviews": 12,
-    "hours": "{\"Monday\": [\"9AM-6:30PM\"], \"Tuesday\": [\"9AM-6:30PM\"], \"Wednesday\": [\"9AM-6:30PM\"], \"Thursday\": [\"9AM-6:30PM\"], \"Friday\": [\"9AM-8PM\"], \"Saturday\": [\"9AM-5PM\"], \"Sunday\": [\"9AM-3PM\"]}",
-    "latitude": 34.0475786,
-    "longitude": -118.2845837,
-    "placeId": "ChIJpxGfnZrHwoAR8vUN8ZZlt-Q",
     "googleMapsUrl": null
   },
   {

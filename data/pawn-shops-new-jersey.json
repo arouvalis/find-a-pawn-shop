@@ -325,7 +325,7 @@
   {
     "slug": "jm-pawn-shop-casa-de-empeno",
     "citySlug": "perth-amboy",
-    "name": "J&M Pawn Shop (Casa De Empeńo)",
+    "name": "J&M Pawn Shop (Casa De Empe\u0144o)",
     "phone": "+1 732-324-1750",
     "website": "https://orgulloso22.wixsite.com/thepawnshopjewelry",
     "address": "256 Smith St, Perth Amboy, NJ 08861",
@@ -587,25 +587,6 @@
     "longitude": -74.4228237,
     "placeId": "ChIJSzR03R26w4kRMt4uMFvNMwI",
     "googleMapsUrl": "https://www.google.com/maps/place/Nelly%27s+Pawn+Shop/@40.6200061,-74.4228237,14z/data=!4m8!1m2!2m1!1sNelly%27s+Pawn+Shop!3m4!1s0x89c3ba1ddd74344b:0x233cd5b302ede32!8m2!3d40.6200061!4d-74.4228237"
-  },
-  {
-    "slug": "cash-centers-of-nj-check-cashing",
-    "citySlug": "east-hanover",
-    "name": "Cash Centers of NJ - Check Cashing",
-    "phone": "+1 973-599-9400",
-    "website": "http://www.premiumpawnnj.com/",
-    "address": "393 NJ-10, East Hanover, NJ 07936",
-    "street": "393 NJ-10",
-    "city": "East Hanover",
-    "state": "New Jersey",
-    "zip": "07936",
-    "rating": 4.3,
-    "reviews": 12,
-    "hours": "{\"Monday\": [\"8AM-6:30PM\"], \"Tuesday\": [\"8AM-6:30PM\"], \"Wednesday\": [\"8AM-6:30PM\"], \"Thursday\": [\"8AM-7PM\"], \"Friday\": [\"8AM-7PM\"], \"Saturday\": [\"8AM-5PM\"], \"Sunday\": [\"9AM-4PM\"]}",
-    "latitude": 40.8015988,
-    "longitude": -74.3610556,
-    "placeId": "ChIJF5Yyrf2ow4kR4HxHSsJXY2M",
-    "googleMapsUrl": "https://www.google.com/maps/place/Cash+Centers+of+NJ+-+Check+Cashing/@40.8015988,-74.3610556,14z/data=!4m8!1m2!2m1!1sCash+Centers+of+NJ+-+Check+Cashing!3m4!1s0x89c3a8fdad329617:0x636357c24a477ce0!8m2!3d40.8015988!4d-74.3610556"
   },
   {
     "slug": "we-buy-everything-pawn-shop-vineland",
@@ -933,7 +914,7 @@
   {
     "slug": "vj-jewelers-pawn-shop",
     "citySlug": "perth-amboy",
-    "name": "V&J Jewelers “Pawn Shop”",
+    "name": "V&J Jewelers \u201cPawn Shop\u201d",
     "phone": "+1 732-293-1379",
     "website": "http://vnj.jewelershowcase.com/",
     "address": "69A Smith St, Perth Amboy, NJ 08861",

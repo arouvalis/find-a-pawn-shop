@@ -1064,25 +1064,6 @@
     "googleMapsUrl": null
   },
   {
-    "slug": "title-loans-365",
-    "citySlug": "las-vegas",
-    "name": "Title Loans 365",
-    "phone": "+1 702-358-0633",
-    "website": "https://titleloans365.com/",
-    "address": "1810 E Sahara Ave #391, Las Vegas, NV 89104",
-    "street": "1810 E Sahara Ave #391",
-    "city": "Las Vegas",
-    "state": "Nevada",
-    "zip": "89104",
-    "rating": 3.5,
-    "reviews": 13,
-    "hours": "{\"Monday\": [\"Open 24 hours\"], \"Tuesday\": [\"Open 24 hours\"], \"Wednesday\": [\"Open 24 hours\"], \"Thursday\": [\"Open 24 hours\"], \"Friday\": [\"Open 24 hours\"], \"Saturday\": [\"Open 24 hours\"], \"Sunday\": [\"Open 24 hours\"]}",
-    "latitude": 36.1451721,
-    "longitude": -115.1248481,
-    "placeId": "ChIJX9EPGJrEyIARFxlUU0eoYPs",
-    "googleMapsUrl": null
-  },
-  {
     "slug": "superpawn",
     "citySlug": "las-vegas",
     "name": "SuperPawn",
@@ -1289,25 +1270,6 @@
     "latitude": 36.2345877,
     "longitude": -115.2287703,
     "placeId": "ChIJufAWtF3qyIARCE5y6oRLnEQ",
-    "googleMapsUrl": null
-  },
-  {
-    "slug": "advantage-check-cashing",
-    "citySlug": "las-vegas",
-    "name": "Advantage Check Cashing",
-    "phone": "+1 702-734-7135",
-    "website": "https://advantagecheckcashing.com/",
-    "address": "547 E Sahara Ave Ste 103, Las Vegas, NV 89104",
-    "street": "547 E Sahara Ave Ste 103",
-    "city": "Las Vegas",
-    "state": "Nevada",
-    "zip": "89104",
-    "rating": 3.8,
-    "reviews": 38,
-    "hours": "{\"Monday\": [\"10AM-5PM\"], \"Tuesday\": [\"10AM-5PM\"], \"Wednesday\": [\"10AM-5PM\"], \"Thursday\": [\"10AM-5PM\"], \"Friday\": [\"10AM-6PM\"], \"Saturday\": [\"Closed\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 36.1433663,
-    "longitude": -115.1492182,
-    "placeId": "ChIJS49E33vEyIARJgClu9A2izs",
     "googleMapsUrl": null
   },
   {

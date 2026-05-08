@@ -912,25 +912,6 @@
     "googleMapsUrl": "https://www.google.com/maps/place/Cash+Fast+Inc/@37.0336303,-100.922106,14z/data=!4m8!1m2!2m1!1sCash+Fast+Inc!3m4!1s0x87081390c4eb12d1:0x4f0f89400200c75a!8m2!3d37.0336303!4d-100.922106"
   },
   {
-    "slug": "loanmax-title-loans",
-    "citySlug": "liberal",
-    "name": "Loanmax Title Loans",
-    "phone": "+1 620-626-5655",
-    "website": "https://www.loanmaxtitleloans.net/locations/kansas/liberal/1030-n-kansas-avenue%3Futm_source%3Dyextgoogle%26utm_medium%3Dorganic%26utm_campaign%3Dwebsite",
-    "address": "1030 N Kansas Ave, Liberal, KS 67901",
-    "street": "1030 N Kansas Ave",
-    "city": "Liberal",
-    "state": "Kansas",
-    "zip": "67901",
-    "rating": 4.8,
-    "reviews": 293,
-    "hours": "{\"Monday\": [\"10AM-6PM\"], \"Tuesday\": [\"10AM-6PM\"], \"Wednesday\": [\"10AM-6PM\"], \"Thursday\": [\"10AM-6PM\"], \"Friday\": [\"10AM-6PM\"], \"Saturday\": [\"9AM-2PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 37.04980949999999,
-    "longitude": -100.9227464,
-    "placeId": "ChIJtcWYxncUCIcR6UQZ3irLRTI",
-    "googleMapsUrl": "https://www.google.com/maps/place/Loanmax+Title+Loans/@37.049809499999995,-100.9227464,14z/data=!4m8!1m2!2m1!1sLoanmax+Title+Loans!3m4!1s0x87081477c698c5b5:0x3245cb2ade1944e9!8m2!3d37.049809499999995!4d-100.9227464"
-  },
-  {
     "slug": "tps-jewelry-pawn",
     "citySlug": "emporia",
     "name": "Tp's Jewelry & Pawn",
@@ -990,7 +971,7 @@
   {
     "slug": "helens-gifts-outdoors-pawn",
     "citySlug": "dodge-city",
-    "name": "Helen’s Gifts, Outdoors & Pawn",
+    "name": "Helen\u2019s Gifts, Outdoors & Pawn",
     "phone": "+1 620-227-8009",
     "website": null,
     "address": "706 3rd Ave, Dodge City, KS 67801",

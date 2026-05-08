@@ -95,25 +95,6 @@
     "googleMapsUrl": null
   },
   {
-    "slug": "one-pawn-check-cashing",
-    "citySlug": "kansas-city",
-    "name": "One Pawn & Check Cashing",
-    "phone": "+1 816-753-1166",
-    "website": "https://www.facebook.com/onepawn",
-    "address": "400 Linwood Blvd Suite B, Kansas City, MO 64109",
-    "street": "400 Linwood Blvd Suite B",
-    "city": "Kansas City",
-    "state": "Missouri",
-    "zip": "64109",
-    "rating": 4,
-    "reviews": 10,
-    "hours": "{\"Monday\": [\"10AM-6PM\"], \"Tuesday\": [\"10AM-6PM\"], \"Wednesday\": [\"10AM-6PM\"], \"Thursday\": [\"10AM-6PM\"], \"Friday\": [\"10AM-6PM\"], \"Saturday\": [\"10:30AM-3PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 39.0688293,
-    "longitude": -94.5797288,
-    "placeId": "ChIJq-eLy3_xwIcRG7wTQPrerxA",
-    "googleMapsUrl": null
-  },
-  {
     "slug": "national-pawn",
     "citySlug": "kansas-city",
     "name": "National Pawn",
@@ -1256,7 +1237,7 @@
   {
     "slug": "steves-pawn",
     "citySlug": "house-springs",
-    "name": "Steve’s Pawn",
+    "name": "Steve\u2019s Pawn",
     "phone": "+1 636-671-7114",
     "website": null,
     "address": "4624 House Springs Center, House Springs, MO 63051",

@@ -116,7 +116,7 @@
   {
     "slug": "9-to-5-pawn-jewelry-co-casa-de-empeno",
     "citySlug": "wilmington",
-    "name": "9 to 5 Pawn & Jewelry Co. [Casa de Empeño]",
+    "name": "9 to 5 Pawn & Jewelry Co. [Casa de Empe\u00f1o]",
     "phone": "+1 844-925-9251",
     "website": "https://www.instagram.com/9to5pawn/",
     "address": "4714 Kirkwood Hwy, Wilmington, DE 19808",
@@ -340,24 +340,5 @@
     "longitude": -75.14025199999999,
     "placeId": "ChIJ31GZNky3uIkRfWQL_ZztMe4",
     "googleMapsUrl": "https://www.google.com/maps/place/Jewelry+Exchange+of+Delaware+-+Lewes/@38.77548,-75.14025199999999,14z/data=!4m8!1m2!2m1!1sJewelry+Exchange+of+Delaware+-+Lewes!3m4!1s0x89b8b74c369951df:0xee31ed9cfd0b647d!8m2!3d38.77548!4d-75.14025199999999"
-  },
-  {
-    "slug": "capitol-title-loans",
-    "citySlug": "bear",
-    "name": "Capitol Title Loans",
-    "phone": "+1 302-221-0886",
-    "website": "https://capitoltitleloans.com/",
-    "address": "772 Pulaski Hwy, Bear, DE 19701",
-    "street": "772 Pulaski Hwy",
-    "city": "Bear",
-    "state": "Delaware",
-    "zip": "19701",
-    "rating": 4.2,
-    "reviews": 6,
-    "hours": "{\"Monday\": [\"9AM-7PM\"], \"Tuesday\": [\"9AM-7PM\"], \"Wednesday\": [\"9AM-7PM\"], \"Thursday\": [\"9AM-7PM\"], \"Friday\": [\"9AM-7PM\"], \"Saturday\": [\"9AM-5PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 39.6421284,
-    "longitude": -75.6428162,
-    "placeId": "ChIJkYZySb8Gx4kRrbh5Eg6Cmgs",
-    "googleMapsUrl": "https://www.google.com/maps/place/Capitol+Title+Loans/@39.6421284,-75.6428162,14z/data=!4m8!1m2!2m1!1sCapitol+Title+Loans!3m4!1s0x89c706bf49728691:0xb9a820e1279b8ad!8m2!3d39.6421284!4d-75.6428162"
   }
 ]

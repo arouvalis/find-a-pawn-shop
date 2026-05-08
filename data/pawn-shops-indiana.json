@@ -760,25 +760,6 @@
     "googleMapsUrl": null
   },
   {
-    "slug": "montana-capital-car-title-loans",
-    "citySlug": "indianapolis",
-    "name": "Montana Capital Car Title Loans",
-    "phone": "+1 765-204-1432",
-    "website": "https://montanacapital.com/%3Futm_source%3Dgoogle%26utm_medium%3Dgmb%26utm_campaign%3D0025041",
-    "address": "123 E 22nd St #11, Indianapolis, IN 46202",
-    "street": "123 E 22nd St #11",
-    "city": "Indianapolis",
-    "state": "Indiana",
-    "zip": "46202",
-    "rating": 4.8,
-    "reviews": 5,
-    "hours": "{\"Monday\": [\"9AM-7PM\"], \"Tuesday\": [\"9AM-7PM\"], \"Wednesday\": [\"9AM-7PM\"], \"Thursday\": [\"9AM-7PM\"], \"Friday\": [\"9AM-7PM\"], \"Saturday\": [\"10AM-5PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 39.7974405,
-    "longitude": -86.15506599999999,
-    "placeId": "ChIJhzTKyaMBQIgRtXTnufdRBmM",
-    "googleMapsUrl": null
-  },
-  {
     "slug": "avon-cash-for-gold-indiana",
     "citySlug": "avon",
     "name": "Avon Cash for Gold Indiana",
@@ -1712,7 +1693,7 @@
   {
     "slug": "ozarks-pawn-shop",
     "citySlug": "mishawaka",
-    "name": "Ozark’s Pawn Shop",
+    "name": "Ozark\u2019s Pawn Shop",
     "phone": "+1 574-222-2527",
     "website": null,
     "address": "1006 S Merrifield Ave, Mishawaka, IN 46544",

@@ -1731,7 +1731,7 @@
   {
     "slug": "levs-pawn-shop",
     "citySlug": "reynoldsburg",
-    "name": "Lev’s Pawn Shop",
+    "name": "Lev\u2019s Pawn Shop",
     "phone": "+1 614-694-2300",
     "website": "http://levspawn.com/",
     "address": "2765 Brice Rd, Reynoldsburg, OH 43068",
@@ -1786,25 +1786,6 @@
     "googleMapsUrl": null
   },
   {
-    "slug": "advance-car-title-loans",
-    "citySlug": "columbus",
-    "name": "Advance Car Title Loans",
-    "phone": "+1 614-881-5609",
-    "website": "https://titleloansadvance.com/locations/columbus-11/",
-    "address": "842 N High St, Columbus, OH 43215",
-    "street": "842 N High St",
-    "city": "Columbus",
-    "state": "Ohio",
-    "zip": "43215",
-    "rating": 4.7,
-    "reviews": 6,
-    "hours": "{\"Monday\": [\"9AM-7PM\"], \"Tuesday\": [\"9AM-7PM\"], \"Wednesday\": [\"9AM-7PM\"], \"Thursday\": [\"9AM-7PM\"], \"Friday\": [\"9AM-7PM\"], \"Saturday\": [\"10AM-5PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 39.979615,
-    "longitude": -83.003704,
-    "placeId": "ChIJk-ly0iiPOIgRMeiWOQXIFmE",
-    "googleMapsUrl": null
-  },
-  {
     "slug": "levs-pawn-shop",
     "citySlug": "lancaster",
     "name": "Lev's Pawn Shop",
@@ -1840,25 +1821,6 @@
     "latitude": 40.23734719999999,
     "longitude": -82.9623455,
     "placeId": "ChIJe_dqwD73OIgRqOZXzKm_SQQ",
-    "googleMapsUrl": null
-  },
-  {
-    "slug": "5-star-car-title-loans",
-    "citySlug": "dayton",
-    "name": "5 Star Car Title Loans",
-    "phone": "+1 614-714-6611",
-    "website": "https://5starloans.com/%3Futm_source%3Dgoogle%26utm_medium%3Dgmb%26utm_campaign%3D0029254",
-    "address": "2600 S Smithville Rd #1, Dayton, OH 45420",
-    "street": "2600 S Smithville Rd #1",
-    "city": "Dayton",
-    "state": "Ohio",
-    "zip": "45420",
-    "rating": 4,
-    "reviews": 7,
-    "hours": "{\"Monday\": [\"9AM-7PM\"], \"Tuesday\": [\"9AM-7PM\"], \"Wednesday\": [\"9AM-7PM\"], \"Thursday\": [\"9AM-7PM\"], \"Friday\": [\"9AM-7PM\"], \"Saturday\": [\"10AM-5PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 39.729704,
-    "longitude": -84.1407692,
-    "placeId": "ChIJuRL4CvyLOIgRlZblTW1VsZA",
     "googleMapsUrl": null
   },
   {
@@ -2318,25 +2280,6 @@
     "googleMapsUrl": null
   },
   {
-    "slug": "5-star-car-title-loans",
-    "citySlug": "dayton",
-    "name": "5 Star Car Title Loans",
-    "phone": "+1 937-358-8185",
-    "website": "https://5starloans.com/locations/ohio/dayton/5670-webster-st/%3Futm_source%3Dgoogle%26utm_medium%3Dgmb%26utm_campaign%3D0029224",
-    "address": "5670 Webster St, Dayton, OH 45414",
-    "street": "5670 Webster St",
-    "city": "Dayton",
-    "state": "Ohio",
-    "zip": "45414",
-    "rating": 4.4,
-    "reviews": 13,
-    "hours": "{\"Monday\": [\"9AM-7PM\"], \"Tuesday\": [\"9AM-7PM\"], \"Wednesday\": [\"9AM-7PM\"], \"Thursday\": [\"9AM-7PM\"], \"Friday\": [\"9AM-7PM\"], \"Saturday\": [\"10AM-5PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 39.8246433,
-    "longitude": -84.17888789999999,
-    "placeId": "ChIJF3_iXVWBQIgRjuOpLQ7q8zE",
-    "googleMapsUrl": null
-  },
-  {
     "slug": "puff-and-pawn-smoke-shop",
     "citySlug": "centerville",
     "name": "PUFF AND PAWN SMOKE SHOP",
@@ -2548,7 +2491,7 @@
   {
     "slug": "dewitts-jewelry",
     "citySlug": "cleveland",
-    "name": "DeWitt’s Jewelry",
+    "name": "DeWitt\u2019s Jewelry",
     "phone": "+1 216-621-6244",
     "website": "http://www.dewittsjewelry.com/",
     "address": "530 Euclid Ave # 24, Cleveland, OH 44115",

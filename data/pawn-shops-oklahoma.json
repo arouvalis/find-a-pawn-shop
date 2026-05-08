@@ -266,25 +266,6 @@
     "googleMapsUrl": null
   },
   {
-    "slug": "top-dollar-pawn-and-check-cashing",
-    "citySlug": "tulsa",
-    "name": "Top Dollar Pawn and Check Cashing",
-    "phone": "+1 918-838-0004",
-    "website": "https://topdollartulsa.com/",
-    "address": "4 N Harvard Ave, Tulsa, OK 74115",
-    "street": "4 N Harvard Ave",
-    "city": "Tulsa",
-    "state": "Oklahoma",
-    "zip": "74115",
-    "rating": 4.5,
-    "reviews": 41,
-    "hours": "{\"Monday\": [\"9AM-6PM\"], \"Tuesday\": [\"9AM-6PM\"], \"Wednesday\": [\"9AM-6PM\"], \"Thursday\": [\"9AM-6PM\"], \"Friday\": [\"9AM-6PM\"], \"Saturday\": [\"9AM-6PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 36.1601647,
-    "longitude": -95.940682,
-    "placeId": "ChIJ_50QyKrttocRWTcDMLd-_LI",
-    "googleMapsUrl": null
-  },
-  {
     "slug": "silver-dollar-jewelry-pawn",
     "citySlug": "tulsa",
     "name": "Silver Dollar Jewelry & Pawn",
@@ -415,25 +396,6 @@
     "latitude": 36.1077728,
     "longitude": -95.9397099,
     "placeId": "ChIJcfCAfMeStocRvFCFZSwfmK0",
-    "googleMapsUrl": null
-  },
-  {
-    "slug": "5-star-car-title-loans",
-    "citySlug": "tulsa",
-    "name": "5 Star Car Title Loans",
-    "phone": "+1 918-612-8014",
-    "website": "https://5starloans.com/locations/oklahoma/tulsa/8740-e-46th-st/%3Futm_source%3Dgoogle%26utm_medium%3Dgmb%26utm_campaign%3D0029221",
-    "address": "8740 E 46th St, Tulsa, OK 74145",
-    "street": "8740 E 46th St",
-    "city": "Tulsa",
-    "state": "Oklahoma",
-    "zip": "74145",
-    "rating": 4.6,
-    "reviews": 13,
-    "hours": "{\"Monday\": [\"9AM-7PM\"], \"Tuesday\": [\"9AM-7PM\"], \"Wednesday\": [\"9AM-7PM\"], \"Thursday\": [\"9AM-7PM\"], \"Friday\": [\"9AM-7PM\"], \"Saturday\": [\"10AM-5PM\"], \"Sunday\": [\"Closed\"]}",
-    "latitude": 36.0974618,
-    "longitude": -95.8780294,
-    "placeId": "ChIJ5YwsdleNtocRllRvRcWh5WU",
     "googleMapsUrl": null
   },
   {
@@ -2073,7 +2035,7 @@
   {
     "slug": "sharps-indian-store-pawn-llc",
     "citySlug": "ponca-city",
-    "name": "Sharp’s Indian Store & Pawn LLC",
+    "name": "Sharp\u2019s Indian Store & Pawn LLC",
     "phone": "+1 580-765-8731",
     "website": "http://sharpsindianstore.com/",
     "address": "118 S 2nd St, Ponca City, OK 74601",
