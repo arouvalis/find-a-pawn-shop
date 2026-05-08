@@ -4,8 +4,19 @@ import { getCaliforniaShopsByCity, formatAddress } from "@/lib/pawnShops";
 
 export const metadata: Metadata = {
   title: "Casas de Empeño en Santa Ana, California — FindAPawnShop.com",
-  description: "Encuentra las mejores casas de empeño en Santa Ana, CA. Directorio completo con direcciones, horarios y teléfonos. Joyería de empeño, electrónicos y más.",
+  description: "Encuentra las mejores casas de empeño en Santa Ana y el área de Orange County, CA. Directorio completo con direcciones, horarios y teléfonos.",
 };
+
+const NEARBY_CITIES = [
+  { slug: "anaheim", label: "Anaheim" },
+  { slug: "orange", label: "Orange" },
+  { slug: "garden-grove", label: "Garden Grove" },
+  { slug: "westminster", label: "Westminster" },
+  { slug: "tustin", label: "Tustin" },
+  { slug: "huntington-beach", label: "Huntington Beach" },
+  { slug: "fullerton", label: "Fullerton" },
+  { slug: "costa-mesa", label: "Costa Mesa" },
+];
 
 const FAQS = [
   { q: "¿Qué aceptan las casas de empeño en Santa Ana?", a: "La mayoría aceptan joyas de oro y plata, electrónicos, teléfonos celulares, instrumentos musicales y herramientas." },
@@ -14,8 +25,15 @@ const FAQS = [
 ];
 
 export default function SantaAnaEspanolPage() {
-  const shops = getCaliforniaShopsByCity("santa-ana");
-  const sorted = [...shops].sort((a, b) => (b.reviews ?? -1) - (a.reviews ?? -1));
+  const santaAnaShops = getCaliforniaShopsByCity("santa-ana");
+  const sorted = [...santaAnaShops].sort((a, b) => (b.reviews ?? -1) - (a.reviews ?? -1));
+
+  const nearbyShops = NEARBY_CITIES.flatMap(({ slug, label }) =>
+    getCaliforniaShopsByCity(slug)
+      .sort((a, b) => (b.reviews ?? -1) - (a.reviews ?? -1))
+      .slice(0, 3)
+      .map(shop => ({ ...shop, cityLabel: label }))
+  );
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
@@ -28,7 +46,7 @@ export default function SantaAnaEspanolPage() {
       </nav>
 
       <h1 className="text-3xl font-bold text-gray-900 mb-2">Casas de Empeño en Santa Ana, California</h1>
-      <p className="text-gray-500 mb-4">{shops.length} negocios encontrados</p>
+      <p className="text-gray-500 mb-4">{santaAnaShops.length} negocios encontrados</p>
       <p className="text-gray-600 mb-10 max-w-2xl">
         Encuentra casas de empeño y joyerías de empeño en Santa Ana. Obtén préstamos rápidos
         usando tus joyas, electrónicos o artículos de valor como garantía.
@@ -54,6 +72,34 @@ export default function SantaAnaEspanolPage() {
           </Link>
         ))}
       </div>
+
+      {nearbyShops.length > 0 && (
+        <div className="mt-14">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Cerca de Santa Ana — Orange County</h2>
+          <p className="text-gray-500 mb-6 text-sm">Casas de empeño en ciudades vecinas</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {nearbyShops.map((shop) => (
+              <Link
+                key={`${shop.citySlug}-${shop.slug}`}
+                href={`/california/${shop.citySlug}/${shop.slug}`}
+                className="border border-gray-200 rounded-lg p-5 hover:border-amber-400 hover:shadow-md transition-all group block"
+              >
+                <div className="text-xs text-amber-600 font-medium mb-1">{shop.cityLabel}</div>
+                <h3 className="font-semibold text-gray-900 group-hover:text-amber-600 mb-2 leading-tight">{shop.name}</h3>
+                {(shop.street || shop.city) && <p className="text-sm text-gray-500 mb-2">{formatAddress(shop)}</p>}
+                {shop.phone && <p className="text-sm text-gray-600 mb-2">{shop.phone}</p>}
+                {shop.rating !== null && (
+                  <div className="flex items-center gap-1.5 mt-3">
+                    <span className="text-amber-500 text-sm">★</span>
+                    <span className="text-sm font-medium text-gray-800">{shop.rating.toFixed(1)}</span>
+                    {shop.reviews !== null && <span className="text-xs text-gray-400">({shop.reviews} reseñas)</span>}
+                  </div>
+                )}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
 
       <div className="mt-12 max-w-2xl">
         <h2 className="text-xl font-bold text-gray-900 mb-4">Preguntas Frecuentes — Santa Ana</h2>
