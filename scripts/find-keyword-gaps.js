@@ -254,6 +254,14 @@ const NOT_CITIES = new Set([
   'illinois', 'california', 'texas', 'florida', 'ohio', 'michigan',
 ]);
 
+// Permanently blocked slugs — bad articles we've deleted and never want regenerated
+const BLOCKED_SLUGS = new Set([
+  'best-pawn-shops-in-express-florence',
+  'best-pawn-shops-in-chicago-illinois',
+  'best-pawn-shops-in-chicago-near',
+  'best-pawn-shops-in-chicago-area',
+]);
+
 function buildLocation(rawCity, stateAbbr) {
   const city = rawCity.trim();
   if (!city || city.length < 2) return null;
