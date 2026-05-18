@@ -1,21 +1,5 @@
 [
   {
-    "query": "mario pawn shop hampton va",
-    "all_queries": [
-      "mario pawn shop hampton va"
-    ],
-    "impressions": 14,
-    "clicks": 0,
-    "position": 11.14,
-    "suggested_title": "Best Pawn Shops in Hampton, Virginia (2026 Guide)",
-    "suggested_slug": "best-pawn-shops-in-hampton",
-    "suggested_description": "Looking for the best pawn shops in Hampton? We cover top-rated shops across Hampton neighborhoods — with addresses, hours, and contact info.",
-    "city": "Hampton",
-    "state": "Virginia",
-    "state_slug": "virginia",
-    "city_slug": "hampton"
-  },
-  {
     "query": "pawn express florence sc",
     "all_queries": [
       "pawn express florence sc"
@@ -30,38 +14,6 @@
     "state": "South Carolina",
     "state_slug": "south-carolina",
     "city_slug": "express-florence"
-  },
-  {
-    "query": "pawn shop in torrance",
-    "all_queries": [
-      "pawn shop in torrance"
-    ],
-    "impressions": 11,
-    "clicks": 0,
-    "position": 44.64,
-    "suggested_title": "Best Pawn Shops in Torrance (2026 Guide)",
-    "suggested_slug": "best-pawn-shops-in-torrance",
-    "suggested_description": "Looking for the best pawn shops in Torrance? We cover top-rated shops across Torrance neighborhoods — with addresses, hours, and contact info.",
-    "city": "Torrance",
-    "state": null,
-    "state_slug": null,
-    "city_slug": "torrance"
-  },
-  {
-    "query": "pawn shop licking mo",
-    "all_queries": [
-      "pawn shop licking mo"
-    ],
-    "impressions": 10,
-    "clicks": 0,
-    "position": 10,
-    "suggested_title": "Best Pawn Shops in Licking, Missouri (2026 Guide)",
-    "suggested_slug": "best-pawn-shops-in-licking",
-    "suggested_description": "Looking for the best pawn shops in Licking? We cover top-rated shops across Licking neighborhoods — with addresses, hours, and contact info.",
-    "city": "Licking",
-    "state": "Missouri",
-    "state_slug": "missouri",
-    "city_slug": "licking"
   },
   {
     "query": "pawn shops in chicago illinois",
@@ -96,38 +48,6 @@
     "city_slug": "chicago-near"
   },
   {
-    "query": "pawn shop elko nv",
-    "all_queries": [
-      "pawn shop elko nv"
-    ],
-    "impressions": 8,
-    "clicks": 0,
-    "position": 11,
-    "suggested_title": "Best Pawn Shops in Elko, Nevada (2026 Guide)",
-    "suggested_slug": "best-pawn-shops-in-elko",
-    "suggested_description": "Looking for the best pawn shops in Elko? We cover top-rated shops across Elko neighborhoods — with addresses, hours, and contact info.",
-    "city": "Elko",
-    "state": "Nevada",
-    "state_slug": "nevada",
-    "city_slug": "elko"
-  },
-  {
-    "query": "pawn shop parker co",
-    "all_queries": [
-      "pawn shop parker co"
-    ],
-    "impressions": 8,
-    "clicks": 0,
-    "position": 12.62,
-    "suggested_title": "Best Pawn Shops in Parker, Colorado (2026 Guide)",
-    "suggested_slug": "best-pawn-shops-in-parker",
-    "suggested_description": "Looking for the best pawn shops in Parker? We cover top-rated shops across Parker neighborhoods — with addresses, hours, and contact info.",
-    "city": "Parker",
-    "state": "Colorado",
-    "state_slug": "colorado",
-    "city_slug": "parker"
-  },
-  {
     "query": "best pawn shops chicago area",
     "all_queries": [
       "best pawn shops chicago area"
@@ -142,37 +62,5 @@
     "state": null,
     "state_slug": null,
     "city_slug": "chicago-area"
-  },
-  {
-    "query": "pawn shop yonkers ny",
-    "all_queries": [
-      "pawn shop yonkers ny"
-    ],
-    "impressions": 8,
-    "clicks": 0,
-    "position": 33.62,
-    "suggested_title": "Best Pawn Shops in Yonkers, New York (2026 Guide)",
-    "suggested_slug": "best-pawn-shops-in-yonkers",
-    "suggested_description": "Looking for the best pawn shops in Yonkers? We cover top-rated shops across Yonkers neighborhoods — with addresses, hours, and contact info.",
-    "city": "Yonkers",
-    "state": "New York",
-    "state_slug": "new-york",
-    "city_slug": "yonkers"
-  },
-  {
-    "query": "pawn shops st joseph mo",
-    "all_queries": [
-      "pawn shops st joseph mo"
-    ],
-    "impressions": 4,
-    "clicks": 1,
-    "position": 33.75,
-    "suggested_title": "Best Pawn Shops in St Joseph, Missouri (2026 Guide)",
-    "suggested_slug": "best-pawn-shops-in-st-joseph",
-    "suggested_description": "Looking for the best pawn shops in St Joseph? We cover top-rated shops across St Joseph neighborhoods — with addresses, hours, and contact info.",
-    "city": "St Joseph",
-    "state": "Missouri",
-    "state_slug": "missouri",
-    "city_slug": "st-joseph"
   }
 ]

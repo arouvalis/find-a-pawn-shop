@@ -538,6 +538,34 @@ export const articles: Article[] = [
     datePublished: "2026-05-04",
     dateDisplay: "May 4, 2026",
   },
+  {
+    slug: "best-pawn-shops-in-express-florence",
+    title: "Best Pawn Shops in Express Florence, South Carolina (2026 Guide)",
+    description: "Looking for the best pawn shops in Express Florence? Discover top-rated shops, South Carolina pawn laws, neighborhood guides & expert tips for 2026.",
+    datePublished: "2026-05-11",
+    dateDisplay: "May 11, 2026",
+  },
+  {
+    slug: "best-pawn-shops-in-chicago-illinois",
+    title: "Best Pawn Shops in Chicago Illinois (2026 Guide)",
+    description: "Looking for the best pawn shops in Chicago Illinois? Discover top neighborhoods, regulations, and expert tips for pawning in the Windy City.",
+    datePublished: "2026-05-18",
+    dateDisplay: "May 18, 2026",
+  },
+  {
+    slug: "best-pawn-shops-in-chicago-near",
+    title: "Best Pawn Shops in Chicago Near, Maine (2026 Guide)",
+    description: "Looking for the best pawn shops in Chicago Near? Discover top-rated shops, Maine regulations, neighborhood guides, and expert tips for 2026.",
+    datePublished: "2026-05-25",
+    dateDisplay: "May 25, 2026",
+  },
+  {
+    slug: "best-pawn-shops-in-chicago-area",
+    title: "Best Pawn Shops in Chicago Area (2026 Guide)",
+    description: "Looking for the best pawn shops in Chicago Area? Find verified listings, neighborhood guides, and expert tips for buying, selling, and pawning items.",
+    datePublished: "2026-05-25",
+    dateDisplay: "May 25, 2026",
+  },
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {
