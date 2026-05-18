@@ -2411,5 +2411,24 @@
     "longitude": -87.73656419999999,
     "placeId": "ChIJD1Ok-P3MD4gRor5IojBSx7c",
     "googleMapsUrl": "https://www.google.com/maps/place/New+Era+Jewelry+and+Coin/@41.931528199999995,-87.73656419999999,14z/data=!4m8!1m2!2m1!1sNew+Era+Jewelry+and+Coin!3m4!1s0x880fccfdf8a4530f:0xb7c75230a248bea2!8m2!3d41.931528199999995!4d-87.73656419999999"
+  },
+  {
+    "slug": "the-exchange",
+    "citySlug": "chicago",
+    "name": "The Exchange",
+    "phone": "+1 773-252-9570",
+    "website": "http://www.theexchange.com/",
+    "address": "1524 N Milwaukee Ave, Chicago, IL 60622",
+    "street": "1524 N Milwaukee Ave",
+    "city": "Chicago",
+    "state": "Illinois",
+    "zip": "60622",
+    "rating": 4.2,
+    "reviews": 245.0,
+    "hours": "{\"Monday\": [\"11AM-7PM\"], \"Tuesday\": [\"11AM-7PM\"], \"Wednesday\": [\"11AM-7PM\"], \"Thursday\": [\"11AM-7PM\"], \"Friday\": [\"11AM-8PM\"], \"Saturday\": [\"11AM-8PM\"], \"Sunday\": [\"11AM-7PM\"]}",
+    "latitude": 41.90913339999999,
+    "longitude": -87.6757602,
+    "placeId": "ChIJLXnZ-MbSD4gRNuMRk9bbW4M",
+    "googleMapsUrl": "https://www.google.com/maps/place/The+Exchange/@41.909133399999995,-87.6757602,14z/data=!4m8!1m2!2m1!1sThe+Exchange!3m4!1s0x880fd2c6f8d9792d:0x835bdbd69311e336!8m2!3d41.909133399999995!4d-87.6757602"
   }
 ]
