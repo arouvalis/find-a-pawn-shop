@@ -629,7 +629,7 @@
   {
     "slug": "casa-de-empeno",
     "citySlug": "chicago",
-    "name": "Casa De Empe\u00f1o",
+    "name": "Casa De Empeño",
     "phone": "+1 773-585-8600",
     "website": null,
     "address": null,
@@ -2120,7 +2120,7 @@
     "state": "Illinois",
     "zip": "60660",
     "rating": 4.8,
-    "reviews": 103.0,
+    "reviews": 103,
     "hours": "{\"Monday\": [\"10:30AM-5:45PM\"], \"Tuesday\": [\"10:30AM-5:45PM\"], \"Wednesday\": [\"10:30AM-5:45PM\"], \"Thursday\": [\"10:30AM-5:45PM\"], \"Friday\": [\"10:30AM-5:45PM\"], \"Saturday\": [\"11AM-4PM\"], \"Sunday\": [\"Closed\"]}",
     "latitude": 41.9983379,
     "longitude": -87.66218359999999,
@@ -2139,7 +2139,7 @@
     "state": "Illinois",
     "zip": "60160",
     "rating": 4.7,
-    "reviews": 38.0,
+    "reviews": 38,
     "hours": "{\"Monday\": [\"10:30AM-7PM\"], \"Tuesday\": [\"10:30AM-7PM\"], \"Wednesday\": [\"10:30AM-7PM\"], \"Thursday\": [\"10:30AM-7PM\"], \"Friday\": [\"10:30AM-7PM\"], \"Saturday\": [\"10:30AM-5PM\"], \"Sunday\": [\"Closed\"]}",
     "latitude": 41.8918031,
     "longitude": -87.84961919999999,
@@ -2158,7 +2158,7 @@
     "state": "Illinois",
     "zip": "60613",
     "rating": 4.6,
-    "reviews": 224.0,
+    "reviews": 224,
     "hours": "{\"Monday\": [\"9AM-5PM\"], \"Tuesday\": [\"9AM-5PM\"], \"Wednesday\": [\"9AM-5PM\"], \"Thursday\": [\"9AM-5PM\"], \"Friday\": [\"9AM-5PM\"], \"Saturday\": [\"9AM-4PM\"], \"Sunday\": [\"Closed\"]}",
     "latitude": 41.9540519,
     "longitude": -87.6755038,
@@ -2176,8 +2176,8 @@
     "city": "Hanover Park",
     "state": "Illinois",
     "zip": "60133",
-    "rating": 4.0,
-    "reviews": 93.0,
+    "rating": 4,
+    "reviews": 93,
     "hours": "{\"Monday\": [\"10AM-6PM\"], \"Tuesday\": [\"10AM-6PM\"], \"Wednesday\": [\"10AM-6PM\"], \"Thursday\": [\"10AM-6PM\"], \"Friday\": [\"10AM-6PM\"], \"Saturday\": [\"10AM-5PM\"], \"Sunday\": [\"Closed\"]}",
     "latitude": 42.005342,
     "longitude": -88.1459883,
@@ -2196,7 +2196,7 @@
     "state": "Illinois",
     "zip": "60621",
     "rating": 3.7,
-    "reviews": 6.0,
+    "reviews": 6,
     "hours": "{\"Monday\": [\"Closed\"], \"Tuesday\": [\"11AM-6PM\"], \"Wednesday\": [\"11AM-6PM\"], \"Thursday\": [\"11AM-6PM\"], \"Friday\": [\"12-6PM\"], \"Saturday\": [\"12-6PM\"], \"Sunday\": [\"Closed\"]}",
     "latitude": 41.7749233,
     "longitude": -87.6445226,
@@ -2215,7 +2215,7 @@
     "state": "Illinois",
     "zip": "60609",
     "rating": 4.2,
-    "reviews": 42.0,
+    "reviews": 42,
     "hours": "{\"Monday\": [\"10:30AM-5:30PM\"], \"Tuesday\": [\"10:30AM-5:30PM\"], \"Wednesday\": [\"10:30AM-5:30PM\"], \"Thursday\": [\"10:30AM-5:30PM\"], \"Friday\": [\"10:30AM-5:30PM\"], \"Saturday\": [\"10:30AM-5:30PM\"], \"Sunday\": [\"Closed\"]}",
     "latitude": 41.7961642,
     "longitude": -87.6303221,
@@ -2233,8 +2233,8 @@
     "city": "Chicago",
     "state": "Illinois",
     "zip": "60609",
-    "rating": 4.0,
-    "reviews": 29.0,
+    "rating": 4,
+    "reviews": 29,
     "hours": "{\"Monday\": [\"10:30AM-5:30PM\"], \"Tuesday\": [\"10:30AM-5:30PM\"], \"Wednesday\": [\"10:30AM-5:30PM\"], \"Thursday\": [\"10:30AM-5:30PM\"], \"Friday\": [\"10:30AM-5:30PM\"], \"Saturday\": [\"10:30AM-5:30PM\"], \"Sunday\": [\"Closed\"]}",
     "latitude": 41.7961669,
     "longitude": -87.63031529999999,
@@ -2253,7 +2253,7 @@
     "state": "Illinois",
     "zip": "60622",
     "rating": 3.2,
-    "reviews": 14.0,
+    "reviews": 14,
     "hours": "{\"Monday\": [\"11:30AM-7PM\"], \"Tuesday\": [\"11:30AM-7PM\"], \"Wednesday\": [\"11:30AM-7PM\"], \"Thursday\": [\"11:30AM-7PM\"], \"Friday\": [\"11:30AM-7PM\"], \"Saturday\": [\"11:30AM-7PM\"], \"Sunday\": [\"Closed\"]}",
     "latitude": 41.9028161,
     "longitude": -87.69315449999999,
@@ -2272,7 +2272,7 @@
     "state": "Illinois",
     "zip": "60623",
     "rating": 4.4,
-    "reviews": 8.0,
+    "reviews": 8,
     "hours": "{\"Monday\": [\"10AM-7PM\"], \"Tuesday\": [\"10AM-7PM\"], \"Wednesday\": [\"10AM-7PM\"], \"Thursday\": [\"10AM-7PM\"], \"Friday\": [\"10AM-7PM\"], \"Saturday\": [\"Closed\"], \"Sunday\": [\"10AM-4PM\"]}",
     "latitude": 41.844523,
     "longitude": -87.7227659,
@@ -2291,7 +2291,7 @@
     "state": "Illinois",
     "zip": "60651",
     "rating": 4.8,
-    "reviews": 385.0,
+    "reviews": 385,
     "hours": "{\"Monday\": [\"10AM-7PM\"], \"Tuesday\": [\"10AM-7PM\"], \"Wednesday\": [\"10AM-7PM\"], \"Thursday\": [\"10AM-7PM\"], \"Friday\": [\"10AM-7PM\"], \"Saturday\": [\"10AM-7PM\"], \"Sunday\": [\"Closed\"]}",
     "latitude": 41.8956974,
     "longitude": -87.7113037,
@@ -2301,7 +2301,7 @@
   {
     "slug": "joyeria-la-caridad",
     "citySlug": "chicago",
-    "name": "Joyer\u00eda La Caridad",
+    "name": "Joyería La Caridad",
     "phone": "+1 773-489-3377",
     "website": null,
     "address": "3039 N Milwaukee Ave, Chicago, IL 60618",
@@ -2310,7 +2310,7 @@
     "state": "Illinois",
     "zip": "60618",
     "rating": 4.4,
-    "reviews": 181.0,
+    "reviews": 181,
     "hours": "{\"Monday\": [\"9AM-5:30PM\"], \"Tuesday\": [\"9AM-5:30PM\"], \"Wednesday\": [\"9AM-5:30PM\"], \"Thursday\": [\"9AM-5:30PM\"], \"Friday\": [\"9AM-5:30PM\"], \"Saturday\": [\"8:30AM-4:30PM\"], \"Sunday\": [\"Closed\"]}",
     "latitude": 41.936575,
     "longitude": -87.71924399999999,
@@ -2328,8 +2328,8 @@
     "city": "Chicago",
     "state": "Illinois",
     "zip": "60623",
-    "rating": 5.0,
-    "reviews": 30.0,
+    "rating": 5,
+    "reviews": 30,
     "hours": "{\"Monday\": [\"Closed\"], \"Tuesday\": [\"10AM-6PM\"], \"Wednesday\": [\"10AM-6PM\"], \"Thursday\": [\"10AM-6PM\"], \"Friday\": [\"10AM-6PM\"], \"Saturday\": [\"9:30AM-5PM\"], \"Sunday\": [\"Closed\"]}",
     "latitude": 41.8441184,
     "longitude": -87.7251539,
@@ -2348,7 +2348,7 @@
     "state": "Illinois",
     "zip": "60402",
     "rating": 4.2,
-    "reviews": 35.0,
+    "reviews": 35,
     "hours": "{\"Monday\": [\"10AM-6:30PM\"], \"Tuesday\": [\"10AM-6:30PM\"], \"Wednesday\": [\"10AM-6:30PM\"], \"Thursday\": [\"10AM-6:30PM\"], \"Friday\": [\"10AM-6:30PM\"], \"Saturday\": [\"10AM-5PM\"], \"Sunday\": [\"Closed\"]}",
     "latitude": 41.8505067,
     "longitude": -87.78257789999999,
@@ -2367,7 +2367,7 @@
     "state": "Illinois",
     "zip": "60302",
     "rating": 4.2,
-    "reviews": 446.0,
+    "reviews": 446,
     "hours": "{\"Monday\": [\"9AM-9PM\"], \"Tuesday\": [\"9AM-9PM\"], \"Wednesday\": [\"9AM-9PM\"], \"Thursday\": [\"9AM-9PM\"], \"Friday\": [\"9AM-9PM\"], \"Saturday\": [\"9AM-9PM\"], \"Sunday\": [\"9AM-7:30PM\"]}",
     "latitude": 41.9087481,
     "longitude": -87.78415369999999,
@@ -2386,7 +2386,7 @@
     "state": "Illinois",
     "zip": "60603",
     "rating": 4.6,
-    "reviews": 2241.0,
+    "reviews": 2241,
     "hours": "{\"Monday\": [\"8AM-8PM\"], \"Tuesday\": [\"8AM-8PM\"], \"Wednesday\": [\"8AM-8PM\"], \"Thursday\": [\"8AM-8PM\"], \"Friday\": [\"8AM-8PM\"], \"Saturday\": [\"9AM-6PM\"], \"Sunday\": [\"Closed\"]}",
     "latitude": 41.8804705,
     "longitude": -87.6328087,
@@ -2404,8 +2404,8 @@
     "city": "Chicago",
     "state": "Illinois",
     "zip": "60639",
-    "rating": 4.0,
-    "reviews": 30.0,
+    "rating": 4,
+    "reviews": 30,
     "hours": "{\"Monday\": [\"10AM-6PM\"], \"Tuesday\": [\"10AM-6PM\"], \"Wednesday\": [\"Closed\"], \"Thursday\": [\"10AM-6PM\"], \"Friday\": [\"10AM-6PM\"], \"Saturday\": [\"10AM-2PM\"], \"Sunday\": [\"Closed\"]}",
     "latitude": 41.9315282,
     "longitude": -87.73656419999999,
@@ -2424,11 +2424,1443 @@
     "state": "Illinois",
     "zip": "60622",
     "rating": 4.2,
-    "reviews": 245.0,
+    "reviews": 245,
     "hours": "{\"Monday\": [\"11AM-7PM\"], \"Tuesday\": [\"11AM-7PM\"], \"Wednesday\": [\"11AM-7PM\"], \"Thursday\": [\"11AM-7PM\"], \"Friday\": [\"11AM-8PM\"], \"Saturday\": [\"11AM-8PM\"], \"Sunday\": [\"11AM-7PM\"]}",
     "latitude": 41.90913339999999,
     "longitude": -87.6757602,
     "placeId": "ChIJLXnZ-MbSD4gRNuMRk9bbW4M",
     "googleMapsUrl": "https://www.google.com/maps/place/The+Exchange/@41.909133399999995,-87.6757602,14z/data=!4m8!1m2!2m1!1sThe+Exchange!3m4!1s0x880fd2c6f8d9792d:0x835bdbd69311e336!8m2!3d41.909133399999995!4d-87.6757602"
+  },
+  {
+    "place_id": "ChIJq5D6H0zXDIgRjVdReLhcgGA",
+    "name": "Gold Rush II",
+    "slug": "gold-rush-ii-champaign",
+    "city": "Champaign",
+    "citySlug": "champaign",
+    "street": "41 E Main St",
+    "zip": "61820",
+    "phone": "+1 217-355-0010",
+    "website": "https://goldrushii.com/",
+    "latitude": 40.117823,
+    "longitude": -88.241377,
+    "rating": 4.2,
+    "reviews": 63,
+    "hours": {
+      "Monday": [
+        "Closed"
+      ],
+      "Tuesday": [
+        "10AM-5PM"
+      ],
+      "Wednesday": [
+        "10AM-5PM"
+      ],
+      "Thursday": [
+        "10AM-5PM"
+      ],
+      "Friday": [
+        "10AM-5PM"
+      ],
+      "Saturday": [
+        "10AM-3PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Gold+Rush+II/@40.117823,-88.241377,14z/data=!4m8!1m2!2m1!1sGold+Rush+II!3m4!1s0x880cd74c1ffa90ab:0x60805cb87851578d!8m2!3d40.117823!4d-88.241377",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJARK7zUjXDIgR7hLXuvH_E7w",
+    "name": "Leonard's Pawn Shop",
+    "slug": "leonards-pawn-shop-champaign",
+    "city": "Champaign",
+    "citySlug": "champaign",
+    "street": "48 E Springfield Ave",
+    "zip": "61820",
+    "phone": "+1 217-356-9321",
+    "website": "http://www.leonardspawnshopil.com/",
+    "latitude": 40.1128966,
+    "longitude": -88.2402786,
+    "rating": 3.4,
+    "reviews": 47,
+    "hours": {
+      "Monday": [
+        "9:30AM-5:30PM"
+      ],
+      "Tuesday": [
+        "12-5:30PM"
+      ],
+      "Wednesday": [
+        "9:30AM-5:30PM"
+      ],
+      "Thursday": [
+        "9:30AM-5:30PM"
+      ],
+      "Friday": [
+        "9:30AM-5:30PM"
+      ],
+      "Saturday": [
+        "10AM-3PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Leonard%27s+Pawn+Shop/@40.1128966,-88.2402786,14z/data=!4m8!1m2!2m1!1sLeonard%27s+Pawn+Shop!3m4!1s0x880cd748cdbb1201:0xbc13fff1bad712ee!8m2!3d40.1128966!4d-88.2402786",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJAcDjrm7XDIgRX5Kh0wpN7is",
+    "name": "Pawn King",
+    "slug": "pawn-king-urbana",
+    "city": "Urbana",
+    "citySlug": "urbana",
+    "street": "1004 W University Ave",
+    "zip": "61801",
+    "phone": "+1 217-384-6000",
+    "website": "https://www.firstcash.com/",
+    "latitude": 40.1166929,
+    "longitude": -88.2214448,
+    "rating": 4.3,
+    "reviews": 275,
+    "hours": {
+      "Monday": [
+        "10AM-6PM"
+      ],
+      "Tuesday": [
+        "10AM-6PM"
+      ],
+      "Wednesday": [
+        "10AM-6PM"
+      ],
+      "Thursday": [
+        "10AM-6PM"
+      ],
+      "Friday": [
+        "10AM-6PM"
+      ],
+      "Saturday": [
+        "10AM-5PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+King/@40.1166929,-88.2214448,14z/data=!4m8!1m2!2m1!1sPawn+King!3m4!1s0x880cd76eaee3c001:0x2bee4d0ad3a1925f!8m2!3d40.1166929!4d-88.2214448",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJAaa0fslmDogRKtonySaASpg",
+    "name": "Sterling & Knight Jewelry & Pawn",
+    "slug": "sterling-knight-jewelry-pawn-joliet",
+    "city": "Joliet",
+    "citySlug": "joliet",
+    "street": "205 N Joliet St",
+    "zip": "60432",
+    "phone": "+1 815-727-2300",
+    "website": "https://www.skjewelryandpawn.com/",
+    "latitude": 41.5281099,
+    "longitude": -88.0848944,
+    "rating": 4.9,
+    "reviews": 2835,
+    "hours": {
+      "Monday": [
+        "9AM-6PM"
+      ],
+      "Tuesday": [
+        "9AM-6PM"
+      ],
+      "Wednesday": [
+        "9AM-6PM"
+      ],
+      "Thursday": [
+        "9AM-6PM"
+      ],
+      "Friday": [
+        "9AM-6PM"
+      ],
+      "Saturday": [
+        "9AM-5PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Sterling+%26+Knight+Jewelry+%26+Pawn/@41.5281099,-88.0848944,14z/data=!4m8!1m2!2m1!1sSterling+%26+Knight+Jewelry+%26+Pawn!3m4!1s0x880e66c97eb4a601:0x984a8026c927da2a!8m2!3d41.5281099!4d-88.0848944",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJAZSgYMhmDogRXcwdKxQF1mM",
+    "name": "Kula's Jewelry & Loan",
+    "slug": "kulas-jewelry-loan-joliet",
+    "city": "Joliet",
+    "citySlug": "joliet",
+    "street": "174 N Chicago St",
+    "zip": "60432",
+    "phone": "+1 815-723-5555",
+    "website": "http://www.jolietpawn.com/",
+    "latitude": 41.5276133,
+    "longitude": -88.08147679999999,
+    "rating": 4.9,
+    "reviews": 148,
+    "hours": {
+      "Monday": [
+        "9AM-6PM"
+      ],
+      "Tuesday": [
+        "9AM-6PM"
+      ],
+      "Wednesday": [
+        "9AM-6PM"
+      ],
+      "Thursday": [
+        "9AM-6PM"
+      ],
+      "Friday": [
+        "9AM-6PM"
+      ],
+      "Saturday": [
+        "9AM-3PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Kula%27s+Jewelry+%26+Loan/@41.5276133,-88.08147679999999,14z/data=!4m8!1m2!2m1!1sKula%27s+Jewelry+%26+Loan!3m4!1s0x880e66c860a09401:0x63d605142b1dcc5d!8m2!3d41.5276133!4d-88.08147679999999",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJ0Ry8zP5gDogRP-WTLPKKeyo",
+    "name": "Crest Hill Pawn & Jewelry",
+    "slug": "crest-hill-pawn-jewelry-crest-hill",
+    "city": "Crest Hill",
+    "citySlug": "crest-hill",
+    "street": "1701 N Larkin Ave",
+    "zip": "60403",
+    "phone": "+1 815-729-2222",
+    "website": "",
+    "latitude": 41.5520322,
+    "longitude": -88.12671189999999,
+    "rating": 4.1,
+    "reviews": 73,
+    "hours": {
+      "Monday": [
+        "9:30AM-6PM"
+      ],
+      "Tuesday": [
+        "9:30AM-5PM"
+      ],
+      "Wednesday": [
+        "9:30AM-6PM"
+      ],
+      "Thursday": [
+        "9:30AM-6PM"
+      ],
+      "Friday": [
+        "9:30AM-6PM"
+      ],
+      "Saturday": [
+        "10AM-2PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Crest+Hill+Pawn+%26+Jewelry/@41.5520322,-88.12671189999999,14z/data=!4m8!1m2!2m1!1sCrest+Hill+Pawn+%26+Jewelry!3m4!1s0x880e60feccbc1cd1:0x2a7b8af22c93e53f!8m2!3d41.5520322!4d-88.12671189999999",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJ_S690bc5dYgRCdVWxHoC_40",
+    "name": "Pawn King",
+    "slug": "pawn-king-springfield",
+    "city": "Springfield",
+    "citySlug": "springfield",
+    "street": "2428 S MacArthur Blvd",
+    "zip": "62704",
+    "phone": "+1 217-544-7322",
+    "website": "https://www.firstcash.com/",
+    "latitude": 39.7732076,
+    "longitude": -89.6676933,
+    "rating": 4.5,
+    "reviews": 431,
+    "hours": {
+      "Monday": [
+        "9AM-6PM"
+      ],
+      "Tuesday": [
+        "9AM-6PM"
+      ],
+      "Wednesday": [
+        "9AM-6PM"
+      ],
+      "Thursday": [
+        "9AM-6PM"
+      ],
+      "Friday": [
+        "9AM-6PM"
+      ],
+      "Saturday": [
+        "9AM-5PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+King/@39.7732076,-89.6676933,14z/data=!4m8!1m2!2m1!1sPawn+King!3m4!1s0x887539b7d1bd2efd:0x8dff027ac456d509!8m2!3d39.7732076!4d-89.6676933",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJQekSpfg4dYgRB_4Re_2cHhM",
+    "name": "Monster Pawn Springfield Inc",
+    "slug": "monster-pawn-springfield-inc-springfield",
+    "city": "Springfield",
+    "citySlug": "springfield",
+    "street": "2324 S MacArthur Blvd",
+    "zip": "62704",
+    "phone": "+1 217-744-7296",
+    "website": "http://monsterpawnspringfield.com/",
+    "latitude": 39.7746499,
+    "longitude": -89.6677484,
+    "rating": 4.6,
+    "reviews": 272,
+    "hours": {
+      "Monday": [
+        "9AM-5PM"
+      ],
+      "Tuesday": [
+        "9AM-5PM"
+      ],
+      "Wednesday": [
+        "9AM-5PM"
+      ],
+      "Thursday": [
+        "9AM-5PM"
+      ],
+      "Friday": [
+        "9AM-5PM"
+      ],
+      "Saturday": [
+        "10AM-4PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Monster+Pawn+Springfield+Inc/@39.7746499,-89.6677484,14z/data=!4m8!1m2!2m1!1sMonster+Pawn+Springfield+Inc!3m4!1s0x887538f8a512e941:0x131e9cfd7b11fe07!8m2!3d39.7746499!4d-89.6677484",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJ_____285dYgR-uw18A9-pF8",
+    "name": "Stevenson Drive Pawn Shop",
+    "slug": "stevenson-drive-pawn-shop-springfield",
+    "city": "Springfield",
+    "citySlug": "springfield",
+    "street": "2223 Adlai Stevenson Dr",
+    "zip": "62703",
+    "phone": "",
+    "website": "http://stevensondrivepawnandjewelry.com/",
+    "latitude": 39.75793549999999,
+    "longitude": -89.6224769,
+    "rating": 4.3,
+    "reviews": 65,
+    "hours": {
+      "Monday": [
+        "9AM-7PM"
+      ],
+      "Tuesday": [
+        "9AM-7PM"
+      ],
+      "Wednesday": [
+        "9AM-7PM"
+      ],
+      "Thursday": [
+        "9AM-7PM"
+      ],
+      "Friday": [
+        "9AM-7PM"
+      ],
+      "Saturday": [
+        "9AM-4PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Stevenson+Drive+Pawn+Shop/@39.757935499999995,-89.6224769,14z/data=!4m8!1m2!2m1!1sStevenson+Drive+Pawn+Shop!3m4!1s0x8875396fffffffff:0x5fa47e0ff035ecfa!8m2!3d39.757935499999995!4d-89.6224769",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJzcsvTOBHdYgROsMkhiHflRA",
+    "name": "Capital City Pawn & Jewelry",
+    "slug": "capital-city-pawn-jewelry-springfield",
+    "city": "Springfield",
+    "citySlug": "springfield",
+    "street": "2700 W Lawrence Ave # Z",
+    "zip": "62704",
+    "phone": "+1 217-747-3244",
+    "website": "https://www.facebook.com/CapitalCityPawn217",
+    "latitude": 39.794836,
+    "longitude": -89.7053516,
+    "rating": 4.9,
+    "reviews": 203,
+    "hours": {
+      "Monday": [
+        "10AM-5PM"
+      ],
+      "Tuesday": [
+        "10AM-5PM"
+      ],
+      "Wednesday": [
+        "10AM-5PM"
+      ],
+      "Thursday": [
+        "10AM-5PM"
+      ],
+      "Friday": [
+        "10AM-6PM"
+      ],
+      "Saturday": [
+        "10AM-2PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Capital+City+Pawn+%26+Jewelry/@39.794836,-89.7053516,14z/data=!4m8!1m2!2m1!1sCapital+City+Pawn+%26+Jewelry!3m4!1s0x887547e04c2fcbcd:0x1095df218624c33a!8m2!3d39.794836!4d-89.7053516",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJxyC-L206dYgRZx4rNzYE_Fk",
+    "name": "Anything Buy-Sell-Trade Store",
+    "slug": "anything-buy-sell-trade-store-springfield",
+    "city": "Springfield",
+    "citySlug": "springfield",
+    "street": "612 N Grand Ave E",
+    "zip": "62702",
+    "phone": "+1 217-210-2028",
+    "website": "",
+    "latitude": 39.8159479,
+    "longitude": -89.64699329999999,
+    "rating": 3.9,
+    "reviews": 61,
+    "hours": {
+      "Monday": [
+        "10AM-6PM"
+      ],
+      "Tuesday": [
+        "10AM-6PM"
+      ],
+      "Wednesday": [
+        "10AM-6PM"
+      ],
+      "Thursday": [
+        "10AM-6PM"
+      ],
+      "Friday": [
+        "10AM-6PM"
+      ],
+      "Saturday": [
+        "10AM-3PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Anything+Buy-Sell-Trade+Store/@39.8159479,-89.64699329999999,14z/data=!4m8!1m2!2m1!1sAnything+Buy-Sell-Trade+Store!3m4!1s0x88753a6d2fbe20c7:0x59fc0436372b1e67!8m2!3d39.8159479!4d-89.64699329999999",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJM_84Rq45dYgRTJvLEiYftqE",
+    "name": "Monster Pawn Springfield Northside",
+    "slug": "monster-pawn-springfield-northside-springfield",
+    "city": "Springfield",
+    "citySlug": "springfield",
+    "street": "222 N Grand Ave E",
+    "zip": "62702",
+    "phone": "+1 217-679-1014",
+    "website": "https://www.monsterpawnspringfield.com/monster-pawn-springfield-north",
+    "latitude": 39.8160027,
+    "longitude": -89.6521834,
+    "rating": 4.6,
+    "reviews": 23,
+    "hours": {
+      "Monday": [
+        "9AM-5PM"
+      ],
+      "Tuesday": [
+        "9AM-5PM"
+      ],
+      "Wednesday": [
+        "9AM-5PM"
+      ],
+      "Thursday": [
+        "9AM-5PM"
+      ],
+      "Friday": [
+        "9AM-5PM"
+      ],
+      "Saturday": [
+        "10AM-2PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Monster+Pawn+Springfield+Northside/@39.8160027,-89.6521834,14z/data=!4m8!1m2!2m1!1sMonster+Pawn+Springfield+Northside!3m4!1s0x887539ae4638ff33:0xa1b61f2612cb9b4c!8m2!3d39.8160027!4d-89.6521834",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJa8rJfpw6DogRZ-A5NY1Y0oE",
+    "name": "EZPAWN",
+    "slug": "ezpawn-hometown",
+    "city": "Hometown",
+    "citySlug": "hometown",
+    "street": "4080 SW Hwy",
+    "zip": "60456",
+    "phone": "+1 708-424-4200",
+    "website": "https://ezpawn.com/stores/il/hometown/4080-southwest-hwy",
+    "latitude": 41.7337435,
+    "longitude": -87.7248127,
+    "rating": 4.6,
+    "reviews": 705,
+    "hours": {
+      "Monday": [
+        "9AM-8PM"
+      ],
+      "Tuesday": [
+        "9AM-8PM"
+      ],
+      "Wednesday": [
+        "9AM-8PM"
+      ],
+      "Thursday": [
+        "9AM-8PM"
+      ],
+      "Friday": [
+        "9AM-8PM"
+      ],
+      "Saturday": [
+        "9AM-6PM"
+      ],
+      "Sunday": [
+        "12-5PM"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/EZPAWN/@41.733743499999996,-87.7248127,14z/data=!4m8!1m2!2m1!1sEZPAWN!3m4!1s0x880e3a9c7ec9ca6b:0x81d2588d3539e067!8m2!3d41.733743499999996!4d-87.7248127",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJYSrAxnxHdYgRexw4PLitA-E",
+    "name": "Gold Stop",
+    "slug": "gold-stop-springfield",
+    "city": "Springfield",
+    "citySlug": "springfield",
+    "street": "2501 Wabash Ave",
+    "zip": "62704",
+    "phone": "+1 217-546-5805",
+    "website": "",
+    "latitude": 39.765743,
+    "longitude": -89.7037216,
+    "rating": null,
+    "reviews": null,
+    "hours": {},
+    "googleMapsUrl": "https://www.google.com/maps/place/Gold+Stop/@39.765743,-89.7037216,14z/data=!4m8!1m2!2m1!1sGold+Stop!3m4!1s0x8875477cc6c02a61:0xe103adb83c381c7b!8m2!3d39.765743!4d-89.7037216",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJHeOkYu9bCogRMz946NjlevM",
+    "name": "Pawn King",
+    "slug": "pawn-king-peoria",
+    "city": "Peoria",
+    "citySlug": "peoria",
+    "street": "3108 N University St",
+    "zip": "61604",
+    "phone": "+1 309-682-0300",
+    "website": "https://www.firstcash.com/",
+    "latitude": 40.7254907,
+    "longitude": -89.6124037,
+    "rating": 4,
+    "reviews": 378,
+    "hours": {
+      "Monday": [
+        "10AM-6PM"
+      ],
+      "Tuesday": [
+        "10AM-6PM"
+      ],
+      "Wednesday": [
+        "10AM-6PM"
+      ],
+      "Thursday": [
+        "10AM-6PM"
+      ],
+      "Friday": [
+        "10AM-6PM"
+      ],
+      "Saturday": [
+        "10AM-5PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+King/@40.7254907,-89.6124037,14z/data=!4m8!1m2!2m1!1sPawn+King!3m4!1s0x880a5bef62a4e31d:0xf37ae5d8e8783f33!8m2!3d40.7254907!4d-89.6124037",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJSX3ikQ5ZCogRbZIfwIwHECI",
+    "name": "A-Z Jewelry & Swap Shop Inc.",
+    "slug": "a-z-jewelry-swap-shop-inc-peoria",
+    "city": "Peoria",
+    "citySlug": "peoria",
+    "street": "414 SW Adams St",
+    "zip": "61602",
+    "phone": "+1 309-637-4531",
+    "website": "",
+    "latitude": 40.6887712,
+    "longitude": -89.5937831,
+    "rating": 4.2,
+    "reviews": 67,
+    "hours": {
+      "Monday": [
+        "9AM-5PM"
+      ],
+      "Tuesday": [
+        "9AM-5PM"
+      ],
+      "Wednesday": [
+        "9AM-5PM"
+      ],
+      "Thursday": [
+        "9AM-5PM"
+      ],
+      "Friday": [
+        "9AM-5PM"
+      ],
+      "Saturday": [
+        "9AM-3PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/A-Z+Jewelry+%26+Swap+Shop+Inc./@40.6887712,-89.5937831,14z/data=!4m8!1m2!2m1!1sA-Z+Jewelry+%26+Swap+Shop+Inc.!3m4!1s0x880a590e91e27d49:0x2210078cc01f926d!8m2!3d40.6887712!4d-89.5937831",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJ3Yg77ZBZCogRxIgpoZHy9yU",
+    "name": "R & J's Northside Pawn Shop",
+    "slug": "r-js-northside-pawn-shop-peoria",
+    "city": "Peoria",
+    "citySlug": "peoria",
+    "street": "1215 NE Jefferson Ave",
+    "zip": "61603",
+    "phone": "+1 309-673-2274",
+    "website": "https://facebook.com/rj.pawn",
+    "latitude": 40.7019575,
+    "longitude": -89.5769309,
+    "rating": 3.7,
+    "reviews": 30,
+    "hours": {
+      "Monday": [
+        "10AM-5PM"
+      ],
+      "Tuesday": [
+        "10AM-5PM"
+      ],
+      "Wednesday": [
+        "10AM-5PM"
+      ],
+      "Thursday": [
+        "10AM-5PM"
+      ],
+      "Friday": [
+        "10AM-5PM"
+      ],
+      "Saturday": [
+        "10AM-2PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/R+%26+J%27s+Northside+Pawn+Shop/@40.7019575,-89.5769309,14z/data=!4m8!1m2!2m1!1sR+%26+J%27s+Northside+Pawn+Shop!3m4!1s0x880a5990ed3b88dd:0x25f7f291a12988c4!8m2!3d40.7019575!4d-89.5769309",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJKciYxlJWDogR8GLZsy4xEa8",
+    "name": "Naperville Pawn - Jewelry & Loan",
+    "slug": "naperville-pawn---jewelry-loan-naperville",
+    "city": "Naperville",
+    "citySlug": "naperville",
+    "street": "605 E Ogden Ave Ste D",
+    "zip": "60563",
+    "phone": "+1 630-420-7296",
+    "website": "http://www.napervillepawn.com/",
+    "latitude": 41.7860938,
+    "longitude": -88.13842799999999,
+    "rating": 5,
+    "reviews": 1202,
+    "hours": {
+      "Monday": [
+        "9:27AM-6:30PM"
+      ],
+      "Tuesday": [
+        "9:27AM-6:30PM"
+      ],
+      "Wednesday": [
+        "9:27AM-6:30PM"
+      ],
+      "Thursday": [
+        "9:37AM-6:30PM"
+      ],
+      "Friday": [
+        "9:27AM-6:30PM"
+      ],
+      "Saturday": [
+        "10AM-4PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Naperville+Pawn+-+Jewelry+%26+Loan/@41.786093799999996,-88.13842799999999,14z/data=!4m8!1m2!2m1!1sNaperville+Pawn+-+Jewelry+%26+Loan!3m4!1s0x880e5652c698c829:0xaf11312eb3d962f0!8m2!3d41.786093799999996!4d-88.13842799999999",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJD8FiFlRWDogRO2EDL14wqy4",
+    "name": "Fast Cash & Pawn USA",
+    "slug": "fast-cash-pawn-usa-naperville",
+    "city": "Naperville",
+    "citySlug": "naperville",
+    "street": "929 E Ogden Ave",
+    "zip": "60563",
+    "phone": "+1 630-579-3278",
+    "website": "http://loandisco.com/",
+    "latitude": 41.7894976,
+    "longitude": -88.13301779999999,
+    "rating": 4.9,
+    "reviews": 211,
+    "hours": {
+      "Monday": [
+        "9:30AM-6:30PM"
+      ],
+      "Tuesday": [
+        "9:30AM-6:30PM"
+      ],
+      "Wednesday": [
+        "9:30AM-6:30PM"
+      ],
+      "Thursday": [
+        "9:30AM-6:30PM"
+      ],
+      "Friday": [
+        "9:30AM-6:30PM"
+      ],
+      "Saturday": [
+        "10AM-5PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Fast+Cash+%26+Pawn+USA/@41.7894976,-88.13301779999999,14z/data=!4m8!1m2!2m1!1sFast+Cash+%26+Pawn+USA!3m4!1s0x880e56541662c10f:0x2eab305e2f03613b!8m2!3d41.7894976!4d-88.13301779999999",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJnzfCalRWDogRopjl9SBohTs",
+    "name": "Naperville Jewelry & Coin Exchange",
+    "slug": "naperville-jewelry-coin-exchange-naperville",
+    "city": "Naperville",
+    "citySlug": "naperville",
+    "street": "914 E Ogden Ave",
+    "zip": "60563",
+    "phone": "+1 331-244-8129",
+    "website": "https://www.goldbuyernapervilleil.com/",
+    "latitude": 41.7885497,
+    "longitude": -88.1329533,
+    "rating": 4.6,
+    "reviews": 75,
+    "hours": {
+      "Monday": [
+        "10AM-6PM"
+      ],
+      "Tuesday": [
+        "10AM-6PM"
+      ],
+      "Wednesday": [
+        "8AM-6PM"
+      ],
+      "Thursday": [
+        "10AM-6PM"
+      ],
+      "Friday": [
+        "10AM-6PM"
+      ],
+      "Saturday": [
+        "10AM-3PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Naperville+Jewelry+%26+Coin+Exchange/@41.7885497,-88.1329533,14z/data=!4m8!1m2!2m1!1sNaperville+Jewelry+%26+Coin+Exchange!3m4!1s0x880e56546ac2379f:0x3b856820f5e598a2!8m2!3d41.7885497!4d-88.1329533",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJI96W3_z4DogR7ALorqX4Uts",
+    "name": "Pebblewood Jewelry and Loan",
+    "slug": "pebblewood-jewelry-and-loan-naperville",
+    "city": "Naperville",
+    "citySlug": "naperville",
+    "street": "1550 Rte 59 #194",
+    "zip": "60563",
+    "phone": "+1 630-848-1000",
+    "website": "http://www.pebblewoodpawnshop.com/",
+    "latitude": 41.7960711,
+    "longitude": -88.20436219999999,
+    "rating": 4.5,
+    "reviews": 67,
+    "hours": {
+      "Monday": [
+        "Closed"
+      ],
+      "Tuesday": [
+        "Closed"
+      ],
+      "Wednesday": [
+        "10AM-6PM"
+      ],
+      "Thursday": [
+        "10AM-6PM"
+      ],
+      "Friday": [
+        "10AM-7PM"
+      ],
+      "Saturday": [
+        "Closed"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Pebblewood+Jewelry+and+Loan/@41.7960711,-88.20436219999999,14z/data=!4m8!1m2!2m1!1sPebblewood+Jewelry+and+Loan!3m4!1s0x880ef8fcdf96de23:0xdb52f8a5aee802ec!8m2!3d41.7960711!4d-88.20436219999999",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJ60e_JNgED4gRkdZxzfGxxks",
+    "name": "EZ Jewelry & Loan",
+    "slug": "ez-jewelry-loan-elgin",
+    "city": "Elgin",
+    "citySlug": "elgin",
+    "street": "1460 Main Ln",
+    "zip": "60123",
+    "phone": "+1 847-888-1460",
+    "website": "https://ezpawn.com/stores/il/elgin/1460-main-ln",
+    "latitude": 42.025014,
+    "longitude": -88.31315,
+    "rating": 4.7,
+    "reviews": 320,
+    "hours": {
+      "Monday": [
+        "10AM-4PM"
+      ],
+      "Tuesday": [
+        "9AM-7PM"
+      ],
+      "Wednesday": [
+        "9AM-7PM"
+      ],
+      "Thursday": [
+        "9AM-7PM"
+      ],
+      "Friday": [
+        "9AM-7PM"
+      ],
+      "Saturday": [
+        "9AM-6PM"
+      ],
+      "Sunday": [
+        "12-5PM"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/EZ+Jewelry+%26+Loan/@42.025014,-88.31315,14z/data=!4m8!1m2!2m1!1sEZ+Jewelry+%26+Loan!3m4!1s0x880f04d824bf47eb:0x4bc6b1f1cd71d691!8m2!3d42.025014!4d-88.31315",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJKYa36k8FD4gRvtrROQPyHgY",
+    "name": "Windy City Jewelry & Loan",
+    "slug": "windy-city-jewelry-loan-elgin",
+    "city": "Elgin",
+    "citySlug": "elgin",
+    "street": "943 N McLean Blvd",
+    "zip": "60123",
+    "phone": "+1 847-622-7296",
+    "website": "http://www.elginpawnshop.com/",
+    "latitude": 42.0546698,
+    "longitude": -88.3145299,
+    "rating": 4.1,
+    "reviews": 140,
+    "hours": {
+      "Monday": [
+        "9AM-6:30PM"
+      ],
+      "Tuesday": [
+        "9AM-6:30PM"
+      ],
+      "Wednesday": [
+        "9AM-6:30PM"
+      ],
+      "Thursday": [
+        "9AM-6:30PM"
+      ],
+      "Friday": [
+        "9AM-6:30PM"
+      ],
+      "Saturday": [
+        "9AM-6PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Windy+City+Jewelry+%26+Loan/@42.0546698,-88.3145299,14z/data=!4m8!1m2!2m1!1sWindy+City+Jewelry+%26+Loan!3m4!1s0x880f054feab78629:0x61ef20339d1dabe!8m2!3d42.0546698!4d-88.3145299",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJ00XGBN69CIgRyK07E8mqvic",
+    "name": "Pawn Daddy",
+    "slug": "pawn-daddy-rockford",
+    "city": "Rockford",
+    "citySlug": "rockford",
+    "street": "986 W Riverside Blvd",
+    "zip": "61103",
+    "phone": "+1 815-654-7296",
+    "website": "",
+    "latitude": 42.3146655,
+    "longitude": -89.0756474,
+    "rating": 3.3,
+    "reviews": 146,
+    "hours": {
+      "Monday": [
+        "Closed"
+      ],
+      "Tuesday": [
+        "9:30AM-7PM"
+      ],
+      "Wednesday": [
+        "9:30AM-7PM"
+      ],
+      "Thursday": [
+        "9:30AM-7PM"
+      ],
+      "Friday": [
+        "9:30AM-7PM"
+      ],
+      "Saturday": [
+        "9:30AM-6PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+Daddy/@42.3146655,-89.0756474,14z/data=!4m8!1m2!2m1!1sPawn+Daddy!3m4!1s0x8808bdde04c645d3:0x27beaac9133badc8!8m2!3d42.3146655!4d-89.0756474",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJ3cvyIS2_CIgRBc_h67aQ18w",
+    "name": "EZPAWN",
+    "slug": "ezpawn-rockford",
+    "city": "Rockford",
+    "citySlug": "rockford",
+    "street": "5011 E State St",
+    "zip": "61108",
+    "phone": "+1 815-381-0780",
+    "website": "https://ezpawn.com/stores/il/rockford/5011-e-state-st",
+    "latitude": 42.2638034,
+    "longitude": -89.0189257,
+    "rating": 4.4,
+    "reviews": 754,
+    "hours": {
+      "Monday": [
+        "9AM-7PM"
+      ],
+      "Tuesday": [
+        "9AM-7PM"
+      ],
+      "Wednesday": [
+        "9AM-7PM"
+      ],
+      "Thursday": [
+        "9AM-7PM"
+      ],
+      "Friday": [
+        "9AM-7PM"
+      ],
+      "Saturday": [
+        "9AM-6PM"
+      ],
+      "Sunday": [
+        "12-5PM"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/EZPAWN/@42.2638034,-89.0189257,14z/data=!4m8!1m2!2m1!1sEZPAWN!3m4!1s0x8808bf2d21f2cbdd:0xccd790b6ebe1cf05!8m2!3d42.2638034!4d-89.0189257",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJa6j_6sO_CIgRkR9_6Ila0cw",
+    "name": "Paymaster Pawn & Jewelers",
+    "slug": "paymaster-pawn-jewelers-rockford",
+    "city": "Rockford",
+    "citySlug": "rockford",
+    "street": "1103 7th St",
+    "zip": "61104",
+    "phone": "+1 815-964-7237",
+    "website": "https://paymasterpawnandjewelers.com/",
+    "latitude": 42.2561267,
+    "longitude": -89.0811636,
+    "rating": 4.8,
+    "reviews": 232,
+    "hours": {
+      "Monday": [
+        "9AM-5PM"
+      ],
+      "Tuesday": [
+        "9AM-5PM"
+      ],
+      "Wednesday": [
+        "9AM-5PM"
+      ],
+      "Thursday": [
+        "9AM-5PM"
+      ],
+      "Friday": [
+        "9AM-5PM"
+      ],
+      "Saturday": [
+        "9AM-1PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Paymaster+Pawn+%26+Jewelers/@42.256126699999996,-89.0811636,14z/data=!4m8!1m2!2m1!1sPaymaster+Pawn+%26+Jewelers!3m4!1s0x8808bfc3eaffa86b:0xccd15a89e87f1f91!8m2!3d42.256126699999996!4d-89.0811636",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJNQPsL-m_CIgRmUPySkMySPY",
+    "name": "Money Market Pawn",
+    "slug": "money-market-pawn-rockford",
+    "city": "Rockford",
+    "citySlug": "rockford",
+    "street": "1010 18th Ave",
+    "zip": "61104",
+    "phone": "+1 815-962-2420",
+    "website": "http://moneymarketpawn.net/",
+    "latitude": 42.2479905,
+    "longitude": -89.0818348,
+    "rating": 4.5,
+    "reviews": 66,
+    "hours": {
+      "Monday": [
+        "9:30AM-5:30PM"
+      ],
+      "Tuesday": [
+        "9:30AM-5:30PM"
+      ],
+      "Wednesday": [
+        "9:30AM-5:30PM"
+      ],
+      "Thursday": [
+        "9:30AM-5:30PM"
+      ],
+      "Friday": [
+        "9:30AM-5:30PM"
+      ],
+      "Saturday": [
+        "9:30AM-1:30PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Money+Market+Pawn/@42.2479905,-89.0818348,14z/data=!4m8!1m2!2m1!1sMoney+Market+Pawn!3m4!1s0x8808bfe92fec0335:0xf64832434af24399!8m2!3d42.2479905!4d-89.0818348",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJMYzVqOq_CIgRB1bnbTebxmc",
+    "name": "Bobby's On Broadway",
+    "slug": "bobbys-on-broadway-rockford",
+    "city": "Rockford",
+    "citySlug": "rockford",
+    "street": "1327 Broadway",
+    "zip": "61104",
+    "phone": "+1 815-965-8888",
+    "website": "",
+    "latitude": 42.25219449999999,
+    "longitude": -89.0756739,
+    "rating": 3.2,
+    "reviews": 25,
+    "hours": {},
+    "googleMapsUrl": "https://www.google.com/maps/place/Bobby%27s+On+Broadway/@42.252194499999995,-89.0756739,14z/data=!4m8!1m2!2m1!1sBobby%27s+On+Broadway!3m4!1s0x8808bfeaa8d58c31:0x67c69b376de75607!8m2!3d42.252194499999995!4d-89.0756739",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJybmqLjTtD4gR1_g-H4gZf9c",
+    "name": "Able Pawn Shop",
+    "slug": "able-pawn-shop-waukegan",
+    "city": "Waukegan",
+    "citySlug": "waukegan",
+    "street": "1532 Belvidere St",
+    "zip": "60085",
+    "phone": "+1 847-662-7296",
+    "website": "http://ablepawnshop.com/",
+    "latitude": 42.3515101,
+    "longitude": -87.8515293,
+    "rating": 3.8,
+    "reviews": 117,
+    "hours": {
+      "Monday": [
+        "9:30AM-6PM"
+      ],
+      "Tuesday": [
+        "9:30AM-6PM"
+      ],
+      "Wednesday": [
+        "9:30AM-6PM"
+      ],
+      "Thursday": [
+        "9:30AM-6PM"
+      ],
+      "Friday": [
+        "9:30AM-6PM"
+      ],
+      "Saturday": [
+        "9:30AM-5PM"
+      ],
+      "Sunday": [
+        "12-5PM"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Able+Pawn+Shop/@42.3515101,-87.8515293,14z/data=!4m8!1m2!2m1!1sAble+Pawn+Shop!3m4!1s0x880fed342eaab9c9:0xd77f19881f3ef8d7!8m2!3d42.3515101!4d-87.8515293",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJrdmxj-mSD4gRm1MvAy-51DI",
+    "name": "EZPAWN",
+    "slug": "ezpawn-waukegan",
+    "city": "Waukegan",
+    "citySlug": "waukegan",
+    "street": "3018 Belvidere Rd",
+    "zip": "60085",
+    "phone": "+1 847-244-4454",
+    "website": "https://ezpawn.com/stores/il/waukegan/3018-belvidere-rd",
+    "latitude": 42.3496966,
+    "longitude": -87.87624369999999,
+    "rating": 4.2,
+    "reviews": 251,
+    "hours": {
+      "Monday": [
+        "9AM-7PM"
+      ],
+      "Tuesday": [
+        "9AM-7PM"
+      ],
+      "Wednesday": [
+        "9AM-7PM"
+      ],
+      "Thursday": [
+        "9AM-7PM"
+      ],
+      "Friday": [
+        "9AM-7PM"
+      ],
+      "Saturday": [
+        "9AM-6PM"
+      ],
+      "Sunday": [
+        "12-5PM"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/EZPAWN/@42.3496966,-87.87624369999999,14z/data=!4m8!1m2!2m1!1sEZPAWN!3m4!1s0x880f92e98fb1d9ad:0x32d4b92f032f539b!8m2!3d42.3496966!4d-87.87624369999999",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJVdHlKZqSD4gRFdRD0zpmOK4",
+    "name": "Family Jewelry & Loan",
+    "slug": "family-jewelry-loan-waukegan",
+    "city": "Waukegan",
+    "citySlug": "waukegan",
+    "street": "422 N Green Bay Rd",
+    "zip": "60085",
+    "phone": "+1 224-944-0728",
+    "website": "http://www.waukeganpawn.com/",
+    "latitude": 42.3661378,
+    "longitude": -87.87909619999999,
+    "rating": 4.8,
+    "reviews": 452,
+    "hours": {
+      "Monday": [
+        "10AM-6PM"
+      ],
+      "Tuesday": [
+        "10AM-6PM"
+      ],
+      "Wednesday": [
+        "10AM-6PM"
+      ],
+      "Thursday": [
+        "10AM-6PM"
+      ],
+      "Friday": [
+        "10AM-6PM"
+      ],
+      "Saturday": [
+        "10AM-6PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Family+Jewelry+%26+Loan/@42.3661378,-87.87909619999999,14z/data=!4m8!1m2!2m1!1sFamily+Jewelry+%26+Loan!3m4!1s0x880f929a29e5d155:0xae38663ad343d415!8m2!3d42.3661378!4d-87.87909619999999",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJrWuU55fwDogRwewFOdmRPfQ",
+    "name": "Fast Cash And Pawn Shop",
+    "slug": "fast-cash-and-pawn-shop-aurora",
+    "city": "Aurora",
+    "citySlug": "aurora",
+    "street": "1669 Montgomery Rd Ste 5",
+    "zip": "60504",
+    "phone": "+1 630-236-0045",
+    "website": "https://loandisco.com/",
+    "latitude": 41.7342855,
+    "longitude": -88.2733863,
+    "rating": 4.9,
+    "reviews": 866,
+    "hours": {
+      "Monday": [
+        "Closed"
+      ],
+      "Tuesday": [
+        "10AM-7PM"
+      ],
+      "Wednesday": [
+        "10AM-7PM"
+      ],
+      "Thursday": [
+        "10AM-7PM"
+      ],
+      "Friday": [
+        "10AM-7PM"
+      ],
+      "Saturday": [
+        "10AM-5PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Fast+Cash+And+Pawn+Shop/@41.7342855,-88.2733863,14z/data=!4m8!1m2!2m1!1sFast+Cash+And+Pawn+Shop!3m4!1s0x880ef097e7946bad:0xf43d91d93905ecc1!8m2!3d41.7342855!4d-88.2733863",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJYc8Om8_6DogRBljB2OlAyMg",
+    "name": "Cash America Pawn",
+    "slug": "cash-america-pawn-aurora",
+    "city": "Aurora",
+    "citySlug": "aurora",
+    "street": "882 N Lake St #50",
+    "zip": "60506",
+    "phone": "+1 630-859-8980",
+    "website": "https://www.firstcash.com/",
+    "latitude": 41.7741434,
+    "longitude": -88.31521479999999,
+    "rating": 4.7,
+    "reviews": 307,
+    "hours": {
+      "Monday": [
+        "10AM-6PM"
+      ],
+      "Tuesday": [
+        "10AM-6PM"
+      ],
+      "Wednesday": [
+        "10AM-6PM"
+      ],
+      "Thursday": [
+        "10AM-6PM"
+      ],
+      "Friday": [
+        "10AM-6PM"
+      ],
+      "Saturday": [
+        "10AM-5PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Cash+America+Pawn/@41.7741434,-88.31521479999999,14z/data=!4m8!1m2!2m1!1sCash+America+Pawn!3m4!1s0x880efacf9b0ecf61:0xc8c840e9d8c15806!8m2!3d41.7741434!4d-88.31521479999999",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJXdYSZNH6DogRJXYAceAxAyE",
+    "name": "EZPAWN",
+    "slug": "ezpawn-aurora",
+    "city": "Aurora",
+    "citySlug": "aurora",
+    "street": "300 W Indian Trail",
+    "zip": "60506",
+    "phone": "+1 630-844-3185",
+    "website": "https://ezpawn.com/stores/il/aurora/300-w-indian-trail",
+    "latitude": 41.7815331,
+    "longitude": -88.31853629999999,
+    "rating": 4,
+    "reviews": 188,
+    "hours": {
+      "Monday": [
+        "9AM-7PM"
+      ],
+      "Tuesday": [
+        "9AM-7PM"
+      ],
+      "Wednesday": [
+        "9AM-7PM"
+      ],
+      "Thursday": [
+        "9AM-7PM"
+      ],
+      "Friday": [
+        "9AM-7PM"
+      ],
+      "Saturday": [
+        "9AM-6PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/EZPAWN/@41.7815331,-88.31853629999999,14z/data=!4m8!1m2!2m1!1sEZPAWN!3m4!1s0x880efad16412d65d:0x210331e071007625!8m2!3d41.7815331!4d-88.31853629999999",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJwy5Bj5exdIgRkgH3Ua_NjWI",
+    "name": "Decatur Jewelry & Pawn",
+    "slug": "decatur-jewelry-pawn-decatur",
+    "city": "Decatur",
+    "citySlug": "decatur",
+    "street": "1065 W Pershing Rd",
+    "zip": "62526",
+    "phone": "+1 217-875-6625",
+    "website": "http://www.decaturjewelry.com/",
+    "latitude": 39.8758316,
+    "longitude": -88.9724548,
+    "rating": 4.9,
+    "reviews": 963,
+    "hours": {
+      "Monday": [
+        "Closed"
+      ],
+      "Tuesday": [
+        "9:30AM-6PM"
+      ],
+      "Wednesday": [
+        "9:30AM-6PM"
+      ],
+      "Thursday": [
+        "9:30AM-6PM"
+      ],
+      "Friday": [
+        "9:30AM-6PM"
+      ],
+      "Saturday": [
+        "10AM-4PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Decatur+Jewelry+%26+Pawn/@39.8758316,-88.9724548,14z/data=!4m8!1m2!2m1!1sDecatur+Jewelry+%26+Pawn!3m4!1s0x8874b1978f412ec3:0x628dcdaf51f70192!8m2!3d39.8758316!4d-88.9724548",
+    "state": "Illinois",
+    "stateCode": "IL"
+  },
+  {
+    "place_id": "ChIJS2ItN9GvdIgRuMbY_IaZLes",
+    "name": "Pawn King",
+    "slug": "pawn-king-decatur",
+    "city": "Decatur",
+    "citySlug": "decatur",
+    "street": "1550 E Eldorado St",
+    "zip": "62521",
+    "phone": "+1 217-425-1000",
+    "website": "https://www.firstcash.com/",
+    "latitude": 39.8467482,
+    "longitude": -88.935676,
+    "rating": 4.3,
+    "reviews": 281,
+    "hours": {
+      "Monday": [
+        "10AM-6PM"
+      ],
+      "Tuesday": [
+        "10AM-6PM"
+      ],
+      "Wednesday": [
+        "10AM-6PM"
+      ],
+      "Thursday": [
+        "10AM-6PM"
+      ],
+      "Friday": [
+        "10AM-6PM"
+      ],
+      "Saturday": [
+        "10AM-5PM"
+      ],
+      "Sunday": [
+        "Closed"
+      ]
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/Pawn+King/@39.8467482,-88.935676,14z/data=!4m8!1m2!2m1!1sPawn+King!3m4!1s0x8874afd1372d624b:0xeb2d9986fcd8c6b8!8m2!3d39.8467482!4d-88.935676",
+    "state": "Illinois",
+    "stateCode": "IL"
   }
 ]
