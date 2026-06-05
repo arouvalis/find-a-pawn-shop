@@ -29,6 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${shop.name} — ${shop.city}, Kansas — FindAPawnShop.com`,
     description: buildKansasSeoDescription(shop),
+    robots: { index: false, follow: true },
   };
 }
 
