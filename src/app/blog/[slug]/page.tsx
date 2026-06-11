@@ -7283,7 +7283,49 @@ export default async function BlogArticlePage({ params }: Props) {
 
   const hero = HERO_IMAGES[slug];
   if (!hero) notFound();
-
+  const isCityGuide = slug.startsWith("best-pawn-shops-in-");
+  const cityName = isCityGuide
+    ? slug.replace("best-pawn-shops-in-", "").replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase())
+    : "";
+  
+  const faqSchema = isCityGuide ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: `Do pawn shops in ${cityName} buy jewelry?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Yes, virtually all pawn shops in ${cityName} buy gold, silver, diamonds, and other jewelry. Most shops use professional testing equipment to evaluate precious metals and gemstones and offer competitive prices based on current market values.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: `How do pawn shops work in ${cityName}?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Pawn shops in ${cityName} provide secured loans using personal property as collateral. You bring an item of value, receive a cash loan, and have a set period to repay the loan plus interest to reclaim your item. If you don't repay, the shop keeps the item. All transactions require valid ID and are reported to local law enforcement.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: `Are pawn shops in ${cityName} safe and regulated?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Yes, pawn shops in ${cityName} are regulated under state law and must maintain proper licensing, keep detailed transaction records, and report to law enforcement to prevent trafficking in stolen goods.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: `How long do pawn shops in ${cityName} hold items before selling them?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `State law requires pawn shops to hold pawned items for a minimum period — typically 30 days — before they can be sold to the public. This gives customers time to repay their loans and reclaim their property.`,
+        },
+      },
+    ],
+  } : null;
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -7298,7 +7340,12 @@ export default async function BlogArticlePage({ params }: Props) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}{faqSchema && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          />
+        )}
       />
 
       <div className="max-w-3xl mx-auto px-4 py-12">
